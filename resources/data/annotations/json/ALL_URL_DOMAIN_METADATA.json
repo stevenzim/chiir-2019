@@ -1,0 +1,1613 @@
+{
+    "18hrwk.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.18hrwk.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.18hrwk.com/products/cinnamon-diabetes.html",
+        "TOTAL_TRACKERS": "0"
+    },
+    "3fatchicks.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.3fatchicks.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "http://www.3fatchicks.com/8-benefits-of-echinacea/",
+        "TOTAL_TRACKERS": "16"
+    },
+    "aafp.org": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.aafp.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.aafp.org/afp/1998/0701/p139.html",
+        "TOTAL_TRACKERS": "11"
+    },
+    "aarp.org": {
+        "BLOCKED_TRACKERS": "29",
+        "DOMAIN_NAME": "https://www.aarp.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "35",
+        "SAMPLE_PAGE": "https://www.aarp.org/health/conditions-treatments/info-2018/insoles-worth-price-fd.html",
+        "TOTAL_TRACKERS": "64"
+    },
+    "abcnews.go.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "https://abcnews.go.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://abcnews.go.com/Health/Healthday/story?id=4509063&page=1",
+        "TOTAL_TRACKERS": "19"
+    },
+    "academic.oup.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://academic.oup.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "https://academic.oup.com/jn/article/136/4/977/4664331",
+        "TOTAL_TRACKERS": "7"
+    },
+    "addictioncenter.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.addictioncenter.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://www.addictioncenter.com/alcohol/benzodiazepines-alcohol-withdrawal/",
+        "TOTAL_TRACKERS": "8"
+    },
+    "alcohol.org": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "https://www.alcohol.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://www.alcohol.org/medication/",
+        "TOTAL_TRACKERS": "3"
+    },
+    "alcoholaddictioncenter.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://alcoholaddictioncenter.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "https://alcoholaddictioncenter.org/treatment/medications/benzodiazepines/",
+        "TOTAL_TRACKERS": "3"
+    },
+    "alcoholrehabguide.org": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.alcoholrehabguide.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://www.alcoholrehabguide.org/treatment/benzodiazepines/",
+        "TOTAL_TRACKERS": "6"
+    },
+    "alive.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.alive.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.alive.com/articles/view/18380/dispelling_myths_about_echinacea",
+        "TOTAL_TRACKERS": "10"
+    },
+    "animated-teeth.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.animated-teeth.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.animated-teeth.com/tooth_sealants/t1_sealing_teeth.htm",
+        "TOTAL_TRACKERS": "10"
+    },
+    "answers.com": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://www.answers.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://www.answers.com/Q/Does_coffee_help_asthma",
+        "TOTAL_TRACKERS": "18"
+    },
+    "answers.yahoo.com": {
+        "BLOCKED_TRACKERS": "6",
+        "DOMAIN_NAME": "https://answers.yahoo.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "https://answers.yahoo.com/question/index?qid=20080812090826AAnHMk7",
+        "TOTAL_TRACKERS": "8"
+    },
+    "articles.mercola.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://articles.mercola.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "http://articles.mercola.com/sites/articles/archive/2013/01/03/probiotics-lessen-eczema-risk.aspx",
+        "TOTAL_TRACKERS": "15"
+    },
+    "askdrmaxwell.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.askdrmaxwell.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.askdrmaxwell.com/2013/09/use-probiotics-to-treat-allergies-eczema-and-more/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "asmbs.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://asmbs.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://asmbs.org/patients/bariatric-surgery-procedures",
+        "TOTAL_TRACKERS": "4"
+    },
+    "asthma.net": {
+        "BLOCKED_TRACKERS": "6",
+        "DOMAIN_NAME": "https://asthma.net/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "https://asthma.net/living/coffee-whats-the-deal/",
+        "TOTAL_TRACKERS": "12"
+    },
+    "asthma.newlifeoutlook.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "https://asthma.newlifeoutlook.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "https://asthma.newlifeoutlook.com/coffee-asthma/",
+        "TOTAL_TRACKERS": "24"
+    },
+    "atcpainreliefdr.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.atcpainreliefdr.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://www.atcpainreliefdr.com/blog/lower-back-pain.html",
+        "TOTAL_TRACKERS": "1"
+    },
+    "avazo.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "https://avazo.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://avazo.com/back-traction-pain-relief/",
+        "TOTAL_TRACKERS": "5"
+    },
+    "babymed.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "https://www.babymed.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "https://www.babymed.com/fertility-news/antioxidant-use-may-not-increase-fertility",
+        "TOTAL_TRACKERS": "15"
+    },
+    "barclayphysicaltherapy.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.barclayphysicaltherapy.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.barclayphysicaltherapy.com/Injuries-Conditions/Lower-Back/Research-Articles/Traction-Therapy-for-Chronic-Low-Back-Pain/a~703/article.html",
+        "TOTAL_TRACKERS": "2"
+    },
+    "bayviewdental.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://bayviewdental.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://bayviewdental.com/2017/02/22/teeth-sealants/",
+        "TOTAL_TRACKERS": "5"
+    },
+    "bellaonline.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.bellaonline.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.bellaonline.com/articles/art68500.asp",
+        "TOTAL_TRACKERS": "7"
+    },
+    "benzo.org.uk": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.benzo.org.uk/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.benzo.org.uk/juliek.htm",
+        "TOTAL_TRACKERS": "0"
+    },
+    "berkeleywellness.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "http://www.berkeleywellness.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.berkeleywellness.com/supplements/other-supplements/article/melatonin-beyond-jet-lag",
+        "TOTAL_TRACKERS": "20"
+    },
+    "betterhealth.vic.gov.au": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "https://www.betterhealth.vic.gov.au/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/obesity-surgery",
+        "TOTAL_TRACKERS": "10"
+    },
+    "beyondmeds.com": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://beyondmeds.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://beyondmeds.com/2009/06/30/warnings-of-the-dangers-of-benzodiazepines/",
+        "TOTAL_TRACKERS": "16"
+    },
+    "bhpalmbeach.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://www.bhpalmbeach.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.bhpalmbeach.com/program/focus/mixing-alcohol-and-benzos",
+        "TOTAL_TRACKERS": "15"
+    },
+    "bionews.org.uk": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.bionews.org.uk/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.bionews.org.uk/page_333284.asp",
+        "TOTAL_TRACKERS": "7"
+    },
+    "blog.sfgate.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://blog.sfgate.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "21",
+        "SAMPLE_PAGE": "http://blog.sfgate.com/sfmoms/2010/09/08/bpa-in-dental-sealants-what-parents-need-to-know/",
+        "TOTAL_TRACKERS": "28"
+    },
+    "bloodsugaroptimizer.com": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "http://www.bloodsugaroptimizer.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "11",
+        "SAMPLE_PAGE": "http://www.bloodsugaroptimizer.com/articles/cinnamon.php",
+        "TOTAL_TRACKERS": "22"
+    },
+    "burnhamcoaching.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://burnhamcoaching.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "http://burnhamcoaching.com/products-i-recommend-superfeet-insoles/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "buzzle.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.buzzle.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.buzzle.com/articles/caffeine-side-effects.html",
+        "TOTAL_TRACKERS": "5"
+    },
+    "caffeineinformer.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.caffeineinformer.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.caffeineinformer.com/a-real-life-death-by-caffeine",
+        "TOTAL_TRACKERS": "7"
+    },
+    "care.diabetesjournals.org": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://care.diabetesjournals.org/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://care.diabetesjournals.org/content/30/4/813.full",
+        "TOTAL_TRACKERS": "6"
+    },
+    "cavalierdaily.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.cavalierdaily.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.cavalierdaily.com/article/2002/09/earning-some-cold-hard-cash/",
+        "TOTAL_TRACKERS": "11"
+    },
+    "cbc.ca": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://www.cbc.ca/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://www.cbc.ca/news/health/mom-s-obesity-surgery-may-help-her-children-1.1402974",
+        "TOTAL_TRACKERS": "18"
+    },
+    "cbsnews.com": {
+        "BLOCKED_TRACKERS": "25",
+        "DOMAIN_NAME": "https://www.cbsnews.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "28",
+        "SAMPLE_PAGE": "https://www.cbsnews.com/news/best-approach-to-preventing-low-back-pain/",
+        "TOTAL_TRACKERS": "53"
+    },
+    "cdhp.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://www.cdhp.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "https://www.cdhp.org/resources/314-dental-sealants-proven-to-prevent-tooth-decay",
+        "TOTAL_TRACKERS": "1"
+    },
+    "chriskresser.com": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://chriskresser.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "http://chriskresser.com/5-uncommon-uses-for-probiotics",
+        "TOTAL_TRACKERS": "23"
+    },
+    "cinnamonvogue.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "https://www.cinnamonvogue.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "https://www.cinnamonvogue.com/dangers_of_cinnamon_capsules.html",
+        "TOTAL_TRACKERS": "1"
+    },
+    "cochrane.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://www.cochrane.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://www.cochrane.org/CD001830/ORAL_sealants-preventing-tooth-decay-permanent-teeth",
+        "TOTAL_TRACKERS": "4"
+    },
+    "cochranelibrary.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://www.cochranelibrary.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD007807.pub3/abstract",
+        "TOTAL_TRACKERS": "6"
+    },
+    "cochraneprimarycare.org": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.cochraneprimarycare.org/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.cochraneprimarycare.org/sites/cochraneprimarycare.org/files/uploads/PEARLS/126_Probiotics%20not%20effective%20for%20eczema.pdf",
+        "TOTAL_TRACKERS": "0"
+    },
+    "colgate.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://www.colgate.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "https://www.colgate.com/en-us/oral-health/procedures/sealants/ada-03-preventing-and-halting-tooth-decay-with-sealants",
+        "TOTAL_TRACKERS": "12"
+    },
+    "conceivingconcepts.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.conceivingconcepts.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.conceivingconcepts.com/news/female-infertility/antioxidants-do-not-increase-fertility",
+        "TOTAL_TRACKERS": "18"
+    },
+    "corydonphysiotherapy.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://corydonphysiotherapy.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://corydonphysiotherapy.com/spinal-decompression",
+        "TOTAL_TRACKERS": "9"
+    },
+    "curetoothdecay.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.curetoothdecay.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.curetoothdecay.com/Dentistry/dental_sealants.htm",
+        "TOTAL_TRACKERS": "3"
+    },
+    "curezone.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://curezone.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://curezone.com/forums/am.asp?i=2074872",
+        "TOTAL_TRACKERS": "13"
+    },
+    "currexsole.co.uk": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://currexsole.co.uk/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://currexsole.co.uk/injury-expert/insoles-lower-back-pain/",
+        "TOTAL_TRACKERS": "3"
+    },
+    "dailymail.co.uk": {
+        "BLOCKED_TRACKERS": "46",
+        "DOMAIN_NAME": "http://www.dailymail.co.uk/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "24",
+        "SAMPLE_PAGE": "http://www.dailymail.co.uk/health/article-2653312/Are-surgeons-hiding-deadly-risks-obesity-surgery.html",
+        "TOTAL_TRACKERS": "70"
+    },
+    "diabetesselfmanagement.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.diabetesselfmanagement.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "http://www.diabetesselfmanagement.com/Blog/Tara-Dairman/cinnamon_mdash_not_so_useful/",
+        "TOTAL_TRACKERS": "24"
+    },
+    "diametrix.net": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.diametrix.net/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://www.diametrix.net/diabeticherbs/cinnamon.html",
+        "TOTAL_TRACKERS": "2"
+    },
+    "doctoroz.com": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "http://www.doctoroz.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "http://www.doctoroz.com/blog/lauren-streicher-md/common-misconceptions-about-common-cold",
+        "TOTAL_TRACKERS": "23"
+    },
+    "drnicksrunningblog.com": {
+        "BLOCKED_TRACKERS": "22",
+        "DOMAIN_NAME": "http://www.drnicksrunningblog.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "16",
+        "SAMPLE_PAGE": "http://www.drnicksrunningblog.com/evidence-of-shoe-orthotics-not-helpful-in-treating-back-pain/",
+        "TOTAL_TRACKERS": "38"
+    },
+    "drsharma.ca": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.drsharma.ca/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.drsharma.ca/obesity-why-bariatric-surgery-can-fail-part-3",
+        "TOTAL_TRACKERS": "15"
+    },
+    "drvee.wordpress.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://drvee.wordpress.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://drvee.wordpress.com/2008/10/31/dental-sealants/",
+        "TOTAL_TRACKERS": "16"
+    },
+    "dualdiagnosis.org": {
+        "BLOCKED_TRACKERS": "8",
+        "DOMAIN_NAME": "http://www.dualdiagnosis.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://www.dualdiagnosis.org/benzodiazepine-addiction/",
+        "TOTAL_TRACKERS": "17"
+    },
+    "ebm-guidelines.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.ebm-guidelines.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.ebm-guidelines.com/ebmg/ltk.free?p_artikkeli=ebm00435",
+        "TOTAL_TRACKERS": "0"
+    },
+    "emedicinehealth.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.emedicinehealth.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.emedicinehealth.com/script/main/art.asp?articlekey=17531",
+        "TOTAL_TRACKERS": "8"
+    },
+    "empoweredsustenance.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://empoweredsustenance.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "https://empoweredsustenance.com/melatonin-is-bad-for-you/",
+        "TOTAL_TRACKERS": "10"
+    },
+    "en.wikipedia.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://en.wikipedia.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "https://en.wikipedia.org/wiki/Alcohol_withdrawal_syndrome",
+        "TOTAL_TRACKERS": "1"
+    },
+    "everydayhealth.com": {
+        "BLOCKED_TRACKERS": "8",
+        "DOMAIN_NAME": "https://www.everydayhealth.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://www.everydayhealth.com/news/things-your-doctor-wont-tell-you-about-weight-loss-surgery/",
+        "TOTAL_TRACKERS": "13"
+    },
+    "evidentlycochrane.net": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.evidentlycochrane.net/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.evidentlycochrane.net/no-good-evidence-that-antioxidants-will-help-you-get-pregnant/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "examine.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://examine.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://examine.com/supplements/Cinnamon/",
+        "TOTAL_TRACKERS": "13"
+    },
+    "fearlesseating.net": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://fearlesseating.net/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://fearlesseating.net/three-reasons-you-should-stop-taking-probiotics/",
+        "TOTAL_TRACKERS": "10"
+    },
+    "firstflightcentennial.org": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.firstflightcentennial.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.firstflightcentennial.org/can-melatonin-help-against-jet-lag/",
+        "TOTAL_TRACKERS": "8"
+    },
+    "flowingfree.org": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://flowingfree.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://flowingfree.org/using-melatonin-to-eliminate-jet-lag/",
+        "TOTAL_TRACKERS": "18"
+    },
+    "footreliefinsoles.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://www.footreliefinsoles.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.footreliefinsoles.com/frequently_asked_questions.htm#What_are_Foot_Relief_Insoles_designed_to_do",
+        "TOTAL_TRACKERS": "14"
+    },
+    "foundationsrecoverynetwork.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.foundationsrecoverynetwork.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/",
+        "TOTAL_TRACKERS": "19"
+    },
+    "frontiersin.org": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "https://www.frontiersin.org/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://www.frontiersin.org/articles/10.3389/fcimb.2017.00392/full",
+        "TOTAL_TRACKERS": "5"
+    },
+    "fyiliving.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://fyiliving.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "http://fyiliving.com/health-news/wives-tale-alert-does-cranberry-really-help-urinary-tract-infections/",
+        "TOTAL_TRACKERS": "24"
+    },
+    "glackinpt.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "https://glackinpt.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "https://glackinpt.com/will-traction-improve-low-back-pain/",
+        "TOTAL_TRACKERS": "13"
+    },
+    "greenamerica.org": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.greenamerica.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.greenamerica.org/livinggreen/dentistry.cfm",
+        "TOTAL_TRACKERS": "10"
+    },
+    "hcahealthcare.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://hcahealthcare.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "https://hcahealthcare.com/hl/?/900036/Shoe-Insoles-Do-Not-Appear-to-Treat-or-Prevent-Low-Back-Pain",
+        "TOTAL_TRACKERS": "3"
+    },
+    "health.clevelandclinic.org": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "https://health.clevelandclinic.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://health.clevelandclinic.org/7-bariatric-surgery-benefits-besides-helping-you-lose-weight/",
+        "TOTAL_TRACKERS": "21"
+    },
+    "health.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.health.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "24",
+        "SAMPLE_PAGE": "http://www.health.com/health/gallery/0,,20672020_5,00.html",
+        "TOTAL_TRACKERS": "34"
+    },
+    "health.cvs.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://health.cvs.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://health.cvs.com/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&chunkiid=473510",
+        "TOTAL_TRACKERS": "0"
+    },
+    "health.harvard.edu": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://www.health.harvard.edu/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "https://www.health.harvard.edu/sleep/melatonin-for-jet-lag",
+        "TOTAL_TRACKERS": "9"
+    },
+    "health.howstuffworks.com": {
+        "BLOCKED_TRACKERS": "12",
+        "DOMAIN_NAME": "http://health.howstuffworks.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "http://health.howstuffworks.com/wellness/natural-medicine/herbal-remedies/echinacea-herbal-remedies.htm",
+        "TOTAL_TRACKERS": "24"
+    },
+    "health24.com": {
+        "BLOCKED_TRACKERS": "21",
+        "DOMAIN_NAME": "https://www.health24.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "15",
+        "SAMPLE_PAGE": "https://www.health24.com/Medical/Diabetes/Diabetes-diet-and-obesity/Cinnamon-the-truth-20120721",
+        "TOTAL_TRACKERS": "36"
+    },
+    "healthfraudoz.blogspot.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://healthfraudoz.blogspot.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://healthfraudoz.blogspot.com/2005/07/echinacea-another-proven-natural-dud.html",
+        "TOTAL_TRACKERS": "4"
+    },
+    "healthhearty.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://healthhearty.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://healthhearty.com/caffeine-asthma",
+        "TOTAL_TRACKERS": "6"
+    },
+    "healthland.time.com": {
+        "BLOCKED_TRACKERS": "19",
+        "DOMAIN_NAME": "http://healthland.time.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "34",
+        "SAMPLE_PAGE": "http://healthland.time.com/2010/09/13/would-you-like-some-bpa-with-that-dental-sealant-dear/",
+        "TOTAL_TRACKERS": "53"
+    },
+    "healthlinkbc.ca": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.healthlinkbc.ca/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://www.healthlinkbc.ca/health-topics/hw193730",
+        "TOTAL_TRACKERS": "8"
+    },
+    "healthx.ca": {
+        "BLOCKED_TRACKERS": "6",
+        "DOMAIN_NAME": "https://www.healthx.ca/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "https://www.healthx.ca/result-traction-of-any-kind-is-pretty-much-useless-for-treating-low-back-pain/",
+        "TOTAL_TRACKERS": "15"
+    },
+    "healthypeople.gov": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.healthypeople.gov/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://www.healthypeople.gov/2020/tools-resources/evidence-based-resource/pit-and-fissure-sealants-for-preventing-dental-decay-in",
+        "TOTAL_TRACKERS": "8"
+    },
+    "herbwisdom.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.herbwisdom.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.herbwisdom.com/herb-echinacea.html",
+        "TOTAL_TRACKERS": "7"
+    },
+    "holfordwatch.wordpress.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://holfordwatch.wordpress.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://holfordwatch.wordpress.com/holford-myths/myth-the-scientific-support-for-chromium-and-cinnamon/",
+        "TOTAL_TRACKERS": "10"
+    },
+    "homeremediesweb.com": {
+        "BLOCKED_TRACKERS": "10",
+        "DOMAIN_NAME": "http://www.homeremediesweb.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "10",
+        "SAMPLE_PAGE": "http://www.homeremediesweb.com/echinacea-health-benefits.php",
+        "TOTAL_TRACKERS": "20"
+    },
+    "hopkinsclinic.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.hopkinsclinic.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.hopkinsclinic.com/decompression-therapy-dts.htm",
+        "TOTAL_TRACKERS": "0"
+    },
+    "huffingtonpost.com": {
+        "BLOCKED_TRACKERS": "8",
+        "DOMAIN_NAME": "http://www.huffingtonpost.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "10",
+        "SAMPLE_PAGE": "http://www.huffingtonpost.com/2013/08/04/antioxidants-fertility_n_3697596.html",
+        "TOTAL_TRACKERS": "18"
+    },
+    "icnr.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.icnr.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.icnr.com/articles/dental-sealant-toxicity.html",
+        "TOTAL_TRACKERS": "1"
+    },
+    "independent.co.uk": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.independent.co.uk/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "22",
+        "SAMPLE_PAGE": "http://www.independent.co.uk/life-style/health-and-families/health-news/weight-loss-surgery-can-ruin-patients-quality-of-life-warns-leading-doctor-10367509.html",
+        "TOTAL_TRACKERS": "27"
+    },
+    "journals.lww.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://journals.lww.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "https://journals.lww.com/spinejournal/Abstract/2009/04200/Insoles_for_Prevention_and_Treatment_of_Back_Pain_.11.aspx",
+        "TOTAL_TRACKERS": "11"
+    },
+    "knowyourteeth.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.knowyourteeth.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.knowyourteeth.com/infobites/abc/article/?abc=S&iid=327&aid=1312",
+        "TOTAL_TRACKERS": "7"
+    },
+    "latimes.com": {
+        "BLOCKED_TRACKERS": "14",
+        "DOMAIN_NAME": "http://www.latimes.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "18",
+        "SAMPLE_PAGE": "http://www.latimes.com/health/la-he-skeptic30-2008jun30-story.html",
+        "TOTAL_TRACKERS": "32"
+    },
+    "livestrong.com": {
+        "BLOCKED_TRACKERS": "23",
+        "DOMAIN_NAME": "http://www.livestrong.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "22",
+        "SAMPLE_PAGE": "http://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/",
+        "TOTAL_TRACKERS": "45"
+    },
+    "marksdailyapple.com": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "http://www.marksdailyapple.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "10",
+        "SAMPLE_PAGE": "http://www.marksdailyapple.com/before-you-close-your-eyes-make-sure-theyre-open/",
+        "TOTAL_TRACKERS": "19"
+    },
+    "mayoclinic.org": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://www.mayoclinic.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "https://www.mayoclinic.org/tests-procedures/gastric-bypass-surgery/in-depth/weight-loss-surgery/art-20045334",
+        "TOTAL_TRACKERS": "12"
+    },
+    "mcelroydds.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.mcelroydds.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.mcelroydds.com/services/cleanings-prevention/pit-and-fissure-sealants-to-prevent-tooth-decay/",
+        "TOTAL_TRACKERS": "2"
+    },
+    "mchoralhealth.org": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.mchoralhealth.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://www.mchoralhealth.org/PDFs/OHDentSealantFactsheet.pdf",
+        "TOTAL_TRACKERS": "2"
+    },
+    "mdedge.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.mdedge.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://www.mdedge.com/jfponline/article/65531/addiction-medicine/3-regimens-alcohol-withdrawal-and-detoxification",
+        "TOTAL_TRACKERS": "15"
+    },
+    "medbroadcast.com": {
+        "BLOCKED_TRACKERS": "18",
+        "DOMAIN_NAME": "https://medbroadcast.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "11",
+        "SAMPLE_PAGE": "https://medbroadcast.com/channel/obesity/managing-obesity/surgery-for-obesity",
+        "TOTAL_TRACKERS": "29"
+    },
+    "medicaldaily.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.medicaldaily.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "11",
+        "SAMPLE_PAGE": "http://www.medicaldaily.com/lack-evidence-suggests-women-taking-antioxidants-wont-increase-chances-fertility-249275",
+        "TOTAL_TRACKERS": "14"
+    },
+    "medicalnewstoday.com": {
+        "BLOCKED_TRACKERS": "19",
+        "DOMAIN_NAME": "http://www.medicalnewstoday.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "18",
+        "SAMPLE_PAGE": "http://www.medicalnewstoday.com/articles/272432.php",
+        "TOTAL_TRACKERS": "37"
+    },
+    "medlineplus.gov": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://medlineplus.gov/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "https://medlineplus.gov/weightlosssurgery.html",
+        "TOTAL_TRACKERS": "8"
+    },
+    "megacomfort.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.megacomfort.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.megacomfort.com/technology/corporate-benefits",
+        "TOTAL_TRACKERS": "0"
+    },
+    "melatonin.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://melatonin.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "https://melatonin.com/index.php/tag/jet-lag/",
+        "TOTAL_TRACKERS": "12"
+    },
+    "mommypotamus.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.mommypotamus.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.mommypotamus.com/popular-probiotic-strain-may-induce-neurotoxicity/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "mouthhealthy.org": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "http://www.mouthhealthy.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.mouthhealthy.org/en/az-topics/s/sealants",
+        "TOTAL_TRACKERS": "19"
+    },
+    "natural-fertility-info.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://natural-fertility-info.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://natural-fertility-info.com/antioxidants-and-fertility.html",
+        "TOTAL_TRACKERS": "7"
+    },
+    "naturalnews.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.naturalnews.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "http://www.naturalnews.com/012352_caffeine_coffee.html",
+        "TOTAL_TRACKERS": "10"
+    },
+    "naturalwomenscare.blogspot.ca": {
+        "BLOCKED_TRACKERS": "12",
+        "DOMAIN_NAME": "http://naturalwomenscare.blogspot.ca/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://naturalwomenscare.blogspot.ca/2010/09/natural-solutions-for-fertility.html",
+        "TOTAL_TRACKERS": "16"
+    },
+    "nbcnews.com": {
+        "BLOCKED_TRACKERS": "22",
+        "DOMAIN_NAME": "http://www.nbcnews.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "29",
+        "SAMPLE_PAGE": "http://www.nbcnews.com/id/37360302/ns/health-health_care/t/feeling-groggy-simple-cures-jet-lag/#.VGLfnkuprwI",
+        "TOTAL_TRACKERS": "51"
+    },
+    "ncbi.nlm.nih.gov": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.ncbi.nlm.nih.gov/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.ncbi.nlm.nih.gov/pubmed/11687099",
+        "TOTAL_TRACKERS": "3"
+    },
+    "ndnr.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "https://ndnr.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "https://ndnr.com/fertility/antioxidants-for-female-infertility-a-review-of-the-literature/",
+        "TOTAL_TRACKERS": "0"
+    },
+    "news-medical.net": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.news-medical.net/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.news-medical.net/news/20110729/Antioxidants-may-help-treat-infertility-problems-in-both-women-and-men.aspx",
+        "TOTAL_TRACKERS": "13"
+    },
+    "nhs.uk": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.nhs.uk/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "https://www.nhs.uk/conditions/probiotics/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "nojetlag.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://www.nojetlag.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.nojetlag.com/jetlag3.html",
+        "TOTAL_TRACKERS": "3"
+    },
+    "npr.org": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "https://www.npr.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://www.npr.org/sections/health-shots/2018/01/08/575977290/bariatric-surgery-helps-teens-with-severe-obesity-reduce-heart-disease-risk",
+        "TOTAL_TRACKERS": "23"
+    },
+    "nutraingredients-usa.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.nutraingredients-usa.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.nutraingredients-usa.com/Research/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT",
+        "TOTAL_TRACKERS": "12"
+    },
+    "nytimes.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "http://www.nytimes.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "22",
+        "SAMPLE_PAGE": "http://www.nytimes.com/2010/11/30/health/30really.html",
+        "TOTAL_TRACKERS": "35"
+    },
+    "obesityaction.org": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "https://www.obesityaction.org/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "https://www.obesityaction.org/obesity-treatments/what-is-obesity-treatment/bariatric-surgery/",
+        "TOTAL_TRACKERS": "6"
+    },
+    "onemedical.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "https://www.onemedical.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "16",
+        "SAMPLE_PAGE": "https://www.onemedical.com/blog/live-well/prevent-jet-lag/",
+        "TOTAL_TRACKERS": "20"
+    },
+    "outalpha.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://outalpha.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://outalpha.com/how-to-cure-bulging-discs-fix-lower-back-pain/ ",
+        "TOTAL_TRACKERS": "3"
+    },
+    "pain-in-lower-back.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.pain-in-lower-back.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.pain-in-lower-back.com/lumbar-traction-device/",
+        "TOTAL_TRACKERS": "6"
+    },
+    "panthersportsmedicine.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.panthersportsmedicine.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.panthersportsmedicine.com/mobile/Injuries-Conditions/Lower-Back/Research-Articles/Traction-Therapy-for-Chronic-Low-Back-Pain/a~703/article.html",
+        "TOTAL_TRACKERS": "5"
+    },
+    "pedro.org.au": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.pedro.org.au/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://www.pedro.org.au/english/archive/top-15-trials/beurskens/",
+        "TOTAL_TRACKERS": "1"
+    },
+    "peoplespharmacy.com": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.peoplespharmacy.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.peoplespharmacy.com/2009/07/06/caffeine-helps/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "phys.org": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://phys.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://phys.org/news/2011-01-antioxidants-fertility-problems-females.html",
+        "TOTAL_TRACKERS": "8"
+    },
+    "portobellophysio.ie": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.portobellophysio.ie/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "http://www.portobellophysio.ie/disc-related-lower-back-pain-and-the-benefits-of-traction/",
+        "TOTAL_TRACKERS": "0"
+    },
+    "pregnancyandbaby.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.pregnancyandbaby.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "21",
+        "SAMPLE_PAGE": "http://www.pregnancyandbaby.com/conception/articles/936421/could-antioxidants-help-infertility-in-both-men-and-women",
+        "TOTAL_TRACKERS": "26"
+    },
+    "prestigeshoes.co.uk": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.prestigeshoes.co.uk/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.prestigeshoes.co.uk/content/why-orthotics.html",
+        "TOTAL_TRACKERS": "5"
+    },
+    "psychologytoday.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://www.psychologytoday.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://www.psychologytoday.com/blog/all-about-addiction/201205/treating-alcohol-withdrawal-benzodiazepines-safe-if-mindful",
+        "TOTAL_TRACKERS": "15"
+    },
+    "quora.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "https://www.quora.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "https://www.quora.com/How-does-bariatric-surgery-help",
+        "TOTAL_TRACKERS": "7"
+    },
+    "researchgate.net": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "https://www.researchgate.net/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "https://www.researchgate.net/publication/236094826_Sealants_for_preventing_dental_decay_in_the_permanent_teeth",
+        "TOTAL_TRACKERS": "15"
+    },
+    "reuters.com": {
+        "BLOCKED_TRACKERS": "18",
+        "DOMAIN_NAME": "https://www.reuters.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "https://www.reuters.com/article/us-diabetes-surgery-idUSN2253011320080123",
+        "TOTAL_TRACKERS": "32"
+    },
+    "sbir-diba.ca": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.sbir-diba.ca/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://www.sbir-diba.ca/follow-up-and-support/withdrawal-monitoring-and-management/medications-for-management-of-alcohol-withdrawal",
+        "TOTAL_TRACKERS": "1"
+    },
+    "sciencedaily.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "https://www.sciencedaily.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "https://www.sciencedaily.com/releases/2013/08/130805092357.htm",
+        "TOTAL_TRACKERS": "5"
+    },
+    "sharecare.com": {
+        "BLOCKED_TRACKERS": "9",
+        "DOMAIN_NAME": "https://www.sharecare.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://www.sharecare.com/health/common-dental-procedures/how-dental-sealants-prevent-decay",
+        "TOTAL_TRACKERS": "21"
+    },
+    "shielddentalcare.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.shielddentalcare.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "4",
+        "SAMPLE_PAGE": "http://www.shielddentalcare.com/dental-sealants/",
+        "TOTAL_TRACKERS": "9"
+    },
+    "smh.com.au": {
+        "BLOCKED_TRACKERS": "22",
+        "DOMAIN_NAME": "http://www.smh.com.au/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "28",
+        "SAMPLE_PAGE": "http://www.smh.com.au/lifestyle/diet-and-fitness/herbal-remedy-claims-debunked-20101221-193sk.html",
+        "TOTAL_TRACKERS": "50"
+    },
+    "spine-health.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.spine-health.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.spine-health.com/wellness/ergonomics/shoe-insoles-lower-back-pain",
+        "TOTAL_TRACKERS": "9"
+    },
+    "spineuniversity.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.spineuniversity.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.spineuniversity.com/evidence_against_the_use_of_shoe_insoles_to_prevent_low_back",
+        "TOTAL_TRACKERS": "8"
+    },
+    "streetdirectory.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.streetdirectory.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.streetdirectory.com/travel_guide/108320/alternative_medicine/effective_eczema_natural_remedies__eczema_cure_tips.html",
+        "TOTAL_TRACKERS": "8"
+    },
+    "stuff.co.nz": {
+        "BLOCKED_TRACKERS": "26",
+        "DOMAIN_NAME": "http://www.stuff.co.nz/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "17",
+        "SAMPLE_PAGE": "http://www.stuff.co.nz/life-style/well-good/4482524/Echinacea-myth-debunked",
+        "TOTAL_TRACKERS": "43"
+    },
+    "sunrisehouse.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://sunrisehouse.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "6",
+        "SAMPLE_PAGE": "https://sunrisehouse.com/detox-process/medications-ease-pain-withdrawals/benzodiazepines/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "telegraph.co.uk": {
+        "BLOCKED_TRACKERS": "24",
+        "DOMAIN_NAME": "http://www.telegraph.co.uk/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "34",
+        "SAMPLE_PAGE": "http://www.telegraph.co.uk/health/healthnews/9596406/Echinacea-can-prevent-colds.html",
+        "TOTAL_TRACKERS": "58"
+    },
+    "theadventurouswriter.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://theadventurouswriter.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://theadventurouswriter.com/blogbaby/cause-infertility-women-antioxidants/",
+        "TOTAL_TRACKERS": "5"
+    },
+    "theatlantic.com": {
+        "BLOCKED_TRACKERS": "6",
+        "DOMAIN_NAME": "https://www.theatlantic.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "16",
+        "SAMPLE_PAGE": "https://www.theatlantic.com/health/archive/2012/04/is-bariatric-surgery-the-solution-to-americas-obesity-problem/253500/",
+        "TOTAL_TRACKERS": "22"
+    },
+    "thebabycorner.com": {
+        "BLOCKED_TRACKERS": "3",
+        "DOMAIN_NAME": "http://www.thebabycorner.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.thebabycorner.com/page/3107/",
+        "TOTAL_TRACKERS": "8"
+    },
+    "thecrimson.com": {
+        "BLOCKED_TRACKERS": "14",
+        "DOMAIN_NAME": "http://www.thecrimson.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "10",
+        "SAMPLE_PAGE": "http://www.thecrimson.com/article/1993/11/2/can-coffee-help-asthma-sufferers-pcoffee/",
+        "TOTAL_TRACKERS": "24"
+    },
+    "thecut.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "https://www.thecut.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "15",
+        "SAMPLE_PAGE": "https://www.thecut.com/2017/05/melatonin-benefits-sleep-jet-lag-cure.html",
+        "TOTAL_TRACKERS": "28"
+    },
+    "theglobeandmail.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "http://www.theglobeandmail.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "14",
+        "SAMPLE_PAGE": "http://www.theglobeandmail.com/life/health-and-fitness/health/conditions/fighting-a-cold-skip-the-echinacea/article623508/",
+        "TOTAL_TRACKERS": "27"
+    },
+    "theguardian.com": {
+        "BLOCKED_TRACKERS": "16",
+        "DOMAIN_NAME": "https://www.theguardian.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "22",
+        "SAMPLE_PAGE": "https://www.theguardian.com/lifeandstyle/2017/jan/30/is-it-safe-to-use-melatonin-for-jet-lag-insomnia",
+        "TOTAL_TRACKERS": "38"
+    },
+    "thehealthsite.com": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "http://www.thehealthsite.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "9",
+        "SAMPLE_PAGE": "http://www.thehealthsite.com/diseases-conditions/having-an-asthma-attack-drink-a-cup-of-black-coffee-v0116/",
+        "TOTAL_TRACKERS": "20"
+    },
+    "theossi.com": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "https://www.theossi.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "https://www.theossi.com/treatment-options-obesity-surgery.html",
+        "TOTAL_TRACKERS": "0"
+    },
+    "timeshifter.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://www.timeshifter.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "https://www.timeshifter.com/melatonin-for-jet-lag/",
+        "TOTAL_TRACKERS": "3"
+    },
+    "torontophysiotherapy.ca": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://torontophysiotherapy.ca/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://torontophysiotherapy.ca/traction-or-spinal-decompression-therapy-doesnt-help-lower-back-pain/",
+        "TOTAL_TRACKERS": "3"
+    },
+    "trimdownclub.com": {
+        "BLOCKED_TRACKERS": "6",
+        "DOMAIN_NAME": "http://www.trimdownclub.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "11",
+        "SAMPLE_PAGE": "http://www.trimdownclub.com/cranberry-juice-does-not-prevent-urinary-tract-infections/",
+        "TOTAL_TRACKERS": "17"
+    },
+    "upstate.edu": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.upstate.edu/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.upstate.edu/bariatric/how-we-can-help.php",
+        "TOTAL_TRACKERS": "2"
+    },
+    "uptodate.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "https://www.uptodate.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "0",
+        "SAMPLE_PAGE": "https://www.uptodate.com/contents/management-of-moderate-and-severe-alcohol-withdrawal-syndromes",
+        "TOTAL_TRACKERS": "1"
+    },
+    "verywellhealth.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "https://www.verywellhealth.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://www.verywellhealth.com/lumbar-traction-offers-no-benefit-for-back-pain-3999170",
+        "TOTAL_TRACKERS": "25"
+    },
+    "vitalianaturalmedicine.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "http://www.vitalianaturalmedicine.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.vitalianaturalmedicine.com/news/the-harmful-effects-of-caffeine/",
+        "TOTAL_TRACKERS": "10"
+    },
+    "vox.com": {
+        "BLOCKED_TRACKERS": "40",
+        "DOMAIN_NAME": "https://www.vox.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "19",
+        "SAMPLE_PAGE": "https://www.vox.com/science-and-health/2017/12/7/16587316/bariatric-surgery-weight-loss-lap-band",
+        "TOTAL_TRACKERS": "59"
+    },
+    "webmd.com": {
+        "BLOCKED_TRACKERS": "13",
+        "DOMAIN_NAME": "https://www.webmd.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "FALSE",
+        "REMAINING_TRACKERS": "12",
+        "SAMPLE_PAGE": "https://www.webmd.com/sleep-disorders/what-is-melatonin",
+        "TOTAL_TRACKERS": "25"
+    },
+    "well.blogs.nytimes.com": {
+        "BLOCKED_TRACKERS": "20",
+        "DOMAIN_NAME": "https://well.blogs.nytimes.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "23",
+        "SAMPLE_PAGE": "https://well.blogs.nytimes.com/2010/11/29/asthma-symptoms-try-caffeine/",
+        "TOTAL_TRACKERS": "43"
+    },
+    "wesleymc.com": {
+        "BLOCKED_TRACKERS": "1",
+        "DOMAIN_NAME": "http://wesleymc.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "http://wesleymc.com/hl/?/473510/Shoe-Insoles-Do-Not-Appear-to-Prevent-Chronic-Low-Back-Pain",
+        "TOTAL_TRACKERS": "2"
+    },
+    "whfoods.com": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.whfoods.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "3",
+        "SAMPLE_PAGE": "http://www.whfoods.com/genpage.php?tname=foodspice&dbid=145",
+        "TOTAL_TRACKERS": "5"
+    },
+    "who.int": {
+        "BLOCKED_TRACKERS": "2",
+        "DOMAIN_NAME": "http://www.who.int/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "5",
+        "SAMPLE_PAGE": "http://www.who.int/mental_health/mhgap/evidence/alcohol/q2/en/",
+        "TOTAL_TRACKERS": "7"
+    },
+    "wikihow.com": {
+        "BLOCKED_TRACKERS": "11",
+        "DOMAIN_NAME": "http://www.wikihow.com/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.wikihow.com/Treat-Asthma-Attacks",
+        "TOTAL_TRACKERS": "18"
+    },
+    "winchesterhospital.org": {
+        "BLOCKED_TRACKERS": "4",
+        "DOMAIN_NAME": "http://www.winchesterhospital.org/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "7",
+        "SAMPLE_PAGE": "http://www.winchesterhospital.org/health-library/article?id=900036",
+        "TOTAL_TRACKERS": "11"
+    },
+    "wired.co.uk": {
+        "BLOCKED_TRACKERS": "14",
+        "DOMAIN_NAME": "https://www.wired.co.uk/",
+        "FACEBOOK_TRACKER": "TRUE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "11",
+        "SAMPLE_PAGE": "https://www.wired.co.uk/article/how-caffeine-can-help-ease-asthma",
+        "TOTAL_TRACKERS": "25"
+    },
+    "worldallergy.org": {
+        "BLOCKED_TRACKERS": "0",
+        "DOMAIN_NAME": "http://www.worldallergy.org/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "2",
+        "SAMPLE_PAGE": "http://www.worldallergy.org/ask-the-expert/answers/probiotics-in-the-treatment-of-atopic-dermatitis-denica-zheleva",
+        "TOTAL_TRACKERS": "2"
+    },
+    "yourorganicchild.com": {
+        "BLOCKED_TRACKERS": "7",
+        "DOMAIN_NAME": "http://yourorganicchild.com/",
+        "FACEBOOK_TRACKER": "FALSE",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "8",
+        "SAMPLE_PAGE": "http://yourorganicchild.com/health/the-dangers-of-dental-sealants/",
+        "TOTAL_TRACKERS": "15"
+    },
+    "youtube.com": {
+        "BLOCKED_TRACKERS": "5",
+        "DOMAIN_NAME": "https://www.youtube.com/",
+        "FACEBOOK_TRACKER": "",
+        "GOOGLE_TRACKER": "TRUE",
+        "REMAINING_TRACKERS": "1",
+        "SAMPLE_PAGE": "https://www.youtube.com/watch?v=u11DfF6fuCM",
+        "TOTAL_TRACKERS": "6"
+    }
+}

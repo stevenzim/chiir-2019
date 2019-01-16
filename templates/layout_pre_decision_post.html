@@ -1,0 +1,25 @@
+{% extends "layout_generic_survey.html" %} 
+
+{% block medical_definitions %}
+<li id="li_1">
+    
+    <label class="description" for="element_1">
+        <b>MEDICAL <u>QUESTION {{ payload.current_med_question_num }}</u>:</b> {{ payload.cochrane_definitions.QUESTION_TEXT }}
+        <br>
+        <b>HEALTH ISSUE: {{ payload.cochrane_definitions.HEALTH_ISSUE_PHRASE }} -</b> {{ payload.cochrane_definitions.HEALTH_ISSUE_DEF }} <i>Source: {{ payload.cochrane_definitions.HEALTH_ISSUE_SOURCE }}</i>
+        <br>
+        <b>TREATMENT:  {{ payload.cochrane_definitions.TREATMENT_PHRASE }} -</b> {{ payload.cochrane_definitions.TREATMENT_DEF }} <i>Source: {{ payload.cochrane_definitions.TREATMENT_SOURCE }}</i>
+        <br>
+        <br>
+        <br>
+    </label>
+
+</li>
+{% endblock %}
+<!--                 <div class="wrap"> -->
+
+{% block survey %}
+            <div class="buttons">
+                <button class="grey">Next</button>
+            </div>
+{% endblock %}

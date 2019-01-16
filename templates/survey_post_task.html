@@ -1,0 +1,25 @@
+{% extends "layout_pre_decision_post.html" %}
+{% block survey %}
+
+
+<div class="form_description">
+    <h2>Questions: <label style="color:red;">{{ message }}</label> </h2>
+</div>
+
+<form  method="post">
+    <label class="statement">How confident are you in your decision about the effectiveness of the treatment for the medical condition?</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.confidence_question }}
+    </ul>
+
+    <label class="statement">To what extent are your certain about your decision?</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.uncertainty_question }}
+    </ul>
+
+</form>
+<div class="buttons">
+    <button class="grey">Submit</button>
+
+</div>
+{% endblock %}

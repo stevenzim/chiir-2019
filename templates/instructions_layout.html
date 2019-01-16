@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Experiment Instructions</title>
+    <link rel="stylesheet" type="text/css" href="static/survey/view.css" media="all">
+    <script type="text/javascript" src="static/survey/view.js"></script>
+</head>
+
+<body id="main_body">
+
+    <img id="top" src="static/survey/top.png" alt="">
+    <div id="form_container">
+        <!-- DISPLAY PROGRESS BAR ON TOP -->
+        Experiment progress: <progress value="{{ payload.participant_state.experiment_state  }}" max="{{ payload.max_state_val  }}"> </progress>
+        
+        <!-- INSTRUCTIONS -->
+        <h1><a>Experiment Instructions</a></h1>
+        <form id="form_23629" class="appnitro" method="post" action="">
+            <!-- <div class="form_description"> -->
+                <h2>Experiment Instructions<label style="color:red;">{{ message }}</label></h2>
+                <p>Welcome to the experiment. In the experiment you will make decisions about the effectiveness of treatments for various health concerns.  A total of 10 questions and decisions (plus an additional 2 practice questions with decisions) will be made in the experiment. After all decisions have been submitted we will take you to a survey to collect demographic and other information.</p>
+
+                <!--<p>For some of the questions, you will be provided with a webpage mimicking commonly used search engines with clickable links to images of the original webpage. When provided a search engine results page, we ask that you <b>imagine</b> that you are using a search engine to find an answer to this question. Once you are ready to make a decision, you will click on a button that takes you to a decision page</p>-->
+                <p>For some of the questions, you will be provided with a webpage mimicking results of commonly used search engines. In these results, <b> you can click on the links (which take you to an image of the webpage).</b>  When provided a search engine results page, we ask that you <b>imagine</b> that you are using a search engine to find information to make your decision. Once you are ready to make a decision, you will click on a button that takes you to a decision page</p>
+
+
+                <p>For some questions, you will be provided with no search results and will be taken directly to the decision page.</p>
+
+                <p>You will have a chance to practice with both methods.</p>
+                
+                <p>Before and after each medical question and decision, you will be asked a couple of questions.</p>
+
+ {#                <p>When presented with a search engine results page, you can click on links (which take you to an image of webpage) to gather any additional information useful for your decision. When provided a search engine results page, we ask that you <b>imagine</b> that you are using a search engine to find an answer to this question. Once you are ready to make a decision, you will click on a button that takes you to a decision page.</p>
+ #}
+{#                 <p>When presented with the decision page, you will make a decision on the effectiveness of the treatment.</p> #}
+
+                <p>For all questions and the practice questions, you will have three options available for your decisions: <i>helpful</i>, <i>does not help</i> or <i>inconclusive</i>.<p> 
+                    
+                <p><b>DEFINITIONS</b> of medical conditions and treatment are provided to you throughout the experiment.  We also provide you with definitions of the 3 decision options.</p>
+
+                <p> <i>helpful: </i> The medical treatment <b>helps</b> if the treatment is effective and has a direct positive influence on the specified illness.</p>
+
+                <p> <i>inconclusive: </i> The effectiveness of a medical treatment is <b>inconclusive</b> if medical professionals are still unsure if the treatment will have a positive, negative or no influence on the specified illness.</p>
+
+                <p> <i>does not help: </i> The medical treatment <b>does not help</b> if the treatment is ineffective and either has no effect or has a direct negative influence on the specified illness.</p>
+            
+
+            <!-- <QUESTIONS / SURVEY BLOCK> -->
+            {% block survey %}{% endblock %}
+
+        </form>
+                <!-- HIDDEN VARIABLES TO SEND BACK IN POST --> 
+      
+                <input hidden type="text" value="{{ payload.participant_state.participant_id  }}" name="participant_id">
+                <input hidden type="text" value="{{ payload.participant_state.privacy_switch_default  }}" name="privacy_switch_default">
+                <input hidden type="text" value="{{ payload.participant_state.variant_id  }}" name="variant_id">
+        <div id="footer">
+            Generated by <a href="">pForm</a>
+        </div>
+    </div>
+    <img id="bottom" src="static/survey/bottom.png" alt="">
+</body>
+
+</html>

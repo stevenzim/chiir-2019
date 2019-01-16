@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+                <meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT</title>
+        
+<meta name="copyright" content="William Reed Business Media">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+<meta name="format-detection" content="telephone=no" >
+<meta http-equiv="Cache-Control" content="public">
+<meta name="google-site-verification" content="Wl_ah8alkH9c5LRKInkelIC0LTmqhlzVhV3yqBDvu1I" />
+
+
+
+            <meta property="fb:admins" content="100000722238608">
+                <meta property="fb:page_id" content="335785766502137">
+                                <meta property="twitter:site" content="@NutraUSA">
+                <meta property="twitter:domain" content="www.nutraingredients-usa.com">
+                                <meta property="og:site_name" content="nutraingredients-usa.com">
+                <meta property="author" content="nutraingredients-usa.com">
+                <meta property="msvalidate.01" content="CEC8ACB0DB9777352167906B78F1EF96">
+                <meta property="verify-v1" content="r9S7rqjdHMJK6SXFKQXVStS7ZfRuhsp/BjUAMCIlAVk=">
+    
+    <link rel="Shortcut icon" href="https://cdn-a.william-reed.com/bundles/wrbmgbsite/images/favicon/nutraingredients_usa/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="https://cdn-a.william-reed.com/bundles/wrbmgbsite/images/favicon/nutraingredients_usa/mobile_favicon.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="https://cdn-a.william-reed.com/bundles/wrbmgbsite/images/favicon/nutraingredients_usa/mobile_favicon.png">
+
+
+    <link rel="Alternate" href="/Info/NutraIngredients-USA-RSS" type="application/rss+xml" title="NutraIngredients-USA RSS">
+    <link rel="Alternate" href="/Info/NutraIngredients-USA-RSS2" type="application/rss+xml" title="NutraIngredients-USA RSS">
+
+    <link rel="publisher" href="//plus.google.com/102895800421163183491">
+
+                
+
+                
+                
+                        
+    
+            
+                        
+        
+            
+        
+
+                    <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT">
+        <meta name="twitter:description" content="Daily supplements containing the probiotic Lactobacillus rhamnosus HN001 strain may reduce the incidence of eczema and skin sensitivity in children, according to data from a double-blind randomized placebo-controlled trial.">
+    
+
+                                <meta name="twitter:image:src" content="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/5/9/2/8/1488295-1-eng-GB/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT.jpg">
+        <meta property="og:image" content="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/5/9/2/8/1488295-1-eng-GB/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT.jpg">
+    
+
+        
+                                        <meta property="al:web:url" content="https://www.nutraingredients-usa.com/Article/2013/09/05/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT">
+    
+
+                <meta property="og:title" content="L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT">
+        <meta property="og:description" content="Daily supplements containing the probiotic Lactobacillus rhamnosus HN001 strain may reduce the incidence of eczema and skin sensitivity in children, according to data from a double-blind randomized placebo-controlled trial.">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://www.nutraingredients-usa.com/Article/2013/09/05/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT">
+
+
+                    
+                                                                                                                                                                                
+                                                                    
+        
+        <meta name="keywords" content="Probiotics &amp; prebiotics, Gut/digestive health, Immune support, Maternal &amp; infant health, Skin health, Allergies &amp; intolerances, Probiotics, Research, Probiotic">
+
+    
+                <meta name="news_keywords" content="Probiotic">
+    
+
+        
+
+        <link rel="canonical" href="https://www.nutraingredients.com/Article/2013/09/05/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT">
+
+
+    
+
+    
+                
+            <style>.Icon{width:1em;height:1em;}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700">
+
+        
+<link rel="stylesheet"
+      href="https://cdn-a.william-reed.com/css/9fd7a26.css?1536304066">
+
+      
+
+        <link rel="stylesheet"
+          href="https://cdn-a.william-reed.com/css/dc81762.css?1536304066">
+    
+    
+            <!--[if IE 9]><script>document.documentElement.className+=' IE9';</script><![endif]-->
+<script>
+    !function(a,b){"function"==typeof define&&define.amd?define([],function(){return a.svg4everybody=b()}):"object"==typeof exports?module.exports=b():a.svg4everybody=b()}(this,function(){/*! svg4everybody v2.0.0 | github.com/jonathantneal/svg4everybody */
+function a(a,b){if(b){var c=!a.getAttribute("viewBox")&&b.getAttribute("viewBox"),d=document.createDocumentFragment(),e=b.cloneNode(!0);for(c&&a.setAttribute("viewBox",c);e.childNodes.length;)d.appendChild(e.firstChild);a.appendChild(d)}}function b(b){b.onreadystatechange=function(){if(4===b.readyState){var c=document.createElement("x");c.innerHTML=b.responseText,b.s.splice(0).map(function(b){a(b[0],c.querySelector("#"+b[1].replace(/(\W)/g,"\\$1")))})}},b.onreadystatechange()}function c(c){function d(){for(var c;c=e[0];){var j=c.parentNode;if(j&&/svg/i.test(j.nodeName)){var k=c.getAttribute("xlink:href");if(f&&(!g||g(k,j,c))){var l=k.split("#"),m=l[0],n=l[1];if(j.removeChild(c),m.length){var o=i[m]=i[m]||new XMLHttpRequest;o.s||(o.s=[],o.open("GET",m),o.send()),o.s.push([j,n]),b(o)}else a(j,document.getElementById(n))}}}h(d,17)}c=c||{};var e=document.getElementsByTagName("use"),f="polyfill"in c?c.polyfill:/\bEdge\/12\b|\bTrident\/[567]\b|\bVersion\/7.0 Safari\b/.test(navigator.userAgent)||(navigator.userAgent.match(/AppleWebKit\/(\d+)/)||[])[1]<537,g=c.validate,h=window.requestAnimationFrame||setTimeout,i={};f&&d()}return c});    ;svg4everybody();
+</script>
+        <script>
+    var wrbm_gb = wrbm_gb || {};
+    wrbm_gb.gtmTagId = "GTM-P3J4TM";
+    
+    
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkspUGCoz7wnnttkZAdIlXgVG3QPjy_gg"
+    onload="wrbm_gb && wrbm_gb.map && wrbm_gb.map.initOnce()">
+</script>
+
+    <script src="https://cdn-a.william-reed.com/js/559e323.js?1536275040"></script>
+
+<script type="application/javascript">
+
+        function getCookie(cname) {
+          var name = cname + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays*24*60*60*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+</script>    
+        <script type="application/ld+json">
+        {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT",
+    "url": "https://www.nutraingredients-usa.com/Article/2013/09/05/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT",
+    "datePublished": "2013-09-05",
+    "mainEntity": {
+        "@type": "Article",
+        "name": "L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT",
+        "author": {
+            "@type": "Person",
+            "name": "Stephen Daniells",
+            "image": "https://www.nutraingredients-usa.com/var/wrbm_gb_food_pharma/storage/images/9/9/2/0/299-20-eng-GB/ldap_thumbnailM1pIDp.jpeg"
+        },
+        "datePublished": "2013-09-05T00:00:00+01:00",
+        "headline": "L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/5/9/2/8/1488295-1-eng-GB/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT.jpg",
+            "width": "800",
+            "height": "600"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "William Reed Business Media Ltd.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "GB",
+                "addressLocality": "Crawley",
+                "postalCode": "RH11 9RT",
+                "streetAddress": "Broadfield Park"
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://resources.wrbm.com/logo/wrbm.png",
+                "description": "William Reed Informing business growth"
+            },
+            "vatID": "644 3073 52"
+        },
+        "dateModified": "2017-03-18T08:33:45+01:00",
+        "mainEntityOfPage": "https://www.nutraingredients-usa.com/Article/2013/09/05/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT",
+        "thumbnailURL": "https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/5/9/2/8/1488295-1-eng-GB/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT_small.jpg",
+        "articleBody": "Giving mothers-to-be supplements of Lactobacillus rhamnosus\u200b HN001, and continuing the supplementation with the infants until two years of age led to a 44% lower incidence of eczema in children up to the age of six, compared to placebo.Researchers from the Wellington Asthma Research Group at the University of Otago in New Zealand also report that no effects were observed when Bifidobacterium animalis\u200b subsp lactis\u200b HN019 were used instead of HN001.\u201cImportantly, our data shows that HN001 did not simply provide protection against eczema during the 2-year intervention period, but that protection persisted for 4 years after cessation of HN001 supplementation,\u201d \u200bthey wrote in Clinical &amp; Experimental Allergy\u200b\u200b. \u201cHN001 also reduced the risk of having eczema at 6 years.\u201d\u200bProbiotics for AD\u200bEczema, also known as atopic dermatitis, is one of the first signs of allergy during the early days of life and is said to be due to delayed development of the immune system. It is a common inflammatory skin disorder, which occurs in early childhood and may persists into adult life.\u00a0Current treatments focus on alleviating symptoms, but probiotics have been studied for over 20 years for their therapeutic benefits for the condition, with numerous studies identifying significant strain-specific benefits.It has been reported that probiotics may influence allergy risk via two mechanisms. The first relates to bacterial effects on gut barrier function, while the second relates to influencing the immune system.The new data from New Zealand found that, by the age of two, both probiotic supplementation regimes led to a presence of HN001 and HN019 in the infant guts, but this was no longer observed by age 4.Since the effects of HN001 were still evident at age six, the researchers noted that this \u201csuggests that this probiotic had immunomodulatory effects during the first 2 years of life which have persisted to the sixth year\u201d\u200b.\n            googletag.cmd.push(function ()\n            {\n                googletag.display('text-ad1');\n            });\n        Study details\u200bThe researchers, led by Dr Kristin Wickens, investigated the effects of probiotic supplements containing L. rhamnosus\u200b HN001 (six billion colony forming units per day) or B. animalis\u200b subsp lactis\u200b HN019 (nine billion cfu) or placebo in mothers and infants. Mothers-to-be received the supplements daily from 35 weeks gestation until birth, and during six months of breastfeeding. After this time, the infants received the supplements directly until the age of two. The children were followed until the age of six, and complete data from about 300 kids was available.Results showed that children in the L. rhamnosus\u200b HN001 group had over 40% lower cumulative prevalence of eczema, compared to placebo.In addition, skin prick test sensitization was also reduced by about 30% in the HN001 group. No effects were observed for HN019, which suggests that the benefits of L. rhamnosus\u200b HN001 may be species specific.\u201cWhile evidence, including a Cochrane review, supports a role for probiotics containing L. rhamnosus in the prevention of eczema, our study is the first to show a significant effect of a probiotic on skin prick test responses by 6 years,\u201d\u200b wrote Dr Wickens and her co-workers.\u201cThe protection provided by HN001 was much weaker for HN019 indicating that not all probiotics are the same. This provides further support for a role of HN001, not just in eczema prevention, but possibly also in long-term prevention of atopic sensitization.\u201d\u200bSource: Clinical &amp; Experimental Allergy\u200b\u200b2013 Sep, Volume 43, Number 9, Pages 1048-1057. doi: 10.1111/cea.12154.\u201cEarly supplementation with Lactobacillus rhamnosus HN001 reduces eczema prevalence to 6 years: does it also reduce atopic sensitization?\u201d\u200bAuthors: K. Wickens, T.V. Stanley, E.A. Mitchell, C. Barthow, P. Fitzharris, G. Purdie, R. Siebers, P.N. Black, J. Crane\n",
+        "alternativeHeadline": "Daily supplements containing the probiotic\u00a0Lactobacillus rhamnosus\u00a0HN001 strain may reduce the incidence of eczema and skin sensitivity in children, according to data from a double-blind randomized placebo-controlled trial.",
+        "keywords": "Probiotic",
+        "commentCount": 0
+    }
+}
+
+
+    </script>
+
+        
+                                
+                                    
+            
+                    <script src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>        <script type="text/javascript"
+                data-help="Andrew">
+            adsCount = 0;
+            isInterstitial = false;
+            var interstitialAd=getCookie('__prestitial');
+            var displayInterstitialAd = (interstitialAd!=1);
+
+                        googletag.cmd.push(function () {
+                                function sanitize_gpt_value(gptValue)
+{
+    var reg = new RegExp('\\W+', "g");
+    gptValue = gptValue.replace(reg, '-');
+    gptValue = gptValue.toLowerCase();
+    gptValue = gptValue.substring(0, 40);
+    return gptValue;
+}
+
+googletag.pubads().setTargeting('niu_oid','oid_139137');
+
+if(!!sessionStorage.getItem('cat')) {
+    googletag.pubads().setTargeting('niu_cat', sanitize_gpt_value(sessionStorage.getItem('cat')));
+        jwplayer_cat_value = sanitize_gpt_value(sessionStorage.getItem('cat'));
+    sessionStorage.removeItem('cat')
+} else {
+                googletag.pubads().setTargeting('niu_cat', ['probiotics-prebiotics', 'gut-digestive-health', 'immune-support', 'maternal-infant-health', 'skin-health', 'allergies-intolerances', 'probiotics', 'research']);
+        }
+
+googletag.pubads().setTargeting('nibrand_tag',['probiotic']);
+
+
+
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[300,1050]],  'background_left').setTargeting('adslot', 'background').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[300,1050]],  'background_right').setTargeting('adslot', 'background').addService(googletag.pubads());
+            adsCount++;
+    
+
+if(displayInterstitialAd){
+    googletag.defineOutOfPageSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text',  'interstitial').setTargeting('adslot', 'interstitial').addService(googletag.pubads());
+}
+            if(displayInterstitialAd){ adsCount++;}
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[970,90],[970,250]],  'leaderboard').setTargeting('adslot', 'leaderboard').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[300,250],[300,600]],  'rectangle1').setTargeting('adslot', 'rectangle1').addService(googletag.pubads());
+
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[300,600],[300,250]],  'rectangle2').setTargeting('adslot', 'rectangle2').addService(googletag.pubads());
+
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', [[120,600],[160,600]],  'skyscraper').setTargeting('adslot', 'skyscraper').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', 'fluid',  'text\x2Dad1').setTargeting('adslot', 'text\x2Dad1').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', 'fluid',  'text\x2Dad2').setTargeting('adslot', 'text\x2Dad2').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', 'fluid',  'special\x2Dalert\x2Dbar').setTargeting('adslot', 'special\x2Dalert\x2Dbar').addService(googletag.pubads());
+            adsCount++;
+    
+
+googletag.defineSlot('\x2F269346476\x2Fniu\x2Fniu_desktop\x2Fniu_desktop_news_text', 'fluid',  'product\x2Dof\x2Dthe\x2Dweek').setTargeting('adslot', 'product\x2Dof\x2Dthe\x2Dweek').addService(googletag.pubads());
+
+
+
+$(document).ready(function(){
+
+    
+// This function allow to put in session storage the main title considered as the "cat" attribute
+// that we use in the call to google publisher tags
+
+    var dataStorage = $("[data-storage]");
+    if ($(dataStorage).length > 0) {
+
+        $(this).find(".Layout-main article.Teaser a, [data-block-type='related_news'] ul li a").each(function(){
+            $(this).on('click',function(e){
+                sessionStorage.setItem('cat',$("[data-storage]").attr('data-storage'));
+            });
+        });
+    }
+
+// Store menu main category title in session storage when clicking on preview item
+
+    $(".MainNav-subnavNews ul.MainNav-subnavNews-detail").on('click','li a', function(e){
+        var sectionTitle = $(this).closest("ul").prev().find("a").text().trim();
+        sessionStorage.setItem('cat',sectionTitle);
+    });
+
+});
+                                googletag.pubads().collapseEmptyDivs();
+                googletag.pubads().enableSingleRequest();
+                googletag.pubads().enableSyncRendering();
+
+                //check if interstitial has been loaded
+                if (displayInterstitialAd) {
+                    googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+                        if (event.slot.getSlotElementId() == 'interstitial') {
+                            isInterstitial = true;
+                        }
+                    });
+                }
+                googletag.enableServices();
+            });
+            
+        </script>
+            
+
+</head>
+<body>
+<script>
+
+dataLayer = [];
+dataLayerContent = {};
+
+    dataLayerContent.cms_news_id = "139137";
+
+    var canonical = "Main Location";
+                canonical = "Crossed";
+    
+    dataLayerContent.canonical = canonical;
+
+            dataLayerContent.article_date = "04-Sep-2013";
+    
+
+dataLayerContent.page_type = "Page_Type";
+dataLayer.push(dataLayerContent);
+
+</script>
+    <script>
+        var categories = [];
+                categories.push("Research");
+                categories.push("Probiotics");
+                categories.push("Skin health");
+                categories.push("Allergies &amp; intolerances");
+                categories.push("Gut/digestive health");
+                categories.push("Immune support");
+                categories.push("Probiotics &amp; prebiotics");
+                categories.push("Maternal &amp; infant health");
+                categories = categories.join(";");
+
+        var author_name = "";
+                author_name = "Stephen DANIELLS";
+        
+        dataLayer = window.dataLayer || [];
+        dataLayerContent = dataLayer[0];
+        dataLayerContent.page_type = "Content_Type";
+        dataLayerContent.content_page_type = "News Text";
+        dataLayerContent.category_name = categories;
+        dataLayerContent.author_name = author_name;
+        dataLayerContent.article_length = 590;
+
+    </script>
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P3J4TM"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+                <script>
+    if(displayInterstitialAd)
+    {
+        document.write('<div id="interstitial" style="position:relative;vertical-align: middle;">');
+        googletag.cmd.push(function() {
+            googletag.display('interstitial');
+        });
+        document.write('</div>');
+    }
+</script>
+        <div class="wrapper">
+        <header class="HeaderMobile">
+
+    
+<a class="HeaderMobile-logo" href="/"><img
+            src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/original/image/549cdfef90615fba8b8a8b71f2874eaa.svg"/></a>
+<button class="HeaderMobile-btn"><svg class="Icon Icon--menu"><title>Menu</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#menu"></use><g></g></svg></button>
+    
+<nav class="HeaderMobile-nav">
+
+    <ul>
+        <li class="HeaderMobile-nav-item">
+            <a class="HeaderMobile-nav-link" href="/">Home</a>
+        </li>
+
+                                    
+<li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="#">News <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+            <li>
+                <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> News</button>
+            </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Manufacturers">Manufacturers</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Suppliers">Suppliers</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Research">Research</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Markets">Markets</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Regulation">Regulation</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/People">People</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Views">Views</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/News/Promotional-Features">Promotional Features</a>
+                </li>
+                    </ul>
+    </li>
+                                                
+<li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="#">Trends <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+            <li>
+                <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> Trends</button>
+            </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/NY-Attorney-General-actions">NY Attorney General actions</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Supply-Chain-Management">Supply Chain Management</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Regulations-Legislation-Enforcement">Regulations, Legislation &amp; Enforcement</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Media-industry-critics">Media &amp; industry critics</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/M-A">M&amp;A</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Personalized-Nutrition">Personalized Nutrition</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Going-non-GMO">Going non-GMO</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/GMPs-QA-QC">GMPs, QA &amp; QC</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/View-from-the-aisles-Retailer-news">View from the aisles: Retailer news</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/Outsourcing">Outsourcing</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link" href="/Trends/NDI-draft-guidance">NDI draft guidance</a>
+                </li>
+                    </ul>
+    </li>
+                                                
+<li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="#">Health <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+            <li>
+                <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> Health</button>
+            </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Allergies-intolerances">Allergies &amp; intolerances</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Beauty-from-within">Beauty from within</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Bone-joint-health">Bone &amp; joint health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Blood-sugar-management">Blood sugar management</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Cardiovascular-health">Cardiovascular health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Cancer-risk-reduction">Cancer risk reduction</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Cognitive-function">Cognitive function</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Energy">Energy</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Eye-health">Eye health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Gut-digestive-health">Gut/digestive health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Healthy-aging">Healthy aging</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Immune-support">Immune support</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Inflammation">Inflammation</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Maternal-infant-health">Maternal &amp; infant health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Men-s-health">Men&#039;s health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Oral-gum-health">Oral/gum health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Respiratory-health">Respiratory health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Skin-health">Skin health</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Sports-nutrition">Sports nutrition</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Weight-management">Weight management</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Health/Women-s-health">Women&#039;s health</a>
+                </li>
+                    </ul>
+    </li>
+                                                
+<li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="#">Ingredients <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+            <li>
+                <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> Ingredients</button>
+            </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Antioxidants-carotenoids">Antioxidants/carotenoids</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Botanicals">Botanicals</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Dairy-based-ingredients">Dairy-based ingredients</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Dosage-forms-delivery-formats">Dosage forms &amp; delivery formats</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Fibers-carbohydrates">Fibers &amp; carbohydrates</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Minerals">Minerals</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Nutricosmetics">Nutricosmetics</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Omega-3s-Nutritional-oils">Omega-3s &amp; Nutritional oils</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Polyphenols">Polyphenols</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Probiotics-prebiotics">Probiotics &amp; prebiotics</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Proteins-peptides-amino-acids">Proteins, peptides, amino acids</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Soy-based-ingredients">Soy-based ingredients</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Ingredients/Vitamins-premixes">Vitamins &amp; premixes</a>
+                </li>
+                    </ul>
+    </li>
+                                                
+<li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="#">Events <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+            <li>
+                <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> Events</button>
+            </li>
+            <li><a class="HeaderMobile-nav-link"
+                   href="/Events">All Events</a></li>
+                                        <li><a class="HeaderMobile-nav-link"
+                       href="/Events/All-Events">All Events</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Events/Editorial-Webinars">Editorial Webinars</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Events/Shows-Conferences">Shows &amp; Conferences</a>
+                </li>
+                            <li><a class="HeaderMobile-nav-link"
+                       href="/Events/Online-Events">Online Events</a>
+                </li>
+                    </ul>
+    </li>
+                                                <li class="HeaderMobile-nav-item">
+    <a class="HeaderMobile-nav-link"
+       href="/LATAM">LATAM</a>
+</li>
+                    
+                <li class="HeaderMobile-nav-item">
+            <a class="HeaderMobile-nav-link" href="#">Resources <svg class="Icon Icon--angle-right" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-right"></use><g></g></svg></a>
+            <ul class="HeaderMobile-nav-subnav">
+                <li>
+                    <button class="HeaderMobile-nav-backLink"><svg class="Icon Icon--angle-left"><title>Back to</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle-left"></use><g></g></svg> Resources</button>
+                </li>
+
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Product-innovations">Product innovations</a>
+                    </li>
+                
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Product-innovations/Technical-Papers">Technical Papers</a>
+                    </li>
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Product-innovations/Product-Brochures">Product Brochures</a>
+                    </li>
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Product-innovations/Videos-Audio">Videos &amp; Audio</a>
+                    </li>
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Product-innovations/Supplier-Webinars">Supplier Webinars</a>
+                    </li>
+                
+                                    <li><a class="HeaderMobile-nav-link"
+                           href="/Suppliers">Suppliers</a>
+                    </li>
+                            </ul>
+        </li>
+
+            </ul>
+
+</nav>
+
+<form class="HeaderMobile-search" action="/search" method = "GET">
+    <p class="HeaderMobile-search-inputs">
+        <label class="HeaderMobile-search-label" for="mainSearch-mobile">Search</label>
+        <input class="HeaderMobile-search-input" name="q" id="mainSearch-mobile" required="required" placeholder="search" type="search" data-action="automplete_search_header" />
+    </p>
+    <button class="HeaderMobile-search-submit" type="submit"><svg class="Icon Icon--search"><title>Send</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#search"></use><g></g></svg></button>
+</form>
+
+</header>        <div class="BodyLayout"
+             data-is-mobile="0">
+                                                <header class="Header" role="banner">
+
+    
+<div class="Header-top">
+            <a class="Header-logo Header-logo--border "
+           href="/"><img width="262"
+                         height="80"
+                         src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/original/image/549cdfef90615fba8b8a8b71f2874eaa.svg"/>
+        </a>
+    
+    <div class="Header-shortcuts">
+        <ul class="Header-links">
+                                        <li>News &amp; Analysis on Supplements, Health and Nutrition – North America</li>
+                                                            <li><a href="https://www.nutraingredients.com/"
+                           target="_blank">EU edition</a></li>
+                                    <li><a href="https://www.nutraingredients-asia.com/"
+                           target="_blank">APAC edition</a></li>
+                                    </ul>
+        <ul class="Header-social">
+                            <li><a class="Header-socialLink Header-socialLink--facebook"
+                       href="https://www.facebook.com/NutraIngredientsUSA"
+                       target="_blank"><svg class="Icon Icon--social-facebook"><title>Follow us on Facebook</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-facebook"></use><g></g></svg></a></li>
+                                        <li><a class="Header-socialLink Header-socialLink--twitter"
+                       href="https://twitter.com/NutraUSA"
+                       target="_blank"><svg class="Icon Icon--social-twitter"><title>Follow us on Twitter</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-twitter"></use><g></g></svg></a></li>
+                                                    <li><a class="Header-socialLink Header-socialLink--linkedin"
+                       href="http://www.linkedin.com/groups/?gid=2818703"
+                       target="_blank"><svg class="Icon Icon--social-linkedin"><title>Follow us on LinkedIn</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-linkedin"></use><g></g></svg></a></li>
+                                </ul>
+    </div>
+
+    <form class="Header-nlForm"
+          action="/subscription/subscriptionview">
+        <p>
+            <label class="Header-nlForm-label">Free newsletter</label>
+            <input class="Header-nlForm-input"
+                   type="email"
+                   name="em"
+                   placeholder="Your e-mail address"/>
+            <button class="Header-nlForm-submit"
+                    type="submit"
+                    data-gtm-category="category_subscriptionbox"
+                    data-gtm-category-value="Subscription_box"
+                    data-gtm-action="action_subscriptionbox"
+                    data-gtm-action-value="Header_Subscription_Box"
+                    action="/subscription/subscriptionview">Subscribe
+            </button>
+        </p>
+    </form>
+
+</div>
+
+    
+<nav class="MainNav">
+
+                        
+<div class="MainNav-item">
+    <p>
+        <a class="MainNav-link"
+           data-type="news"
+           data-location-id="2013">News</a>
+    </p>
+            <div class="MainNav-subnav">
+                        <div class="MainNav-subnavNews">
+                                    <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2014"                           href="/News/Manufacturers">Manufacturers <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2015"                           href="/News/Suppliers">Suppliers <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2016"                           href="/News/Research">Research <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2017"                           href="/News/Markets">Markets <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2018"                           href="/News/Regulation">Regulation <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2019"                           href="/News/People">People <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                           data-type="news"                            data-location-id="2020"                           href="/News/Views">Views <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink"
+                            data-type="promotional_feature"                           data-location-id="2021"                           href="/News/Promotional-Features">Promotional Features <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                </div>
+                        <div class="MainNav-subnavExtra">
+            <p class="MainNav-section">Site Archive</p>
+            <ul>
+                            <li>
+                                                                                <a class="MainNav-subLink" href="/Article/2018/09">September 2018</a>
+                </li>
+                            <li>
+                                                                                <a class="MainNav-subLink" href="/Article/2018/08">August 2018</a>
+                </li>
+                        <li>
+                <a class="MainNav-subLink" href="/Article">All News</a>
+            </li>
+            </ul>
+            <p class="MainNav-section">Multimedia</p>
+            <ul>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Videos">Videos</a></li>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Audiocasts">Audiocasts</a></li>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Photo-Galleries">Photo Galleries</a></li>
+                            </ul>
+        </div>
+    
+        </div>
+    </div>
+                                
+<div class="MainNav-item">
+    <p>
+        <a class="MainNav-link"
+           data-type="news"
+           data-location-id="2022">Trends</a>
+    </p>
+            <div class="MainNav-subnav">
+                        <div class="MainNav-subnavList">
+                                    <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/NY-Attorney-General-actions">NY Attorney General actions</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Supply-Chain-Management">Supply Chain Management</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Regulations-Legislation-Enforcement">Regulations, Legislation &amp; Enforcement</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Media-industry-critics">Media &amp; industry critics</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/M-A">M&amp;A</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Personalized-Nutrition">Personalized Nutrition</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Going-non-GMO">Going non-GMO</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/GMPs-QA-QC">GMPs, QA &amp; QC</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/View-from-the-aisles-Retailer-news">View from the aisles: Retailer news</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/Outsourcing">Outsourcing</a>
+                    </p>
+                                                        <p>
+                        <a class="MainNav-subLink"
+                                                      href="/Trends/NDI-draft-guidance">NDI draft guidance</a>
+                    </p>
+                                                </div>
+                        <div class="MainNav-subnavExtra">
+            <p class="MainNav-section">Site Archive</p>
+            <ul>
+                            <li>
+                                                                                <a class="MainNav-subLink" href="/Article/2018/09">September 2018</a>
+                </li>
+                            <li>
+                                                                                <a class="MainNav-subLink" href="/Article/2018/08">August 2018</a>
+                </li>
+                        <li>
+                <a class="MainNav-subLink" href="/Article">All News</a>
+            </li>
+            </ul>
+            <p class="MainNav-section">Multimedia</p>
+            <ul>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Videos">Videos</a></li>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Audiocasts">Audiocasts</a></li>
+                                    <li><a class="MainNav-subLink" href="/Multimedia/Photo-Galleries">Photo Galleries</a></li>
+                            </ul>
+        </div>
+    
+        </div>
+    </div>
+                                <div class="MainNav-item">
+    <p><a class="MainNav-link"
+                >Health</a>
+    </p>
+            <div class="MainNav-subnav">
+            <div class="MainNav-subnavList">
+                <ul>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Allergies-intolerances">Allergies &amp; intolerances</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Beauty-from-within">Beauty from within</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Bone-joint-health">Bone &amp; joint health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Blood-sugar-management">Blood sugar management</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Cardiovascular-health">Cardiovascular health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Cancer-risk-reduction">Cancer risk reduction</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Cognitive-function">Cognitive function</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Energy">Energy</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Eye-health">Eye health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Gut-digestive-health">Gut/digestive health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Healthy-aging">Healthy aging</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Immune-support">Immune support</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Inflammation">Inflammation</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Maternal-infant-health">Maternal &amp; infant health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Men-s-health">Men&#039;s health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Oral-gum-health">Oral/gum health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Respiratory-health">Respiratory health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Skin-health">Skin health</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Sports-nutrition">Sports nutrition</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Weight-management">Weight management</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Health/Women-s-health">Women&#039;s health</a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="MainNav-subnavExtra">
+                <p class="MainNav-section">Resources</p>
+                <ul>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations">Product innovations</a>
+                        </li>
+                    
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Technical-Papers">Technical Papers</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Product-Brochures">Product Brochures</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Videos-Audio">Videos &amp; Audio</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Supplier-Webinars">Supplier Webinars</a>
+                        </li>
+                                                                <li><a class="MainNav-subLink"
+                               href="/Suppliers">Suppliers</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+                                <div class="MainNav-item">
+    <p><a class="MainNav-link"
+                >Ingredients</a>
+    </p>
+            <div class="MainNav-subnav">
+            <div class="MainNav-subnavList">
+                <ul>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Antioxidants-carotenoids">Antioxidants/carotenoids</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Botanicals">Botanicals</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Dairy-based-ingredients">Dairy-based ingredients</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Dosage-forms-delivery-formats">Dosage forms &amp; delivery formats</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Fibers-carbohydrates">Fibers &amp; carbohydrates</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Minerals">Minerals</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Nutricosmetics">Nutricosmetics</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Omega-3s-Nutritional-oils">Omega-3s &amp; Nutritional oils</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Polyphenols">Polyphenols</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Probiotics-prebiotics">Probiotics &amp; prebiotics</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Proteins-peptides-amino-acids">Proteins, peptides, amino acids</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Soy-based-ingredients">Soy-based ingredients</a>
+                        </li>
+                                            <li>
+                            <a class="MainNav-subLink"
+                               href="/Ingredients/Vitamins-premixes">Vitamins &amp; premixes</a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="MainNav-subnavExtra">
+                <p class="MainNav-section">Resources</p>
+                <ul>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations">Product innovations</a>
+                        </li>
+                    
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Technical-Papers">Technical Papers</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Product-Brochures">Product Brochures</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Videos-Audio">Videos &amp; Audio</a>
+                        </li>
+                                            <li><a class="MainNav-subLink"
+                               href="/Product-innovations/Supplier-Webinars">Supplier Webinars</a>
+                        </li>
+                                                                <li><a class="MainNav-subLink"
+                               href="/Suppliers">Suppliers</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+                                
+<div class="MainNav-item">
+    <p><a class="MainNav-link" data-type="events"
+          data-location-id="2084">Events</a>
+    </p>
+            <div class="MainNav-subnav">
+            <div class="MainNav-subnavNews">
+                                                    <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink" data-type="events" data-location-id="1306250"                           href="/Events/All-Events">All Events <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink" data-type="events" data-location-id="1306252"                           href="/Events/Editorial-Webinars">Editorial Webinars <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink" data-type="events" data-location-id="1306253"                           href="/Events/Shows-Conferences">Shows &amp; Conferences <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                        <p class="MainNav-subnavNews-title">
+                        <a class="MainNav-subLink" data-type="events" data-location-id="1306251"                           href="/Events/Online-Events">Online Events <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+                    </p>
+                                            <ul class="MainNav-subnavNews-detail"></ul>
+                                                </div>
+            <div class="MainNav-subnavExtra">
+                <p class="MainNav-section">Events</p>
+                <ul>
+                    <li>
+                        <a class="MainNav-subLink" href="/Events">All Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                                <div class="MainNav-item">
+    <p>
+        <a class="MainNav-link"
+           href="/LATAM">LATAM</a>
+    </p>
+</div>
+            
+    
+    <div class="MainNav-item MainSearch-wrapper">
+        <form class="MainSearch" action="/search" method = "GET" role="search">
+            <label class="MainSearch-label" for="mainSearch">Search</label>
+            <input class="MainSearch-input" name="q" id="mainSearch" required="required" type="search" autocomplete="off" data-action="automplete_search_header" />
+            <button class="MainSearch-submit" type="submit"><svg class="Icon Icon--search"><title>Send</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#search"></use><g></g></svg></button>
+        </form>
+    </div>
+</nav>
+
+
+</header>
+                                                    <div class="TopBoard adBox">
+                                                                                                            <div class="Ad rwd--noMobile">
+            <div class="Ad-loaded" id="leaderboard">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display('leaderboard');
+                });
+            </script>
+        </div>
+    </div>
+                                                                                                                                                                    <div id="special-alert-bar">
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display('special-alert-bar');
+            });
+        </script>
+    </div>
+                                                                                                                        </div>
+                            
+            <main class="Layout" role="main">
+
+                                    <div class="Layout-main">
+                        
+            
+
+<form class="NlForm rwd--onlyMobile rwd--noMobile" action="/subscription/subscriptionview" method="get">
+    <label class="NlForm-label" for="nlFormTop">Subscribe to our FREE newsletter</label>
+    <input class="NlForm-input" id="nlFormTop" type="email" name="em" placeholder="Your e-mail address" />
+    <input type="hidden" name="do" value="subs"/>
+    <button class="NlForm-submit" type="submit" data-gtm-category="category_subscriptionbox" data-gtm-category-value="Subscription_box"
+            data-gtm-action="action_subscriptionbox" data-gtm-action-value="Top_Article_Subscription_Box" action="/subscription/subscriptionview">Subscribe
+    </button>
+</form>
+    
+        <article class="Detail" data-widget="CopyAlert-dyn" data-news-id="1722199">
+
+        
+
+
+
+<header id="news"
+        class="Detail-header">
+
+    
+    <h1 class="Detail-title">L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT</h1>
+
+    <div class="Detail-info">
+
+        <div class="Detail-meta">
+                            <p class="Detail-author">By <span class="ezstring-field">Stephen DANIELLS</span> </p>
+            
+                            <p class="Detail-date">
+                    <time datetime="04-Sep-2013">04-Sep-2013</time>
+                    - Last updated on
+                        <time datetime="05-Sep-2013 at 13:07">05-Sep-2013 at 13:07</time> GMT                </p>
+                    </div>
+
+        <div class="Detail-share">
+                            <script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=dnmaccount"></script>
+
+<div class="Share">
+    <div class="addthis_sharing_toolbox"></div>
+    
+    <a href="/Info/Recommend-this-page" class="Share-item Share-item--email">
+        <span class="Share-itemIcon"><svg class="Icon Icon--enveloppe"><title>Email to a friend</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#enveloppe"></use><g></g></svg></span>
+    </a>
+
+    
+</div>                    </div>
+
+    </div>
+
+                <figure class="Detail-ill">
+                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/5/9/2/8/1488295-1-eng-GB/L.-rhamnosus-probiotic-shows-long-lasting-anti-eczema-benefits-for-kids-RCT_wrbm_large.jpg" alt="L. rhamnosus probiotic shows long-lasting anti-eczema benefits for kids: RCT"/>
+                    </figure>
+    
+    
+            <p class="Detail-tags"><strong>Related tags:</strong>
+            <a href="/tag/keyword/Food/Probiotic">Probiotic</a>
+        </p>
+                                <!-- excluded -->
+    <aside id="text-ad2" class="AlertAd-front AlertAd--red">
+        <script type='text/javascript'>
+            googletag.cmd.push(function ()
+            {
+                googletag.display('text-ad2');
+            });
+        </script>
+    </aside>
+    <!-- /excluded  -->
+
+
+            
+            <div class="Detail-intro">
+                            Daily supplements containing the probiotic Lactobacillus rhamnosus HN001 strain may reduce the incidence of eczema and skin sensitivity in children, according to data from a double-blind randomized placebo-controlled trial.
+        </div>
+    
+</header>
+                                    
+<aside class="Ad positionLeft rwd--noMobile adBox">
+            <div class="Ad-loaded" id="skyscraper">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display('skyscraper');
+                });
+            </script>
+        </div>
+    </aside>                    
+                    <div class="Detail-content RichText">
+                                                        <div                     class="ezxmltext-field RichText"
+             ><p>Giving mothers-to-be supplements of <em>Lactobacillus rhamnosus</em>​ HN001, and continuing the supplementation with the infants until two years of age led to a 44% lower incidence of eczema in children up to the age of six, compared to placebo.</p><p>Researchers from the Wellington Asthma Research Group at the University of Otago in New Zealand also report that no effects were observed when <em>Bifidobacterium animalis</em>​ subsp <em>lactis</em>​ HN019 were used instead of HN001.</p><p><em>“Importantly, our data shows that HN001 did not simply provide protection against eczema during the 2-year intervention period, but that protection persisted for 4 years after cessation of HN001 supplementation,” </em>​they wrote in <em><a href="http://onlinelibrary.wiley.com/doi/10.1111/cea.12154/abstract" target="_self">Clinical &amp; Experimental Allergy</a>​</em>​. <em>“HN001 also reduced the risk of having eczema at 6 years.”</em>​</p><p><strong>Probiotics for AD</strong>​</p><p>Eczema, also known as atopic dermatitis, is one of the first signs of allergy during the early days of life and is said to be due to delayed development of the immune system. It is a common inflammatory skin disorder, which occurs in early childhood and may persists into adult life. </p><div class="object-right"><figure class="hasCaption"><a href="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/4/3/5/2/102534-2-eng-GB/iStock_000014544167_ExtraSmall.jpg" data-widget="LightboxGallery"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/4/3/5/2/102534-2-eng-GB/iStock_000014544167_ExtraSmall_medium.jpg" alt="iStock_000014544167_ExtraSmall"/></a><figcaption><?xml version="1.0" encoding="utf-8"?><section xmlns:image="http://ez.no/namespaces/ezpublish3/image/" xmlns:xhtml="http://ez.no/namespaces/ezpublish3/xhtml/" xmlns:custom="http://ez.no/namespaces/ezpublish3/custom/"><paragraph>According to the American Academy of Dermatologists, eczema affects between 10 to 20% of all infants, but almost half of these kids will 'grow out' of it between the ages of 5 &amp; 15.</paragraph></section></figcaption></figure></div><p>Current treatments focus on alleviating symptoms, but probiotics have been studied for over 20 years for their therapeutic benefits for the condition, with numerous studies identifying significant strain-specific benefits.</p><p>It has been reported that probiotics may influence allergy risk via two mechanisms. The first relates to bacterial effects on gut barrier function, while the second relates to influencing the immune system.</p><p>The new data from New Zealand found that, by the age of two, both probiotic supplementation regimes led to a presence of HN001 and HN019 in the infant guts, but this was no longer observed by age 4.</p><p>Since the effects of HN001 were still evident at age six, the researchers noted that this <em>“suggests that this probiotic had immunomodulatory effects during the first 2 years of life which have persisted to the sixth year”</em>​.</p><p><aside id="text-ad1" class="AlertAd-front"><script type="text/javascript">
+            googletag.cmd.push(function ()
+            {
+                googletag.display('text-ad1');
+            });
+        </script></aside><!-- /excluded  --></p><p><strong>Study details</strong>​</p><p>The researchers, led by Dr Kristin Wickens, investigated the effects of probiotic supplements containing <em>L. rhamnosus</em>​ HN001 (six billion colony forming units per day) or <em>B. animalis</em>​ subsp <em>lactis</em>​ HN019 (nine billion cfu) or placebo in mothers and infants. Mothers-to-be received the supplements daily from 35 weeks gestation until birth, and during six months of breastfeeding. After this time, the infants received the supplements directly until the age of two. The children were followed until the age of six, and complete data from about 300 kids was available.</p><p>Results showed that children in the <em>L. rhamnosus</em>​ HN001 group had over 40% lower cumulative prevalence of eczema, compared to placebo.</p><p>In addition, skin prick test sensitization was also reduced by about 30% in the HN001 group. No effects were observed for HN019, which suggests that the benefits of <em>L. rhamnosus</em>​ HN001 may be species specific.</p><p><em>“While evidence, including a Cochrane review, supports a role for probiotics containing L. rhamnosus in the prevention of eczema, our study is the first to show a significant effect of a probiotic on skin prick test responses by 6 years,”</em>​ wrote Dr Wickens and her co-workers.</p><p><em>“The protection provided by HN001 was much weaker for HN019 indicating that not all probiotics are the same. This provides further support for a role of HN001, not just in eczema prevention, but possibly also in long-term prevention of atopic sensitization.”</em>​</p><p>Source: <em><a href="http://onlinelibrary.wiley.com/doi/10.1111/cea.12154/abstract" target="_self">Clinical &amp; Experimental Allergy</a>​</em>​<br>2013 Sep, Volume 43, Number 9, Pages 1048-1057. doi: 10.1111/cea.12154.<br><em>“Early supplementation with Lactobacillus rhamnosus HN001 reduces eczema prevalence to 6 years: does it also reduce atopic sensitization?”</em>​<br>Authors: K. Wickens, T.V. Stanley, E.A. Mitchell, C. Barthow, P. Fitzharris, G. Purdie, R. Siebers, P.N. Black, J. Crane</p></div>
+                            </div>
+        
+        
+        <footer class="Detail-footer">
+            <p class="Detail-copyright">Copyright - Unless otherwise stated all contents of this web site are © 2018 - William Reed Business Media Ltd - All Rights Reserved - Full details for the use of materials on this site can be found in the <a href="https://www.william-reed.com/Terms-and-Conditions">Terms & Conditions</a>
+                                                <p class="Detail-tags"><strong>Related topics:</strong>
+                                                                                                            <a href="https://www.nutraingredients-usa.com/News/Research">Research</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Trends/Probiotics">Probiotics</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Health/Skin-health">Skin health</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Health/Allergies-intolerances">Allergies &amp; intolerances</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Health/Gut-digestive-health">Gut/digestive health</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Health/Immune-support">Immune support</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Ingredients/Probiotics-prebiotics">Probiotics &amp; prebiotics</a>,
+                                                                                                                                            <a href="https://www.nutraingredients-usa.com/Health/Maternal-infant-health">Maternal &amp; infant health</a>
+                                                                                                    </p>
+                                    </footer>
+    </article>
+
+            
+
+<form class="NlForm rwd--onlyMobile rwd--noMobile" action="/subscription/subscriptionview" method="get">
+    <label class="NlForm-label" for="nlFormBottom">Subscribe to our FREE newsletter</label>
+    <input class="NlForm-input" id="nlFormBottom" type="email" name="em" placeholder="Your e-mail address" />
+    <input type="hidden" name="do" value="subs"/>
+    <button class="NlForm-submit" type="submit" data-gtm-category="category_subscriptionbox" data-gtm-category-value="Subscription_box"
+            data-gtm-action="action_subscriptionbox" data-gtm-action-value="News_Bottom_Subscription_Box" action="/subscription/subscriptionview">Subscribe
+    </button>
+</form>
+    
+        
+        
+<section class="Section">
+    <header class="Section-header">
+        <h2 class="Section-title">Related news</h2>
+                    <a class="Section-cta" data-action="load_more_related_news" href="#">Show more <svg class="Icon Icon--plus" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#plus"></use><g></g></svg></a>
+                <input type="hidden" value="139137" id="current_news_content_id" />
+        <input type="hidden" value="10" id="total_related_news" />
+    </header>
+    <ul class="GridL GridM related_news">
+        
+
+    
+    <li class="GridL-6 GridM-6">
+        <a class="Card" href="/Article/2016/05/09/Synbiotics-show-anti-eczema-potential-for-kids-Meta-analysis"             data-gtm-category="Related News" data-gtm-category-value="Related News"
+            data-gtm-action="action_relatednews" data-gtm-action-value="Related News 1"
+    >
+                                                                            <span class="Card-ill" data-widget="ImageCover"
+                style="background-image:url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/0/3/8/3/2263830-1-eng-GB/Synbiotics-show-anti-eczema-potential-for-kids-Meta-analysis_wrbm_medium.jpg');">
+                                        <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/0/3/8/3/2263830-1-eng-GB/Synbiotics-show-anti-eczema-potential-for-kids-Meta-analysis_wrbm_medium.jpg" alt="Image: iStockPhoto / Taborsk"/>
+                            </span>
+
+            <span class="Card-text">
+                <strong class="Card-title">Synbiotics show anti-eczema potential for kids: Meta-analysis</strong>
+            </span>
+
+                    </a>
+    </li>
+
+    
+    <li class="GridL-6 GridM-6">
+        <a class="Card" href="/Article/2016/05/09/Bifidobacterium-probiotic-shows-metabolic-and-anti-obesity-benefits-RCT"             data-gtm-category="Related News" data-gtm-category-value="Related News"
+            data-gtm-action="action_relatednews" data-gtm-action-value="Related News 2"
+    >
+                                                                            <span class="Card-ill" data-widget="ImageCover"
+                style="background-image:url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/6/9/9/2/2172996-1-eng-GB/Bifidobacterium-probiotic-shows-metabolic-and-anti-obesity-benefits-RCT_wrbm_medium.jpg');">
+                                        <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/6/9/9/2/2172996-1-eng-GB/Bifidobacterium-probiotic-shows-metabolic-and-anti-obesity-benefits-RCT_wrbm_medium.jpg" alt="Image © iStockPhoto / Jezperklauzen"/>
+                            </span>
+
+            <span class="Card-text">
+                <strong class="Card-title">Bifidobacterium probiotic shows metabolic and anti-obesity benefits: RCT</strong>
+            </span>
+
+                    </a>
+    </li>
+
+    
+    <li class="GridL-6 GridM-6">
+        <a class="Card" href="/Article/2014/10/13/Vitamin-D3-can-reduce-atopic-dermatitis-in-kids-via-innate-immunity-Study"             data-gtm-category="Related News" data-gtm-category-value="Related News"
+            data-gtm-action="action_relatednews" data-gtm-action-value="Related News 3"
+    >
+                                                                            <span class="Card-ill" data-widget="ImageCover"
+                style="background-image:url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/3/5/2345331-1-eng-GB/Vitamin-D3-can-reduce-atopic-dermatitis-in-kids-via-innate-immunity-Study_wrbm_medium.jpg');">
+                                        <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/1/3/3/5/2345331-1-eng-GB/Vitamin-D3-can-reduce-atopic-dermatitis-in-kids-via-innate-immunity-Study_wrbm_medium.jpg" alt="Lead researcher Dr Carlos Camargo said the dermatitis-reducing effect was likely due to “vitamin D’s effects on innate immunity”."/>
+                            </span>
+
+            <span class="Card-text">
+                <strong class="Card-title">Vitamin D3 can reduce atopic dermatitis in kids via &#039;innate immunity&#039;: Study</strong>
+            </span>
+
+                    </a>
+    </li>
+
+    
+    <li class="GridL-6 GridM-6">
+        <a class="Card" href="/Article/2014/04/25/L-Oreal-Nestle-scientists-Probiotics-may-improve-sensitive-skin-from-within"             data-gtm-category="Related News" data-gtm-category-value="Related News"
+            data-gtm-action="action_relatednews" data-gtm-action-value="Related News 4"
+    >
+                                                                            <span class="Card-ill" data-widget="ImageCover"
+                style="background-image:url('https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/6/7/4/5/3015476-1-eng-GB/L-Oreal-Nestle-scientists-Probiotics-may-improve-sensitive-skin-from-within_wrbm_medium.jpg');">
+                                        <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/6/7/4/5/3015476-1-eng-GB/L-Oreal-Nestle-scientists-Probiotics-may-improve-sensitive-skin-from-within_wrbm_medium.jpg" alt="L’Oréal-Nestlé scientists: Probiotics may improve sensitive skin from within"/>
+                            </span>
+
+            <span class="Card-text">
+                <strong class="Card-title">L’Oréal-Nestlé scientists: Probiotics may improve sensitive skin from within</strong>
+            </span>
+
+                    </a>
+    </li>
+    </ul>
+            <p class="Section-footer"><a class="Btn" data-action="load_more_related_news" href="#">Show more</a></p>
+    </section>
+
+
+    
+    
+            <section class="Section Section--promoted" data-total-count="37"
+                 data-news-location-id="1722199">
+            <header class="Section-header">
+                <h2 class="Section-title">Related products</h2>
+                                    <a class="Section-cta" data-action="load_more_products_for_news" href="#">show
+                        more <svg class="Icon Icon--plus" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#plus"></use><g></g></svg></a>
+                            </header>
+
+                
+
+    
+<article class="Teaser">
+
+    <p class="Teaser-thumb">
+                                    
+        <a class="Teaser-ill" data-widget="ImageCover" href="/Product-innovations/Human-Milk-Oligosaccharides-The-Next-Frontier-in-Early-Life-Nutrition" style="background-image: url(https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/human-milk-oligosaccharides-the-next-frontier-in-early-life-nutrition/8575550-1-eng-GB/Human-Milk-Oligosaccharides-The-Next-Frontier-in-Early-Life-Nutrition_news_teaser.jpg);">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/human-milk-oligosaccharides-the-next-frontier-in-early-life-nutrition/8575550-1-eng-GB/Human-Milk-Oligosaccharides-The-Next-Frontier-in-Early-Life-Nutrition_news_teaser.jpg" alt="Human Milk Oligosaccharides: The Next Frontier in Early Life Nutrition"/>
+                    </a>
+        <span class="Teaser-icon Teaser-icon--red"><svg class="Icon Icon--webinar" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#webinar"></use><g></g></svg></span>
+    </p>
+    <div class="Teaser-text">
+                <p class="DateEvent">
+            <time class="DateEvent-item" datetime="26 2018-09-01">
+                <span class="DateEvent-d">26</span>
+                <span class="DateEvent-my">Sep 2018 <span class="DateEvent-w">Wednesday</span></span>
+            </time>
+        </p>
+                            <h3 class="Teaser-title"> <a href="/Product-innovations/Human-Milk-Oligosaccharides-The-Next-Frontier-in-Early-Life-Nutrition">Human Milk Oligosaccharides: The Next Frontier in Early Life Nutrition</a></h3>
+        
+        <p class="Teaser-meta">
+                        <span class="ezstring-field">DuPont Nutrition & Health</span> |             Webinar        </p>
+
+                    <p class="Teaser-intro">
+                    Human milk oligosaccharides (HMOs) are prebiotics found in human milk that support digestive, immune and cognitive health in infants. While not directly...
+            </p>
+        
+                    <p class="Teaser-cta">
+                                                                                <a target="_blank" class="Cta" href="https://onlinexperiences.com/Launch/QReg/ShowKey=57102&AffiliateData=wrbm-listing">
+                            Register for free <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg>
+                        </a>
+                                                </p>
+        
+    </div>
+</article>
+
+    
+            
+<article class="Teaser">
+    <p class="Teaser-thumb">
+                                            <a class="Teaser-ill" data-widget="ImageCover" href="/Product-innovations/New-frontiers-in-GUT-HEALTH-with-Boswellia-serrata" style="background-image: url(https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/new-frontiers-in-gut-health-with-boswellia-serrata/8283470-4-eng-GB/New-frontiers-in-GUT-HEALTH-with-Boswellia-serrata_news_teaser.png);">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/new-frontiers-in-gut-health-with-boswellia-serrata/8283470-4-eng-GB/New-frontiers-in-GUT-HEALTH-with-Boswellia-serrata_news_teaser.png" alt="New frontiers in GUT HEALTH with Boswellia serrata"/>
+                    </a>
+
+        <span class="Teaser-icon Teaser-icon--red"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+    </p>
+
+    <div class="Teaser-text">
+        <h3 class="Teaser-title">
+            <a href="/Product-innovations/New-frontiers-in-GUT-HEALTH-with-Boswellia-serrata">New frontiers in GUT HEALTH with Boswellia serrata</a>
+        </h3>
+        <p class="Teaser-meta">
+                                        <span class="Teaser-info">Indena: botanical ingredients for the Health Food industry | 19-Jul-2018
+                     | Research Study                </span>
+                    </p>
+        <p class="Teaser-intro">
+                Boswellia serrata is renowned for its use in Ayurvedic medicine for various applications. <br />
+Its efficacy in GUT HEALTH is now validated with a more...
+        </p>
+    </div>
+</article>
+    
+            
+<article class="Teaser">
+    <p class="Teaser-thumb">
+                                            <a class="Teaser-ill" data-widget="ImageCover" href="/Product-innovations/Making-Health-Claims-on-Infant-Nutrition" style="background-image: url(https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients.com/product-innovations/making-health-claims-on-infant-nutrition/8127692-1-eng-GB/Making-Health-Claims-on-Infant-Nutrition_news_teaser.png);">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients.com/product-innovations/making-health-claims-on-infant-nutrition/8127692-1-eng-GB/Making-Health-Claims-on-Infant-Nutrition_news_teaser.png" alt="Making Health Claims on Infant Nutrition"/>
+                    </a>
+
+        <span class="Teaser-icon Teaser-icon--red"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+    </p>
+
+    <div class="Teaser-text">
+        <h3 class="Teaser-title">
+            <a href="/Product-innovations/Making-Health-Claims-on-Infant-Nutrition">Making Health Claims on Infant Nutrition</a>
+        </h3>
+        <p class="Teaser-meta">
+                                        <span class="Teaser-info">KGK Science, Inc. | 09-Jul-2018
+                     | Technical / White Paper                </span>
+                    </p>
+        <p class="Teaser-intro">
+                The market for infant formula has expanded over the past decade and competition is high amongst leading manufacturers to make claims that differentiate...
+        </p>
+    </div>
+</article>
+    
+            
+<article class="Teaser">
+    <p class="Teaser-thumb">
+                                            <a class="Teaser-ill" data-widget="ImageCover" href="/Product-innovations/Injuv-Internal-Hydration-for-External-Benefits" style="background-image: url(https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/injuv-internal-hydration-for-external-benefits/8025675-1-eng-GB/Injuv-Internal-Hydration-for-External-Benefits_news_teaser.jpg);">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/product-innovations/injuv-internal-hydration-for-external-benefits/8025675-1-eng-GB/Injuv-Internal-Hydration-for-External-Benefits_news_teaser.jpg" alt="Injuv: Internal Hydration for External Benefits"/>
+                    </a>
+
+        <span class="Teaser-icon Teaser-icon--red"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+    </p>
+
+    <div class="Teaser-text">
+        <h3 class="Teaser-title">
+            <a href="/Product-innovations/Injuv-Internal-Hydration-for-External-Benefits">Injuv: Internal Hydration for External Benefits</a>
+        </h3>
+        <p class="Teaser-meta">
+                                        <span class="Teaser-info">Soft Gel Technologies, Inc. | 13-Jun-2018
+                     | Technical / White Paper                </span>
+                    </p>
+        <p class="Teaser-intro">
+                Injuv softgels contain a naturally-derived hyaluronic acid (HA) complex with proven bioavailability. A proprietary enzyme-cleaving technique allows it...
+        </p>
+    </div>
+</article>
+
+                            <p class="Section-footer"><a class="Btn" data-action="load_more_products_for_news" href="#">Show
+                        more</a></p>
+                    </section>
+    
+        
+
+    <section class="Section">
+        <header class="Section-header">
+            <h3 class="Section-title">Related suppliers</h3>
+                    </header>
+        <div class="Section-content Section-content--highlighted Section-content--mobileBox">
+            <ul>
+                                                        <a href="/Suppliers/Advanced-Organic-Materials-AOM"><span class="ezstring-field">Advanced Organic Materials (AOM)</span></a>                                            |
+                                                                            <a href="/Suppliers/CK-Nutraceuticals"><span class="ezstring-field">CK Nutraceuticals</span></a>                                            |
+                                                                            <a href="/Suppliers/ExcelVite-Sdn.-Bhd2"><span class="ezstring-field">ExcelVite Sdn. Bhd.</span></a>                                            |
+                                                                            <a href="/Suppliers/GanedenBC30"><span class="ezstring-field">GanedenBC30</span></a>                                            |
+                                                                            <a href="/Suppliers/Gemini-Pharmaceuticals"><span class="ezstring-field">Gemini Pharmaceuticals</span></a>                                            |
+                                                                            <a href="/Suppliers/Gnosis-USA-Inc"><span class="ezstring-field">Gnosis USA Inc.</span></a>                                            |
+                                                                            <a href="/Suppliers/Horphag-Research"><span class="ezstring-field">Horphag Research</span></a>                                            |
+                                                                            <a href="/Suppliers/International-Probiotics-Association"><span class="ezstring-field">International Probiotics Association</span></a>                                            |
+                                                                            <a href="/Suppliers/Jennewein-Biotechnologie-GmbH"><span class="ezstring-field">Jennewein Biotechnologie GmbH</span></a>                                            |
+                                                                            <a href="/Suppliers/Kewpie-Corporation"><span class="ezstring-field">Kewpie Corporation</span></a>                                            |
+                                                                            <a href="/Suppliers/KOHJIN-Life-Sciences-Co.-Ltd"><span class="ezstring-field">KOHJIN Life Sciences Co.,Ltd.</span></a>                                            |
+                                                                            <a href="/Suppliers/Lallemand-Bio-Ingredients"><span class="ezstring-field">Lallemand Bio-Ingredients</span></a>                                            |
+                                                                            <a href="/Suppliers/Lallemand-Health-Solutions.-Quality-Probiotics.-Complete-Solutions"><span class="ezstring-field">Lallemand Health Solutions. Quality Probiotics. Complete Solutions.</span></a>                                            |
+                                                                            <a href="/Suppliers/Lonza-Consumer-Health-and-Nutrition"><span class="ezstring-field">Lonza Consumer Health and Nutrition</span></a>                                            |
+                                                                            <a href="/Suppliers/Lonza-Inc.-Capsugel"><span class="ezstring-field">Lonza Inc. - Capsugel </span></a>                                            |
+                                                                            <a href="/Suppliers/MeriCal-LLC"><span class="ezstring-field">MeriCal, LLC</span></a>                                            |
+                                                                            <a href="/Suppliers/Natreon-Inc"><span class="ezstring-field">Natreon Inc.</span></a>                                            |
+                                                                            <a href="/Suppliers/Naturex"><span class="ezstring-field">Naturex</span></a>                                            |
+                                                                            <a href="/Suppliers/NP-Nutra-Nature-s-Power-Nutraceuticals-Corp"><span class="ezstring-field">NP Nutra (Nature&#039;s Power Nutraceuticals Corp.)</span></a>                                            |
+                                                                            <a href="/Suppliers/OmniActive-Health-Technologies"><span class="ezstring-field">OmniActive Health Technologies</span></a>                                            |
+                                                                            <a href="/Suppliers/Stratum-Nutrition"><span class="ezstring-field">Stratum Nutrition</span></a>                                            |
+                                                                            <a href="/Suppliers/Tate-Lyle"><span class="ezstring-field">Tate &amp; Lyle</span></a>                                            |
+                                                                            <a href="/Suppliers/UAS-Labs"><span class="ezstring-field">UAS Labs</span></a>                                            |
+                                                                            <a href="/Suppliers/Valensa-International"><span class="ezstring-field">Valensa International</span></a>                                            |
+                                                                            <a href="/Suppliers/Wellmune"><span class="ezstring-field">Wellmune</span></a>                                                </ul>
+        </div>
+    </section>
+
+
+    
+
+
+                    </div>
+
+                                            <div class="Layout-aside">
+                                                                                        
+                                                                                                
+                                
+                                                                    <section class="Section adBox"><div class="Section-content"><aside class="Ad"><div id='product-of-the-week'
+             class="Ad-loaded"><script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('product-of-the-week');
+                });
+                adsCount++;
+            </script></div></aside></div></section>
+<section class="Section">
+    <header class="Section-header">
+        <h3 class="Section-title">Follow us</h3>
+    </header>
+    <div class="Section-content Section-content--mobileBox">
+        <div class="Follow">
+            <ul class="Follow-social">
+                                    <li><a class="Follow-socialLink Follow-socialLink--facebook"
+                           href="https://www.facebook.com/NutraIngredientsUSA"
+                           target="_blank"><svg class="Icon Icon--social-facebook"><title>Facebook</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-facebook"></use><g></g></svg></a></li>
+                                                    <li><a class="Follow-socialLink Follow-socialLink--twitter"
+                           href="https://twitter.com/NutraUSA"
+                           target="_blank"><svg class="Icon Icon--social-twitter"><title>Twitter</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-twitter"></use><g></g></svg></a></li>
+                                                    <li><a class="Follow-socialLink Follow-socialLink--linkedin"
+                           href="http://www.linkedin.com/groups/?gid=2818703"
+                           target="_blank"><svg class="Icon Icon--social-linkedin"><title>Linkedin</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#social-linkedin"></use><g></g></svg></a></li>
+                                                                <li><a class="Follow-socialLink Follow-socialLink--mail"
+                       href="/subscription/subscriptionview"><svg class="Icon Icon--enveloppe"><title>Tip a friend</title><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#enveloppe"></use><g></g></svg></a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</section><section class="Section adBox"><div class="Section-content"><aside class="Ad"><div id='rectangle1'
+             class="Ad-loaded"><script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('rectangle1');
+                });
+                adsCount++;
+            </script></div></aside></div></section>
+    <section class="Section Section--promoted">
+        <header class="Section-header">
+            <h3 class="Section-title">Featured Events</h3>
+            <a class="Section-cta" href="/Events">View more <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+        </header>
+        <div class="Section-content Section-content--highlighted">
+            <ul>
+                
+                    <li>
+                        <a class="RelatedEvent" href="/Events/Probiota-Asia2">
+
+                                                            <date class="RelatedEvent-date" datetime="2018-10-17">
+                                                                            <span class="RelatedEvent-dateD">17</span>
+                                                                                                                <span class="RelatedEvent-dateMY">Oct 2018 <span class="RelatedEvent-dateW">Wed</span></span>
+                                                                    </date>
+                            
+                            <span class="RelatedEvent-text">
+
+                                                                    <span class="RelatedEvent-category">Conference | Singapore</span>
+                                
+                                                                    <strong class="RelatedEvent-title">Probiota Asia</strong>
+                                
+                            </span>
+                        </a>
+                    </li>
+
+                
+                    <li>
+                        <a class="RelatedEvent" href="/Events/Probiota3">
+
+                                                            <date class="RelatedEvent-date" datetime="2019-02-13">
+                                                                            <span class="RelatedEvent-dateD">13</span>
+                                                                                                                <span class="RelatedEvent-dateMY">Feb 2019 <span class="RelatedEvent-dateW">Wed</span></span>
+                                                                    </date>
+                            
+                            <span class="RelatedEvent-text">
+
+                                                                    <span class="RelatedEvent-category">Conference | København</span>
+                                
+                                                                    <strong class="RelatedEvent-title">Probiota</strong>
+                                
+                            </span>
+                        </a>
+                    </li>
+
+                            </ul>
+        </div>
+    </section>
+<section class="Section adBox"><div class="Section-content"><aside class="Ad"><div id='rectangle2'
+             class="Ad-loaded"><script type='text/javascript'>
+                googletag.cmd.push(function () {
+                    googletag.display('rectangle2');
+                });
+                adsCount++;
+            </script></div></aside></div></section>
+    <section class="Section Section--promoted">
+        <header class="Section-header">
+            <h3 class="Section-title">Products</h3>
+            <a class="Section-cta" href="/Product-innovations">View more <svg class="Icon Icon--angle" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#angle"></use><g></g></svg></a>
+        </header>
+        <div class="Section-content Section-content--highlighted">
+            <ul>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/A-Unique-Botanical-Supplement-for-Joint-Health">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">Soft Gel Technologies, Inc.</span> |                 Download
+                                    Technical / White Paper
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">A Unique Botanical Supplement for Joint Health</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/Pycnogenol-R-Effective-in-Improving-Symptoms-of-Mild-Cognitive-Impairment">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">Horphag Research</span> |                 Download
+                                    Research Study
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">Pycnogenol® Effective in Improving Symptoms of Mild Cognitive Impairment</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/Robuvit-R-Shown-to-Reduce-Symptoms-of-Workplace-Burnout">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">Horphag Research</span> |                 Download
+                                    Clinical Study
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">Robuvit® Shown to Reduce Symptoms of Workplace Burnout</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/New-frontiers-in-GUT-HEALTH-with-Boswellia-serrata">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">Indena: botanical ingredients for the Health Food industry</span> |                 Download
+                                    Research Study
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">New frontiers in GUT HEALTH with Boswellia serrata</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/Bioavailable-and-Stable-Ubiquinol-CoQH-CF-Softgels2">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">Soft Gel Technologies, Inc.</span> |                 Download
+                                    Infographic
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">Bioavailable and Stable Ubiquinol CoQH-CF Softgels</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                                    
+<li class="teaser_latest_products">
+    <a class="RelatedFile" href="/Product-innovations/Making-Health-Claims-on-Infant-Nutrition">
+
+        <span class="RelatedFile-type">
+            <span class="RelatedFile-typeIcon"><svg class="Icon Icon--file-pdf" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-pdf"></use><g></g></svg></span>
+        </span>
+
+        <span class="RelatedFile-text">
+
+            <span class="RelatedFile-category">
+                                    <span class="ezstring-field">KGK Science, Inc.</span> |                 Download
+                                    Technical / White Paper
+                            </span>
+            <strong class="RelatedFile-title"><span class="ezstring-field">Making Health Claims on Infant Nutrition</span></strong>
+
+    </span>
+
+    </a>
+</li>
+                            </ul>
+                    </div>
+
+    </section>
+
+<section class="Section Section--promoted">
+    <header class="Section-header">
+        <h3 class="Section-title">Webinars</h3>
+    </header>
+    <div class="Section-content Section-content--highlighted">
+                <p class="Section-subtitle">Upcoming supplier webinars</p>
+        <ul>
+                                                                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowKey=57102&amp;AffiliateData=wrbm-listing" target="_blank">
+
+                                                    <date class="RelatedEvent-date" datetime="2018-09-26">
+                                                                    <span class="RelatedEvent-dateD">26</span>
+                                                                                                    <span class="RelatedEvent-dateMY">Sep 2018 <span class="RelatedEvent-dateW">Wed</span></span>
+                                                            </date>
+                        
+                        <span class="RelatedEvent-text">
+                                                            <span class="RelatedEvent-category">DuPont Nutrition &amp; Health</span>
+                            
+                                                            <strong class="RelatedEvent-title">Human Milk Oligosaccharides: The Next Frontier in Early Life Nutrition</strong>
+                            
+                            </span>
+                    </a>
+                </li>
+                    </ul>
+                        <p class="Section-subtitle">Upcoming editorial webinars</p>
+        <ul>
+                                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowUUID=75E037D0-9363-45B0-98BB-5B4E2076E344 &amp;AffiliateData=Web-Webbox-SSS18_NIU" target="_blank">
+
+                                                    <date class="RelatedEvent-date" datetime="2018-09-20">
+                                                                    <span class="RelatedEvent-dateD">20</span>
+                                                                                                    <span class="RelatedEvent-dateMY">Sep 2018
+                                        <span class="RelatedEvent-dateW">Thu</span>
+                                    </span>
+                                                            </date>
+                        
+                        <span class="RelatedEvent-text">
+                                                            <span class="RelatedEvent-category">Webinar</span>
+                            
+                                                            <strong class="RelatedEvent-title">Supplements, Skincare, and the Science Around It</strong>
+                            
+                        </span>
+
+                    </a>
+
+                </li>
+                    </ul>
+                        <p class="Section-subtitle">On-demand webinars</p>
+        <ul>
+                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowKey=53696&amp;AffiliateData=NIU-listing"
+                                                                    target="_blank">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                                                                                                Roquette: Improving well-being by offering the best of nature
+                                                                                                </span>
+
+                                                            <strong class="RelatedEvent-title">Sugar Reduction? The tactics &amp; the techniques to achieve your goal!</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowKey=52347&amp;AffiliateData=Web-Webbox-O318_NIU">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                    Webinar
+                                                            </span>
+
+                                                            <strong class="RelatedEvent-title">Omega-3 editorial webinar by NutraIngredients-USA</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowKey=52403&amp;AffiliateData=website-listing"
+                                                                    target="_blank">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                                                                                                Lonza Consumer Health and Nutrition
+                                                                                                </span>
+
+                                                            <strong class="RelatedEvent-title">Creating Joint-Health Products for Addressing the Needs of an Aging Population</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                            <li>
+                    <a class="RelatedEvent" href="https://onlinexperiences.com/Launch/QReg/ShowKey=52216&amp;AffiliateData=websitelisting"
+                                                                    target="_blank">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                                                                                                Lonza Inc. - Capsugel 
+                                                                                                </span>
+
+                                                            <strong class="RelatedEvent-title">Insights to build a successful world-class Quality Program</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                            <li>
+                    <a class="RelatedEvent" href="/Events/Active-nutrition-2018-Round-table-discussion">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                    Webinar
+                                                            </span>
+
+                                                            <strong class="RelatedEvent-title">Active nutrition 2018 - Round table discussion</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                            <li>
+                    <a class="RelatedEvent" href="/Events/Innovation-Fulfills-Today-s-Active-Nutrition-Demands">
+                        <span class="RelatedEvent-text">
+
+                            <span class="RelatedEvent-category">
+                                                                    Webinar
+                                                            </span>
+
+                                                            <strong class="RelatedEvent-title">Innovation Fulfills Today&#039;s Active Nutrition Demands</strong>
+                            
+                        </span>
+                    </a>
+                </li>
+                    </ul>
+            </div>
+</section>
+    <div class="Testing-block">
+        <section class="Section">
+            <header class="Section-header">
+                <h3 class="Section-title">Top Headlines</h3>
+            </header>
+            <div class="Section-content">
+                                    <ul>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/06/Probiotics-and-CFUs-FDA-issues-draft-guidance-on-how-to-label-supplements-containing-live-microbials"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/article/2018/09/06/probiotics-and-cfus-fda-issues-draft-guidance-on-how-to-label-supplements-containing-live-microbials/8582857-1-eng-GB/Probiotics-and-CFUs-FDA-issues-draft-guidance-on-how-to-label-supplements-containing-live-microbials_wrbm_tiny.jpg" alt="Probiotics and CFUs: FDA issues draft guidance on how to label supplements containing live microbials"/>
+                                        <span class="RelatedItem-icon"><svg class="Icon Icon--file-video" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-video"></use><g></g></svg></span>
+                    </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">Probiotics and CFUs: FDA issues draft guidance on how to label supplements containing live microbials</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/06/Swisse-is-back-stateside-ramps-up-brand-awareness-with-Wanderlust-108-partnership"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/news/manufacturers/swisse-is-back-stateside-ramps-up-brand-awareness-with-wanderlust-108-partnership/8582510-1-eng-GB/Swisse-is-back-stateside-ramps-up-brand-awareness-with-Wanderlust-108-partnership_wrbm_tiny.jpg" alt="Swisse is back stateside, ramps up brand awareness with Wanderlust 108 partnership"/>
+                                </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">Swisse is back stateside, ramps up brand awareness with Wanderlust 108 partnership</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/06/Do-consumers-care-if-ingredients-are-synthetic-Yes-survey-finds"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/article/2018/09/06/do-consumers-care-if-ingredients-are-synthetic-yes-survey-finds/8577979-2-eng-GB/Do-consumers-care-if-ingredients-are-synthetic-Yes-survey-finds_wrbm_tiny.jpg" alt="Getty Images / JackF"/>
+                                </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">Do consumers care if ingredients are synthetic? Yes, survey finds</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/06/Lumina-Intelligence-Online-reviews-shaping-how-sports-nutrition-products-are-sold"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients.com/article/2018/09/06/lumina-intelligence-online-reviews-shaping-how-sports-nutrition-products-are-sold/8581194-1-eng-GB/Lumina-Intelligence-Online-reviews-shaping-how-sports-nutrition-products-are-sold_wrbm_tiny.jpg" alt="©iStock/dolphfyn"/>
+                                </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">Lumina Intelligence: ‘Online reviews shaping how sports nutrition products are sold’</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/04/WATCH-Highlights-from-the-inaugural-NutraIngredients-USA-Awards-2018"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients-usa.com/news/people/watch-highlights-from-the-inaugural-nutraingredients-usa-awards-2018/8573283-1-eng-GB/WATCH-Highlights-from-the-inaugural-NutraIngredients-USA-Awards-2018_wrbm_tiny.jpg" alt="WATCH: Highlights from the inaugural NutraIngredients-USA Awards 2018"/>
+                                        <span class="RelatedItem-icon"><svg class="Icon Icon--file-video" aria-hidden="true"><use xlink:href="/bundles/wrbmgbfront/sprite/icons.svg#file-video"></use><g></g></svg></span>
+                    </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">WATCH: Highlights from the inaugural NutraIngredients-USA Awards 2018</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                                                                <li>
+
+<a class="RelatedItem  "
+href="/Article/2018/09/06/Weight-and-age-managing-products-prove-popular-in-aiding-healthier-lifestyles"
+>
+
+            <span class="RelatedItem-ill" data-widget="ImageCover">
+                                <img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/publications/food-beverage-nutrition/nutraingredients.com/article/2018/09/06/weight-and-age-managing-products-prove-popular-in-aiding-healthier-lifestyles2/8580755-1-eng-GB/Weight-and-age-managing-products-prove-popular-in-aiding-healthier-lifestyles_wrbm_tiny.jpg" alt="©iStock/triocean"/>
+                                </span>
+    
+    
+    
+    <span class="RelatedItem-text">
+
+        
+                                    <strong class="RelatedItem-title">Weight and age-managing products prove popular in aiding healthier lifestyles</strong>
+                    
+        
+    </span>
+
+</a>
+</li>
+                                            </ul>
+                            </div>
+        </section>
+    </div>
+<div class="Testing-block"><section class="Section"><header class="Section-header"><h3 class="Section-title">Promotional Features</h3></header><div class="Section-content"><ul><li><a class="RelatedItem  "
+href="/News/Promotional-Features/Three-signs-you-need-a-new-contract-manufacturer"
+><span class="RelatedItem-ill" data-widget="ImageCover"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/3/3/2/1/7261233-1-eng-GB/Three-signs-you-need-a-new-contract-manufacturer_wrbm_tiny.jpg" alt="Three signs you need a new contract manufacturer"/></span><span class="RelatedItem-text"><span class="RelatedItem-category">By Gemini Pharmaceuticals</span><strong class="RelatedItem-title">Three signs you need a new contract manufacturer</strong></span></a></li><li><a class="RelatedItem  "
+href="/News/Promotional-Features/Paper-2-Inflammatory-Conditions"
+><span class="RelatedItem-ill" data-widget="ImageCover"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/6/1/8/6/4366816-3-eng-GB/Paper-2-Inflammatory-Conditions_wrbm_tiny.jpg" alt="Paper #2: Inflammatory Conditions"/></span><span class="RelatedItem-text"><span class="RelatedItem-category">By International Probiotics Association</span><strong class="RelatedItem-title">Paper #2: Inflammatory Conditions</strong></span></a></li><li><a class="RelatedItem  "
+href="/News/Promotional-Features/Probiotics-and-Metabolic-Syndrome"
+><span class="RelatedItem-ill" data-widget="ImageCover"><img src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/0/1/9/3/243910-5-eng-GB/Probiotics-and-Metabolic-Syndrome_wrbm_tiny.png" alt="Probiotics and Metabolic Syndrome"/></span><span class="RelatedItem-text"><span class="RelatedItem-category">By International Probiotics Association</span><strong class="RelatedItem-title">Evaluation of the State of Science Outside of Conventional Probiotic Usage Paper #1: Probiotics and Metabolic Syndrome</strong></span></a></li></ul></div><footer class="Section-footer"><p><a class="Btn" href="/News/Promotional-Features">More promotional features</a></p></footer></section></div>
+                                                                                    </div>
+                                                </main>
+
+                            <div class="Footer">
+    <div class="Footer-block">
+        <h3 class="Footer-title">Free newsletter sign up</h3>
+        <form class="Footer-nlForm" action="/subscription/subscriptionview">
+            <p>
+                <label class="Footer-nlForm-label">Free newsletter</label>
+                <input class="Footer-nlForm-input" type="email" name="em" placeholder="Your e-mail address"/>
+                <button class="Footer-nlForm-submit" type="submit" data-gtm-category="category_subscriptionbox" data-gtm-category-value="Subscription_box"
+                        data-gtm-action="action_subscriptionbox" data-gtm-action-value="Footer_Subscription_Box" action="/subscription/subscriptionview">Subscribe
+                </button>
+                <span class="Footer-nlForm-info">Sign up to our free newsletter and get the latest news sent direct to your inbox</span>
+            </p>
+        </form>
+    </div>
+            <div class="Footer-block">
+                            <h3 class="Footer-title">NutraIngredients-USA</h3>
+                        <ul>
+
+                                                            <li><a href="https://plsclear.com/" target="_blank">Apply to reuse our content</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/About-us">About us</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Advertise-with-us">Advertise with us</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Contact-the-Editor">Contact the Editor</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Recommend-this-page">Recommend this page</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Report-a-technical-problem">Report a technical problem</a></li>
+                                                </ul>
+        </div>
+                <div class="Footer-block">
+                            <h3 class="Footer-title">Resources</h3>
+                        <ul>
+                                                            <li><a href="https://www.nutraingredients-usa.com/Info/Whitelist-NutraIngredients-Usa-Newsletters" target="_blank">Whitelist our newsletters</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Editorial-Schedule-and-Features-List" target="_blank">Editorial Calendar</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/NutraIngredients-USA-RSS2" target="_blank">RSS Feed</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/Podcasts" target="_blank">Podcast</a></li>
+                                                                                <li><a href="https://www.nutraingredients-usa.com/Info/FAQ" target="_blank">FAQ</a></li>
+                                                </ul>
+        </div>
+    </div>
+
+                    </div>
+
+        
+    </div>
+
+    
+    <div class="AdHabillage">
+                    <div class="AdHabillage-left" id="background_left">
+                <script>
+                    googletag.cmd.push(function () {
+                        googletag.display('background_left');
+                    });
+                </script>
+            </div>
+                            <div class="AdHabillage-right" id="background_right">
+                <script>
+                    googletag.cmd.push(function () {
+                        googletag.display('background_right');
+                    });
+                </script>
+            </div>
+            </div>
+
+
+        <script src="https://cdn-a.william-reed.com/js/e3f07a2.js?1536296284"></script>
+
+<script async defer src="https://www.google.com/recaptcha/api.js?hl=en-GB"></script>
+
+<script src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=dnmaccount"></script>
+
+<script src="https://content.jwplatform.com/libraries/2hnD6Aul.js"></script>
+
+<script>
+    // Function called if AdBlock is detected using https://github.com/sitexw/BlockAdBlock
+    function adBlockDetected() {
+        $('.adBox').css('display', 'none');
+        dataLayer.push({'event': 'adblock', 'eventAction': 'Ads_blocked', 'eventValue': adsCount});
+    }
+
+    function adBlockNotDetected() {
+
+        var adsBlockHeight = [
+            'official-media-partner',
+            'rectangle1',
+            'rectangle2',
+            'skyscraper',
+            'product-of-the-week'
+        ];
+
+        adsBlockHeight.map(function (value) {
+            var adsItem = document.getElementById(value);
+            if (adsItem !== null) {
+                var jQueryValueObject = $('#' + value);
+                if(adsItem.offsetHeight === 0 ) {
+                    var parentValueObject = jQueryValueObject.parents('.Section');
+                    if (value === 'skyscraper') {
+                        parentValueObject = jQueryValueObject.parents('.Ad');
+                    }
+                    parentValueObject.css('display', 'none');
+                }
+            }
+        });
+    }
+
+    // Recommended audit because AdBlock lock the file 'blockadblock.js'
+    // If the file is not called, the variable does not exist 'blockAdBlock'
+    // This means that AdBlock is present
+    if (typeof blockAdBlock === 'undefined') {
+        adBlockDetected();
+    } else {
+        blockAdBlock.onDetected(adBlockDetected);
+        blockAdBlock.onNotDetected(adBlockNotDetected)
+    }
+
+</script>
+
+<footer>
+
+        <div class="FooterLegal">
+        <script>
+            var footerBgColor = '#FFFFFF ';
+            var footerFontColor = '#343434';
+            var footerLinkColor = '#000000';
+            var footerLogoType = 'black';
+        </script>
+        <script src="https://resources.wrbm.com/Footers/wrbm-footer.js?lan=en&amp;ent=WRBM"></script>
+        <script>
+            $(document).ready(function(){
+                var para = $('#wrbm-footer-div p').first();
+                if (para.length !== 1) return;
+                var bolded = para.html().replace(
+                  /(© William Reed Business Media Ltd 20\d\d\. All rights reserved\.)/g,
+                  '<strong>$1</strong>'
+                );
+                para.html(bolded);
+            });
+        </script>
+    </div>
+
+        <script>
+        var linkToWrbmPolicyPage = "https://www.william-reed.com/William-Reed-Privacy-Cookies-Policy";
+        var ppBgColor = '#000000';
+        var ppFontColor = '#fff';
+        var ppOpacity = '1';
+    </script>
+    <script src="https://resources.wrbm.com/cookiepolicy_ez.js"></script>
+
+    <script>jwplayer.key="i5vL1NnwhE6lz8bW21asiZnt6N8PF47mwlsulw==";</script>
+
+                <script src="https://resources.wrbm.com/endorser/endorser.js"></script>
+    
+</footer>
+
+
+<script>
+
+        setTimeout(function(){$('#endorsement-bar').css({"width":"0px","height":"0"})},100);
+
+    if(displayInterstitialAd)
+    {
+
+        setTimeout(function () {
+            $('.wrapper,.AdHabillage').css({"opacity": 1});
+            $('#endorsement-bar').css({"width":"100%","height":"28px"});
+            if(getCookie('cookiesaccepted')!=1) {
+
+                $('#cookie-notice').css({"display": "inline-block"});
+                $('#cookie-notice').css({"visibility": "visible"});
+            }
+        }, 1500);
+        setCookie('__prestitial','1',1);
+    }
+    else {
+        if(getCookie('cookiesaccepted')!=1) {
+
+            $('#cookie-notice').css({"display": "block"});
+            $('#cookie-notice').css({"visibility": "visible"});
+        }
+        $('.wrapper,.AdHabillage').css({"opacity": "1"});
+        setTimeout(function(){$('#endorsement-bar').css({"width":"100%","height":"28px"})},200);
+    }
+    </script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f5b52db28f","applicationID":"28371662","transactionName":"ZQZSZUICW0FQUUcMWVxMcVJEClpcHmVhJ3t1IWNYRAZ3R19WXwAMYgJXVHIPWlFaCEEAWFYGQmFCDFFHUkZwBEJXBF9DSTFQXlBGVgFmQAxdXkQKWlxQXnUAV0YWQlRDIVldUlk=","queueTime":0,"applicationTime":1856,"atts":"SUFREwoYSE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

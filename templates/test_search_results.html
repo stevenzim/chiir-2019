@@ -1,0 +1,50 @@
+{% extends "search_layout.html" %}
+{% block results %}
+
+
+
+<!-- RESULTS GRID MAIN -->
+{% block resultspanel %}
+
+<div class="grid-container">
+  <div class="item1"></div>
+
+  <div class="item2">
+    {% for item in payload.search_results %}
+        <p>
+            <h4 class="hlink">
+            {# ADD WARNING CIRCLES IF IT IS STOPLIGHT NUDGE #}
+            {% if item.circles %}
+                <svg height="20px" width="20px">
+                  <circle cx="10" cy="10" r="10" fill="{{ item.circles.circle_color }}" />
+                  <text x="50%" y="50%" text-anchor="middle" fill="{{ item.circles.text_color }}" font-size="120%" font-family="Arial" dy=".35em">{{ item.circles.text }}</text>
+                </svg>
+            {% endif %}
+            
+            <!-- Include name(imagename), rank(rank in results page), pid=participant and pg_id = unique page idin request string...you might not need any other (e.g. user state and switch setting ) asthese should already be saved. -->
+            <a class="hlink" href="{{ 'webpage?name=' + item.IMAGE_NAME 
+            + '&rank=' + item.final_rank|string  
+            + '&pid=' + payload.participant_state.participant_id
+            + '&pg_id=' + item.UNIQUE_ID_PK}}">{{ item.TITLE }}</a>
+            </h4>
+            <p class="source">{{ item.DOMAIN_NAME }}</p>
+            <p class="snippet">{{ item.SNIPPET }}</p>
+
+            <p type="hidden" value="{{item.final_rank}}" name="final_rank">
+
+            
+
+
+        </p>
+    {% endfor %}
+  </div>
+
+  <div class="item3"></div>
+</div>
+
+{% endblock %}
+
+<!-- RESULTS GRID FOOTER (ONLY TRIGGERED IF MORE THAN 10 RESULTS) -->
+
+
+{% endblock %}

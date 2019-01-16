@@ -1,0 +1,2003 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<title> Dangers of Mixing Alcohol and Benzodiazepines | Foundations Recovery Network</title>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese" rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Antic+Slab:400,400italic,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese" rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Antic+Slab:400,400italic,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese" rel='stylesheet' type='text/css' />
+<link href="https://fonts.googleapis.com/css?family=Antic+Slab:400,400italic,700,700italic&amp;subset=latin,greek-ext,cyrillic,latin-ext,greek,cyrillic-ext,vietnamese" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/style.css?v=2.1" />
+<!--[if IE]>
+		<script type="text/javascript" src="https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/respond.min.js"></script>
+		<link rel="stylesheet" href="https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/css/ie.css" />
+		<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/css/media.css?v=2" />
+<style type="text/css">
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+				#wrapper{
+					width:1100px !important;
+				}
+				body .pp_overlay{width:1100px !important;}
+				div.pp_pic_holder{margin-left:65px !important;}
+				#wrapper .ei-slider{width:100% !important;}
+			}
+			@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape){
+				#wrapper{
+					width:1100px !important;
+				}
+				body .pp_overlay{width:1100px !important;}
+				div.pp_pic_holder{margin-left:65px !important;}
+				#wrapper .ei-slider{width:100% !important;}
+			}
+			</style>
+<link rel="shortcut icon" href="/wp-content/uploads/FRN_favicon1.ico" type="image/x-icon" />
+
+<link rel="apple-touch-icon-precomposed" href="/wp-content/uploads/FRN_logoblack_favicon-iphone4.ico">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/uploads/FRN_logoblack_favicon-ipad1.ico">
+
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/wp-content/uploads/FRN_logoblack_favicon-iphone1.ico">
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/uploads/FRN_logoblack_favicon-ipad.ico">
+
+<meta name="description" content="People risk their lives every time they mix alcohol and benzodiazepines, but professional treatment can help them avoid both drugs and stay clean." />
+<link rel="canonical" href="https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/" />
+<link rel="publisher" href="https://plus.google.com/117582848945150720379" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Dangers of Mixing Alcohol and Benzodiazepines | Foundations Recovery Network" />
+<meta property="og:description" content="People risk their lives every time they mix alcohol and benzodiazepines, but professional treatment can help them avoid both drugs and stay clean." />
+<meta property="og:url" content="https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/" />
+<meta property="og:site_name" content="Foundations Recovery Network" />
+<meta property="article:publisher" content="https://www.facebook.com/frnetwork" />
+<meta property="article:section" content="Alcohol Abuse" />
+<meta property="article:published_time" content="2014-04-02T12:15:35-05:00" />
+<meta property="article:modified_time" content="2018-05-31T09:39:20-05:00" />
+<meta property="og:updated_time" content="2018-05-31T09:39:20-05:00" />
+<meta property="fb:app_id" content="721022864576316" />
+<meta property="og:image" content="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-benzodiazepines-and-alcohol.jpg" />
+<meta property="og:image:secure_url" content="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-benzodiazepines-and-alcohol.jpg" />
+<meta property="og:image:width" content="669" />
+<meta property="og:image:height" content="446" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="People risk their lives every time they mix alcohol and benzodiazepines, but professional treatment can help them avoid both drugs and stay clean." />
+<meta name="twitter:title" content="Dangers of Mixing Alcohol and Benzodiazepines | Foundations Recovery Network" />
+<meta name="twitter:site" content="@FRNetwork" />
+<meta name="twitter:image" content="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-benzodiazepines-and-alcohol.jpg" />
+<meta name="twitter:creator" content="@FRNetwork" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.foundationsrecoverynetwork.com\/","sameAs":["https:\/\/www.facebook.com\/frnetwork","http:\/\/instagram.com\/frnetwork","https:\/\/www.linkedin.com\/company\/foundations-recovery-network","https:\/\/plus.google.com\/117582848945150720379","http:\/\/www.youtube.com\/foundationsrnetwork","http:\/\/www.pinterest.com\/frnetwork\/","https:\/\/twitter.com\/FRNetwork"],"@id":"https:\/\/www.foundationsrecoverynetwork.com\/#organization","name":"Foundations Recovery Network","logo":"https:\/\/www.foundationsrecoverynetwork.com\/wp-content\/uploads\/FRN_logoblack_social.jpg"}</script>
+
+<link rel='dns-prefetch' href='//www.foundationsrecoverynetwork.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Foundations Recovery Network &raquo; Feed" href="https://www.foundationsrecoverynetwork.com/feed/" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.foundationsrecoverynetwork.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='st-widget-css' href='https://www.foundationsrecoverynetwork.com/wp-content/plugins/share-this/css/style.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='layerslider_css-css' href='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/LayerSlider/css/layerslider.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-settings-css' href='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/revslider/rs-plugin/css/settings.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-captions-css' href='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/revslider/rs-plugin/css/captions.css?ver=4.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wooslider-flexslider-css' href='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/css/flexslider.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wooslider-common-css' href='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/css/style.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='frn_plugin_styles-css' href='https://www.foundationsrecoverynetwork.com/wp-content/plugins/frn_plugins/frn_plugin.css?ver=1.12' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.flexslider-min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.fitvids.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.easing.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/LayerSlider/js/layerslider.kreaturamedia.jquery.js?ver=4.1.1'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/LayerSlider/js/jquery-easing-1.3.js?ver=1.3.0'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/LayerSlider/js/jquerytransit.js?ver=0.9.9'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/LayerSlider/js/layerslider.transitions.js?ver=4.1.1'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/revslider/rs-plugin/js/jquery.themepunch.plugins.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/revslider/rs-plugin/js/jquery.themepunch.revolution.min.js?ver=4.9.8'></script>
+<link rel='https://api.w.org/' href='https://www.foundationsrecoverynetwork.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.foundationsrecoverynetwork.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.foundationsrecoverynetwork.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 4.9.8" />
+<link rel='shortlink' href='https://www.foundationsrecoverynetwork.com/?p=1740' />
+<link rel="alternate" type="application/json+oembed" href="https://www.foundationsrecoverynetwork.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.foundationsrecoverynetwork.com%2Fdangers-mixing-alcohol-benzodiazepines%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.foundationsrecoverynetwork.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.foundationsrecoverynetwork.com%2Fdangers-mixing-alcohol-benzodiazepines%2F&#038;format=xml" />
+
+<meta property="og:image" content="https://www.foundationsrecoverynetwork.com/wp-content/uploads/SocialShare.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="717" />
+<meta name="twitter:image" content="https://www.foundationsrecoverynetwork.com/wp-content/uploads/SocialShare.jpg" />
+
+<link type="text/css" rel="stylesheet" href="https://www.foundationsrecoverynetwork.com/wp-content/plugins/latest-twitter-sidebar-widget/latest_twitter_widget.css" />
+<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
+<script charset="utf-8" type="text/javascript" id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=edec65cb-2ba0-420b-90af-5194e9f67e79&amp;product=sharethis-wordpress"></script>
+<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"edec65cb-2ba0-420b-90af-5194e9f67e79","doNotCopy":true,"hashAddressBar":false,"doNotHash":true});var st_type="wordpress4.9.2";</script>
+
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-5495921-1');
+			ga('require', 'linkid');
+			ga('require', 'displayfeatures');
+			ga('set', 'dimension1', '2014-04-02');
+			ga('set', 'dimension2', '2018-05-31');
+			ga('set', 'contentGroup1', 'Short 2 (500-849)');
+			ga('send', 'pageview');
+		</script>
+
+
+<script type="text/javascript">
+		frn_phone = "877-714-1318";
+		lhnWindowN = 40629;		
+		function frn_open_lhnwindow (type,category,action,label) {
+			if(type===undefined) type=''; if(category===undefined) category='';  if(action===undefined) action=''; if(label===undefined) label='';
+			if (typeof ga==='function') {
+				if(type=="chat" || type=="") {
+					try{ frn_chat_window( category,action,label ) }
+					catch(err) { if (typeof ga==='function') ga('send', 'event', 'Live Chat', 'Chat Window Open Error', err); }
+					fbq('track', 'Lead'); 				}
+				else if(type=="email") {
+					try{ frn_email_window( category,action,label ) }
+					catch(err) { if (typeof ga==='function') ga('send', 'event', 'Live Chat', 'Email Window Open Error', err); }
+					fbq('track', 'Lead'); 				}
+			}
+			else {
+				if(type=="chat" || type=="") {frn_chat_window( category,action,label );}
+				else if(type=="email") {frn_email_window( category,action,label );}
+					fbq('track', 'Lead'); 			}
+		}
+	</script>
+
+<style type="text/css" id="wp-custom-css">
+			.page-id-4406 #sidebar .contact_info p.address:after {
+    content: ', Suite 200';
+}		</style>
+
+<script type="text/javascript">
+			function frn_reporting (type,category,action,label,conv_url) {
+				var conv_trigger=false; 
+				if(type=="phone") {
+					if(category===undefined || category=="") category='Phone Numbers';
+					if(action===undefined || action=="") action='Phone Clicks [General]';
+					if(label===undefined || label=="") label='Calls';
+					var conv_url='/conversion-phone-number-click-touch/';
+					if(isTierIphone) conv_trigger=true;
+				}
+				else if(type===undefined || type=="") { 
+					if(category===undefined || category=="") category='Unknown';
+					if(action===undefined || action=="") action='Unknown';
+					if(label===undefined || label=="") label='';
+					if(conv_url===undefined || conv_url=="") conv_url='';
+				}
+				try{ frn_analytics( category, action, label, conv_trigger, conv_url );  }
+				catch(err) { if (typeof ga==='function') ga('send', 'event', category, 'FRN_Analytics Function Not Loaded', err); }
+					if(type=="phone") { 
+					if(isTierIphone && (typeof fbq==='function')) fbq('track', 'Lead', {
+					    content_name: location.hostname+' Page',
+					    content_category: 'Regular Webpage',
+					    content_type: 'Phone Clicks'
+					}); 
+				}
+				}
+		</script>
+
+
+<script type='text/javascript'>_sf_startpt=(new Date()).getTime();</script>
+
+<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '402262266824056');
+		fbq('track', "PageView");
+		</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=402262266824056&ev=PageView&noscript=1" /></noscript>
+
+<!--[if IE 8]>
+		<script type="text/javascript">
+		jQuery(document).ready(function() {
+		var imgs, i, w;
+		var imgs = document.getElementsByTagName( 'img' );
+		for( i = 0; i < imgs.length; i++ ) {
+			w = imgs[i].getAttribute( 'width' );
+			if ( 615 < w ) {
+				imgs[i].removeAttribute( 'width' );
+				imgs[i].removeAttribute( 'height' );
+			}
+		}
+		});
+		</script>
+		<![endif]-->
+<script type="text/javascript">
+		/*@cc_on
+		  @if (@_jscript_version == 10)
+			document.write(' <link type= "text/css" rel="stylesheet" href="https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/css/ie10.css" />');
+		  @end
+		@*/
+		function insertParam(url, parameterName, parameterValue, atStart){
+			replaceDuplicates = true;
+			if(url.indexOf('#') > 0){
+				var cl = url.indexOf('#');
+				urlhash = url.substring(url.indexOf('#'),url.length);
+			} else {
+				urlhash = '';
+				cl = url.length;
+			}
+			sourceUrl = url.substring(0,cl);
+
+			var urlParts = sourceUrl.split("?");
+			var newQueryString = "";
+
+			if (urlParts.length > 1)
+			{
+				var parameters = urlParts[1].split("&");
+				for (var i=0; (i < parameters.length); i++)
+				{
+					var parameterParts = parameters[i].split("=");
+					if (!(replaceDuplicates && parameterParts[0] == parameterName))
+					{
+						if (newQueryString == "")
+							newQueryString = "?";
+						else
+							newQueryString += "&";
+						newQueryString += parameterParts[0] + "=" + (parameterParts[1]?parameterParts[1]:'');
+					}
+				}
+			}
+			if (newQueryString == "")
+				newQueryString = "?";
+
+			if(atStart){
+				newQueryString = '?'+ parameterName + "=" + parameterValue + (newQueryString.length>1?'&'+newQueryString.substring(1):'');
+			} else {
+				if (newQueryString !== "" && newQueryString != '?')
+					newQueryString += "&";
+				newQueryString += parameterName + "=" + (parameterValue?parameterValue:'');
+			}
+			return urlParts[0] + newQueryString + urlhash;
+		};
+		jQuery(window).load(function() {
+			var iframes = jQuery('iframe');
+			jQuery.each(iframes, function(i, v) {
+				var src = jQuery(this).attr('src');
+				if(src) {
+				    if(src.indexOf('vimeo') >= 1) {
+					jQuery(this).attr('id', 'player_'+(i+1));
+					var new_src = insertParam(src, 'api', '1', false);
+					var new_src_2 = insertParam(new_src, 'player_id', 'player_'+(i+1), false);
+					jQuery(this).attr('src', new_src_2);
+				    }
+				}
+			});
+
+			var vimeoPlayers = jQuery('.flexslider').find('iframe'), player;
+
+			for (var i = 0, length = vimeoPlayers.length; i < length; i++) {
+					player = vimeoPlayers[i];
+					$f(player).addEvent('ready', ready);
+			}
+
+			function addEvent(element, eventName, callback) {
+				if (element.addEventListener) {
+					element.addEventListener(eventName, callback, false)
+				} else {
+					element.attachEvent(eventName, callback, false);
+				}
+			}
+
+			function ready(player_id) {
+				var froogaloop = $f(player_id);
+				froogaloop.addEvent('play', function(data) {
+				 jQuery('.flexslider, .tfs-slider').flexslider("pause");
+				});
+
+				froogaloop.addEvent('pause', function(data) {
+					jQuery('.flexslider, .tfs-slider').flexslider("play");
+				});
+			}
+
+			jQuery('.tfs-slider').flexslider({
+				animation: "fade",
+				slideshow: true,
+				slideshowSpeed: 7000,
+				animationSpeed: 600,
+				smoothHeight: true,
+				pauseOnHover: false,
+				useCSS: false,
+				video: true,
+				start: function(slider) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   					   jQuery(slider).find('.flex-control-nav').hide();
+					   				   } else {
+					   					   jQuery(slider).find('.flex-control-nav').show();
+					   				   }
+				},
+				before: function(slider) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   $f( slider.slides.eq(slider.currentSlide).find('iframe').attr('id') ).api('pause');
+					   /* ------------------  YOUTUBE FOR AUTOSLIDER ------------------ */
+					   playVideoAndPauseOthers(jQuery('.play3 iframe')[0]);
+				   }
+				},
+				after: function(slider) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   					   jQuery(slider).find('.flex-control-nav').hide();
+					   				   } else {
+					   					   jQuery(slider).find('.flex-control-nav').show();
+					   				   }
+				}
+			});
+			
+			jQuery('.flexslider').flexslider({
+				slideshow: false,
+				video: true,
+				pauseOnHover: false,
+				useCSS: false,
+				start: function(slider) {
+					if(slider.currentSlide !== undefined) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   					   jQuery(slider).find('.flex-control-nav').hide();
+					   				   } else {
+					   					   jQuery(slider).find('.flex-control-nav').show();
+					   				   }
+					}
+				},
+				before: function(slider) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   $f( slider.slides.eq(slider.currentSlide).find('iframe').attr('id') ).api('pause');
+					   /* ------------------  YOUTUBE FOR AUTOSLIDER ------------------ */
+					   playVideoAndPauseOthers(jQuery('.play3 iframe')[0]);
+				   }
+				},
+				after: function(slider) {
+					if (slider.slides.eq(slider.currentSlide).find('iframe').length !== 0) {
+					   					   jQuery(slider).find('.flex-control-nav').hide();
+					   				   } else {
+					   					   jQuery(slider).find('.flex-control-nav').show();
+					   				   }
+				}
+			});
+
+			function playVideoAndPauseOthers(frame) {
+				jQuery('iframe').each(function(i) {
+				var func = this === frame ? 'playVideo' : 'stopVideo';
+				this.contentWindow.postMessage('{"event":"command","func":"' + func + '","args":""}', '*');
+				});
+			}
+
+			/* ------------------ PREV & NEXT BUTTON FOR FLEXSLIDER (YOUTUBE) ------------------ */
+			jQuery('.flex-next, .flex-prev').click(function() {
+				playVideoAndPauseOthers(jQuery('.play3 iframe')[0]);
+			});
+
+			jQuery('.full-video, .video-shortcode, .wooslider .slide-content').fitVids();
+
+			if(jQuery('.fullwidthbanner-container').length >=1 && jQuery('.tp-bannershadow').length == 0) {
+				jQuery('<div class="shadow-left">').appendTo('.rev_slider_wrapper');
+				jQuery('<div class="shadow-right">').appendTo('.rev_slider_wrapper');
+
+				jQuery('.fullwidthbanner-container').addClass('avada-skin-rev');
+			}
+
+			jQuery('.tparrows').each(function() {
+				if(jQuery(this).css('visibility') == 'hidden') {
+					jQuery(this).remove();
+				}
+			});
+		});
+		jQuery(document).ready(function($) {
+			function onAfter(curr, next, opts, fwd) {
+			  var $ht = jQuery(this).height();
+
+			  //set the container's height to that of the current slide
+			  $(this).parent().animate({height: $ht});
+			}
+
+			jQuery('.reviews').cycle({
+				fx: 'fade',
+				after: onAfter,
+								timeout: 4000							});
+
+						/*$('.image').live('mouseenter', function(e) {
+				if(!$(this).hasClass('slided')) {
+					$(this).find('.image-extras').show().stop(true, true).animate({opacity: '1', left: '0'}, 400);
+					$(this).addClass('slided');
+				} else {
+					$(this).find('.image-extras').stop(true, true).fadeIn('normal');
+				}
+			});
+			$('.image-extras').mouseleave(function(e) {
+				$(this).fadeOut('normal');
+			});*/
+			
+			var ppArgs = {
+								animation_speed: 'fast',
+								overlay_gallery: true,
+				autoplay_slideshow: false,
+								slideshow: 5000,
+												opacity: 0.8,
+								show_title: true,
+							};
+
+			jQuery("a[rel^='prettyPhoto']").prettyPhoto(ppArgs);
+
+			
+			var mediaQuery = 'desk';
+
+			if (Modernizr.mq('only screen and (max-width: 600px)') || Modernizr.mq('only screen and (max-height: 520px)')) {
+
+				mediaQuery = 'mobile';
+				jQuery("a[rel^='prettyPhoto']").unbind('click');
+							} 
+
+			// Disables prettyPhoto if screen small
+			jQuery(window).resize(function() {
+				if ((Modernizr.mq('only screen and (max-width: 600px)') || Modernizr.mq('only screen and (max-height: 520px)')) && mediaQuery == 'desk') {
+					jQuery("a[rel^='prettyPhoto']").unbind('click.prettyphoto');
+										mediaQuery = 'mobile';
+				} else if (!Modernizr.mq('only screen and (max-width: 600px)') && !Modernizr.mq('only screen and (max-height: 520px)') && mediaQuery == 'mobile') {
+					jQuery("a[rel^='prettyPhoto']").prettyPhoto(ppArgs);
+										mediaQuery = 'desk';
+				}
+			});
+						jQuery('.side-nav li').hoverIntent({
+			over: function() {
+				if(jQuery(this).find('> .children').length >= 1) {
+					jQuery(this).find('> .children').stop(true, true).slideDown('slow');
+				}
+			},
+			out: function() {
+				if(!jQuery(this).find('.current_page_item').length) {
+					jQuery(this).find('.children').stop(true, true).slideUp('slow');
+				}
+			},
+			timeout: 500
+			});
+			
+			jQuery('#ei-slider').eislideshow({
+								animation: 'sides',
+								autoplay: true,
+								slideshow_interval: 3000,
+												speed: 800,
+												thumbMaxWidth: 150							});
+
+			var retina = window.devicePixelRatio > 1 ? true : false;
+
+						if(retina) {
+				jQuery('#header .logo img').attr('src', 'https://www.foundationsrecoverynetwork.com/wp-content/uploads/frn-logo-w300.png');
+				jQuery('#header .logo img').attr('width', '155');
+				jQuery('#header .logo img').attr('height', '75');
+			}
+					});
+		</script>
+<style type="text/css">
+				a:hover,
+		#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+		.footer-area ul li a:hover,
+		.side-nav li.current_page_item a,
+		.portfolio-tabs li.active a, .faq-tabs li.active a,
+		.project-content .project-info .project-info-box a:hover,
+		.about-author .title a,
+		span.dropcap,.footer-area a:hover,.copyright a:hover,
+		#sidebar .widget_categories li a:hover,
+		#main .post h2 a:hover,
+		#sidebar .widget li a:hover,
+		#nav ul a:hover{
+			color:#0490d6 !important;
+		}
+		#nav ul .current_page_item a, #nav ul .current-menu-item a, #nav ul > .current-menu-parent a,
+		#nav ul ul,#nav li.current-menu-ancestor a,
+		.reading-box,
+		.portfolio-tabs li.active a, .faq-tabs li.active a,
+		.tab-holder .tabs li.active a,
+		.post-content blockquote,
+		.progress-bar-content,
+		.pagination .current,
+		.pagination a.inactive:hover,
+		#nav ul a:hover{
+			border-color:#0490d6 !important;
+		}
+		.side-nav li.current_page_item a{
+			border-right-color:#0490d6 !important;	
+		}
+		.header-v2 .header-social, .header-v3 .header-social, .header-v4 .header-social,.header-v5 .header-social{
+			border-top-color:#0490d6 !important;	
+		}
+		h5.toggle.active span.arrow,
+		.post-content ul.arrow li:before,
+		.progress-bar-content,
+		.pagination .current,
+		.header-v3 .header-social,.header-v4 .header-social,.header-v5 .header-social{
+			background-color:#0490d6 !important;
+		}
+		
+				.sep-boxed-pricing ul li.title-row{
+			background-color:#92C563 !important;
+			border-color:#92C563 !important;
+		}
+		.pricing-row .exact_price, .pricing-row sup{
+			color:#92C563 !important;
+		}
+						.image .image-extras{
+			background-image: linear-gradient(top, #0490d6 0%, #0b4970 100%);
+			background-image: -o-linear-gradient(top, #0490d6 0%, #0b4970 100%);
+			background-image: -moz-linear-gradient(top, #0490d6 0%, #0b4970 100%);
+			background-image: -webkit-linear-gradient(top, #0490d6 0%, #0b4970 100%);
+			background-image: -ms-linear-gradient(top, #0490d6 0%, #0b4970 100%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, #0490d6),
+				color-stop(1, #0b4970)
+			);
+
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0490d6', endColorstr='#0b4970');
+		}
+		.no-cssgradients .image .image-extras{
+			background:#0490d6;
+		}
+						#main .reading-box .button,
+		#main .continue.button,
+		#main .portfolio-one .button,
+		#main .comment-submit,
+		.button.default{
+			color: #54770f !important;
+			background-image: linear-gradient(top, #D1E990 0%, #AAD75B 100%);
+			background-image: -o-linear-gradient(top, #D1E990 0%, #AAD75B 100%);
+			background-image: -moz-linear-gradient(top, #D1E990 0%, #AAD75B 100%);
+			background-image: -webkit-linear-gradient(top, #D1E990 0%, #AAD75B 100%);
+			background-image: -ms-linear-gradient(top, #D1E990 0%, #AAD75B 100%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, #D1E990),
+				color-stop(1, #AAD75B)
+			);
+			border:1px solid #AAD75B;
+
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D1E990', endColorstr='#AAD75B');
+		}
+		.no-cssgradients #main .reading-box .button,
+		.no-cssgradients #main .continue.button,
+		.no-cssgradients #main .portfolio-one .button,
+		.no-cssgradients #main .comment-submit,
+		.no-cssgradients .button.default{
+			background:#D1E990;
+		}
+		#main .reading-box .button:hover,
+		#main .continue.button:hover,
+		#main .portfolio-one .button:hover,
+		#main .comment-submit:hover,
+		.button.default:hover{
+			color: #54770f !important;
+			background-image: linear-gradient(top, #AAD75B 0%, #D1E990 100%);
+			background-image: -o-linear-gradient(top, #AAD75B 0%, #D1E990 100%);
+			background-image: -moz-linear-gradient(top, #AAD75B 0%, #D1E990 100%);
+			background-image: -webkit-linear-gradient(top, #AAD75B 0%, #D1E990 100%);
+			background-image: -ms-linear-gradient(top, #AAD75B 0%, #D1E990 100%);
+
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0, #AAD75B),
+				color-stop(1, #D1E990)
+			);
+			border:1px solid #AAD75B;
+
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#AAD75B', endColorstr='#D1E990');
+		}
+		.no-cssgradients #main .reading-box .button:hover,
+		.no-cssgradients #main .continue.button:hover,
+		.no-cssgradients #main .portfolio-one .button:hover,
+		.no-cssgradients #main .comment-submit:hover,
+		.no-cssgradients .button.default{
+			background:#AAD75B;
+		}
+		
+		
+				.page-title-container{
+			background-image:url(https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/images/page_title_bg.png) !important;
+		}
+		
+				.page-title-container{
+			background-color:#0490d6;
+		}
+		
+		
+		
+		body,#nav ul li ul li a,
+		.more,
+		.avada-container h3,
+		.meta .date,
+		.review blockquote q,
+		.review blockquote div strong,
+		.image .image-extras .image-extras-content h4,
+		.project-content .project-info h4,
+		.post-content blockquote,
+		.button.large,
+		.button.small,
+		.ei-title h3{
+			font-family:"PT Sans", Arial, Helvetica, sans-serif !important;
+		}
+		.avada-container h3,
+		.review blockquote div strong,
+		.footer-area  h3,
+		.button.large,
+		.button.small{
+			font-weight:bold;
+		}
+		.meta .date,
+		.review blockquote q,
+		.post-content blockquote{
+			font-style:italic;
+		}
+
+		
+		#nav,
+		.side-nav li a{
+			font-family:"Antic Slab", Arial, Helvetica, sans-serif !important;
+		}
+		
+		
+		#main .reading-box h2,
+		#main h2,
+		.page-title h1,
+		.image .image-extras .image-extras-content h3,
+		#main .post h2,
+		#sidebar .widget h3,
+		.tab-holder .tabs li a,
+		.share-box h4,
+		.project-content h3,
+		h5.toggle a,
+		.full-boxed-pricing ul li.title-row,
+		.full-boxed-pricing ul li.pricing-row,
+		.sep-boxed-pricing ul li.title-row,
+		.sep-boxed-pricing ul li.pricing-row,
+		.person-author-wrapper,
+		.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6,
+		.ei-title h2, #header .tagline{
+			font-family:"Antic Slab", Arial, Helvetica, sans-serif !important;
+		}
+		
+		
+		.footer-area  h3{
+			font-family:"Antic Slab", Arial, Helvetica, sans-serif !important;
+		}
+
+				body,#sidebar .slide-excerpt h2, .footer-area .slide-excerpt h2{
+			font-size:13px;
+						line-height:20px;
+		}
+		.project-content .project-info h4{
+			font-size:13px !important;
+						line-height:20px !important;
+		}
+		
+				#nav{font-size:13px !important;}
+		
+				.header-social *{font-size:12px !important;}
+		
+				.page-title ul li,page-title ul li a{font-size:11px !important;}
+		
+				.side-nav li a{font-size:14px !important;}
+		
+				#sidebar .widget h3{font-size:13px !important;}
+		
+				.footer-area h3{font-size:13px !important;}
+		
+				.copyright{font-size:12px !important;}
+		
+				#header .avada-row, #main .avada-row, .footer-area .avada-row, #footer .avada-row{ max-width:940px; }
+		
+				.post-content h1{
+			font-size:32px !important;
+						line-height:48px !important;
+		}
+		
+				.post-content h2,.title h2,#main .post-content .title h2,.page-title h1,#main .post h2 a{
+			font-size:18px !important;
+						line-height:27px !important;
+		}
+		
+				.post-content h3,.project-content h3,#header .tagline{
+			font-size:16px !important;
+						line-height:24px !important;
+		}
+		
+				.post-content h4{
+			font-size:13px !important;
+						line-height:20px !important;
+		}
+		h5.toggle a,.tab-holder .tabs li a,.share-box h4,.person-author-wrapper{
+			font-size:13px !important;
+		}
+		
+				.post-content h5{
+			font-size:12px !important;
+						line-height:18px !important;
+		}
+		
+				.post-content h6{
+			font-size:11px !important;
+						line-height:17px !important;
+		}
+		
+				.ei-title h2{
+			font-size:42px !important;
+						line-height:63px !important;
+		}
+		
+				.ei-title h3{
+			font-size:20px !important;
+						line-height:30px !important;
+		}
+		
+				body,.post .post-content,.post-content blockquote,.tab-holder .news-list li .post-holder .meta,#sidebar #jtwt,.meta,.review blockquote div,.search input,.project-content .project-info h4{color:#747474 !important;}
+		
+				.post-content h1, .post-content h2, .post-content h3,
+		.post-content h4, .post-content h5, .post-content h6,
+		#sidebar .widget h3,h5.toggle a, .tab-holder .tabs li a,
+		.page-title h1,.full-boxed-pricing ul li.title-row,
+		.image .image-extras .image-extras-content h3,.project-content .project-info h4,.project-content h3,.share-box h4,.title h2,.person-author-wrapper,#sidebar .tab-holder .tabs li a,#header .tagline{
+			color:#333333 !important;
+		}
+		
+				body a,.project-content .project-info .project-info-box a,#sidebar .widget li a, #sidebar .widget .recentcomments, #sidebar .widget_categories li, #main .post h2 a{color:#0490d6 !important;}
+		
+				.page-title ul li,.page-title ul li a{color:#333333 !important;}
+		
+				.footer-area h3{color:#DDDDDD !important;}
+		
+				.footer-area,.footer-area #jtwt,.copyright{color:#8C8989 !important;}
+		
+				.footer-area a,.copyright a{color:#BFBFBF !important;}
+		
+				#nav ul a,.side-nav li a{color:#333333 !important;}
+		
+				#nav ul ul{background-color:#edebeb;}
+		
+				#wrapper #nav ul li ul li a,.side-nav li li a,.side-nav li.current_page_item li a{color:#333333 !important;}
+		
+				.ei-title h2{color:#333333 !important;}
+		
+				.ei-title h3{color:#747474 !important;}
+		
+				#wrapper .header-social *{color:#ffffff !important;}
+		#wrapper .header-social .menu li{border-color:#ffffff !important;}
+		
+		
+		
+				
+				@media only screen and (max-width: 940px){
+			.breadcrumbs{display:none !important;}
+		}
+		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait){
+			.breadcrumbs{display:none !important;}
+		}
+		
+				
+				#nav > li > a,#nav li.current-menu-ancestor a{height:85px;line-height:85px;}
+		#nav > li > a,#nav li.current-menu-ancestor a{height:85px;line-height:85px;}
+
+		/* #nav ul ul{top:88px;} */
+
+				
+		@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+			.page-title-container {
+				background-image: url() !important;
+				-webkit-background-size:cover;
+				   -moz-background-size:cover;
+					 -o-background-size:cover;
+						background-size:cover;
+			}
+		}
+
+				.ei-slider{width:100% !important;}
+		
+				.ei-slider{height:400px !important;}
+		
+				</style>
+<style type="text/css" id="ss">
+		</style>
+<link rel="stylesheet" id="style_selector_ss" href="#" />
+
+<script>
+    (function(f,b){
+        var c;
+        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
+        f._hjSettings={hjid:1225, hjsv:3};
+        c=b.createElement("script");c.async=1;
+        c.src="//static.hotjar.com/c/hotjar-1225.js?sv=3";
+        b.getElementsByTagName("head")[0].appendChild(c); 
+    })(window,document);
+</script>
+
+<meta property="fb:admins" content="701372480" /> 
+</head>
+<body class="post-template-default single single-post postid-1740 single-format-standard">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=721022864576316&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrapper">
+<div class="header-v3">
+<div class="header-social">
+<div class="avada-row">
+<div class="header-phone">
+<span>Confidential and Private <span style="white-space:nowrap;">877-714-1318</span> </span>
+</div>
+<ul class="social-networks social-networks-light">
+<li class="facebook"><a target="_blank" href="https://www.facebook.com/frnetwork">Facebook</a>
+<div class="popup">
+<div class="holder">
+<p>Facebook</p>
+</div>
+</div>
+</li>
+<li class="twitter"><a target="_blank" href="https://www.twitter.com/FRNetwork">Twitter</a>
+<div class="popup">
+<div class="holder">
+<p>Twitter</p>
+</div>
+</div>
+</li>
+<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/foundations-recovery-network">LinkedIn</a>
+<div class="popup">
+<div class="holder">
+<p>LinkedIn</p>
+</div>
+</div>
+</li>
+<li class="youtube"><a target="_blank" href="https://www.youtube.com/foundationsrnetwork">Youtube</a>
+<div class="popup">
+<div class="holder">
+<p>Youtube</p>
+</div>
+</div>
+</li>
+<li class="pinterest"><a target="_blank" href="https://pinterest.com/heroesnrecovery/" class="pinterest">Pinterest</a>
+<div class="popup">
+<div class="holder">
+<p>Pinterest</p>
+</div>
+</div>
+</li>
+<li class="google"><a target="_blank" href="https://plus.google.com/u/0/b/117582848945150720379" class="google">Google+</a>
+<div class="popup">
+<div class="holder">
+<p>Google</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<header id="header">
+<div class="avada-row" style="margin-top:0px;margin-bottom:0px;">
+<div class="logo" style="margin-left:0px;margin-bottom:28px;"><a href="https://www.foundationsrecoverynetwork.com"><img src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/foundations-recovery-network-logo.png" alt="Foundations Recovery Network" /></a></div>
+<nav id="nav" class="nav-holder">
+<ul id="nav" class="menu"><li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64"><a href="https://www.foundationsrecoverynetwork.com/about-us/">About Us</a>
+<ul class="sub-menu">
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="https://www.foundationsrecoverynetwork.com/about-us/alumni/">Life Challenge</a></li>
+<li id="menu-item-1332" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1332"><a href="https://www.foundationsrecoverynetwork.com/careers/">Careers</a></li>
+<li id="menu-item-3216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3216"><a href="https://www.foundationsrecoverynetwork.com/about-us/faq/">FAQ</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="https://www.foundationsrecoverynetwork.com/about-us/heroes-in-recovery/">Heroes in Recovery</a></li>
+<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="https://www.foundationsrecoverynetwork.com/about-us/integrated-treatment-model/">Integrated Treatment</a></li>
+<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="https://www.foundationsrecoverynetwork.com/media/">Media</a></li>
+<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://www.foundationsrecoverynetwork.com/staff/">Staff</a></li>
+</ul>
+</li>
+<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-67"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/">Treatment</a>
+<ul class="sub-menu">
+<li id="menu-item-1205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1205"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/black-bear-lodge-georgia/">Black Bear Lodge</a></li>
+<li id="menu-item-142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-142"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/the-canyon-malibu-california/">The Canyon</a></li>
+<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/michaels-house-palm-springs-california/">Michael&#8217;s House</a></li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/oaks-la-paloma-memphis-tennessee/">The Oaks at La Paloma</a></li>
+<li id="menu-item-4223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4223"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/skywood-recovery-center/">Skywood Recovery</a></li>
+<li id="menu-item-4667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4667"><a href="https://www.foundationsrecoverynetwork.com/residential-treatment/talbott-recovery-atlanta/">Talbott Recovery</a></li>
+</ul>
+</li>
+<li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-208"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/">Outpatient Treatment</a>
+<ul class="sub-menu">
+<li id="menu-item-2993" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2993"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-atlanta-outpatient/">Foundations Atlanta</a></li>
+<li id="menu-item-4434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4434"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-chicago/">Foundations Chicago</a></li>
+<li id="menu-item-4387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4387"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-detroit-michigan/">Foundations Detroit</a></li>
+<li id="menu-item-4403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4403"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/the-canyon-at-encino/">The Canyon at Encino</a></li>
+<li id="menu-item-203" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-memphis/">Foundations Memphis</a></li>
+<li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-210"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-nashville-tennessee/">Foundations Nashville</a></li>
+<li id="menu-item-3503" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3503"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-san-diego/">Foundations San Diego</a></li>
+<li id="menu-item-1032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1032"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/foundations-san-francisco/">Foundations San Francisco</a></li>
+<li id="menu-item-211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-211"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/michaels-house-outpatient-palm-springs-california/">Michael&#8217;s House Outpatient</a></li>
+<li id="menu-item-4820" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4820"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/talbott-outpatient/">Talbott Outpatient</a></li>
+<li id="menu-item-202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a href="https://www.foundationsrecoverynetwork.com/outpatient-treatment/the-canyon-outpatient-santa-monica-california/">The Canyon at Santa Monica</a></li>
+</ul>
+</li>
+<li id="menu-item-189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-189"><a href="https://www.foundationsrecoverynetwork.com/events/">Events</a>
+<ul class="sub-menu">
+<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="https://www.foundationsrecoverynetwork.com/events/conferences/">Conferences</a></li>
+<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="https://www.foundationsrecoverynetwork.com/events/eduational-webinar-series/">Educational Webinar Series</a></li>
+<li id="menu-item-1525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1525"><a href="https://www.foundationsrecoverynetwork.com/events/heroes-6k/">Heroes 6K</a></li>
+<li id="menu-item-5103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5103"><a href="https://www.foundationsrecoverynetwork.com/recovery-unscripted-podcast/"><em>Recovery Unscripted</em> Podcast</a></li>
+</ul>
+</li>
+<li id="menu-item-1500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1500"><a href="#">Publications</a>
+<ul class="sub-menu">
+<li id="menu-item-1432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1432"><a href="https://www.foundationsrecoverynetwork.com/research-outcomes/">About Our Research</a></li>
+<li id="menu-item-1428" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1428"><a href="https://www.foundationsrecoverynetwork.com/research-outcomes/abstracts/">Research Abstracts</a></li>
+<li id="menu-item-1782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1782"><a href="https://www.foundationsrecoverynetwork.com/white-papers/">White Papers</a></li>
+<li id="menu-item-1501" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1501"><a href="https://www.foundationsrecoverynetwork.com/childrens-book/">Children&#8217;s Book</a></li>
+<li id="menu-item-1805" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-1805"><a href="https://www.foundationsrecoverynetwork.com/articles/">Topical Articles</a></li>
+</ul>
+</li>
+<li id="menu-item-201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-201"><a href="https://www.foundationsrecoverynetwork.com/referral-services/">Referral Services</a>
+<ul class="sub-menu">
+<li id="menu-item-200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-200"><a href="https://www.foundationsrecoverynetwork.com/intervention-help/">Intervention Help</a></li>
+</ul>
+</li>
+<li id="menu-item-190" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-190"><a href="https://www.foundationsrecoverynetwork.com/contact-us/">Contact</a>
+<ul class="sub-menu">
+<li id="menu-item-6641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6641"><a href="https://www.foundationsrecoverynetwork.com/online-bill-pay/">Online Bill Pay</a></li>
+<li id="menu-item-1388" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1388"><a href="https://www.foundationsrecoverynetwork.com/insurance-faq/">Insurance FAQ</a></li>
+</ul>
+</li>
+</ul> </nav>
+</div>
+</header>
+</div> <div id="sliders-container">
+</div>
+<div class="page-title-container">
+<div class="page-title">
+<div class="page-title-wrapper">
+<h1>Dangers of Mixing Alcohol and Benzodiazepines</h1>
+</div>
+</div>
+</div>
+<div id="main" style="overflow:hidden !important;">
+<div class="avada-row"> <div id="content" style="float:left;">
+<div id="post-1740" class="post-1740 post type-post status-publish format-standard has-post-thumbnail hentry category-alcohol-abuse category-drug-abuse">
+<div class="flexslider post-slideshow">
+<ul class="slides">
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-benzodiazepines-and-alcohol.jpg" rel="prettyPhoto[gallery1740]"><img src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-benzodiazepines-and-alcohol.jpg" alt="" /></a>
+</li>
+</ul>
+</div>
+<h2>Dangers of Mixing Alcohol and Benzodiazepines</h2>
+<div class="post-content">
+<style>
+							.frn_toc {
+							    border: 1px solid #ccc;
+							    border-radius: 10px;
+							    padding: 0;
+							    font-size: 1em;
+							    margin: 0 15px 20px 0;
+							    max-width: 50%;
+							    float: left;
+							}
+							.frn_toc_inner {
+							    margin: .8em 1em .3em 1em;
+							    padding: .3em .1em .3em .1em !important;
+							}
+							.frn_toc h1, .frn_toc h2, .frn_toc h3 {
+								font-size: 1.3em;
+								margin: 0 0 5px 0;
+								padding: 0;
+							}
+							.frn_toc ul {
+								padding: 0;
+								margin:0;
+								line-height: 1.2em;
+							}
+							.frn_toc .frn_toc_inner ul li {
+								list-style:none;
+								margin: .5em 0 .7em 0;
+							}
+							a[name].frn_toc_anchor:before {
+							    content: "";
+							    display: block;
+							    height: 60px;
+							    margin: -60px 0 0 0;
+							}
+							@media (max-width: 1023px) {
+								.frn_toc {
+								    border: 1px solid #ccc;
+								    border-radius: 10px;
+								    padding: 0;
+								    font-size: 1em;
+								    margin: 0 0 20px 0;
+								    max-width: 100%;
+								    width: 100%;
+								    float: none;
+								}
+								.frn_toc .frn_toc_inner {
+								    margin: 8px 10px;
+								}
+								.frn_toc ul {
+									
+								}
+								.frn_toc .frn_toc_inner ul li {
+								    padding: 5px 5px 5px 0;
+								}
+								.frn_toc .frn_toc_inner ul li:active {
+								    background: #eee;
+								    padding: 5px 5px;
+								    border-radius: 5px;
+								}
+							}
+						</style>
+<div class="frn_toc">
+<div class="frn_toc_inner">
+<h2>On This Page:</h2>
+<ul>
+<li><a href="#effects-of-benzodiazepine-abuse" onClick="frn_reporting('','Content Interactions', 'Table of Contents', 'effects of benzodiazepine abuse',false,'');">Effects of Benzodiazepine Abuse</a></li>
+<li><a href="#effects-of-alcohol-abuse" onClick="frn_reporting('','Content Interactions', 'Table of Contents', 'effects of alcohol abuse',false,'');">Effects of Alcohol Abuse</a></li>
+<li><a href="#effects-of-combining-alcohol-and-benzodiazepines" onClick="frn_reporting('','Content Interactions', 'Table of Contents', 'effects of combining alcohol and benzodiazepines',false,'');">Effects of Combining Alcohol and Benzodiazepines</a></li>
+<li><a href="#find-treatment-for-alcohol-and-benzodiazepine-abuse" onClick="frn_reporting('','Content Interactions', 'Table of Contents', 'find treatment for alcohol and benzodiazepine abuse',false,'');">Find Treatment for Alcohol and Benzodiazepine Abuse</a></li>
+<li><a href="#frn_related_posts" onClick="frn_reporting('','Content Interactions', 'Table of Contents', 'you may want to know',false,'');">You May Want to Know</a></li>
+</ul>
+</div>
+</div>
+<p>Many people drink alcohol while taking other substances to enhance the effects of both drugs, but this activity is extremely dangerous. Mixing alcohol with benzodiazepines is especially risky, and can cause severe and permanent damage, both to a person&rsquo;s body and to her relationships. Seek professional help to quit whatever drug you abuse.</p>
+<p>&nbsp;</p>
+<a name="effects-of-benzodiazepine-abuse" class="frn_toc_anchor"></a><h2>Effects of Benzodiazepine Abuse</h2>
+<p>Benzodiazepines are depressants that relax muscles, so they are often prescribed to treat muscle spasms, anxiety and seizures. As the Drug Enforcement Agency describes, the most frequently prescribed benzodiazepines are Valium, Xanax, Halcion, Ativan and Klonopin, which can all produce the following side effects:</p>
+<ul><li>Aggression</li>
+<li>Amnesia</li>
+<li>Extreme drowsiness</li>
+<li>Intense dreams</li>
+<li>Irritability</li>
+<li>Slower muscle movements</li>
+</ul><p><a title="Benzodiazepine abuse dangers" href="https://www.foundationsrecoverynetwork.com/the-hidden-dangers-of-benzodiazepines/" target="new">Benzodiazepine abuse</a> can create many problems that will devastate users.</p>
+<p>&nbsp;</p>
+<a name="effects-of-alcohol-abuse" class="frn_toc_anchor"></a><h2>Effects of Alcohol Abuse</h2>
+<p>Alcohol is also a depressant that relaxes muscles, so it can cause the following side effects:</p>
+<ul><li>Decreased coordination</li>
+<li>Drowsiness</li>
+<li>Mood and behavior changes</li>
+<li>Slurred speech</li>
+</ul><p>When people abuse alcohol, its side effects can be more deadly. In fact, the National Institute on Alcohol Abuse and Alcoholism explains that the effects of heavy drinking include the following problems:</p>
+<ul><li>Severe loss of coordination</li>
+<li>High blood pressure</li>
+<li>Stroke</li>
+<li>Cirrhosis of the liver</li>
+<li>Inflammation of the pancreas</li>
+<li>Increased risk of developing cancer</li>
+<li>Immune system depression</li>
+</ul><p>If you abuse alcohol, you risk any of these problems. The problem is that your risks increase when you abuse other drugs alongside alcohol.</p>
+<p>&nbsp;</p>
+<a name="effects-of-combining-alcohol-and-benzodiazepines" class="frn_toc_anchor"></a><h2>Effects of Combining Alcohol and Benzodiazepines</h2>
+<p>While many people abuse these substances individually, other people combine them to increase their effects. A 2011 study conducted by the <a href="http://www.samhsa.gov/" rel="external noopener">Substance Abuse and Mental Health Services Administration</a> found that 95 percent of all patients admitted to rehab centers for benzodiazepine abuse also abused another drug. Alcohol was the other drug for about 25 percent of those patients. Alcohol and benzodiazepines can each harm the body, but the damage increases when they are combined. Since both substances are depressants, they can greatly relax muscles and bring the central nervous system to a crawl, which can result in unconsciousness or even a coma. Their effect on the immune system can also increase the likelihood of life-threatening infections and accidents, especially those related to driving. Abusing these two substances in great quantities can also lead to massive organ failure and death.</p>
+<div style="background-color: cadetblue; padding: 20px; font-size: 20px; font-family: trebuchet, sans-serif; color: white;">The Substance Abuse and Mental Health Services Administration found that 95 percent of all patients admitted to rehab centers for benzodiazepine abuse also abused another drug.</div>
+<p>Mixing alcohol and benzodiazepines can also damage relationships. When people abuse these drugs, they might experience fatigue, memory loss and mood swings, which can strain relationships with friends and family members. Additionally, substance abuse can plague relationships when the user denies a problem and avoids professional help. Combining alcohol and benzodiazepines only multiplies these problems, and can make it harder for users to recover.</p>
+<p>&nbsp;</p>
+<a name="find-treatment-for-alcohol-and-benzodiazepine-abuse" class="frn_toc_anchor"></a><h2>Find Treatment for Alcohol and Benzodiazepine Abuse</h2>
+<p>People who mix alcohol and benzodiazepines engage in dangerous behavior that, if unchecked, can threaten countless lives and permanent damage. Therefore, users must seek professional help to recover; call our toll-free, 24 hour helpline to talk with our admissions coordinators about alcohol and benzodiazepine abuse. They can also discuss treatment options while connecting you with a treatment center that best fits your needs. Don&rsquo;t wait any longer; call us today to find instant, confidential support.</p>
+<div id="frn_posts_search" class="frn_posts_search">
+<div class="frn_posts_search_inner">
+<a name="frn_related_posts" class="frn_toc_anchor"></a>
+<h2 id="frn_related_hdr">You May Want to Know:</h2>
+<ul class="frn_rp_results"><li>
+<a href="https://www.foundationsrecoverynetwork.com/dangers-mixing-opiates-alcohol/" onclick="frn_reporting('','Content Interactions', 'Related Posts', 'Dangers of Mixing Opiates and Alcohol',false,''); ">Dangers of Mixing Opiates and Alcohol</a>
+</li>
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-prescription-drugs/" onclick="frn_reporting('','Content Interactions', 'Related Posts', 'Dangers of Mixing Alcohol and Prescription Drugs',false,''); ">Dangers of Mixing Alcohol and Prescription Drugs</a>
+</li>
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/the-hidden-dangers-of-benzodiazepines/" onclick="frn_reporting('','Content Interactions', 'Related Posts', 'The Hidden Dangers of Benzodiazepines',false,''); ">The Hidden Dangers of Benzodiazepines</a>
+</li>
+</ul></div>
+</div>
+<div class="frn_clear"></div> </div>
+<div style="clear:both;"></div>
+<div class="share-box">
+<h4>Share This Story, Choose Your Platform!</h4>
+<ul class="social-networks">
+<li class="facebook">
+<a href="https://www.facebook.com/sharer.php?u=https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/&amp;t=Dangers of Mixing Alcohol and Benzodiazepines">
+Facebook
+</a>
+<div class="popup">
+<div class="holder">
+<p>Facebook</p>
+</div>
+</div>
+</li>
+<li class="twitter">
+<a href="https://twitter.com/home?status=Dangers of Mixing Alcohol and Benzodiazepines https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/">
+Twitter
+</a>
+<div class="popup">
+<div class="holder">
+<p>Twitter</p>
+</div>
+</div>
+</li>
+<li class="linkedin">
+<a href="https://linkedin.com/shareArticle?mini=true&amp;url=https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/&amp;title=Dangers of Mixing Alcohol and Benzodiazepines">
+LinkedIn
+</a>
+<div class="popup">
+<div class="holder">
+<p>LinkedIn</p>
+</div>
+</div>
+</li>
+<li class="email">
+<a href="/cdn-cgi/l/email-protection#58672b2d3a323d3b2c651c39363f3d2a2b78373e7815312031363f7819343b373037347839363c781a3d3622373c3139223d2831363d2b7e393528633a373c2165302c2c282b6277772f2f2f763e372d363c392c3137362b2a3d3b372e3d2a21363d2c2f372a33763b3735773c39363f3d2a2b7535312031363f7539343b37303734753a3d3622373c3139223d2831363d2b77">
+Email
+</a>
+<div class="popup">
+<div class="holder">
+<p>Email</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div style="clear:both;"></div>
+<div class="meta-info">
+<div class="alignleft">
+<span class="sep"></span>Read more in: <a href="https://www.foundationsrecoverynetwork.com/category/alcohol-abuse/" rel="category tag">Alcohol Abuse</a>, <a href="https://www.foundationsrecoverynetwork.com/category/drug-abuse/" rel="category tag">Drug Abuse</a> </div>
+</div>
+<div class="related-posts">
+<div class="title"><h2>Related Posts</h2></div>
+<div id="carousel" class="es-carousel-wrapper">
+<div class="es-carousel">
+<ul>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/pros-and-cons-of-decriminalizing-drug-addiction/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/judge-and-gavel-669w-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Judge issuing court order" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/pros-and-cons-of-decriminalizing-drug-addiction/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/judge-and-gavel-669w.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Pros and Cons of Decriminalizing Drug Addiction</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/faqs-answering-your-biggest-questions-about-the-opioid-epidemic/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/opioids-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Opioids" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/faqs-answering-your-biggest-questions-about-the-opioid-epidemic/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/opioids.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>FAQs: Answering Your Biggest Questions About the Opioid Epidemic</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/the-dangerous-combination-of-drug-addiction-and-eating-disorders/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/looking-in-refrigerator-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Looking in refrigerator" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/the-dangerous-combination-of-drug-addiction-and-eating-disorders/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/looking-in-refrigerator.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Dangerous Combination of Drug Addiction and Eating Disorders</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/initiating-a-discussion-on-drug-abuse/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/serious-discussion-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Serious discussion" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/initiating-a-discussion-on-drug-abuse/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/serious-discussion.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Initiating a Discussion on Drug Abuse</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/what-are-narcotics-and-why-are-they-addictive/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/narcotics-addictive-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Narcotics are addictive" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/what-are-narcotics-and-why-are-they-addictive/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/narcotics-addictive.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>What Are Narcotics and Why Are They Addictive?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/how-drugs-can-cause-physical-distress/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/physical-distress-drugs-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Physical distress" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/how-drugs-can-cause-physical-distress/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/physical-distress-drugs.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>How Drugs Can Cause Physical Distress</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/differences-between-drug-side-effects-and-addiction-symptoms/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drug-side-effects-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Drug side effects" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/differences-between-drug-side-effects-and-addiction-symptoms/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drug-side-effects.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Differences Between Drug Side Effects and Addiction Symptoms</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/drug-temptation-for-professionals/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/professional-doing-drugs-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Professional doing drugs" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/drug-temptation-for-professionals/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/professional-doing-drugs.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Drug Temptation for Professionals</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/the-difference-between-an-illegal-and-a-controlled-substance/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drug-questions-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="drug questions" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/the-difference-between-an-illegal-and-a-controlled-substance/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drug-questions.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Difference Between an Illegal and a Controlled Substance</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/why-recovery-is-better-than-drug-abuse/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/happy-chart-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Happy chart" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/why-recovery-is-better-than-drug-abuse/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/happy-chart.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Why Recovery Is Better than Drug Abuse</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/the-risk-of-drug-use-during-physical-activities/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/exhaustion-sports-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Exhaustion" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/the-risk-of-drug-use-during-physical-activities/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/exhaustion-sports.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Risk of Drug Use During Physical Activities</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/the-effect-of-drugs-on-serotonin/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/brain-serotonin-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="The brain neurotransmitters" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/the-effect-of-drugs-on-serotonin/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/brain-serotonin.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Effect of Drugs on Serotonin</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/depressants-and-ptsd/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/ptsd-depressed-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="PTSD and depressed" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/depressants-and-ptsd/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/ptsd-depressed.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Depressants and PTSD</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/why-does-withdrawal-make-you-sick/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/sweating-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Sweating" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/why-does-withdrawal-make-you-sick/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/sweating.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Why Does Withdrawal Make You Sick?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/defining-binge-drinking-and-alcohol-abuse/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/binge-drinking-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Binge Drinking" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/defining-binge-drinking-and-alcohol-abuse/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/binge-drinking.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Defining Binge Drinking and Alcohol Abuse</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/medical-conditions-that-can-be-caused-by-alcoholism/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/medical-science-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Medical science" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/medical-conditions-that-can-be-caused-by-alcoholism/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/medical-science.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Medical Conditions that Can be Caused by Alcoholism</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/have-prescription-drugs-been-changed-to-reduce-abuse/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/pills-chart-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Prescription pills in a chart" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/have-prescription-drugs-been-changed-to-reduce-abuse/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/pills-chart.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Have Prescription Drugs Been Changed to Reduce Abuse?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/what-to-do-when-someone-lies-about-drug-use/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/family-discussion-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Family discussion about problems" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/what-to-do-when-someone-lies-about-drug-use/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/family-discussion.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>What to Do When Someone Lies about Drug Use</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/the-effects-of-drugs-on-pregnancy/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/pregnancy-drugs-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Pregnancy and drugs" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/the-effects-of-drugs-on-pregnancy/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/pregnancy-drugs.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Effects of Drugs on Pregnancy</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/do-men-and-women-metabolize-drugs-differently/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/men-women-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Men and Women" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/do-men-and-women-metabolize-drugs-differently/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/men-women.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Do Men and Women Metabolize Drugs Differently?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/medical-conditions-that-can-be-caused-by-drug-abuse/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/medical-conditions-drug-abuse-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Medical conditions" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/medical-conditions-that-can-be-caused-by-drug-abuse/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/medical-conditions-drug-abuse.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Medical Conditions that Can be Caused by Drug Abuse</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/what-are-the-criteria-for-alcoholism/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcoholism-profile-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="alcoholism and drinking" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/what-are-the-criteria-for-alcoholism/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcoholism-profile.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>What Are the Criteria for Alcoholism?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/what-happens-when-you-mix-depressants-and-opiates/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/opiate-drug-use-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Opiate Drug Use" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/what-happens-when-you-mix-depressants-and-opiates/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/opiate-drug-use.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>What Happens When You Mix Depressants and Opiates?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/why-co-dependent-relationships-should-be-avoided/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/codependent-relationship-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Co-dependent relationship" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/why-co-dependent-relationships-should-be-avoided/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/codependent-relationship.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Why Co-dependent Relationships Should Be Avoided</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/three-tips-for-avoiding-addiction-to-prescription-drugs/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-pill-abuse-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Prescription Pill abuse" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/three-tips-for-avoiding-addiction-to-prescription-drugs/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-pill-abuse.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Three Tips for Avoiding Addiction to Prescription Drugs</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/dangerous-combination-drug-addiction-eating-disorders/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/eating-disorders-drugs-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Eating disorders and drugs" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/dangerous-combination-drug-addiction-eating-disorders/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/eating-disorders-drugs.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Dangerous Combination of Drug Addiction and Eating Disorders</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/avoid-becoming-addicted-prescriptions/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/avoid-pill-addiction-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Avoid prescription pill addiction" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/avoid-becoming-addicted-prescriptions/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/avoid-pill-addiction.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>How to Avoid Becoming Addicted to Your Prescriptions</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/maintaining-recovery-alcohol-saturated-culture/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-drink-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Alcoholic drink" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/maintaining-recovery-alcohol-saturated-culture/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-drink.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Maintaining Recovery in an Alcohol Saturated Culture</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/adapting-reality-loved-one-addicted/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/loved-one-addicted-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Loved one addicted to drugs" /></a>
+ <div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/adapting-reality-loved-one-addicted/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/loved-one-addicted.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Adapting to the Reality that Your Loved One is Addicted</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/ways-drugs-can-cause-impaired-judgment/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/impaired-from-drugs-alcohol-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Impaired from drugs and alcohol" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/ways-drugs-can-cause-impaired-judgment/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/impaired-from-drugs-alcohol.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Ways that Drugs Can Cause Impaired Judgment</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/can-drugs-make-people-violent/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/addiction-violence-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Addiction and violence" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/can-drugs-make-people-violent/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/addiction-violence.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Can Drugs Make People Violent?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/three-myths-drug-addiction/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/myths-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Myths" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/three-myths-drug-addiction/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/myths.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Three Myths About Drug Addiction</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/makes-zohydro-dangerous/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/zohydro-addiction-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Zohydro dangerous effects" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/makes-zohydro-dangerous/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/zohydro-addiction.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>What Makes Zohydro Dangerous?</h3>
+</div>
+</div>
+</div>
+</li>
+ <li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/dangers-abusing-multiple-depressants/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drowsy-woman-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Drowsy woman" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/dangers-abusing-multiple-depressants/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/drowsy-woman.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Dangers of Abusing Multiple Depressants</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/descent-heroin-addiction/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/heroin-abuse-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Heroin abuse" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/descent-heroin-addiction/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/heroin-abuse.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Descent into Heroin Addiction</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/3-things-know-alcohol-intoxication-mood-disorders/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-and-mood-disorders-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Alcohol and mood disorders" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/3-things-know-alcohol-intoxication-mood-disorders/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-and-mood-disorders.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>3 Things to Know About Alcohol Intoxication and Mood Disorders</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/names-common-prescription-drugs/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-pill-bottles-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Prescription Pill Bottles" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/names-common-prescription-drugs/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-pill-bottles.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Other Names for Common Prescription Drugs</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/bad-mix-drugs/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mix-of-pills-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Mix of several pills" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/bad-mix-drugs/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mix-of-pills.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Is It Bad to Mix Drugs?</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/prescription-drug-abuse-treatment/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-drugs-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Prescription Drugs" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/prescription-drug-abuse-treatment/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/prescription-drugs.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Prescription Drug Abuse Treatment</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/danger-thinking-can-use-drugs-just/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/contemplating-drug-use-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Contemplating to use drugs" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/danger-thinking-can-use-drugs-just/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/contemplating-drug-use.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>The Danger of Thinking You Can Use Drugs Just Once More</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/4-ways-peer-pressure-may-affecting-drinking-habits/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/peer-pressure-drinking-habits-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Peer pressure and drinking" srcset="https://www.foundationsrecoverynetwork.com/wp-content/uploads/peer-pressure-drinking-habits-180x138.jpg 180w, https://www.foundationsrecoverynetwork.com/wp-content/uploads/peer-pressure-drinking-habits-300x228.jpg 300w, https://www.foundationsrecoverynetwork.com/wp-content/uploads/peer-pressure-drinking-habits.jpg 669w" sizes="(max-width: 180px) 100vw, 180px" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/4-ways-peer-pressure-may-affecting-drinking-habits/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/peer-pressure-drinking-habits.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>4 Ways Peer Pressure May Be Affecting Your Drinking Habits</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/alcohol-abuse-treatment/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-abuse-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Alcohol abuse" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/alcohol-abuse-treatment/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/alcohol-abuse.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Alcohol Abuse Treatment</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-prescription-drugs/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-prescription-drugs-alcohol-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Dangers of Mixing Prescription Drugs and Alcohol" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-prescription-drugs/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-prescription-drugs-alcohol.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Dangers of Mixing Alcohol and Prescription Drugs</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/dangers-mixing-opiates-alcohol/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-opiates-alcohol-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Mixing opiates with alcohol" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/dangers-mixing-opiates-alcohol/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/mixing-opiates-alcohol.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Dangers of Mixing Opiates and Alcohol</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/cocaine-addiction-treatment/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/cocaine-addiction-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Cocaine Addiction Treatment" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/cocaine-addiction-treatment/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/cocaine-addiction.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Cocaine Addiction Treatment</h3>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="image">
+<a href="https://www.foundationsrecoverynetwork.com/heroin-addiction-treatment/"><img width="180" height="138" src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/heroin-addiction-treatment-180x138.jpg" class="attachment-related-img size-related-img wp-post-image" alt="Heroin Addiction Treatment" /></a>
+<div class="image-extras">
+<div class="image-extras-content">
+<a class="icon link-icon" href="https://www.foundationsrecoverynetwork.com/heroin-addiction-treatment/">Permalink</a>
+<a class="icon gallery-icon" href="https://www.foundationsrecoverynetwork.com/wp-content/uploads/heroin-addiction-treatment.jpg" rel="prettyPhoto[gallery]">Gallery</a>
+<h3>Heroin Addiction Treatment</h3>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="sidebar" style="float:right;">
+<div id="search-2" class="widget widget_search"><div class="heading"><h3>Search for More Information</h3></div><form class="search" action="https://www.foundationsrecoverynetwork.com/" method="get">
+<fieldset>
+<span class="text"><input name="s" id="s" type="text" value="" placeholder="Search ..." /></span>
+</fieldset>
+</form></div><div id="text-72" class="widget widget_text"> <div class="textwidget"><div align="center"><a href="http://blackbearrehab.com/blog/opioid-addiction-epidemic-users-not-getting-help-long-term-recovery-best-hope/" target="new"><img src="https://www.foundationsrecoverynetwork.com/wp-content/uploads/heroin-opioids.jpg"></a><br /><br /><strong>Opioid Addiction Epidemic: Most Users Are Not Getting Help, But Long-Term Recovery Is Their Best Hope.</strong><br /><em>See the full article and infographic to learn more.</em><br /><br />
+<a class="button small blue" href="http://blackbearrehab.com/blog/opioid-addiction-epidemic-users-not-getting-help-long-term-recovery-best-hope/" target="new">Learn More</a></div></div>
+</div><div id="custom-recent-posts-2" class="widget widget_recent_entries"><div class="heading"><h3>Recent Posts</h3></div><ul>
+<li class="crpw-item">
+<a href="https://www.foundationsrecoverynetwork.com/depression-outpatient-programs-value-success-rates-and-flexibility/" rel="bookmark" title="Permanent link to Depression Outpatient Programs: Value, Success Rates, and Flexibility" class="crpw-title">Depression Outpatient Programs: Value, Success Rates, and Flexibility</a>
+</li>
+<li class="crpw-item">
+<a href="https://www.foundationsrecoverynetwork.com/tough-love-intervention-approach/" rel="bookmark" title="Permanent link to Interventions With Heart: Tough Love May Save Your Child&#8217;s Life" class="crpw-title">Interventions With Heart: Tough Love May Save Your Child&#8217;s Life</a>
+</li>
+<li class="crpw-item">
+<a href="https://www.foundationsrecoverynetwork.com/the-therapeutic-benefits-of-humor-in-addiction-counseling/" rel="bookmark" title="Permanent link to The Therapeutic Benefits of Humor in Addiction Counseling" class="crpw-title">The Therapeutic Benefits of Humor in Addiction Counseling</a>
+</li>
+<li class="crpw-item">
+<a href="https://www.foundationsrecoverynetwork.com/outpatient-ptsd-treatment/" rel="bookmark" title="Permanent link to Outpatient PTSD Treatment" class="crpw-title">Outpatient PTSD Treatment</a>
+</li>
+<li class="crpw-item">
+<a href="https://www.foundationsrecoverynetwork.com/signs-and-symptoms-of-work-addiction/" rel="bookmark" title="Permanent link to Signs and Symptoms of Work Addiction" class="crpw-title">Signs and Symptoms of Work Addiction</a>
+</li>
+</ul>
+</div><div id="nav_menu-3" class="widget widget_nav_menu"><div class="heading"><h3>Categories</h3></div><div class="menu-categories-container"><ul id="menu-categories" class="menu"><li id="menu-item-3181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3181"><a href="https://www.foundationsrecoverynetwork.com/category/addiction/">Addiction</a></li>
+<li id="menu-item-3182" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3182"><a href="https://www.foundationsrecoverynetwork.com/category/alcohol-abuse/">Alcohol Abuse</a></li>
+<li id="menu-item-3179" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3179"><a href="https://www.foundationsrecoverynetwork.com/category/drug-abuse/">Drug Abuse</a></li>
+<li id="menu-item-3184" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3184"><a href="https://www.foundationsrecoverynetwork.com/category/intervention/">Intervention</a></li>
+<li id="menu-item-3183" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3183"><a href="https://www.foundationsrecoverynetwork.com/category/mental-health/">Mental Health</a></li>
+<li id="menu-item-3180" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3180"><a href="https://www.foundationsrecoverynetwork.com/category/recovery/">Recovery</a></li>
+<li id="menu-item-3178" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3178"><a href="https://www.foundationsrecoverynetwork.com/category/treatment/">Treatment</a></li>
+</ul></div></div> </div>
+</div>
+</div>
+<footer class="footer-area">
+<div class="avada-row">
+<section class="columns columns-4">
+<article class="col">
+<div id="text-37" class="footer-widget-col widget_text"><h3>Company Mission</h3> <div class="textwidget">Based in <a href="https://www.foundationsrecoverynetwork.com/tennessee-drug-rehab/">Nashville, Tennessee</a>, Foundations Recovery Network’s mission is to be the leader in evidence-based, integrated treatment for co-occurring mental health and substance use disorders through clinical services, education and research.
+<br /><br />
+<a href="https://www.foundationsrecoverynetwork.com/marketing-statement-of-ethics/">- Marketing Statement of Ethics</a><br />
+<a href="https://www.foundationsrecoverynetwork.com/foundations-recovery-networks-statement-of-ethics/
+">- FRN Statement of Ethics</a>
+<br /><br />
+<a id="bbblink" class="ruhzbam" href="https://www.bbb.org/nashville/business-reviews/drug-abuse-and-addiction-info-and-treatment/foundations-recovery-network-in-brentwood-tn-37038606#bbbseal" title="Foundations Recovery Network, LLC, Drug Abuse & Addiction  Info & Treatment, Brentwood, TN" style="display: block;position: relative;overflow: hidden; width: 150px; height: 68px; margin: 0px; padding: 0px;"><img style="padding: 0px; border: none;" id="bbblinkimg" src="https://seal-nashville.bbb.org/logo/ruhzbam/foundations-recovery-network-37038606.png" width="300" height="68" alt="Foundations Recovery Network, LLC, Drug Abuse & Addiction  Info & Treatment, Brentwood, TN" /></a><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">var bbbprotocol = ( ("https:" == document.location.protocol) ? "https://" : "http://" ); document.write(unescape("%3Cscript src='" + bbbprotocol + 'seal-nashville.bbb.org' + unescape('%2Flogo%2Ffoundations-recovery-network-37038606.js') + "' type='text/javascript'%3E%3C/script%3E"));</script>
+<div style="display: block; margin: 15px auto 0;"><script src="https://static.legitscript.com/seals/3417923.js"></script></div>
+<img style="display: block; margin: 15px 0 0;" src="/wp-content/uploads/naatp-stacked-white.svg" alt="NAATP Logo" width="85" /></div>
+<div style="clear:both;"></div></div> </article>
+<article class="col">
+<div id="recent-posts-3" class="footer-widget-col widget_recent_entries"> <h3>Recent Articles</h3> <ul>
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/depression-outpatient-programs-value-success-rates-and-flexibility/">Depression Outpatient Programs: Value, Success Rates, and Flexibility</a>
+</li>
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/tough-love-intervention-approach/">Interventions With Heart: Tough Love May Save Your Child&#8217;s Life</a>
+</li>
+<li>
+<a href="https://www.foundationsrecoverynetwork.com/the-therapeutic-benefits-of-humor-in-addiction-counseling/">The Therapeutic Benefits of Humor in Addiction Counseling</a>
+</li>
+</ul>
+<div style="clear:both;"></div></div> </article>
+<article class="col">
+<div id="text-23" class="footer-widget-col widget_text"><h3>Latest Press Release</h3> <div class="textwidget"><p><strong>August 6, 2018 | IIBH Conference To Feature Both Local Behavioral Healthcare Experts And Those On The Front Lines Furthering The Cause Of Recovery</strong><br />
+<em>Foundations Recovery Network’s latest conference to contribute to Nashville’s growing focus on addiction and mental health awareness and education</em><br />
+<a href="/media/iibh-conference-to-feature-both-local-behavioral-healthcare-experts-and-those-on-the-front-lines-furthering-the-cause-of-recovery/">Read press release</a></p>
+</div>
+<div style="clear:both;"></div></div> </article>
+<article class="col last">
+<div id="contact_info-widget-8" class="footer-widget-col contact_info"> <div itemscope itemtype="http://schema.org/MedicalOrganization">
+Foundations Recovery Network
+<a itemprop="hasMap" href="			https://www.google.com/maps/place/Foundations+Recovery+Network/@36.036026,-86.81564,17z/data=!3m1!4b1!4m2!3m1!1s0x88647b5a7484b359:0xfba931ccdb9deb2a" target="_blank">
+<p class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress">1000 Health Park Dr, Building Three, Ste 400, Brentwood, TN 37027</span><br />
+<span itemprop="addressLocality">Brentwood</span>,
+<span itemprop="addressRegion">TN</span>
+<span itemprop="postalCode">37027</span>
+</p></a>
+<div class="phone">Phone: <span itemprop="telephone"><span style="text-decoration:underline;">877.714.1318</span></span></div>
+<div>&nbsp;</div>
+<div class="web">Website: <a itemprop="url" href="http://foundationsrecoverynetwork.com/" rel="nofollow">our site</a></div>
+<div>&nbsp;</div>
+</div>
+<div style="clear:both;"></div></div>
+</article>
+</section>
+</div>
+</footer>
+<footer id="footer">
+<div class="avada-row">
+<ul class="social-networks">
+<li class="facebook"><a target="" href="https://www.facebook.com/frnetwork">Facebook</a>
+<div class="popup">
+<div class="holder">
+<p>Facebook</p>
+</div>
+</div>
+</li>
+<li class="twitter"><a target="" href="https://www.twitter.com/FRNetwork">Twitter</a>
+<div class="popup">
+<div class="holder">
+<p>Twitter</p>
+</div>
+</div>
+</li>
+<li class="linkedin"><a target="" href="https://www.linkedin.com/company/foundations-recovery-network">LinkedIn</a>
+<div class="popup">
+<div class="holder">
+<p>LinkedIn</p>
+</div>
+</div>
+</li>
+<li class="youtube"><a target="" href="https://www.youtube.com/foundationsrnetwork">Youtube</a>
+<div class="popup">
+<div class="holder">
+<p>Youtube</p>
+</div>
+</div>
+</li>
+<li class="pinterest"><a target="" href="https://pinterest.com/heroesnrecovery/" class="pinterest">Pinterest</a>
+<div class="popup">
+<div class="holder">
+<p>Pinterest</p>
+</div>
+</div>
+</li>
+<li class="google"><a target="" href="https://plus.google.com/u/0/b/117582848945150720379" class="google">Google+</a>
+<div class="popup">
+<div class="holder">
+<p>Google</p>
+</div>
+</div>
+</li>
+</ul>
+<ul class="copyright">
+<li>
+
+<div class="frn_footer">Copyright © 1995-2018 Foundations Recovery Network. All Rights Reserved. | Confidential and Private Call: 877-714-1318 | <a href="https://www.foundationsrecoverynetwork.com/wp-content/plugins/frn_plugins/privacy-policy.pdf">Privacy Policy</a>
+</div>
+
+</li>
+</ul>
+</div>
+</footer>
+</div>
+
+<script type='text/javascript'>
+			var _sf_async_config={};
+			/** CONFIGURATION START **/
+			_sf_async_config.uid = 37107;
+			_sf_async_config.domain = 'allwebsites.com';
+			_sf_async_config.path = 'https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/';
+			_sf_async_config.authors = 'FoundationsRecoveryNetwork.com';
+			/** CONFIGURATION END **/
+			(function(){
+			  function loadChartbeat() {
+				window._sf_endpt=(new Date()).getTime();
+				var e = document.createElement('script');
+				e.setAttribute('language', 'javascript');
+				e.setAttribute('type', 'text/javascript');
+				e.setAttribute('src',
+				   (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+				   'js/chartbeat.js');
+				document.body.appendChild(e);
+			  }
+			  var oldonload = window.onload;
+			  window.onload = (typeof window.onload != 'function') ?
+				 loadChartbeat : function() { oldonload(); loadChartbeat(); };
+			})();
+		</script>
+
+
+<script type="text/javascript">
+		var lhnButtonN = -1;
+		var lhnAccountN = "14160-1"; 
+		var lhnWindowN = 40629;
+		var lhnDepartmentN = 15027;
+		var lhnCustom1 = "[CALL-IN CODE] Web FRN (FRN.com)";
+		var lhnCustom2 = "[CURRENT PAGE] https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/";
+		var lhnCustom3 = "[Desktop] User is chatting on this.";
+	</script>
+<script async='async' src="//www.livehelpnow.net/lhn/widgets/chatbutton/lhnchatbutton-current.min.js?v=1.0" type="text/javascript" id="lhnscript"></script>
+
+
+<script type="text/javascript">
+		var lhnAccountN = "14160"; 
+		var lhnWindowN = 40629;
+		var lhnDepartmentN = 15027;
+		var lhnHPCallbackButton = false;
+	    var lhnHPKnowledgeBase = false;
+	    var lhnHPMoreOptions = false;
+	    var lhnCss = "https://www.foundationsrecoverynetwork.com/wp-content/plugins/frn_plugins/frn_plugin.css?v=1.0";
+		var lhnCustom1 = "[CALL-IN CODE] Web FRN (FRN.com)";
+		var lhnCustom2 = "[CURRENT PAGE] https://www.foundationsrecoverynetwork.com/dangers-mixing-alcohol-benzodiazepines/";
+		var lhnCustom3 = "[Desktop] User is chatting on this.";</script>
+<script async='async' src="//www.livehelpnow.net/lhn/widgets/helpouttab/lhnhelpouttab-current.min.js?v=1.0" type="text/javascript" id="lhnscriptho"></script>
+<div id="lhnChatButton"></div>
+
+
+<style>
+				#frn_floating_footer, .frn_mobile_copyright {
+					display:none;
+				}
+				@media only screen and (max-device-width: 480px) {
+					#frn_floating_footer {
+						text-align: center;
+					    width: auto;
+						left: 0;
+						right: 0;
+					    display: block;
+						color: #333; /*#333; A7D7FB;#AEE0FB*/
+						font-weight: bold;
+						padding:5px 3px;
+						position: fixed;
+						bottom: 0;
+						z-index: 1000;
+						font-size:30px;
+						border:1px solid gray;
+						background: -moz-linear-gradient(top,  rgba(0,0,0,0) 46%, rgba(0,0,0,0.04) 54%, rgba(0,0,0,0.25) 100%); /* FF3.6+ */
+						background: -webkit-gradient(linear, left top, left bottom, color-stop(46%,rgba(0,0,0,0)), color-stop(54%,rgba(0,0,0,0.04)), color-stop(100%,rgba(0,0,0,0.25))); /* Chrome,Safari4+ */
+						background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 46%,rgba(0,0,0,0.04) 54%,rgba(0,0,0,0.25) 100%); /* Chrome10+,Safari5.1+ */
+						background: -o-linear-gradient(top,  rgba(0,0,0,0) 46%,rgba(0,0,0,0.04) 54%,rgba(0,0,0,0.25) 100%); /* Opera 11.10+ */
+						background: -ms-linear-gradient(top,  rgba(0,0,0,0) 46%,rgba(0,0,0,0.04) 54%,rgba(0,0,0,0.25) 100%); /* IE10+ */
+						background: linear-gradient(to bottom,  rgba(0,0,0,0) 46%,rgba(0,0,0,0.04) 54%,rgba(0,0,0,0.25) 100%); /* W3C */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#40000000',GradientType=0 ); /* IE6-9 */
+					}
+					.frn_floating_ftr_intro {
+						font-size:12px;
+						color:#555;
+					}
+					.frn_floating_ftr_phone a, .frn_floating_ftr_phone a:visited {
+						color:#ECFAFF !important; /*22789B;*/
+					}
+					.footer {
+						margin-bottom:140px;
+					}
+				}
+			</style>
+<div id="frn_floating_footer" style="background-color:#16a1e6">
+<div class="frn_floating_ftr_phone">
+<div class="frn_floating_ftr_intro"><style>.frn_floating_ftr_phone a {color:#fff !important; font-weight:normal !important; margin-bottom: 5px;}</style><div class="frn_floating_ftr_intro">Confidential and Private. We're here to help.</div></div>
+<a href="tel:1-877-714-1318" style="white-space:nowrap;" onClick="frn_reporting('phone','Phone Numbers', 'Phone Clicks in Floating Footer Bar','');">877-714-1318</a></div>
+</div>
+
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/modernizr.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.elastislide.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.prettyPhoto.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.isotope.min.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.cycle.lite.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.hoverIntent.minified.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.eislideshow.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/froogaloop.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.placeholder.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/jquery.waypoint.js?ver=4.9.8'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/js/main.js?ver=2'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/js/jquery.mousewheel.min.js?ver=2.1.0-20121206'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/themes/Avada/framework/plugins/tf-flexslider/assets/js/jquery.flexslider.min.js?ver=2.1.0-20121206'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-content/plugins/frn_plugins/frn_plugin.js?ver=1.12' async='async'></script>
+<script type='text/javascript' src='https://www.foundationsrecoverynetwork.com/wp-includes/js/wp-embed.min.js?ver=4.9.8'></script>
+
+<script type="text/javascript">
+        var _stk = "29b7c6a9512f3b1450d85acb9aa55fb8818ba6aa";
+        (function(){
+            var a=document, b=a.createElement("script"); b.type="text/javascript";
+            b.async=!0; b.src=('https:'==document.location.protocol ? 'https://' :
+            'http://') + 'd31y97ze264gaa.cloudfront.net/assets/st/js/st.js';
+            a=a.getElementsByTagName("script")[0]; a.parentNode.insertBefore(b,a);
+        })();
+    </script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7adc0d305b","applicationID":"52636899","transactionName":"MQBWNUcEV0RWURJZWQhKdQJBDFZZGEEPXlEKAA==","queueTime":0,"applicationTime":1056,"atts":"HUdVQw8eREo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

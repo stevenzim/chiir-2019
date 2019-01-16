@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {# <link rel="stylesheet" type="text/css" href="static/survey/view.css" media="all"> #}
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <!-- ATTEMPT TO MAKE STICKY HEADER... the one with id calls javascript 
+            You will need to drop HTML/CSS/JAVA into codepen to demonstrate with someone and hopefully fix-->
+        <div class="header" id="myHeader">
+        <!-- <div class="header"> -->
+
+            <!-- SEARCH GRID -->
+            <div class="grid-container-top-experiment" >
+
+                <!-- BUTTON TO GO TO DECISON -->
+                <div class="item1">
+                        <!-- DROPDOWN BUTTON -->
+                        <div class="dropdown">
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line"></div>
+                            <div class="dropdown-line"></div>
+                        <!-- <button class="dropbtn">settings</button> -->
+                        <div class="dropdown-content">
+                                <a href="#" class="switch" onclick="window.location.href='{{url_for('experiment', participant_id=payload.participant_state.participant_id, ps=1) }}'">
+                                    {% if payload.interface_details.interface_name != 'baseline' %}
+                                     <!-- IF its not the baseline we use these settings  -->
+                                        
+                                        {% if payload.participant_state.privacy_switch_default == true %}
+
+                                          Privacy Protection Off
+                                              <label class="switch">
+                                                  <input type="checkbox" onclick="window.location.href='{{url_for('experiment', participant_id=payload.participant_state.participant_id, ps=1) }}'" checked>
+                                                  <span class="slider round"></span>
+                                              </label>
+                                          On 
+
+                                        {% else %} 
+
+                                          Privacy Protection Off
+                                              <label class="switch">
+                                                  <input type="checkbox" onclick="window.location.href='{{url_for('experiment', participant_id=payload.participant_state.participant_id, ps=1) }}'" >
+                                                  <span class="slider round"></span>
+                                              </label>
+                                          On 
+                                         <!-- IF is the baseline.....we use these settings (DEFAULT SWITCH IS OFF) -->
+                                        {% endif %}
+                                    {% else %} 
+                                        {% if payload.participant_state.privacy_switch_default == true %}
+
+                                          Privacy Protection Off
+                                              <label class="switch">
+                                                  <input type="checkbox" onclick="window.location.href='{{url_for('experiment', participant_id=payload.participant_state.participant_id, ps=1) }}'">
+                                                  <span class="slider round"></span>
+                                              </label>
+                                          On 
+
+                                        {% else %} 
+
+                                          Privacy Protection Off
+                                              <label class="switch">
+                                                  <input type="checkbox" onclick="window.location.href='{{url_for('experiment', participant_id=payload.participant_state.participant_id, ps=1) }}'" checked>
+                                                  <span class="slider round"></span>
+                                              </label>
+                                          On 
+                                         <!-- IF is the baseline.....we use these settings (DEFAULT SWITCH IS OFF) -->
+                                        {% endif %}
+                                    {% endif %}
+
+                                </a>
+                            </div>
+                        </div>
+
+                    <br><br><br><br><br><br><br><br><br>
+                    {% if payload.interface_details.interface_name == 'nudge_stoplight' %}
+                        {% if payload.participant_state.privacy_switch_default == true %} 
+                            <svg height="20px" width="20px">
+                              <circle cx="10" cy="10" r="10" fill="red" />
+                              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="120%" font-family="Arial" dy=".35em">P</text>
+                           </svg>
+                            <a class="tooltip">Explain this
+                              <span class="tooltiptext">Privacy risk where <br>Red = High privacy risk <br>Yellow =  Medium privacy risk <br>Green = Low privacy risk</span>
+                            </a>
+                        {% endif %}
+                    {% endif %}
+
+                </div>
+
+                <!-- MEDICAL DEFINITIONS -->
+                <div class="item2">
+                    <!-- <li id="li_1"> -->
+                    <label class="description" for="element_1">
+                        <b>MEDICAL QUESTION {{ payload.current_med_question_num }}:</b> {{ payload.cochrane_definitions.QUESTION_TEXT }}
+                        <br>
+                        <br>
+                        <b>HEALTH ISSUE: {{ payload.cochrane_definitions.HEALTH_ISSUE_PHRASE }} -</b> {{ payload.cochrane_definitions.HEALTH_ISSUE_DEF }} <i>Source: {{ payload.cochrane_definitions.HEALTH_ISSUE_SOURCE }}</i>
+                        <br>
+                        <br>
+                        <b>TREATMENT:  {{ payload.cochrane_definitions.TREATMENT_PHRASE }} -</b> {{ payload.cochrane_definitions.TREATMENT_DEF }} <i>Source: {{ payload.cochrane_definitions.TREATMENT_SOURCE }}</i>
+                        <br>
+                        <br>
+                        <b> You can click on links below</b>
+                        <br>
+                    </label>
+
+                    <br>
+
+                    <!-- SNIPPET AND DECISION BUTTON -->
+                    <div class="buttons-decision">
+
+                         <input class="grey" type="button" value="Make Decision" onclick="window.location.href='{{url_for('decision', participant_id=payload.participant_state.participant_id, decision='makedecision') }}'" />
+                    </div>
+                </div>
+
+                <!-- OPTIONS FOR DECISONS -->
+                <div class="item3">
+                </div>
+                <div class="item4">
+                    <label class="description" for="element_1">
+                        <u><i>helpful: </i></u> The medical treatment <b>helps</b> if the treatment is effective and has a direct positive influence on the specified illness.
+                        <br>
+
+                        <u><i>inconclusive: </i></u> The effectiveness of a medical treatment is <b>inconclusive</b> if medical professionals are still unsure if the treatment will have a positive, negative or no influence on the specified illness.
+                        <br>
+
+                        <u><i>does not help: </i></u> The medical treatment <b>does not help</b> if the treatment is ineffective and either has no effect or has a direct negative influence on the specified illness.
+                        <br>
+                        <br>
+                    </label>
+ 
+                </div>
+            </div>
+        </div>
+        <script type=text/javascript src="{{url_for('static', filename='js/header.js') }}"></script>
+
+ 
+
+        <!--RESULTS BLOCK (see search_results.html)-->
+
+        {% block results %}
+        {% endblock %} 
+
+        <!--PAGINATION BLOCK-->
+        {% if payload.pagination|length > 1 %}
+        <div class="grid-container">
+            <div class="item1"></div>
+
+            <div class="pagination">
+                {% for item in payload.pagination %} 
+                  {% if '99999' in item[1] %}
+                    <a style="color:black">{{ item[0] }}</a> 
+                  {% else %}
+                    <a href="{{ item[1] }}">{{ item[0] }}</a> 
+                  {% endif %}
+                {% endfor %}
+            </div>
+
+            <div class="item3">
+
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- SNIPPET AND DECISION BUTTON -->
+        <div class="buttons-decision">
+
+             <input class="grey" type="button" value="Make Decision" onclick="window.location.href='{{url_for('decision', participant_id=payload.participant_state.participant_id, decision='makedecision') }}'" />
+             <br><br><br>
+        </div>
+</body>
+
+<!-- HIDDEN RESULTS USEFUL FOR POST?? -->
+<input hidden type="text" value="{{ payload.participant_state.participant_id  }}" name="participant_id">
+<input hidden type="text" value="{{ payload.participant_state.privacy_switch_default  }}" name="privacy_switch_default">
+<input hidden type="text" value="{{ payload.participant_state.variant_id  }}" name="variant_id">
+</form>
+
+</html>

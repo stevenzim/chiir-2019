@@ -1,0 +1,14 @@
+{
+    "decision": "helpful",
+    "experiment_state": 11,
+    "interface_name": "nudge_filter",
+    "interface_type": "decision",
+    "log_type": "decisions",
+    "participant_id": "T0001",
+    "privacy_switch_default": true,
+    "random_seed": 9,
+    "task_id": "T7",
+    "time_logged": "2018-09-29 08:20:59",
+    "uuid": "0f4f46fc-4614-4f36-a0a4-9840aa6bb9ce",
+    "variant_id": "4"
+}

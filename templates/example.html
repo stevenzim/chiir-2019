@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Pre-Task</title>
+    <link rel="stylesheet" type="text/css" href="static/survey/view.css" media="all">
+    <script type="text/javascript" src="static/survey/view.js"></script>
+</head>
+
+<body id="main_body">
+
+    <img id="top" src="static/survey/top.png" alt="">
+    <div id="form_container">
+
+        <h1><a>Pre-Task</a></h1>
+        <form id="form_23629" class="appnitro" method="post" action="">
+            <div class="form_description">
+                <h2>Understanding your prior knowledge of treatment and health issue</h2>
+                <!-- <p>Pre-Task Questionnaire</p> -->
+            </div>
+            <ul>
+
+                <li id="li_1">
+                    <label class="description" for="element_1">
+                        <b>MEDICAL QUESTION:</b> {{ cochrane_defs.QUESTION_TEXT }}
+                        <br>
+                        <b>HEALTH ISSUE: {{ cochrane_defs.HEALTH_ISSUE_PHRASE }} -</b> {{ cochrane_defs.HEALTH_ISSUE_DEF }} <i>Source: {{ cochrane_defs.HEALTH_ISSUE_SOURCE }}</i>
+                        <br>
+                        <b>TREATMENT:  {{ cochrane_defs.TREATMENT_PHRASE }} -</b> {{ cochrane_defs.TREATMENT_DEF }} <i>Source: {{ cochrane_defs.TREATMENT_SOURCE }}</i>
+                        <br>
+                        <br>
+                        <br>
+                    </label>
+
+                </li>
+
+                <div class="wrap">
+
+                    <div class="form_description">
+                        <h2>Questions: <label style="color:red;">{{ message }}</label> </h2>
+                    </div>
+
+                    <form  method="post">
+                        <!--{{ form.csrf_token }}-->
+                        <!--{{ form.hidden_tag() }}-->
+                        <label class="statement">How knowledgeable/familiar are you of this health issue?</label>
+                        <ul class='likert'>
+                            {{ form.hidden_tag() }} {{ form.health_question }}
+                        </ul>
+
+                        <label class="statement">What level of familiarity/knowledge do you have in regards to this treatment?</label>
+                        <ul class='likert'>
+                            <!--{{ form.hidden_tag() }} {{ form.treatment_question }}-->
+                        </ul>
+
+                    </form>
+                        <div class="buttons">
+                            <button class="grey">Submit</button>
+
+                            <!--<input type="submit">-->
+                            <!--<input  type="text" value="{{ participant_code }}" name="participant_code">-->
+                            <!--<input  type="text" value="{{ participant_state.participant_id  }}" name="participant_id">-->
+                            <!--<input  type="text" value="{{ participant_state.privacy_switch_default  }}" name="privacy_switch_default">-->
+                            <!--<input  type="text" value="{{ participant_state.variant_id  }}" name="variant_id">-->
+                        </div>
+                </div>
+            </ul>
+        </form>
+    </div>
+<img id="bottom" src="static/survey/bottom.png" alt="">
+</body>
+
+</html>

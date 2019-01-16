@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<!--[if IE 9]><html class="no-js ie ie9" data-ng-app="utdApp" data-ng-controller="ConfigController as configCtrl2" data-ng-class="[configCtrl2.ui.fixedHTML,{wkProspect:configCtrl2.isProspectView()}]"><![endif]-->
+
+<html class="no-js" data-ng-app="utdApp" data-ng-controller="ConfigController as configCtrl2" data-ng-class="[configCtrl2.ui.fixedHTML,{wkProspect:configCtrl2.isProspectView()}]">
+	<head>
+		<title>UpToDate</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-title" content="UpToDate" />
+        <meta name="format-detection" content="telephone=no" />
+        <link href="/app/assets/utd-icon.png" rel="apple-touch-icon" />
+		<meta name="fragment" content="!" />
+        <link rel="canonical" href="{{configCtrl2.info.canonicalUrl}}"/>
+        <meta name="description" content="{{configCtrl2.info.metaDescription}}"/>
+        <meta charset="UTF-8"/>
+
+        <style type="text/css">
+            #appContainer {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: url(/app/assets/utd-menu/utd-icon.png) no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background-size: 48px 48px;
+            }
+        </style>
+        <!-- for prerender.io -->
+        <script> window.prerenderReady = false; </script>
+
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        </script>
+
+        
+        <link rel="stylesheet" href="/app/utd-all-ea1271c15a700b6539aa-1.css">
+        
+        <link rel="stylesheet" href="/app/utd-all-ea1271c15a700b6539aa-2.css">
+        
+        <script src="/app/dist/pace-5ac5ecf45e67e15f32df.min.js"></script>
+        <script type="text/javascript">
+            // Polyfills for IE 9 and above
+            if (window.navigator.userAgent.indexOf("MSIE ") > 0 || !!window.navigator.userAgent.match(/Trident.*rv\:11\./)) {
+                var polyfillsIE = document.createElement("script");
+                polyfillsIE.type = "text/javascript";
+                polyfillsIE.src = "/app/dist/polyfills-9184f34a12b8cb917bfb.min.js";
+                document.head.appendChild(polyfillsIE);
+            }
+        </script>
+
+        <style ng-if="configCtrl2.ui.additiveContentCss" ng-bind="configCtrl2.ui.additiveContentCss"></style>
+        <base href="/index.html">
+	</head>
+    <body data-ng-strict-di
+          data-ng-controller="ConfigController as configCtrl" utd-check-mobile-on-desktop
+          data-ng-class="[configCtrl.browser.name,
+                          configCtrl.browser.type,
+                          configCtrl.browser.customVersion,
+                          configCtrl.browser.os,
+                          configCtrl.localization.language,
+                          configCtrl.storedSettings.textSize,
+                          configCtrl.ui.noHeaderClass,
+                          configCtrl.ui.fullscreenClass,
+                          configCtrl.ui.searchbar.autoComplete,
+                          configCtrl.ui.logo,
+                          configCtrl.ui.ngLoaded,
+                          {ModernBrowser: configCtrl.browser.isModern},
+                          {topicView: configCtrl.ui.isTopicView},
+                          {myUtdView: configCtrl.ui.isMyUtdView},
+                          {isHomeSearchEmpty: configCtrl.ui.isHomeSearchEmpty},
+                          {topicPrint: configCtrl.ui.isPrintView},
+                          {gfxView: configCtrl.ui.isGraphicView},
+                          {graphicPrint: configCtrl.ui.isPrintGraphic},
+                          {fullWidth : configCtrl.ui.fullTopicWidth},
+                          {utdWkHeader : configCtrl.ui.headerRedesign},
+                          {utdWkTopic : configCtrl.ui.topicRedesign},
+                          {hasSessionData: configCtrl.ui.hasSessionData},
+                          {fixedToolbar: configCtrl.ui.isFixedToolbar},
+                          {lockOverflow: configCtrl.ui.lockBodyScroll},
+                          {mobileonDesktop: configCtrl.browser.isMobileOnDesktop},
+                          {fixedSidebar: configCtrl.ui.isFixedSidebar}]" class="ngLoading">
+
+        <noscript>It seems to us that you have your JavaScript disabled on your browser. JavaScript is required in order for our site to behave correctly.  Please enable JavaScript to use our site.</noscript>
+        <div id="appContainer" ng-class="configCtrl.ui.hideMarketingBanner" utd-track-click-events>
+            <header ng-if="!configCtrl.ui.headerRedesign" data-utd-header></header>
+            <header wk-utd-header ng-if="configCtrl.ui.headerRedesign"></header>
+            <div data-utd-loading-widget></div>
+            <div id="paceHolder" data-ng-class="{'hideNavBar' : configCtrl.ui.hideNavBar}"></div>
+            <div id="utd-main" data-ui-view data-ng-class="{'hasFewResults' : configCtrl.ui.fewSearchResults,'contentError' : configCtrl.ui.nullSearchResults, 'utdError': configCtrl.ui.errorClass, 'hideNavBar' : configCtrl.ui.hideNavBar}" ></div>
+            <footer id="utdFooter" data-utd-footer data-ng-if="!configCtrl.ui.headerRedesign && configCtrl.isDesktopView()"></footer>
+            <footer wk-utd-footer ng-if="configCtrl.ui.headerRedesign"></footer>
+        </div>
+        <div data-utd-modal-dialog></div>
+        <utd-cookie-policy></utd-cookie-policy>
+
+        <script src="/app/dist/angular-30036f49a9cd03866cb5.min.js"></script>
+        <script src="/app/dist/vendors-819b27e9d80011339d53.min.js"></script>
+        <script src="/app/dist/iscroll-zoom.utd.js"></script>
+        <script src="/app/dist/utd-all-ea1271c15a700b6539aa.min.js"></script>
+        <script src="/app/dist/epic-12ac7c9637a08e08e663.min.js"></script>
+    </body>
+</html>

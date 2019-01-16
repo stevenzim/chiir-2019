@@ -1,0 +1,25 @@
+{% extends "layout_generic_survey.html" %} 
+
+
+{% block survey %}
+<div class="form_description">
+    <h2>Please provide responses to the following statements: <label style="color:red;">{{ message }}</label> </h2>
+</div>
+
+<form  method="post">
+    <label class="statement">I use search systems (such as Google or Bing) for all of my questions and concerns about health and medicine.</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.prev_search_question_1 }}
+    </ul>
+
+    <label class="statement">Before going to the doctor for an illness, I never go online to find additional information.</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.prev_search_question_2 }}
+    </ul>
+
+</form>
+<div class="buttons">
+    <button class="grey">Submit</button>
+
+</div>
+{% endblock %}

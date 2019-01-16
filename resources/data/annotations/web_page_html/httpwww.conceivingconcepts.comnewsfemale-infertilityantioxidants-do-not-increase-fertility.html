@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Antioxidants do not increase fertility</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/favicon_1.ico" type="image/x-icon" />
+<meta name="description" content="Antioxidants do not improve a woman’s chances of conceiving as have been suggested in previous studies.  This is according to a new study from the University of Auckland, New Zealand.   Women who take oral antioxidants are no more likely to conceive and there was “limited information” about potential harmful effects." />
+<link rel="stylesheet" type="text/css" href="/themes/theme096/reset.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/default/files/css/css_92a503f443f4182711ba3753b67783d3.css" />
+<script type="text/javascript" src="/sites/default/files/js/js_0aa165264a3b779eeaa9ccda25415539.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" } });
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+<script src="http://jwpsrv.com/library/ImLIdGNuEeOU6iIACrqE1A.js"></script>
+
+</head>
+  
+<body class="not-front not-logged-in page-node node-type-news two-sidebars">
+
+
+<div align="center">
+<!--/* OpenX IFrame tag */-->
+<iframe id="4edca299d8" name="4edca299d8" src="http://ox-d.cloud9-media.net/w/1.0/afr?auid=482974&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="728" height="90"><a href="http://ox-d.cloud9-media.net/w/1.0/rc?cs=4edca299d8&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ox-d.cloud9-media.net/w/1.0/ai?auid=482974&cs=4edca299d8&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe>
+
+</div>	<div id="container">
+		<div id="main">
+		  	<div id="header">
+				<div class="head-row1">
+					<div class="meta">September 7, 2018 <span class="delimiter"></span></div>
+                    <div class="rssbutton"></div>
+                    <!-- /Meta -->
+                    
+                    <!--facebook like -->
+                    <div id="header-like"></div>
+                    <!-- /like -->
+                    
+                    <!-- plusone -->
+                    <div id="header-plusone"></div>
+                    
+                    <!-- twitter -->
+                    <div id="header-twitter"></div>
+                  
+                    
+                    <!-- Login links -->
+                    <div class="login">
+                    </div>
+
+                    </div> <!-- /row1 -->
+
+					<div class="head-row2">
+						                        <a href="/" title="Home"><img src="/themes/theme096/logo.png" alt="Home" class="logo" /></a>
+                        
+					<div class="search"><form action="/news/female-infertility/antioxidants-do-not-increase-fertility"  accept-charset="UTF-8" method="post" id="search-theme-form">
+<div><input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-9880dbc65fac0e2d91691c0b4a02d566" value="form-9880dbc65fac0e2d91691c0b4a02d566"  />
+<input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+
+</div></form>
+</div>
+				</div>
+
+				<div class="head-row3">
+					                    <div class="pr-menu"><ul class="links primary-links"><li class="menu-145 first"><a href="/" title="">Home</a></li>
+<li class="menu-147"><a href="/learning/index.html" title="">Fertility Overview</a></li>
+<li class="menu-153"><a href="/learning/treatment.html" title="">Treatment</a></li>
+<li class="menu-150"><a href="http://www.conceivingconcepts.com/learning/fertility_clinics.html" title="">Fertility Clinics</a></li>
+<li class="menu-914"><a href="/articles" title="Articles">Articles</a></li>
+<li class="menu-404"><a href="/news" title="Fertility Related News">News</a></li>
+<li class="menu-906"><a href="/videos" title="Conceiving Concepts VIdeos">Videos</a></li>
+<li class="menu-275"><a href="/content/blog-categories" title="Fertility Blogs">Blogs</a></li>
+<li class="menu-149"><a href="/learning/causes.html" title="">Causes</a></li>
+<li class="menu-148"><a href="/learning/articles/lifestyle.html" title="">Lifestyle</a></li>
+<li class="menu-398 last"><a href="/content/support/aboutcontact" title="About/Contact">About/Contact</a></li>
+</ul></div>
+									</div>
+			</div> <!-- /HEADER -->
+
+			<div id="cont">
+                <div id="left-col">
+					                    <div class="block block-block" id="block-block-7">
+  <div class="title">
+	  <h3>Main Menu</h3>
+  </div>
+  <div class="content"><h4>Community &amp; Support</h4>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/content/have-a-question-know-an-answer">Fertility Questions and Answers</a></li>
+<li><a href="http://www.conceivingconcepts.com/news">News</a></li>
+<li><a href="http://www.conceivingconcepts.com/content/blog-categories">Blogs</a></li>
+</ul>
+<h4><a href="http://www.conceivingconcepts.com/learning/index.html">Fertility Overview</a></h4>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/female_causes.html">Female Infertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/male_causes.html">Male Infertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/diagnosis.html">Infertility Diagnosis</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/prevention.html">Infertility Prevention</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/hcg.html">hCG Levels</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/statistics.html">Infertility Statistics</a></li>
+<li><a href="http://www.conceivingconcepts.com/fertility-a-to-z.html">Fertility A to Z</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/adoption.html">Adoption</a></li>
+</ul>
+<h4><a href="http://www.conceivingconcepts.com/learning/causes.html">Infertility Causes</a></h4>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/lifestyle.html">Lifestyle and Infertility </a></li>
+<li><a href="http://www.conceivingconcepts.com/causes/female-infertility/std-s-and-infertility">STDs and Infertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/causes/age-and-fertility">Age and Fertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/female_causes.html">Female Infertility Causes</a>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/causes/female-infertility/pcos">PCOS</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/endo.html">Endometriosis</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/pof.html">POF</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/prolactin.html">High Prolactin</a></li>
+</ul>
+</li>
+<li><a href="http://www.conceivingconcepts.com/learning/male_causes.html">Male Infertility Causes</a>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/causes/male-infertility/cancer-and-male-infertility">Cancer and Male Infertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/causes/male-infertility/varicocele">Variocele</a></li>
+</ul>
+</li>
+</ul>
+<h4><a href="http://www.conceivingconcepts.com/learning/treatment.html">Treatment</a></h4>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/fertility_clinics.html">Fertility Clinics</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/female_diagnosis.html">Female Testing</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/male_diagnosis.html">Male Testing</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/infertility-treatment-complications">Infertility Treatment Complications</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/making-treatment-decisions">Infertility Treatment Decisions</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/sterilization-reversal">Sterilization Reversal</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/ovulation-induction.html">Ovulation Induction</a>
+</li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/assisted-reproduction-techniques.html">Assisted Reproduction</a>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/aec.html">AEC</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/azh.html">AZH</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/icsi.html">ICSI</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/ivf.html">IVF</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/pgd.html">PGD</a></li>
+</ul>
+</li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/fertility_drugs.html">Fertility Drugs</a>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/0020.html">Clomid</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/ovulation-induction/fertility-drugs/letrozole-femara">Letrozole</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/ovulation-induction/fertility-drugs/bromocriptine-parlodel">Bromocriptine</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/ovulation-induction/fertility-drugs/estrogen">Estrogen</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/ovulation-induction/fertility-drugs/follistim-and-gonal">Follistim</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/progesterone.html">Progesterone</a></li>
+<li><a href="http://www.conceivingconcepts.com/infertility-treatment/ovulation-induction/fertility-drugs/metformin-glucophage">Metformin</a></li>
+</ul>
+</li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/3rd-party-reproduction.html">Third Party Reproduction</a>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/embryo.html">Donor Embryo</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/iui.html">Insemination (IUI)</a>
+</li><li><a href="http://www.conceivingconcepts.com/learning/articles/surrogacy.html">Surrogacy </a></li>
+</ul>
+</li>
+<li><a href="http://www.conceivingconcepts.com/learning/infertility-insurance.html">Infertility Insurance</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/semen-analysis.html">Semen Analysis</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/increase-male-fertility.html">Improve Male Fertility</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/fertility-tests.html">Fertility Tests</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/infertility-insurance.html">Infertility Insurance</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/0002.html">Alternative Treatment</a></li>
+<li><a href="http://www.conceivingconcepts.com/content/infertility-treatment/why-you-need-an-infertility-consultant">Infertility Consultants</a></li>
+</ul>
+<h4><a href="http://www.conceivingconcepts.com/learning/articles/healthypregnancy.html">Pregnancy</a></h4>
+<ul>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/starters.html">Sex Positions</a></li>
+<li><a href="http://www.conceivingconcepts.com/pregnancy/combat-morning-sickness">Morning Sickness</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/smoking.html">Smoking and Pregnancy</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/0011.html">Caffeine and Pregnancy</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/first-trimester.html">First Trimester</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/third-trimester.html">Third Trimester</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/pregnancy-diet.html">Pregnancy Diet</a></li>
+<li><a href="http://www.conceivingconcepts.com/learning/articles/miscarriage.html">Miscarriage Myths</a></li>
+</ul>
+</div>
+</div>
+
+<!--/* OpenX IFrame tag */-->
+<iframe id="83d50361a3" name="83d50361a3" src="http://ox-d.cloud9-media.net/w/1.0/afr?auid=482976&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="160" height="600"><a href="http://ox-d.cloud9-media.net/w/1.0/rc?cs=83d50361a3&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ox-d.cloud9-media.net/w/1.0/ai?auid=482976&cs=83d50361a3&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe>
+                                    </div> 
+
+				<div id="cont-col">
+					<div class="ind">
+												<h1>Antioxidants do not increase fertility</h1><div class="byline">Submitted by <a title="View user profile." href="/users/shelbydburns">Shelby D Burns</a> Tue 08/13/2013</div>          
+              
+                                                                                                                        <div class="slideshow"></div>
+                        <!-- START MAIN CONTENT -->
+                        <div class="node">
+	  
+  
+    <div class="content"><div class="all-attached-images"><div class="image-attach-body image-attach-node-4659" style="width: 160px;"><a href="/image/woman-17"><img src="http://www.conceivingconcepts.com/sites/default/files/images/00443686_12.news2.jpg" alt="woman" title="woman"  class="image image-news2 " width="160" height="125" /></a></div>
+</div><p><strong>Antioxidants do not improve a woman’s chances of conceiving as have been suggested in previous studies. </strong> This is according to a new study from the University of Auckland, New Zealand.   Women who take oral antioxidants are no more likely to conceive and there was “limited information” about potential harmful effects. </p>
+<h2>A quarter of women in fertility treatments take supplements</h2>
+<p>Many people who look to help their fertility take supplements.  Around 25% of people planning to have a baby experience trouble conceiving and many take antioxidants to increase their chances of getting pregnant. These researchers though say there is no sufficient evidence that this is the case.  They add that many of the antioxidants taken are unregulated with little safety testing. </p>
+<h2>No increase in pregnancies</h2>
+<p>Researchers analyzed data from 28 trials involved over 3500 women undergoing fertility treatment.  Treatment ranged from 12 days to two years.  Analysis showed that a variety of antioxidants were used during these fertility treatments.  They included:  Octatron, multiple micronutrients and Fertility Blend, N-acetylcysteine, melatonin, L-arginine, vitamin E, Myo-inositol, vitamin C, vitamin D and calcium, and omega-3 polyunsaturated fatty acids.  <strong>Compared to women taking placebos or being given standard treatments with folic acid, there was no significant increase of women taking antioxidants getting pregnant. </strong></p>
+<h2>No harmful effect either</h2>
+<p>When it comes to potential side effects of women taking antioxidants as part of fertility treatment, some theories have circulated that the antioxidants could be the cause of fertility problems in females. This research did not find any adverse side effects compared to women who used standard treatment.  </p>
+<p>“Antioxidants were not associated with an increased live birth rate or clinical pregnancy rate.  Variation in the types of antioxidants given meant that we could not assess whether one antioxidant was better than another.  There did not appear to be any association of antioxidants with adverse effects for women, but data for these outcomes were limited,” the authors concluded. </p>
+<p>Source:  MedicalNewsToday, The Cochrane Library</p>
+</div>
+    <br />
+            <div class="links"><ul class="links inline"><li class="comment_forbidden first last"></li>
+</ul></div>
+        <div class="clear"></div>
+    </div>                        <div class="block block-block" id="block-block-80">
+  <div class="title">
+	  <h3></h3>
+  </div>
+  <div class="content"><script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  'http://cdn.taboola.com/libtrc/lgmedia-network/loader.js');
+</script><div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-a',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+</script><script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script></div>
+</div>
+
+<!--/* OpenX IFrame tag */-->
+<iframe id="36e5116631" name="36e5116631" src="http://ox-d.cloud9-media.net/w/1.0/afr?auid=537236716&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="300" height="250"><a href="http://ox-d.cloud9-media.net/w/1.0/rc?cs=36e5116631&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ox-d.cloud9-media.net/w/1.0/ai?auid=537236716&cs=36e5116631&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe>
+
+
+<div class="block block-block" id="block-block-36">
+  <div class="title">
+	  <h3></h3>
+  </div>
+  <div class="content"><div class="clear">&nbsp;</div>
+<div id="disclaimer">
+  <img src="http://www.deepdivemedia.net/images/disclaimer-icon.gif" alt="disclaimer" width="25" height="25">
+  <p>The information provided on ConceivingConcepts.com is designed to support, not replace, the relationship that exists between a patient/site visitor and his/her health professional. This information is solely for informational and educational purposes. The publication of this information does not constitute the practice of medicine, and this information does not replace the advice of your physician or other health care provider. Neither the owners or employees of ConceivingConcepts.com nor the author(s) of site content take responsibility for any possible consequences from any treatment, procedure, exercise, dietary modification, action or application of medication which results from reading this site. Always speak with your primary health care provider before engaging in any form of self treatment. See our <a href="http://www.conceivingconcepts.com/legal.html">Legal Statement</a> for more details.</p>
+</div></div>
+</div><div class="block block-block" id="block-block-84">
+  <div class="title">
+	  <h3></h3>
+  </div>
+  <div class="content"><script src="http://Q1MediaHydraPlatform.com/ads/video/unit_desktop_impact_right.php?eid=19606"></script><div class="clear"></div>
+</div>
+</div><div class="block block-block" id="block-block-86">
+  <div class="title">
+	  <h3></h3>
+  </div>
+  <div class="content"><script>
+
+      // block the search submit and forward to a url
+      jQuery('#search-theme-form:not(.processed)').addClass('processed').submit(function(){
+        // check to see if we are showing and the click needs to be a submit
+        var text = $('input[type="text"]', $(this)).val();
+        if(text.length) {
+          var search_url = "http://searchresults.conceivingconcepts.com/results/?q=" + text.split(' ').join('%20');
+          window.location = search_url;
+        }
+
+        return false;
+      });
+
+</script></div>
+</div>					</div>
+				</div> <!-- /cont-col -->
+
+				<!-- Right column -->
+				<div id="right-col">
+					                    
+
+<!--/* OpenX IFrame tag */-->
+<iframe id="90a28e4a96" name="90a28e4a96" src="http://ox-d.cloud9-media.net/w/1.0/afr?auid=482975&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="300" height="250"><a href="http://ox-d.cloud9-media.net/w/1.0/rc?cs=90a28e4a96&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ox-d.cloud9-media.net/w/1.0/ai?auid=482975&cs=90a28e4a96&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe>
+<div class="block block-block" id="block-block-37">
+  <div class="title">
+	  <h3>Fertility Clinics Directory</h3>
+  </div>
+  <div class="content"><h2>Find a Fertility Clinic</h2>
+<p>If you or a loved one is suffering from infertility and needs help conceiving then we are here to offer help in any way we can. We have over 450 Fertility Clinics listed on our Directory.  <a href="http://www.conceivingconcepts.com/learning/fertility_clinics.html">Click here to search for a Fertility Clinic that is right for you</a>. </p>
+</div>
+</div>
+
+<!--/* OpenX IFrame tag */-->
+<iframe id="36e5116631" name="36e5116631" src="http://ox-d.cloud9-media.net/w/1.0/afr?auid=537236716&cb=INSERT_RANDOM_NUMBER_HERE" frameBorder="0" frameSpacing="0" scrolling="no" width="300" height="250"><a href="http://ox-d.cloud9-media.net/w/1.0/rc?cs=36e5116631&cb=INSERT_RANDOM_NUMBER_HERE" ><img src="http://ox-d.cloud9-media.net/w/1.0/ai?auid=537236716&cs=36e5116631&cb=INSERT_RANDOM_NUMBER_HERE" border="0" alt=""></a></iframe>
+
+
+									</div>
+			</div> <!-- /cont -->
+		</div> <!-- /main -->
+
+		<div id="footer">
+            <div class="foot">
+				                <p>Company Information</p>
+<p><a href="http://www.conceivingconcepts.com/legal.html">Legal Statement</a> | <a href="http://www.conceivingconcepts.com/privacy_policy.html">Privacy Policy</a> | <a href="http://www.conceivingconcepts.com/content/support/aboutcontact#advertising">Advertise With Us</a> | <a href="http://www.conceivingconcepts.com/content/support/aboutcontact">Contact Us</a></p>
+
+<p>©2016 Conceivingconcepts.com. All rights reserved. Use of this site constitutes acceptance of Conceivingconcepts.com's terms of service and privacy policy. The material on this site is for informational purposes only, and is not a substitute for medical advice, diagnosis or treatment provided by a qualified health care provider.</p>                            </div>
+		</div>
+	</div>   <!-- /CONTAINER -->
+
+<!-- start Vibrant Media IntelliTXT script section -->
+<script type="text/javascript" src="http://conceivingconcepts.us.intellitxt.com/intellitxt/front.asp?ipid=12918"></script>
+<!-- end Vibrant Media IntelliTXT script section -->
+
+<div><a href="/drupal"></a></div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-40758615-16"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2b53033680","applicationID":"67610117","transactionName":"NlUDMUZRWBcEVxIMCw8fIAZAWVkKSloJAQE+QAACUW9ADQBD","queueTime":0,"applicationTime":294,"atts":"GhIARw5LSxk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

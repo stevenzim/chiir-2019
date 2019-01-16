@@ -1,0 +1,25 @@
+{% extends "layout_pre_decision_post.html" %}
+{% block survey %}
+
+
+<div class="form_description">
+    <h2>Questions (Understanding your prior knowledge of treatment and health issue): <label style="color:red;">{{ message }}</label> </h2>
+</div>
+
+<form  method="post">
+    <label class="statement">How knowledgeable are you of this health issue?</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.health_question }}
+    </ul>
+
+    <label class="statement">What level of knowledge do you have in regards to this treatment?</label>
+    <ul class='likert'>
+        {{ form.hidden_tag() }} {{ form.treatment_question }}
+    </ul>
+
+</form>
+<div class="buttons">
+    <button class="grey">Submit</button>
+
+</div>
+{% endblock %}

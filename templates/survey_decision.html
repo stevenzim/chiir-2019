@@ -1,0 +1,34 @@
+{% extends "layout_pre_decision_post.html" %} 
+{% block survey %}
+
+<div class="form_description">
+    <li id="li_1">
+        <label class="description" for="element_1">
+            <h2>Decision Definitions: <label style="color:red;">{{ message }}</label> </h2>
+            <i>helpful: </i> The medical treatment <b>helps</b> if the treatment is effective and has a direct positive influence on the specified illness.
+            <br>
+            <br>
+            <i>inconclusive: </i> The effectiveness of a medical treatment is <b>inconclusive</b> if medical professionals are still unsure if the treatment will have a positive, negative or no influence on the specified illness.
+            <br>
+            <br>
+            <i>does not help: </i> The medical treatment <b>does not help</b> if the treatment is ineffective and either has no effect or has a direct negative influence on the specified illness.
+            <br>
+            <br>
+        </label>
+</div>
+
+{#
+<div class="form_description"> #}
+    <h2>Please make your decision about  this treatment </h2> 
+{# </div> #}
+<div class="buttons">
+    <input class="grey" type="button" value="Helpful" onclick="window.location.href='{{url_for('decision', participant_id=payload.participant_state.participant_id, decision='helpful') }}'" />
+    <input class="grey" type="button" value="Inconclusive" onclick="window.location.href='{{url_for('decision', participant_id=payload.participant_state.participant_id, decision='inconclusive') }}'" />
+    <input class="grey" type="button" value="Does not Help" onclick="window.location.href='{{url_for('decision', participant_id=payload.participant_state.participant_id, decision='nothelpful') }}'" />
+</div>
+{# <div class="buttons" method="POST">
+    <button class="grey" name="decision_button" value="helpful">Helpful</button>
+    <button class="grey" name="decision_button" value="inconclusive">Inconclusive</button>
+    <button class="grey" name="decision_button" value="helpful">Does not Help</button>
+</div> #}
+{% endblock %}

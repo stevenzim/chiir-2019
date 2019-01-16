@@ -1,0 +1,17 @@
+{
+    "click_type": "arrival",
+    "experiment_state": 17,
+    "interface_name": "baseline",
+    "interface_type": "decision",
+    "log_type": "clicks",
+    "page_id": "H_00000225",
+    "page_rank": "7",
+    "pagination_num": "0",
+    "participant_id": "T0001",
+    "privacy_switch_default": true,
+    "random_seed": 9,
+    "task_id": "T7",
+    "time_logged": "2018-09-24 21:47:50",
+    "uuid": "0caff166-7903-416d-a3a9-9a7a0326d7ec",
+    "variant_id": "1"
+}

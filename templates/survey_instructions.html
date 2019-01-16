@@ -1,0 +1,35 @@
+{% extends "instructions_layout.html" %}
+{% block survey %}
+            <div class="wrap">
+
+                <div class="form_description">
+                    <h2>Questions: <label style="color:red;">{{ message }}</label> </h2>
+                </div>
+
+                <form method="post">
+                    <label class="statement">You have 3 possible decisions available to you for each treatment and health issue?</label>
+                    <ul class='likert'>
+                        {{ form.hidden_tag() }} {{ form.decision_question_1 }}
+                    </ul>
+
+{#                     <label class="statement">There are only 2 possible decisions available to you for each treatment and health issue?</label>
+                    <ul class='likert'>
+                        {{ form.hidden_tag() }} {{ form.decision_question_2 }}
+                    </ul> #}
+
+                    <label class="statement">Including the practice questions, there are 12 medical questions for which you will provide a decision? </label>
+                    <ul class='likert'>
+                        {{ form.hidden_tag() }} {{ form.task_question_1 }}
+                    </ul>
+
+{#                     <label class="statement">1 of these tasks will be used for practice?</label>
+                    <ul class='likert'>
+                        {{ form.hidden_tag() }} {{ form.task_question_2 }}
+                    </ul> #}
+
+                </form>
+                <div class="buttons">
+                    <button class="grey">Submit Answers</button>
+                </div>
+            </div>
+{% endblock %}

@@ -1,0 +1,2072 @@
+{
+    "1": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "11": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "14": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "17": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "23": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "26": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "29": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "32": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "35": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "38": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        }
+    },
+    "10": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "11": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "14": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "17": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "23": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "26": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "29": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "32": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "35": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "38": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        }
+    },
+    "2": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "11": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "14": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "17": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "23": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "26": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "29": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "32": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "35": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "38": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        }
+    },
+    "3": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "11": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "14": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "17": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "23": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "26": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "29": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "32": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "35": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "38": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "8": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        }
+    },
+    "4": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "11": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "14": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "17": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "23": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "26": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "29": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "32": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "35": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "38": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        }
+    },
+    "5": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "11": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "14": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "17": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "23": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "26": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "29": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "32": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "35": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "38": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "8": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        }
+    },
+    "6": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "11": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "14": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "17": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "23": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "26": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "29": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "32": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "35": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "38": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        }
+    },
+    "7": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "11": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "14": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "17": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "23": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "26": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "29": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "32": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "35": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "38": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        }
+    },
+    "8": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "11": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "14": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "17": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "23": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "26": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "29": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "32": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "35": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "38": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "8": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        }
+    },
+    "9": {
+        "0": {
+            "interface_name": "login_screen",
+            "interface_type": "static",
+            "task_id": "login"
+        },
+        "1": {
+            "interface_name": "instruction_page",
+            "interface_type": "static",
+            "task_id": "instruction"
+        },
+        "10": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T9"
+        },
+        "11": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T9"
+        },
+        "12": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T9"
+        },
+        "13": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T2"
+        },
+        "14": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T2"
+        },
+        "15": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T2"
+        },
+        "16": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T1"
+        },
+        "17": {
+            "interface_name": "nudge_rank",
+            "interface_type": "decision",
+            "task_id": "T1"
+        },
+        "18": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T1"
+        },
+        "19": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T6"
+        },
+        "2": {
+            "interface_name": "survey_instructions",
+            "interface_type": "static",
+            "task_id": "survey_instruct"
+        },
+        "20": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T6"
+        },
+        "21": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T6"
+        },
+        "22": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T4"
+        },
+        "23": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "T4"
+        },
+        "24": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T4"
+        },
+        "25": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T10"
+        },
+        "26": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "T10"
+        },
+        "27": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T10"
+        },
+        "28": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T7"
+        },
+        "29": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T7"
+        },
+        "3": {
+            "interface_name": "survey_prev_experience",
+            "interface_type": "static",
+            "task_id": "survey_previous"
+        },
+        "30": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T7"
+        },
+        "31": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T8"
+        },
+        "32": {
+            "interface_name": "nudge_filter",
+            "interface_type": "decision",
+            "task_id": "T8"
+        },
+        "33": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T8"
+        },
+        "34": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T5"
+        },
+        "35": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T5"
+        },
+        "36": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T5"
+        },
+        "37": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "T3"
+        },
+        "38": {
+            "interface_name": "nudge_stoplight",
+            "interface_type": "decision",
+            "task_id": "T3"
+        },
+        "39": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "T3"
+        },
+        "4": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-2"
+        },
+        "40": {
+            "interface_name": "exit_page",
+            "interface_type": "static",
+            "task_id": "exit_qualtrics"
+        },
+        "5": {
+            "interface_name": "control",
+            "interface_type": "decision",
+            "task_id": "Practice-2"
+        },
+        "6": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-2"
+        },
+        "7": {
+            "interface_name": "survey_pre_task",
+            "interface_type": "decision_pre",
+            "task_id": "Practice-1"
+        },
+        "8": {
+            "interface_name": "baseline",
+            "interface_type": "decision",
+            "task_id": "Practice-1"
+        },
+        "9": {
+            "interface_name": "survey_post_task",
+            "interface_type": "decision_post",
+            "task_id": "Practice-1"
+        }
+    }
+}

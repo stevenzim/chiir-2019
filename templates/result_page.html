@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <div class="header" id="myHeader">
+            <!-- BUTTON TO GO BACK TO RESULTS -->
+
+            <div class="buttons">
+
+                <button class="grey" name="back_to_results" value="back_to_results"><b>&lt&lt Back to Results</b></button>
+            </div>
+
+        </div>
+        <script type=text/javascript src="{{url_for('static', filename='js/header.js') }}"></script>
+
+        {# <img src="resources/data/annotations/web_page_images/httpbayviewdental.com20170222teeth-sealants.jpg"> #}
+        <img src="{{url_for('static', filename=image_path)}}" /> {# <img src="{{url_for('static', filename='webpage_img/httpsasthma.netlivingcoffee-whats-the-deal.jpg')}}" /> #}
+
+<!-- HIDDEN RESULTS USEFUL FOR POST -->
+<input hidden type="text" value="{{ click_dict.page_id  }}" name="page_id">
+<input hidden type="text" value="{{ click_dict.page_rank  }}" name="page_rank">
+<input hidden type="text" value="{{ click_dict.pagination_num  }}" name="pagination_num">
+
+<input hidden type="text" value="{{ payload.participant_state.participant_id  }}" name="participant_id">
+<input hidden type="text" value="{{ payload.participant_state.privacy_switch_default  }}" name="privacy_switch_default">
+<input hidden type="text" value="{{ payload.participant_state.variant_id  }}" name="variant_id">
+    </form>
+</body>
+
+
+</html>

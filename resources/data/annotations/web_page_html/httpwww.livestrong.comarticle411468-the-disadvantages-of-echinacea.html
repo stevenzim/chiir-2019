@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html class="livestrong en-US" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" data-channel="livestrong">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta charset="utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVVVUGwYGXVNQBgE="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta name="cachetime" content="20180907005636"/>
+<meta name="description" content="Echinacea is a medicinal herb first used by Native Americans to treat infections. Today, it is most often used to treat the common cold. It is unclear if..."/>
+<title>The Disadvantages of Echinacea | LIVESTRONG.COM</title>
+<meta name="google-site-verification" content="Zpt5B5Q5IH3uzuI4AilnP5Szp5o47SV6jLT0HKx0LCg"/>
+<meta name="last_updated" content="2017-10-03T11:11:21.924000"/>
+<meta name="last_rcp_import" content="2016-11-04T22:45:54.751000"/>
+<meta name="s_origin" content="ls-new"/>
+<link href="https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/" rel="canonical"/>
+<link href="//muyfitness.com/desventajas-equinacea-info_17742/" rel="alternate" hreflang="es"/><link href="//www.livestrong.com/article/411468-the-disadvantages-of-echinacea/" rel="alternate" hreflang="en-us"/>
+<meta name="ustatus" content="1"/>
+<meta name="api_server" content="livestrongapi.demandmedia.com"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@livestrong_com"/>
+<meta name="featured-articles" content="https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/"/>
+<meta name="author" content="Louise Lyon"/>
+<meta name="publish-date" content="03/30/2011"/>
+<meta name="articleimage" content="//img.aws.livestrongcdn.com/ls-hp-1920-image/ds-photo/getty/article/240/179/484837632.jpg"/>
+<meta property="og:image" content="https://img.aws.livestrongcdn.com/ls-1200x630/ds-photo/getty/article/240/179/484837632.jpg"/>
+<meta property="og:url" content="https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:title" content="The Disadvantages of Echinacea"/>
+<meta property="og:description" content="Echinacea is a medicinal herb first used by Native Americans to treat infections. Today, it is most often used to treat the common cold. It is unclear if echinacea works, as the research evidence is conflicting. Echinacea is also used to treat other infections like the flu, herpes and ear infections, but its effectiveness is unproven. Echinacea can..."/>
+<meta property="fb:app_id" content="49285624359"/>
+<meta property="fb:ttl" content="604800"/>
+<meta property="fb:pages" content="170615319988"/>
+<meta property="og:site_name" content="LIVESTRONG.COM"/>
+<meta name="msvalidate.01" content="5F1B06EBE88583F1C05B9114514366ED"/><meta name="msapplication-tooltip" content="Empowering Life&#039;s Healthy Achievements"/><meta name="msapplication-window" content="width=1500;height=900"/><meta name="msapplication-task" content="name=MyPlate;action-uri=http://www.livestrong.com/myplate/;icon-uri=/media/images/ico/myplate.ico"/><meta name="msapplication-task" content="name=Fitness;action-uri=/fitness/;icon-uri=/media/images/ico/fitness_icon.ico"/><meta name="msapplication-task" content="name=Health;action-uri=/health/;icon-uri=/media/images/ico/health.ico"/><meta name="msapplication-task" content="name=Diet &amp; Nutrition;action-uri=/diet-and-nutrition;icon-uri=/media/images/ico/diet.ico"/><!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="//www.livestrong.com/favicon.ico"><![endif]-->
+<link href="//www.livestrong.com/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed"/>
+<link href="//www.livestrong.com/favicon.png" rel="icon"/>
+<link href="https://plus.google.com/110346285354241363829" rel="publisher"/><link rel="stylesheet" type="text/css" href="//dynamic02.livestrongcdn.com/services/modules/css/common_header,article-1-page/4ce50411/"/><link type="text/css" href="//static.livestrongcdn.com/content/compressed/authorbio-6f5b00bc.css" rel="stylesheet"/>
+<script>window._omnitureLinkSetDomain = 'extended.dmtracker.com';</script>
+<script>
+		var dmjs = dmjs || {};
+
+		/* Core DMJS configuration */
+		dmjs.global = dmjs.global || {};
+		dmjs.global.quantcast={"appId":"p-4dIM5nVs2rFio","labels":"Livestrong.Food and Drink"};dmjs.global.glbBaseUrl="https:\/\/www.livestrong.com";dmjs.global.facebook={"app_id":"49285624359","api_version":"v2.5","login_service":"https:\/\/www.livestrong.com\/services\/fb\/login\/","comment_service":"https:\/\/www.livestrong.com\/services\/comment\/refresh\/","lazy_load":false};dmjs.urls={"cdn":"\/\/static.livestrongcdn.com","dmtracker":"vs.dmtracker.com"};dmjs.global.IN_PRODUCTION=true;dmjs.global.pool="default";dmjs.global.skin="livestrong";dmjs.global.athleta=true;dmjs.global.styleframes={"t_food_drink":"5164374306","t_diseases_conditions":"4398087546","t_sports_fitness":"1771924202","t_weight_management":"9458842532","t_health":"9215299958","t_fashion_style_personal_care":"7379474102","t_parenting":"1915216826","t_lifestyle":"7714516021","t_relationships_family":"1907655574","ls_testpool_default":"8281492230","ls_testpool_control":"2823127906","ls_testpool_test1":"9196964568","ls_testpool_test2":"5655328896","ls_testpool_test3":"2458319914","ls_landing_page":"2462011732","ls_infinite_scroll_1":"7859832165","ls_infinite_scroll_2":"9005392878","ls_infinite_scroll_3":"8089920548","ls_infinite_scroll_4":"1145238243","ls_testpool_default_top":"5047290356","ls_testpool_default_bottom":"1782477543","ls_testpool_control_top":"3642354121","ls_testpool_control_bottom":"3450782439","ls_testpool_test1_top":"4664146971","ls_testpool_test1_bottom":"9221983862","ls_testpool_test2_top":"1075900531","ls_testpool_test2_bottom":"4544372254","ls_testpool_test3_top":"5750121649","ls_testpool_test3_bottom":"1862847527"};dmjs.global._ad_info={"ad_test":"off","content_type_orig":"Article","dart_content_type":"freestyle","hints":"Food and Drink","ad_channel":"t_food_drink,diet_nutrition,text,adblock","radlinks_client_id":"ca-dailyplate_radlinks_js","ad_channel_160x600":"t_food_drink,diet_nutrition,text,adblock","adsense_client_160x600":"ca-livestrong_html","ad_channel_336x280":"t_food_drink,diet_nutrition,text,adblock","adsense_client_336x280":"ca-livestrong_html","ad_channel_300x250":"t_food_drink,diet_nutrition,text,adblock","adsense_client_300x250":"ca-livestrong_html","ad_channel_728x90":"t_food_drink,diet_nutrition,text,adblock","adsense_client_728x90":"ca-livestrong_html","adsense_client_mobile_300x250":null,"adsense_client_mobile_post_300x250":null,"adsense_client_mobile_320x50":null,"envr":"","revenue_tag":"t_food_drink","category":"Food and Drink","subcategory":"Diet and Nutrition","dart_art":7220763,"dart_cats":["fooddrink","dietnutrition","vitaminssupplements"],"dart_ctype":"articles","ctype":"articles","dart_tyn":null,"dart_vid":0,"dart_zone":"fooddrink\/dietnutrition\/vitaminssupplements","ipid":-1};dmjs.global.facebook.lazy_load=false;dmjs.global.rcp_results=false;dmjs.global.IsSlideStep=false;dmjs.global.article_id_jw={"format":"article","category":"diet and nutrition","id":"7220763"};dmjs.global.jw_selector={"1":[],"2":[],"3":{"article":true},"4":{"13710134":true,"13712420":true,"13712547":true,"13712508":true}};dmjs.global.page_type="article";
+		/* Add xdomain first event helper to be added before ad event listeners are added */
+		dmjs.xdomainFirstEventListener = true;
+		if (window.addEventListener) {
+			window.addEventListener("message", function(event){
+				if (typeof xdomain != 'undefined' && typeof xdomain.dmjsFirstEventListener != 'undefined') {
+					xdomain.dmjsFirstEventListener(event);
+				}
+			}, false);
+		} else {
+			window.attachEvent("message", function(event){
+				if (typeof xdomain != 'undefined' && typeof xdomain.dmjsFirstEventListener != 'undefined') {
+					xdomain.dmjsFirstEventListener(event);
+				}
+			});
+		}
+	</script>
+<!--[if lt IE 9]>
+<script src="//static.livestrongcdn.com/content/compressed/common_header_ie_legacy-6568f108.js"  ></script>
+<![endif]-->
+<!-- BEGIN Krux ControlTag for "livestrong.com" -->
+<script class="kxct" data-id="JZ1ubDnI" data-timing="async" data-version="3.0" type="text/javascript">
+		window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+		(function(){
+			var k=document.createElement('script');k.type='text/javascript';k.async=true;
+			k.src=(location.protocol==='https:'?'https:':'http:')+'//cdn.krxd.net/controltag/JZ1ubDnI.js';
+			var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+		}());
+	</script>
+<!-- END Krux ControlTag -->
+<!-- Krux Interchange -->
+<script>
+		window.Krux || ((Krux = function() {
+		  	Krux.q.push(arguments);
+		}).q = []);
+		(function() {
+			function retrieve(n) {
+				var m, k = 'kx' + n;
+				if (window.localStorage) {
+					return window.localStorage[k] || "";
+				} else if (navigator.cookieEnabled) {
+					m = document.cookie.match(k + '=([^;]*)');
+					return (m && unescape(m[1])) || "";
+				} else {
+					return '';
+				}
+			}
+			Krux.user = retrieve('user');
+			Krux.segments = retrieve('segs') && retrieve('segs').split(',') || [];
+		})();
+	</script>
+<!-- END Krux Interchange-->
+<script src="//dynamic01.livestrongcdn.com/services/modules/js/common_header/2a8ca7de/"></script><script src="//static.livestrongcdn.com/content/compressed/gpt-21097b80.js"></script>
+<script id="main-datalayer-push">
+    var dataLayer = window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+        'platform': 'website',
+        'author': 'Louise Lyon',
+        'last_updated': '2017-10-03T11:11:21.924000',
+        'image': 'https://img.aws.livestrongcdn.com/ls-hp-1920-image/ds-photo/getty/article/240/179/484837632.jpg',
+        'exp_name': 'desktop:default',
+        'category': 'Food and Drink',
+        'subcategory': 'Diet and Nutrition',
+        'subsubcat': 'Vitamins and Supplements',
+        'pagetype': 'article',
+        'subsubpagetype': 'Freestyle',
+        'publish_date': '03/30/2011',
+        'subpagetype': 'Article',
+        'studioid': '024c2d85-e9cb-4719-bb15-885c0dd596d8',
+        'contentid': '7220763',
+        'tags': []
+    });
+</script>	<script async src="//js-sec.indexww.com/ht/p/183706-263200072844875.js"></script>
+<script type='text/javascript'>
+	!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function()
+	{q("f",arguments)},setDisplayBids:function(){},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(
+		A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+	apstag.init({
+		pubID: '3066',
+		adServer: 'googletag'
+	});
+</script>
+<script src="//static.livestrongcdn.com/content/compressed/jquery-90f0a03d.js"></script><!--
+<PageMap>
+	<DataObject type="meta">
+		<Attribute name="articlethumbnail"><![CDATA[http://photos.demandstudios.com/getty/article/240/179/484837632.jpg]]></Attribute>
+		<Attribute name="articletype"><![CDATA[professional]]></Attribute>
+	</DataObject>
+</PageMap>
+-->
+<script type="text/javascript" src="//native.sharethrough.com/assets/sfp.js" defer></script>
+</head>
+<body class="Livestrong" data-skin="livestrong">
+<noscript>
+<iframe src="//www.googletagmanager.com/ns.html?id=GTM-M67BT3H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-M67BT3H');
+</script><div id="fb-root"></div>
+<header class="top_header js-top_header" data-section="header">
+<div class="top_header__container--level1 header_container">
+<section class="top_header__user_activity">
+<div class="js-top_header__loggedin top_header__loggedin top_header--username">
+<div class="top_header__links">
+<span id="avatar_image"></span>
+<span class="avatar_welcome">Hello, <span class="avatar_username" id="loggedin_username"> </span></span>
+</div>
+<section class="top_header__popup--loggedin">
+<ul>
+<li class="top_header__primary_nav__items top_header__primary_nav__items--upgrade">
+<a id="js-upgrade_gold" href="//www.livestrong.com/upgrade/" class="top_header__links--overlay upgrade_gold">
+<img class="icon-gold-badge" alt="Gold Member Badge" src="//static.livestrongcdn.com/livestrong/ui/images/gold-badge.png">
+<span class="upgrade_gold__title">
+UPGRADE TO GOLD FOR ADDITIONAL BENEFITS
+<span class="upgrade_gold__carrot icon-right-open-big"></span>
+</span>
+</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a id="js-user_profile" class="top_header__links--overlay icon-nav-profile">Profile
+</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a class="top_header__links--overlay icon-nav-track" href="//www.livestrong.com/myplate/dashboard/track/">Track</a>
+</li>
+<li class="top_header__primary_nav__items ">
+<a class="top_header__links--overlay icon-nav-exercise" href="//www.livestrong.com/myplate/dashboard/workouts/">Exercise</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a class="top_header__links--overlay icon-nav-progress" href="//www.livestrong.com/myplate/dashboard/goals/">Progress</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a class="top_header__links--overlay icon-nav-community" href="//www.livestrong.com/conversations/">Community</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a class="top_header__links--overlay icon-nav-inbox" href="//www.livestrong.com/messages/">Inbox</a>
+</li>
+<li class="top_header__primary_nav__items">
+<a class="top_header__links--overlay icon-nav-settings" href="//www.livestrong.com/settings/account/">Settings</a>
+</li>
+</ul>
+<a class="top_header__links--button" href="//www.livestrong.com/logout/">Log Out</a>
+</section>
+</div>
+<div class="top_header_signin_reg js-signin_reg">
+<div class="top_header--signup">
+<a href="//www.livestrong.com/register/" data-gtm-event="navHeader" data-gtm-info="primary" class="top_header__links top_header__links--pipe">Sign Up </a>
+</div>
+<div class="top_header--signin js-top_header--signin">
+<span data-gtm-event="navHeader" data-gtm-info="primary" class="top_header__links"> Log In</span>
+<section class="top_header__popup--signin">
+<form class="top_header__form" method="post" id="js-login_form" action="https://www.livestrong.com/login/">
+<label class="top_header__form__label" class="clear">Log In</label>
+<p class="top_header__error_field js-top_header__error_field"></p>
+<input type="text" name="login_username" required id="login_username" placeholder="USERNAME" autocomplete="off" class="top_header__form__input"/>
+<input type="password" name="login_password" id="login_password" required placeholder="PASSWORD" class="top_header__form__input"/>
+<fieldset class="top_header__signin_form__fieldset">
+<input name="autologin" type="checkbox" value="1" id="keep_me_logged_in"/>
+<label class="top_header__signin_form__textlabel" for="keep_me_logged_in">Keep me logged in</label>
+</fieldset>
+<fieldset class="top_header__signin_form__fieldset top_header__signin_form__remind">
+<a class="top_header__links--form_links" href="//www.livestrong.com/remind/">Forgot your password?</a>
+</fieldset>
+<input name="submit" class="top_header__links--button top_header__form__submit" type="submit" value="Log In">
+</form>
+</section>
+</div>
+</div>
+<a class="top_header__links--upgrade" href="//www.livestrong.com/upgrade/"><img class="icon-gold-badge" alt="Gold Member Badge" src="//static.livestrongcdn.com/livestrong/ui/images/gold-badge.png"></a>
+<div id="event_notifier" data-lsapp-cmd="event_notifier">
+<span data-lsapp-cmd="event_notifier" class="count">0</span>
+<div id="event_history_wrapper">
+<header>
+<h2>Notifications</h2>
+<div data-lsapp-cmd="notification_settings" class="notification_settings" id="notification_settings" title="Settings">
+<ul id="notification_settings_menu" data-lsapp-cmd="notification_settings_menu">
+<li><a class="toggle_notifications" data-lsapp-cmd="toggle_notifications">Notifications</a></li>
+<li><a href="/settings/account/" data-lsapp-cmd="user_preferences">User Preferences</a></li>
+</ul>
+</div>
+</header>
+<ul class="event_history" data-lsapp-cmd="event_history">
+<li class="no_notifications recent_notifications">You're all caught up!</li>
+<script id="notification_history" data-lsapp-cmd="notification_history" type="text/html">
+				<li data-lsapp-cmd="[!= notification_obj !]">
+					<div class="notification_meta">
+						<a href="/profile/[!= from !]" title="[!= from !]"><img src="[!= from_avatar !]" data-lsapp-cmd="avatar" alt="[!= from !]" class="avatar"/></a>
+						<span data-lsapp-cmd="last_notification" class="timestamp" data-timestamp="[!= timestamp !]">[!= offset !]</span>
+					</div>
+					<div class="user_notification">
+						<a class="username" data-lsapp-cmd="username" href="/profile/[!= from !]">[!= from !]</a>
+						<p class="notification" data-lsapp-cmd="notification"><span class="context">[!= context !]</span>: <span class="message">[!= message !]</span></p>
+					</div>
+				</li>
+			</script>
+</ul>
+</div>
+</div>
+</section>
+<div class="top_header--right">
+<a class="top_header__links top_header__social_links" target="_blank" data-gtm-event="navSocial" data-gtm-info="twitter" href="https://twitter.com/LIVESTRONG_COM">
+<span class="icon-nav_twitter top_header__social_icons">&nbsp;</span>
+</a>
+<a class="top_header__links top_header__social_links" target="_blank" data-gtm-event="navSocial" data-gtm-info="youtube" href="https://www.youtube.com/user/livestrong">
+<span class="icon-nav_youtube top_header__social_icons">&nbsp;</span>
+</a>
+<a class="top_header__links top_header__social_links" target="_blank" data-gtm-event="navSocial" data-gtm-info="instagram" href="https://www.instagram.com/livestrong_com/">
+<span class="icon-nav_instagram top_header__social_icons">&nbsp;</span>
+</a>
+<a class="top_header__links top_header__social_links" target="_blank" data-gtm-event="navSocial" data-gtm-info="pinterest" href="https://www.pinterest.com/livestrongcom/">
+<span class="icon-nav_pinterest top_header__social_icons">&nbsp;</span>
+</a>
+<a class="top_header__links top_header__social_links" target="_blank" data-gtm-event="navSocial" data-gtm-info="facebook" href="https://www.facebook.com/livestrongcom">
+<span class="icon-nav_facebook-squared top_header__social_icons"></span>
+</a>
+</div>
+</div>
+<div class="top_header__container--level2 header_container">
+<section class="top_header__logo">
+<a href="//www.livestrong.com" data-gtm-event="navHeader" data-gtm-info="lsLogo" title="Livestrong.com">
+<img alt="Livestrong Logo" src="//static.livestrongcdn.com/livestrong/ui/images/livestrong_logo_horizontal.svg">
+</a>
+</section>
+<div class="header_divider">
+<nav class="top_header__nav" role="navigation">
+<ul>
+<li class="top_header__nav__item">
+<a class="top_header__links--nav" href="//www.livestrong.com/recipes/" data-gtm-event="navHeader" data-gtm-info="primary">Recipes</a>
+</li>
+<li class="top_header__nav__item">
+<a class="top_header__links--nav" href="//www.livestrong.com/cat/sports-and-fitness/" data-gtm-event="navHeader" data-gtm-info="primary">Fitness</a>
+</li>
+<li class="top_header__nav__item">
+<a class="top_header__links--nav" href="//www.livestrong.com/cat/health/" data-gtm-event="navHeader" data-gtm-info="primary">Health</a>
+</li>
+<li class="top_header__nav__item">
+<a class="top_header__links--nav" href="//www.livestrong.com/myplate/" data-gtm-event="navHeader" data-gtm-info="primary">MyPlate</a>
+</li>
+<li class="top_header__nav__item">
+<a class="top_header__links--nav" href="//www.livestrong.com/stronger-women/" data-gtm-event="navHeader" data-gtm-info="primary">Stronger Women</a>
+</li>
+<li class="top_header__nav__item top_header__nav__item--dropdown">
+<span class="top_header__links--nav arrow-down-icon" href="javascript: void(0)" data-gtm-event="navHeader" data-gtm-info="primary">More</span>
+<ul class="top_header__more_dropdown">
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/news/" data-gtm-event="navHeader" data-gtm-info="primary">News</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/food-and-drink/" data-gtm-event="navHeader" data-gtm-info="primary">Food</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/diseases-and-conditions/" data-gtm-event="navHeader" data-gtm-info="primary">Diseases & Conditions</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/lifestyle/" data-gtm-event="navHeader" data-gtm-info="primary">Lifestyle</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/fashion-style-personal-care/" data-gtm-event="navHeader" data-gtm-info="primary">Style & Beauty</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/parenting/" data-gtm-event="navHeader" data-gtm-info="primary">Parenting</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/relationships-and-family/" data-gtm-event="navHeader" data-gtm-info="primary">Relationships & Family</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/cat/weight-management/" data-gtm-event="navHeader" data-gtm-info="primary">Weight Management</a>
+</li>
+<li>
+<a class="top_header__more_dropdown--nav" href="//www.livestrong.com/tools/body-mass-calculator/" data-gtm-event="navHeader" data-gtm-info="primary">BMI Calculator</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form method="get" action="//www.livestrong.com/search/" id="siteSearch" class="top_header__search" data-gtm-event="navHeader" data-gtm-info="siteSearch">
+<input id="siteSearchInput" autocomplete="off" value="" type="text" name="search" data-module="searchbox" class="search_input">
+<input type="hidden" name="mode" value="standard">
+<button type="submit" class="icon-nav-search"></button>
+</form>
+</div>
+</div>
+</header>
+<script type="text/template" id="newsletter_template">
+		<div class="newsletter_signup_overlay newsletter_transparentbg"></div>
+
+		<div class="newsletter_signup_overlay">
+			<div class="newsletter_signup_overlay__body newsletter_body">
+				<div class="newsletter_body__header_icon--close">
+					<span class="close_icon newsletter_body__close"><span class="icon icon-cancel-circle"></span></span>
+				</div>
+
+				<div class="newsletter_body__header_text">
+					<p class="newsletter_header__title_2">GET 18 HIGH PROTEIN BREAKFAST RECIPES</p>
+					<p class="newsletter_header__title_1">When you sign up for the LIVE<span class="newsletter_bold">STRONG</span>.COM newsletter</p>
+				</div>
+
+				<div class="newsletter_body_signup">
+					<form class="newsletter_body_signup__form newsletter_form">
+						<input id="large_newsletter_listid" type="hidden" name="id" value="nl_opt_in">
+						<input type="hidden" id="email_pop_source" name="source" value="email_pop">
+						<div>
+							<input class="newsletter_form__email" type="email" placeholder="EMAIL ADDRESS" name="email">
+						</div>
+
+						<div class="newsletter_form__dropdown icon-down-open-big">
+							<select class="newsletter_form__select" name="man_woman">
+								<option class="placeholder" selected disabled value="">GENDER</option>
+								<option value="female">FEMALE</option>
+								<option value="male">MALE</option>
+							</select>
+						</div>
+
+						<div>
+							<input class="newsletter_form__submit submit" type="submit"  value="GET FREE RECIPES">
+						</div>
+
+						<div class="message newsletter_error_message">
+							<p class="newsletter_error_message--gender">Please select your gender.</p>
+							<p class="newsletter_error_message--email">Please enter a valid email address.</p>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="newsletter_signup_overlay--success success_overlay">
+
+				<div class="success_overlay__header_text">
+					<p class="success_overlay__salutation">
+						Awesome! Check your inbox for an e-mail with a link to download the recipes
+					</p>
+				</div>
+
+				<div>
+					<button type="button" class="newsletter_form__continue submit">
+						CLOSE
+					</button>
+				</div>
+			</div>
+		</div>
+	</script>
+<script data-schema="Organization" type="application/ld+json">
+  {
+	"@context": "http://schema.org",
+	"name": "LIVESTRONG.COM",
+	"url": "https://www.livestrong.com",
+	"logo": "http://www.livestrong.com/livestrong/ui/images/ls_logo.png",
+	"@type": "Organization",
+	"foundingDate": "2008-06-17",
+	"owns": {
+		"@type": "Product",
+		"name": "MyPlate Calorie Counter",
+		"aggregateRating": {
+			"bestRating": "5",
+			"ratingCount": "29717",
+			"ratingValue": "4.6"
+		},
+		"url": "https://www.livestrong.com/myplate/",
+		"image": "http://www.livestrong.com/livestrong/ui/images/myplate_logo.png"
+	},
+	"awards": [
+		"2018 Webby Award for Best Visual Design for MyPlate App",
+		"2012 Webby Award for Best Home/Welcome Page"
+	],
+	"sameAs": [
+		"https://www.facebook.com/livestrongcom",
+		"https://twitter.com/livestrong_com",
+		"http://instagram.com/livestrong_com",
+		"http://pinterest.com/livestrongcom",
+		"https://www.linkedin.com/company/livestrong-com/",
+		"https://www.youtube.com/user/Livestrong/",
+		"https://www.youtube.com/user/LivestrongWoman/",
+		"https://flipboard.com/@Livestrong"
+	],
+	"parentOrganization": {
+		"@type": "Organization",
+		"name": "Leaf Group",
+		"url": "https://www.leafgroup.com/"
+	}
+}
+</script>
+<div class="container article_body js-article_body" data-section="body">
+<div class="social_share_container js-social_share_container">
+<ul class="social_share_container__icon_list">
+<li class="social_share_container__icon_button social_share_container__facebook_icon">
+<a class="social_share_container__link icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F&utm_source=facebook&utm_medium=referral&utm_campaign=Social-Sharing" target="_blank" data-gtm-event="Social-Sharing-Icons" data-gtm-info="Facebook">
+</a>
+</li>
+<li class="social_share_container__icon_button social_share_container__pinterest_icon">
+<a class="social_share_container__link icon-pinterest" data-pin-do="true" href="https://www.pinterest.com/pin/create/button/?description=The%20Disadvantages%20of%20Echinacea&url=https%3A%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F&media=http%3A%2F%2Fphotos.demandstudios.com%2Fgetty%2Farticle%2F240%2F179%2F484837632.jpg&utm_source=pinterest&utm_medium=referral&utm_campaign=Social-Sharing" target="_blank" data-gtm-event="Social-Sharing-Icons" data-gtm-info="Pinterest"></a>
+</li>
+<li class="social_share_container__icon_button social_share_container__flipboard_icon">
+<a class="social_share_container__link icon-flipboard" data-pin-do="true" href="https://share.flipboard.com/bookmarklet/popout?v=2&title=The%20Disadvantages%20of%20Echinacea&url=https%3A%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F&utm_source=flipboard&utm_medium=referral&utm_campaign=Social-Sharing" target="_blank" data-gtm-event="Social-Sharing-Icons" data-gtm-info="Flipboard"></a>
+</li>
+<li class="social_share_container__icon_button social_share_container__twitter_icon">
+<a class="social_share_container__link icon-twitter" href="https://twitter.com/intent/tweet?text=The%20Disadvantages%20of%20Echinacea&url=https%3A%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F&via=livestrong_com&utm_source=twitter&utm_medium=referral&utm_campaign=Social-Sharing" target="_blank" data-gtm-event="Social-Sharing-Icons" data-gtm-info="Twitter"></a>
+</li>
+<li class="social_share_container__icon_button social_share_container__email_icon">
+<a class="social_share_container__link icon-mail" href="mailto:?subject=An article from LIVESTRONG.COM I thought you'd find interesting...&body=I thought you'd find this LIVESTRONG.COM article interesting.%0D%0A%0D%0AThe%20Disadvantages%20of%20Echinacea%0D%0Ahttps%3A%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F&utm_source=email&utm_medium=referral&utm_campaign=Social-Sharing" data-gtm-event="Social-Sharing-Icons" data-gtm-info="Email"></a>
+</li>
+<li class="social_share_container__icon_button share_count js-share_count" style="display:none;">
+<span class="share_count__body js-share_count__body"></span>
+<span class="shares_label js-shares_label"></span>
+</li>
+</ul>
+</div>
+<div class="AdUnit js-desktop_ad_728x90_990x90_970x250_atf" data-is-freestyle="true"></div>
+<div class="article_content_container">
+<!-- google_ad_section_start(weight="0") -->
+<ol id="Breadcrumbs" class="Grid12 Note Breadcrumbs container" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" data-module="breadcrumb">
+<li class="list">
+<a href="//www.livestrong.com/" rel="home" itemprop="url" class="title">
+<span itemprop="title">LIVESTRONG.COM</span>
+</a>
+</li>
+<li class="list" itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="//www.livestrong.com/cat/food-and-drink/" rel="directory" itemprop="url" class="title">
+<span itemprop="title">Food and Drink</span>
+</a>
+</li>
+<li class="list" itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="//www.livestrong.com/scat/diet-and-nutrition/" rel="directory" itemprop="url" class="title">
+<span itemprop="title">Diet and Nutrition</span>
+</a>
+</li>
+<li class="list" itemprop="child" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="//www.livestrong.com/sscat/vitamins-supplements/" rel="directory" itemprop="url" class="title">
+<span itemprop="title">Vitamins and Supplements</span>
+</a>
+</li>
+</ol>
+<!-- google_ad_section_end() -->
+<div class="article_content js-article_content">
+<article id="article" class="js-article" itemscope itemtype="http://schema.org/Article">
+<meta itemprop="url" content="//www.livestrong.com/article/411468-the-disadvantages-of-echinacea/"/>	<header class="clearfix article__header_card header_card article__header header js-article__header_card js-article_header">
+<div class="header__body">
+<h1 itemprop="name" content="The Disadvantages of Echinacea" id="nointelliTXT" class="header__title" data-dmc="article-headline" data-module="article-title">
+<span>The Disadvantages of Echinacea</span>
+</h1>
+<div class="header__information">
+by&nbsp;<span itemprop="author" content="Louise Lyon" class="header__author js-author" data-dmc="article-author">
+LOUISE LYON	</span>
+<time data-dmc="article-publishdate" class="article_published"> Oct. 03, 2017</time>
+</div>
+<section id="js-author_bio" class="author_bio js-author_bio ">
+<a class="close_icon"></a>
+<div class="image_wrapper">
+<img class="image" alt="author image" src="//img.aws.livestrongcdn.com/ls-author-bio/cme/cme_public_images/www_demandstudios_com/sitelife.studiod.com/ver1.0/Content/images/store/6/1/e6fda532-2899-41e2-b15a-9eef407b8a6e.Small.jpg"/>
+<span class="author_name">Louise Lyon</span>
+</div>
+<div class="about_author">Louise Lyon has been a writer since 1989. Her work has appeared in "Family Doctor," "AARP Bulletin," "Focus on Healthy Aging" and other national publications covering health and science. She holds a Master of Science degree from the Columbia University School of Journalism. </div>
+</section>
+</div>
+<div class="header__image_wrapper image--bottom_bar">
+<img class="header__image header__image--small" data-dmc="article-image" src="//img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/240/179/484837632.jpg" alt="The Disadvantages of Echinacea"/>
+<div class="content_card__camera_icon_wrapper js-content_card__camera_icon_wrapper js-header__icon_wrapper">
+<span class="content_card__camera_icon icon-camera_2"></span>
+</div>
+<div class="header__caption js-header__caption">
+<span data-dmc="image-caption">A close-up of an echinacea flower.</span>
+<span data-dmc="image-credit">
+Photo Credit: Holcy/iStock/Getty Images	</span>
+</div>
+<a class="content_card__pinterest_wrapper" href="https://www.pinterest.com/pin/create/button/?description=The Disadvantages of Echinacea&url=https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/&media=http://photos.demandstudios.com/getty/article/240/179/484837632.jpg" target="_blank">
+<div class="content_card__pinterest_button icon-pinterest"></div>
+</a>
+</div>
+</header>
+<div class="clear"></div>
+<div class="article_content_body">
+<section class="subsection article__section__step article_module_section"><p data-dmc="section" class="article-section__content">Echinacea is a medicinal herb first used by Native Americans to treat infections. Today, it is most often used to treat the common cold. It is unclear if echinacea works, as the research evidence is conflicting. Echinacea is also used to treat other infections like the flu, herpes and ear infections, but its effectiveness is unproven. Echinacea can cause side effects and may pose health risks for certain people. Talk to your doctor before taking echinacea.</p>
+<section class="jwplayer-section">
+<h2 class="jwplayer__label">
+Video of the Day
+</h2>
+<div class="jwplayer__container-outer js-jwplayer_container_outer">
+<div class="jwplayer__container js-jwplayer_container">
+<div id="jw-player">
+</div>
+<div class="jwplayer__close js-jwplayer_close">
+<span class="close-x"></span>
+</div>
+</div>
+</div>
+</section>
+</section><section class="subsection article__section__step article_module_section">	<h2 class="header"><span class="section-headline">Side Effects</span></h2>
+<p data-dmc="section" class="article-section__content">When used short-term, echinacea seems to cause few side effects but long term use has not been adequately studied, according to MedlinePlus. Potential side effects include fever, nausea, vomiting, stomach pain, diarrhea, constipation, sore throat, dry mouth, headache, numbness or tingling of the tongue, dizziness, sleep problems, confusion, joint pain and muscle aches.</p></section><section class="subsection article__section__step article_module_section">	<section class="article-module">
+<ul><li class="googleAd">
+<div id="DMINSTR" type="adimpression" data-type="adTracking">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Livestrong_Inline_SF_Desktop -->
+<ins class="adsbygoogle" style="display:inline-block;min-width:320px;max-width:1200px;width:100%;height:100px" data-ad-client="ca-pub-0316265116163263" data-ad-slot="2776439210"></ins>
+<script>
+		var my_google_ad_channel = '5164374306+8281492230+2462011732+5047290356' ;
+		(adsbygoogle = window.adsbygoogle || []).push({
+			params: { google_ad_channel: my_google_ad_channel}
+		});
+	</script>
+</div>
+</li></ul>
+</section>
+<h2 class="header"><span class="section-headline">Allergic Reactions</span></h2>
+<p data-dmc="section" class="article-section__content">Echinacea can cause serious allergic reactions, so if you have asthma or other allergies you should talk to your doctor before taking echinacea. People who are allergic to plants in the daisy family, including ragweed, mums, marigolds or daisies are at particular risk. Some people use echinacea topically to treat skin conditions like boils, burns or eczema, but this can cause a rash, redness or itching.</p></section><section class="subsection article__section__step article_module_section">	<h2 class="header"><span class="section-headline">Precautions</span></h2>
+<p data-dmc="section" class="article-section__content">Echinacea might boost the immune system in ways that may worsen autoimmune diseases in which the body’s immune system attacks healthy tissue. If you have an autoimmune disorder, such as lupus, multiple sclerosis or rheumatoid arthritis, do not take echinacea without consulting your doctor first. If you have tuberculosis, leukemia, diabetes, connective tissue disorders, HIV/AIDS or liver disease, do not take echinacea without consulting your doctor first as there is some concern that it may worsen your condition, according to the University of Maryland Medical Center. Avoid echinacea if you are pregnant or nursing, as its safety has not been adequately studied.</p></section><section class="subsection article__section__step article_module_section">	<h2 class="header"><span class="section-headline">Interactions</span></h2>
+<p data-dmc="section" class="article-section__content">Echinacea may increase the effects of caffeine, raising the risk of side effects like nervousness, headache and a racing heart. Because it may boost the immune system, echinacea may reduce the effectiveness of medications designed to suppress the immune system, like prednisone and corticosteroids. Other drugs in this category include azathioprine, basiliximab, cyclosporine, daclizumab, muromonab-CD3, mycophenolate, tacrolimus and sirolimus. Echincea may also increase the effectiveness and the risk of side effects of many common medications including cholesterol-lowering statins like lovastatin, amiodarone, methotrexate, ketoconazole, clarithromycin, diltiazem, estrogen, indinavir, triazolam, clozapine, haloperidol, olanzapine, pentazocine, propranolol, tacrine, theophylline, zileuton and others. Talk to your doctor or pharmacist before taking echinacea if you are taking any prescription drugs.</p></section>	</div>
+<!-- Native Ad -->
+<!-- <section class="native_ad_unit js-native_ad_unit"></section> -->
+<div class="js-sponsored_links">
+<div id="DMINSTR" type="adimpression" data-type="adTracking" data-module="google-ad-336x280">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Livestrong_336_SF_Desktop -->
+<ins class="adsbygoogle" style="display:inline-block;min-width:320px;max-width:1200px;width:623px;height:555px;padding: 0 25px;box-sizing: border-box;" data-ad-client="ca-pub-0316265116163263" data-ad-slot="2492313234"></ins>
+<script>
+		var my_google_ad_channel = '5164374306+8281492230+2462011732+1782477543' ;
+		(adsbygoogle = window.adsbygoogle || []).push({
+			params: { google_ad_channel: my_google_ad_channel}
+		});
+	</script>
+</div>
+</div>
+<div class="Module related_searches js-related_searches" data-module="radlinks">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- LiveStrong_LinkUnit_Body -->
+<ins class="adsbygoogle" style="display:block;width:70%;height:200px;" data-ad-client="ca-pub-0316265116163263" data-ad-slot="1851338222" data-ad-format="link"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="js-social_share_fadeout_marker"></div>
+<section class="calorie_tracker_module calorie_tracker_module--content js-calorie_tracker_module">
+<img class="calorie_tracker_module__background calorie_tracker_module__background--right" src="//static.livestrongcdn.com/livestrong/ui/images/calorie-tracker-module/content-page/calorie_tracker_elements-blueberries.png" alt="LiveStrong Calorie Tracker"/>
+<div class="calorie_tracker_module__hero_caption">
+<span class="calorie_tracker_module__main_text">
+Lose Weight. Feel Great!
+</span>
+<span class="calorie_tracker_module__caption_text">Change your life with MyPlate by LIVE<span class="calorie_tracker_module__main_text--bold">STRONG</span>.COM</span>
+</div>
+<div class="content_calorie_tracker_container">
+<div id="calorie_tracker_module" class="view_horizontal">
+<div class="calorie_tracker_body">
+<form method="get" id="js-calorie_calc" class="calorie_calc_form" action="https://www.livestrong.com/30-day-fitness-challenge/register/">
+<input type="hidden" name="overlay" value="1">
+<div class="form_inputs">
+<div class="input_row">
+<span class="custom_dropdown js-custom_dropdown custom_dropdown--top animation_input animation_input--long icon-down-open-big">
+<span class="custom_dropdown__label animation_input__label">
+<span class="animation_input__label_content">GOAL</span>
+<span class="custom_dropdown__selected_item js-custom_dropdown__selected_item"></span>
+</span>
+<ul class="custom_dropdown__field js-custom_dropdown__field">
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="-2">Gain 2 pounds per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="-1.5">Gain 1.5 pounds per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="-1">Gain 1 pound per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="-0.5">Gain 0.5 pound per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="0">Maintain my current weight</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="0.5">Lose 0.5 pound per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="1">Lose 1 pound per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="1.5">Lose 1.5 pounds per week</li>
+<li class="custom_dropdown__item js-custom_dropdown__item custom_dropdown__item--big" data-field-value="2">Lose 2 pounds per week</li>
+</ul>
+<input class="custom_dropdown__input js-custom_dropdown__input" type="text" id="js-calorie_calc_goal" name="goal" maxlength="4" style="display: none;"/>
+</span>
+</div>
+<div class="input_row">
+<div class="column_space">
+<span class="custom_dropdown js-custom_dropdown animation_input icon-down-open-big">
+<span class="custom_dropdown__label animation_input__label">
+<span class="animation_input__label_content">GENDER</span>
+<span class="custom_dropdown__selected_item js-custom_dropdown__selected_item"></span>
+</span>
+<ul class="custom_dropdown__field js-custom_dropdown__field">
+<li class="custom_dropdown__item js-custom_dropdown__item" data-field-value="female">Female</li>
+<li class="custom_dropdown__item js-custom_dropdown__item" data-field-value="male">Male</li>
+</ul>
+<input class="custom_dropdown__input js-custom_dropdown__input" type="text" id="js-calorie_calc_gender" name="gender" maxlength="5" style="display: none;"/>
+</span>
+</div>
+<div>
+<span class="animation_input">
+<input class="animation_input__field animation_input__field--input js-animation_input__field" type="text" id="js-calorie_calc_age" name="age" maxlength="3"/>
+<label class="animation_input__label" for="js-calorie_calc_age">
+<span class="animation_input__label_content">
+AGE
+</span>
+</label>
+</span>
+</div>
+</div>
+<div class="input_row">
+<div class="column_space">
+<span class="animation_input">
+<input class="animation_input__field animation_input__field--input js-animation_input__field js-input--weight_lbs" type="text" id="js-calorie_calc_weight" name="weight" maxlength="3"/>
+<span class="measure_unit measure_unit--weight_lbs js-measure_unit--weight_lbs">
+lbs.
+</span>
+<label class="animation_input__label" for="js-calorie_calc_weight">
+<span class="animation_input__label_content">
+WEIGHT
+</span>
+</label>
+</span>
+</div>
+<div>
+<span class="animation_input">
+<input class="animation_input__field animation_input__field--input js-animation_input__field input--height_feet js-input--height_feet" type="text" id="js-calorie_calc_height" name="feet" maxlength="1"/>
+<input class="animation_input__field animation_input__field--input js-animation_input__field input--height_inches js-input--height_inches" type="text" id="js-calorie_calc_height_inches" name="inches" maxlength="2"/>
+<span class="measure_unit measure_unit--height_feet js-measure_unit--height_feet">
+ft.
+</span>
+<span class="measure_unit measure_unit--height_inch js-measure_unit--height_inch">
+in.
+</span>
+<label class="animation_input__label" for="js-calorie_calc_height">
+<span class="animation_input__label_content">
+HEIGHT
+</span>
+</label>
+</span>
+</div>
+</div>
+<input type="hidden" id="activity" name="activity" value="1.2"/>
+</div>
+<button type="submit" class="calorie_calc_button" data-gtm-event="calorieTracker" data-gtm-info="default">
+GET MY CALORIE GOAL
+</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<div class="article_you_might_also_like">
+<header class=" you_might_also_like">
+<h3 class="header Heading3">YOU MIGHT ALSO LIKE</h3>
+</header>
+<section id="rcp-slider" class="rcp-slider RelatedContent Module" data-module="rcp-slider">
+<div class="you_might_also_like wrapper" data-type="more-relatedArticles">
+<div class="scroller" data-element="theSlider">
+<div class="item first" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/cme/photography.prod.demandstudios.com/c325f65c-2b9f-45d1-ae6d-15fef7df5ba9.jpg" width="130" height="87" alt="Alternative Medicine for Cold and Flu" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Alternative Medicine for Cold and Flu</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/69/236/514856127.jpg" width="130" height="87" alt="Echinacea Tea Benefits" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Echinacea Tea Benefits</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/83/91/518098837.jpg" width="130" height="87" alt="Echinacea &amp; Astragalus" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Echinacea &amp; Astragalus</a>
+</span>
+</div>
+<div class="item last" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/57/91/483279988.jpg" width="130" height="87" alt="Echinacea &amp; Allergies" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Echinacea &amp; Allergies</a>
+</span>
+</div>
+<div class="item first" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/103/24/468386114.jpg" width="130" height="87" alt="The Side Effects of Echinacea Tea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">The Side Effects of Echinacea Tea</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/152/110/123727652.jpg" width="130" height="87" alt="Benefits of Echinacea &amp; Goldenseal" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Benefits of Echinacea &amp; Goldenseal</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/100/199/483015000.jpg" width="130" height="87" alt="How to Use Echinacea to Treat Acne" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">How to Use Echinacea to Treat Acne</a>
+</span>
+</div>
+<div class="item last" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/108/249/479026808.jpg" width="130" height="87" alt="Benefits &amp; Side Effects of Echinacea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Benefits &amp; Side Effects of Echinacea</a>
+</span>
+</div>
+<div class="item first" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/181/226/176206374.jpg" width="130" height="87" alt="Side Effects of Echinacea &amp; Goldenseal" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Side Effects of Echinacea &amp; Goldenseal</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/190/130/505051517.jpg" width="130" height="87" alt="The Dangers &amp; Side Effects of Acidophilus" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">The Dangers &amp; Side Effects of Acidophilus</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/cme/cme_public_images/www_livestrong_com/photos.demandstudios.com/75/113/fotolia_11244545_XS.jpg" width="130" height="87" alt="Zinc &amp; Echinacea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Zinc &amp; Echinacea</a>
+</span>
+</div>
+<div class="item last" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/152/219/501772076.jpg" width="130" height="87" alt="Echinacea When Pregnant" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Echinacea When Pregnant</a>
+</span>
+</div>
+<div class="item first" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/getty/xc/89586584.jpg?v=1&amp;c=EWSAsset&amp;k=2&amp;d=618630EBDF4B44EDA9A846D1A30CE6B0994A3374585E1539CD70C3D3BB9254F6" width="130" height="87" alt="Zinc, Vitamin C and Echinacea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Zinc, Vitamin C and Echinacea</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/94/69/165053364.jpg" width="130" height="87" alt="Is it Safe to Take Echinacea &amp; Goldenseal While Breastfeeding?" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Is it Safe to Take Echinacea &amp; Goldenseal While Breastfeeding?</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/94/161/490435926.jpg" width="130" height="87" alt="How to Dry Echinacea for Tea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">How to Dry Echinacea for Tea</a>
+</span>
+</div>
+<div class="item last" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/64/153/488574056.jpg" width="130" height="87" alt="Oil of Oregano for a Virus" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Oil of Oregano for a Virus</a>
+</span>
+</div>
+<div class="item first" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/228/10/484610630.jpg" width="130" height="87" alt="Does Echinacea Thin Your Blood?" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Does Echinacea Thin Your Blood?</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/94/254/495216906.jpg" width="130" height="87" alt="Echinacea Overdose Reactions" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Echinacea Overdose Reactions</a>
+</span>
+</div>
+<div class="item mid" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/235/29/474875350.jpg" width="130" height="87" alt="Side Effects of Too Much Echinacea" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">Side Effects of Too Much Echinacea</a>
+</span>
+</div>
+<div class="item last" data-element="slides">
+<a class="item_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">
+<img src="https://img.aws.livestrongcdn.com/ls-article-you-might-also-like/ds-photo/getty/article/163/138/57308030.jpg" width="130" height="87" alt="3 Ways to Diagnose Chest Congestion and Sore Throat" class="thumb"/>	</a>
+<span class="title">
+<a class="rcp_title_link" href="//www.livestrong.com/" data-gtm-event="alsoLike" data-gtm-info="content">3 Ways to Diagnose Chest Congestion and Sore Throat</a>
+</span>
+</div>
+</div>
+</div>
+<a class="prev " data-element="prevButton" data-action="prev" data-gtm-event="alsoLike" data-gtm-info="prev"></a>
+<a class="next " data-element="nextButton" data-action="next" data-gtm-event="alsoLike" data-gtm-info="next"></a>
+</section>
+</div>
+</article>
+<div class="clear"></div>
+<section class="article_content__loading_indicator_section js-loading_indicator_section">
+<img src=//static.livestrongcdn.com/livestrong/ui/images/loading-indicator.gif />
+</section>
+<section class="js-lazy_load_marker lazy_load_marker"></section>
+</div>
+<aside class="rail js-rail">
+<div class="AdUnit js-desktop_ad_300x250_300x600_atf" data-is-freestyle="true"></div>
+<div class="advertisement">Advertisement</div>
+<div class="js-sticky_rail_start"></div>
+<div class="article_nav js-article_nav right_rail_ad_wrapper js-right_rail_ad_wrapper">
+<div class="AdUnit js-desktop_ad_300x250_btf" data-is-freestyle="true"></div>
+<div class="advertisement">Advertisement</div>
+</div>
+<div class="js-sticky_rail_end"></div>
+</aside>
+<script>
+			googleAds.addChannel('GoogleAdsense300x250', 'testpool_default');
+		googleAds.addChannel('GoogleAdsense300x250', 'testpool_default_top');
+		googleAds.addChannel('GoogleRelatedAds', 'testpool_default');
+		googleAds.addChannel('GoogleRelatedAds-2', 'testpool_default');
+		googleAds.addChannel('GoogleAdsense336x280', 'testpool_default');
+		googleAds.addChannel('GoogleAdsense336x280', 'testpool_default_bottom');
+			googleAds.addChannel('GoogleAdsense300x250', 'article_top');
+	googleAds.addChannel('GoogleAdsense336x280', 'article_bottom');
+	googleAds.defaults.google_adtest = 'off';
+	googleAds.defaults.google_page_url = 'https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/';
+	googleAds.render();
+</script>
+<script>
+	$(function() {
+
+		// Hide AdSense ads for modern articles
+		var article_format = 'Article';
+		if (article_format === 'modern_article') {
+			$('.js-sponsored_links').remove();
+			$('.js-related_searches').remove();
+			$('.googleAd').remove();
+
+			// Remove JW player from modern_article except for whitelist
+			if (!(dmjs.global.article_id_jw['id'] in dmjs.global.jw_selector['1'])) {
+				$('.jwplayer-section').remove();
+			}
+
+			// Add extra-bottom-margin to last paragraph of modern_article
+			$('.article-section__content').last().css( "margin-bottom", "30px" );
+		}
+
+					var rcp_specifics = {
+				algo_id: '286',
+				request_id: '23ecfff5-a7fc-4f72-9447-d6cf470fd7a6',
+				weight_config_name: 'LiveStrong',
+				widget_id: '59',
+				category: escape('Food and Drink')
+			};
+			new OmnitureLinkSet($("#rcp-slider"), "R1B", "default_R1B", true, rcp_specifics);
+						new OmnitureLinkSet($("#GoogleRelatedAds"), "R10", "default_R10");
+			new OmnitureLinkSet($("#GoogleRelatedAds-2"), "R3", "default_R3");
+			new OmnitureLinkSet($(".article-references"), "R7", "default_R7");
+				});
+	</script>
+<!-- JW Player player: ID selection -->
+<!-- Code Group 3 -->
+<script type="text/javascript" src="https://content.jwplatform.com/libraries/ug2Y6qQz.js"></script>
+</div>
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "NewsArticle",
+	"headline": "The Disadvantages of Echinacea",
+	"url": "https://www.livestrong.com/article/411468-the-disadvantages-of-echinacea/",
+	"thumbnailUrl": "http://photos.demandstudios.com/getty/article/240/179/484837632.jpg",
+	"dateCreated": "2011-03-30T02:27:00Z",
+	"articleSection": "Food and Drink",
+	"creator": ["Louise Lyon"],
+	"keywords": ["echinacea side effects","echinacea risks","echinacea dangers"]
+	}
+</script>
+<span class="parsely_script_data" style="display:none;">{"@context":"http:\/\/schema.org","@type":"NewsArticle","headline":"The Disadvantages of Echinacea","url":"https:\/\/www.livestrong.com\/article\/411468-the-disadvantages-of-echinacea\/","thumbnailUrl":"http:\/\/photos.demandstudios.com\/getty\/article\/240\/179\/484837632.jpg","dateCreated":"2011-03-30T02:27:00Z","articleSection":"Food and Drink","creator":"[\"Louise Lyon\"]","keywords":"[\"echinacea side effects\",\"echinacea risks\",\"echinacea dangers\"]"}</span>
+</div>
+<footer id="footer" data-section="footer">
+<div class="footer clear">
+<section class="container">
+<div class="footer_newsletter_container">
+<header>
+<h2 class="newsletter_signup">Get the latest tips on diet, exercise and healthy living.</h2>
+</header>
+<form class="newsletter newsletter_footer " data-pagetype="newsletter_footer">
+<input type="hidden" name="id" value="nl_opt_in,badge_notification_email,nl_special_offers"/>
+<input type="hidden" name="source" value="email_footer"/>
+<fieldset class="styled-radio-teal">
+<div class="col50 col50--big">
+<input type="radio" name="gender" id="footer_gender_female" class="styled-radio-teal--radio" value="female" checked="checked">
+<label class="gender__label" for="footer_gender_female"><span class="check"></span>Woman</label>
+</div>
+<div class="col50">
+<input type="radio" name="gender" id="footer_gender_male" class="styled-radio-teal--radio" value="male">
+<label class="gender__label" for="footer_gender_male"><span class="check"></span>Man</label>
+</div>
+</fieldset>
+<div class="newsletter__email_field">
+<input class="newsletter_email" type="email" placeholder="Email Address" name="email">
+<input class="hidden" type="text" id="human" name="human" value="">
+<button type="button" class="submit" data-gtm-event="newsletter">Sign Up</button>
+</div>
+<p class="message">You're signed up!</p>
+</form>	</div>
+<nav class="footer__nav">
+<ul>
+<li class="footer__nav__title">MORE</a></li>
+<li>
+<a class="footer__nav__item" href="//www.livestrong.com/contact-us/" data-gtm-event="navFooter" data-gtm-info="primary">Contact &amp; FAQ
+</a>
+</li>
+<li>
+<a class="footer__nav__item" href="//www.livestrong.com/aboutus/" data-gtm-event="navFooter" data-gtm-info="primary">About
+</a>
+</li>
+<li>
+<a class="footer__nav__item" href="//www.livestrong.com/advertise/" data-gtm-event="navFooter" data-gtm-info="primary">Advertise
+</a>
+</li>
+<li>
+<a class="footer__nav__item" href="//www.livestrong.com/terms/" data-gtm-event="navFooter" data-gtm-info="primary">Terms of Use
+</a>
+</li>
+<li>
+<a class="footer__nav__item" href="//www.livestrong.com/privacy-policy/" data-gtm-event="navFooter" data-gtm-info="primary">Privacy Policy
+</a>
+</li>
+</ul>
+</nav>
+<a class="fl foundation" href="//www.livestrong.org/" target="_blank">PARTNER &amp; LICENSEE OF THE LIVESTRONG FOUNDATION</a>
+<div id="footer_links">
+<div class="brick_seal leaf_logo">
+<a href="//www.leafgroup.com/" class="icon-leaf_logo" target="_blank" data-gtm-event="navFooter" data-gtm-info="dmLogo"></a></div>
+</div>
+<p class="fine_print">
+Copyright &copy; 2018 Leaf Group Ltd.
+Use of this web site constitutes acceptance of the LIVESTRONG.COM
+<a class="fine_print_link" href="//www.livestrong.com/terms/">Terms of Use</a>,
+<a class="fine_print_link" href="//www.livestrong.com/privacy-policy/">
+Privacy Policy</a> and
+<a class="fine_print_link" href="//www.livestrong.com/copyright-policy/">Copyright Policy</a>.
+The material appearing on LIVESTRONG.COM is for educational use only. It should not be
+used as a substitute for professional medical advice,
+diagnosis or treatment. LIVESTRONG is a registered trademark of the LIVESTRONG Foundation.
+The LIVESTRONG Foundation and LIVESTRONG.COM do not endorse
+any of the products or services that are advertised on the web site.
+Moreover, we do not select every advertiser or advertisement that appears on the web site-many of the
+advertisements are served by third party advertising companies.
+</p>
+</section>
+</div>
+</footer>
+<div class="comscore"><img id="comscoreBrick" src="//static.livestrongcdn.com/ui/images/modules/loading/pixel.gif" data-img="//static.livestrongcdn.com/media/vendor/comscore/partners/demand-media.png" width="1" height="1" alt="Demand Media"/></div>
+<noscript><img src="//b.scorecardresearch.com/b?c1=2&c2=6036385&c3=&c7=%2F%2Fwww.livestrong.com%2Farticle%2F411468-the-disadvantages-of-echinacea%2F%3Fcomscorekw%3D&cv=2.0&cj=1"/></noscript>
+<script src="//dynamic01.livestrongcdn.com/services/modules/js/evidon,comscore,common_footer/cfb2f2dd/" defer="defer"></script><!--[if lt IE 9]>
+<script src="//static.livestrongcdn.com/content/compressed/common_footer_ie_legacy-30605e86.js"  ></script>
+<![endif]-->
+<script src="//static.livestrongcdn.com/content/compressed/article-1-page-e7ea2699.js" defer="defer"></script>
+<script src="//static.livestrongcdn.com/content/compressed/module-gpt-0aab9815.js" defer="defer"></script>
+<script src="//static.livestrongcdn.com/content/compressed/authorbio-7477fac9.js" defer="defer"></script>
+<script defer src="//cdn.optimizely.com/js/7550209.js"></script>
+<script>
+		var dmjs = dmjs || {};
+
+		/* Core DMJS configuration */
+		dmjs.global = dmjs.global || {};
+		dmjs.global.comscore={"c1":"2","c2":"6036385","c3":"","options":{"url_append":"comscorekw="}};
+		/* Add xdomain first event helper to be added before ad event listeners are added */
+		dmjs.xdomainFirstEventListener = true;
+		if (window.addEventListener) {
+			window.addEventListener("message", function(event){
+				if (typeof xdomain != 'undefined' && typeof xdomain.dmjsFirstEventListener != 'undefined') {
+					xdomain.dmjsFirstEventListener(event);
+				}
+			}, false);
+		} else {
+			window.attachEvent("message", function(event){
+				if (typeof xdomain != 'undefined' && typeof xdomain.dmjsFirstEventListener != 'undefined') {
+					xdomain.dmjsFirstEventListener(event);
+				}
+			});
+		}
+	</script>
+<script>(function() {
+	function async_load(script_url)
+	{ var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://'); var s = document.createElement('script'); s.src = protocol + script_url; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }
+	bm_website_code = '44FB1B361BD44440';
+	jQuery(document).ready(function()
+		{async_load('asset.pagefair.com/measure.min.js')}
+	);
+	jQuery(document).ready(function()
+		{async_load('asset.pagefair.net/ads.min.js')}
+	);
+})();</script><img src="//d.agkn.com/pixel/7698/?che=022843800153630699694276&amp;atr=FoodDrink,DietNutritionFoodDrink" width="1" height="1" style="display:none;" border="0"/>
+<script>
+	if(dmjs.maintenance.dart) {
+		dmjs.addLoadEvent(function() {
+			dartAds.renderAdElements($("[data-dartAdParams]"));
+		});
+	}
+	$(window).load(function() {
+		dmjs.fireEvents();
+	});
+</script>
+<div id="parsely-root" style="display: none">
+<span id="parsely-cfg" data-parsely-site="livestrong.com"></span>
+</div>
+<script>
+	(function(s, p, d) {
+		var h=d.location.protocol, i=p+"-"+s,
+		e=d.getElementById(i), r=d.getElementById(p+"-root"),
+		u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+		:"static."+p+".com";
+		if (e) return;
+		e = d.createElement(s); e.id = i; e.async = true;
+		e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+	})("script", "parsely", document);
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1dbad03b56","applicationID":"5692210","transactionName":"MwRUYUFSCkdXWxcPCQpOd1ZHWgtaGU0NDQgLFlg=","queueTime":0,"applicationTime":1526,"atts":"H0NXFwlIGUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

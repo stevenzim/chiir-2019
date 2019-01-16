@@ -1,0 +1,627 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	<link rel="alternate" type="application/rss+xml" title="Corydon Physiotherapy Blog" href="/news/feed" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="">
+<meta name="description" content="If you&#039;ve got neck or upper back pain, spinal decompression or traction may be the right treatment for you. Visit Corydon Physio today to learn more.">
+	<meta name="author" content=".">
+
+	<title>Spinal Decompression Therapy (Traction) in Winnipeg - CorydonPhysiotherapy.com - .</title>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/cache/331cf4aad38939b119556e8b2db7d4af-1425314122.1523372612.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif|Oswald' rel='stylesheet' type='text/css'>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/cmsCorePlugin/js/jquery.min.js"><\/script>')</script>
+	
+
+	<script src="http://static.dudamobile.com/DM_redirect.js" type="text/javascript"></script>
+	<script type="text/javascript">DM_redirect("http://m.corydonphysiotherapy.com");</script>
+		
+	<!--[if lt IE 9 ]>
+		<script src="/cmsCorePlugin/lib/modernizr-2.0.6.min.js"></script>
+		<script src="/lib/selectivizr-1.0.2/selectivizr-min.js"></script>
+	<![endif]-->
+	<script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script>
+
+	<script>window.addEventListener('LPLeadboxesReady',function(){LPLeadboxes.setExitIntent('WvVoGJBSBAma44rmHPT8wj',{dontShowFor:'1d',domain:'greatbigideas.lpages.co'});});</script>
+			
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '2053753334843831');
+		fbq('track', 'CorydonPhysioPageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"src="https://www.facebook.com/tr?id=2053753334843831&ev=PageView&noscript=1"/></noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
+
+<body class="spinal-decompression">
+
+	<h2 class="visuallyhidden">Spinal Decompression Therapy (Traction) in Winnipeg - CorydonPhysiotherapy.com - .</h2>
+<div id="stickywrap">
+
+	<div id="header">
+
+	<div class="layout-container">
+
+		<nav>
+			
+
+	
+<ul class="dropdown">
+			<li class="level-0 home clickable">
+			<a
+								class="level-0 home clickable"
+				href="/home">
+
+
+
+				Home</a>
+					</li>
+			<li class="level-0 our-team clickable">
+			<a
+								class="level-0 our-team clickable"
+				href="/our-team">
+
+
+
+				Our<br>Team</a>
+					</li>
+			<li class="level-0 services clickable">
+			<a
+								class="level-0 services clickable"
+				href="/services">
+
+
+
+				Services</a>
+							
+
+<ul >
+			<li class="level-1 acupuncture clickable">
+			<a
+								class="level-1 acupuncture clickable"
+				href="/acupuncture">
+
+
+
+				Acupuncture</a>
+					</li>
+			<li class="level-1 physiotherapy clickable">
+			<a
+								class="level-1 physiotherapy clickable"
+				href="/physiotherapy">
+
+
+
+				Physiotherapy</a>
+							
+
+<ul >
+			<li class="level-2 link-45 clickable">
+			<a
+								class="level-2 link-45 clickable"
+				href="/physiotherapy">
+
+
+
+				Physiotherapy Home</a>
+					</li>
+			<li class="level-2 at-home-visits clickable">
+			<a
+								class="level-2 at-home-visits clickable"
+				href="/at-home-visits">
+
+
+
+				At Home Visits</a>
+					</li>
+			<li class="level-2 sports-physiotherapy clickable">
+			<a
+								class="level-2 sports-physiotherapy clickable"
+				href="/sports-physiotherapy">
+
+
+
+				Sports Physiotherapy</a>
+					</li>
+			<li class="level-2 safe-steps-balance-program clickable">
+			<a
+								class="level-2 safe-steps-balance-program clickable"
+				href="/safe-steps-balance-program">
+
+
+
+				Safe Steps Balance Program</a>
+					</li>
+			<li class="level-2 other-physiotherapy-services clickable last">
+			<a
+								class="level-2 other-physiotherapy-services clickable last"
+				href="/other-physiotherapy-services">
+
+
+
+				Other Physio Services</a>
+					</li>
+	</ul>
+					</li>
+			<li class="level-1 massage-therapy clickable">
+			<a
+								class="level-1 massage-therapy clickable"
+				href="/massage-therapy">
+
+
+
+				Massage Therapy</a>
+					</li>
+			<li class="level-1 occupational-therapy clickable">
+			<a
+								class="level-1 occupational-therapy clickable"
+				href="/occupational-therapy">
+
+
+
+				Occupational Therapy</a>
+					</li>
+			<li class="level-1 other-services clickable">
+			<a
+								class="level-1 other-services clickable"
+				href="/other-services">
+
+
+
+				Other Services</a>
+							
+
+<ul >
+			<li class="level-2 custom-foot-orthotics clickable">
+			<a
+								class="level-2 custom-foot-orthotics clickable"
+				href="/custom-foot-orthotics">
+
+
+
+				Custom Foot Orthotics</a>
+					</li>
+			<li class="level-2 yoga-exercise-class clickable">
+			<a
+								class="level-2 yoga-exercise-class clickable"
+				href="/yoga-exercise-class">
+
+
+
+				Yoga Exercise Class</a>
+					</li>
+			<li class="level-2 other-classes clickable last">
+			<a
+								class="level-2 other-classes clickable last"
+				href="/other-classes">
+
+
+
+				Other Classes</a>
+					</li>
+	</ul>
+					</li>
+			<li class="level-1 nutrition-coaching clickable last">
+			<a
+								class="level-1 nutrition-coaching clickable last"
+				href="/nutrition-coaching">
+
+
+
+				Nutrition Coaching</a>
+							
+
+<ul >
+			<li class="level-2 link-46 clickable">
+			<a
+								class="level-2 link-46 clickable"
+				href="/nutrition-coaching">
+
+
+
+				Nutrition Home</a>
+					</li>
+			<li class="level-2 nutrigenomix-testing clickable">
+			<a
+								class="level-2 nutrigenomix-testing clickable"
+				href="/nutrigenomix-testing">
+
+
+
+				Nutrigenomix Testing</a>
+					</li>
+			<li class="level-2 nutrition-coaching-faq clickable last">
+			<a
+								class="level-2 nutrition-coaching-faq clickable last"
+				href="/nutrition-coaching-faq">
+
+
+
+				Nutrition FAQ</a>
+					</li>
+	</ul>
+					</li>
+	</ul>
+					</li>
+			<li class="level-0 link-40 clickable">
+			<a
+								class="level-0 link-40 clickable"
+				href="/blog">
+
+
+
+				Health<br>Blog</a>
+					</li>
+			<li class="level-0 clinic-profile clickable">
+			<a
+								class="level-0 clinic-profile clickable"
+				href="/clinic-profile">
+
+
+
+				Clinic<br>Profile</a>
+					</li>
+			<li class="level-0 faq clickable">
+			<a
+								class="level-0 faq clickable"
+				href="/faq">
+
+
+
+				FAQ</a>
+					</li>
+			<li class="level-0 contact-us clickable">
+			<a
+								class="level-0 contact-us clickable"
+				href="/contact-us">
+
+
+
+				Contact</a>
+					</li>
+			<li class="level-0 patient-portal-login clickable last">
+			<a
+								class="level-0 patient-portal-login clickable last"
+				href="/patient-portal-login">
+
+
+
+				Your<br>Exercises</a>
+					</li>
+	</ul>
+		</nav>
+
+		<a href="/" id="logo"><img src="/img/logo.png?v2" alt="Logo" /></a>
+
+	</div>
+
+</div>
+	<div id="main">
+	
+		<div class="layout-container">
+	
+				
+			<div id="left">
+
+				<h1>Spinal Decompression / Traction Therapy </h1>
+				<div>
+					<div class="cms-content">
+	<h3>What is spinal decompression or traction?</h3>
+<p><strong><em>Spinal decompression</em></strong> or traction essentially means the same thing. Traction is the force applied and spinal decompression is the result of that force. It has been used in one form or another for centuries. There are paintings and statues from ancient civilizations showing healing practitioners using their hands to apply traction and help people in pain. Traction can be performed either by hand or using a mechanical traction unit. Unfortunately, many people historically associate traction with a torture device. It should not be confused with that as obviously traction has a positive purpose to help and not harm. Traction either by hand or by a mechanical unit has been used commonly by physiotherapists since the 1940’s.</p>
+<p>A traction unit can be used for the neck and upper back as shown in the photo below or for the low back (lumbar spine) in the next photo below.</p>
+<p style="text-align: center;"><img src="/images/traction-1.jpg" alt="Spinal Decompression" height="193" width="256" /> <img src="/images/traction-2.jpg" alt="Spinal Traction" height="193" width="256" /></p>
+<p><br />Traction is a gentle or moderate force that is applied to the spine for the purpose of slightly separating the bones or vertebrae of the spine. The best way to visualize this force to the low back is to imagine yourself hanging by your arms from an overhead bar and letting your legs and lower body relax and pulled by gravity.  Or in the case of the neck, if you could hang upside down by your feet, a traction force would be applied to the neck. Of course this is not practical, especially if you are in pain, so that’s where a physiotherapist’s hands or the traction unit are beneficial. This force causes the vertebrae to be slightly separated usually by millimeters. In the low back there are five vertebrae and in the neck there are seven.</p>
+<p><img src="/images/back-neck-1.png" style="display: block; margin-left: auto; margin-right: auto;" height="294" width="100" /></p>
+<p>The photo below shows neck traction applied by a therapist’s hands.</p>
+<p><img src="/images/faq-treatment.jpg" style="display: block; margin-left: auto; margin-right: auto;" height="220" width="165" /></p>
+<h3>What are the effects?</h3>
+<p>When the traction force is applied and the space between the bones is increased the following can occur:</p>
+<ul>
+<li>There is less pressure within the spinal discs relieving pain and encouraging nutrition to the disc.</li>
+<li>A protrusion or bulge in the disc may be reduced by drawing or “sucking” the gel nucleus towards the centre of the disc</li>
+</ul>
+<p><img src="/images/pinch-nerve.jpg" style="display: block; margin-left: auto; margin-right: auto;" height="191" width="186" /></p>
+<ul>
+<li>The tunnels where the nerves exit the spine become larger and therefore allow the nerves to “breathe” and regain proper circulation and become “un-pinched”.</li>
+<li>Painful or arthritic spinal joints are stretched and decompressed from the effects of constant gravity and poor posture acting on the body.</li>
+<li>Muscles, tendons and ligaments are lengthened and stretched in ways that are impossible with exercises and day to day movements unless you are able to fully relax and hang from a bar!</li>
+<li>Proper circulation and nutrition to the spine is achieved by allowing a flushing of inflammatory chemicals and bringing oxygen and nutrition to the area. This encourages healing and reduces painful irritation of the nerves in the spine.</li>
+</ul>
+<h3>Who benefits from spinal decompression?</h3>
+<p>Traction or spinal decompression helps a large percentage of people with spinal conditions, but:</p>
+<p>There are two very important facts that should be understood and are supported by the best reviews of all available research on this topic.</p>
+<ol start="1">
+<li>All patients must be evaluated by licensed and qualified professionals in the healthcare field. This can be a doctor or a physiotherapist. They will determine if it is beneficial and safe. There is only a certain category of neck and back pain patients that will see good outcomes. This needs to be evaluated ahead of time. There is only a certain category of neck and back pain patients that will see good outcomes. </li>
+<li>Like any other treatment,traction treatment needs to be used in conjunction with other programs. If not, results may be disappointing. An overall program of treatment should include any (or all) of the following:</li>
+<ol start="1">
+<li>Individualized exercises that are tailored to you. Whether postural exercises, flexibility work or strengthening, these exercises help improve the spine and how it works.</li>
+<li>Neck and back body mechanics education.</li>
+<li>Therapy that is hands-on and works to reduce pain.</li>
+<li>Different treatment modalities (ask one of our experts to learn more).</li>
+</ol></ol>
+<p>If the person is carefully selected for traction and the above factors are addressed then certainly the majority of those people will see the benefits.</p>
+<p><strong>Generally the following conditions are potentially improved:</strong></p>
+<ul>
+<li>Neck and lower back pain, either recent or longstanding that is of a mechanical cause</li>
+<li>Sciatica (thigh and leg pain)</li>
+<li>Disc bulging or protrusion</li>
+<li>Nerve compression (pinched nerve)</li>
+<li>Arthritis of the spine</li>
+<li>Degenerative disc disease</li>
+<li>Stenosis of the spine (narrowed nerve tunnels)</li>
+</ul>
+<h3>How safe and comfortable is it?</h3>
+<p>It is very safe when used properly. The patient lies on their back for either neck or back traction. Please see the above photos. For neck traction the person lies with their neck cradled and their head resting on the unit. The side pieces are slowly moved inwards in order to cup and cradle the neck. The patient’s head is not locked into position and they can lift their head easily out of the cradle if they wish. The computerized traction unit is then programmed by the physiotherapist starting with a gentle amount of pull through the rope usually between 12 and 18lbs and can be progressed up to 30 lbs.  As a reference the human head weighs between 16 and 22 lbs. The patient is given careful instructions and has a safety button they can press any time to stop the traction if they are uncomfortable. The time of treatment varies between 8 and 25 minutes.</p>
+<p>Low back traction is set up using a harness around the torso and ribs and one around the hips. The traction unit rope is attached to a harness which is wrapped around the hips. The legs are usually resting on a platform that is height adjustable depending on the desired angle of pull. The rope then pulls through the harness and the hips which tractions the spine because the hips are attached to the spine with strong ligaments and joints. The traction forces used are higher than in the neck because the lower spine requires more force to cause decompression, usually starting at 30-40 lbs. The table separates and splits beneath the lower back as the traction pulls which gives a greater effect.</p>
+<p>Occasionally there is some extra pain during traction which may be normal. This needs to be evaluated by the physiotherapist as it depends on the location of pain and the degree. When the treatment is over the pain typically subsides.</p>
+<h3>How long before you see results?</h3>
+<p>Usually within two sessions the physiotherapist will be able to tell whether traction is going to be beneficial. If there are signs of progress then usually an average of six to ten sessions is sufficient. </p>
+<p>Traction treatment is often used as part of a successful physiotherapy program. It should be viewed as one of the many tools physiotherapists have to help people with neck and back problems move towards a painfree lifestyle. The physiotherapists at Corydon Physiotherapy welcome any further questions on traction treatment.</p>
+<p></p></div>				</div>
+	
+				<div id="banner">
+	
+																<p></p>
+<p><img src="/images/home-banner.png" width="600" height="90" /></p>
+<p>Welcome to Corydon Physiotherapy Clinic &ndash; <strong>now with 2 locations:</strong></p>
+<div itemscope="" itemtype="http://schema.org/LocalBusiness"><span itemprop="name">Corydon Physiotherapy Clinic</span>
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">3354 Roblin Blvd.</span> <span itemprop="addressLocality">Winnipeg</span>, <span itemprop="addressRegion">MB</span> <span itemprop="postalCode">R3R 0C5</span></div>
+Phone: <span itemprop="telephone">(204) 925-0380</span></div>
+<div itemscope="" itemtype="http://schema.org/LocalBusiness"><span itemprop="name"><br />Corydon Physiotherapy Clinic</span>
+<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">123 Doncaster St.</span> <span itemprop="addressLocality">Winnipeg</span>, <span itemprop="addressRegion">MB</span> <span itemprop="postalCode">R3N 2B3</span></div>
+Phone: <span itemprop="telephone">(204) 925-0380</span></div>
+<p>We&rsquo;re a Winnipeg pain therapy and management clinic that will work with you to help <strong>heal your pain</strong>, offering a number of healing treatments including <em>physiotherapy, massage therapy, acupuncture and much more.</em></p>
+<p>Founded in 1979, we&rsquo;ve been on the forefront of effective pain solutions for 35+ years. In 1987 we moved to our current 3100 sq. ft. in order to serve our patients better.</p>
+<p>Our certified physiotherapists and health staff will make sure <strong>your treatment plan is designed specifically for your needs</strong>. We use a combination of solutions to help you heal in the best way possible.</p>
+<p>We also offer <em>direct billing to insurance companies</em> for our Winnipeg physiotherapy services. Can&rsquo;t make it to the clinic? Ask about our at-home physiotherapy visits!</p>
+<p>At Corydon Physiotherapy Clinic, we can help you feel better faster. <span style="text-decoration: underline;"><strong>Call us today at 204-925-0380 to learn more or book an appointment today!</strong></span></p>						
+				</div>
+				
+			</div>
+
+			<div id="right">
+			
+				<aside id="book-appointment">
+	
+					<h2>Book An Appointment Today</h2>
+				
+					<form class="cms-hot-form" action="/validate" method="post">
+
+	<div>
+
+		<fieldset>
+				
+			<dl id="CorydonPhysioAppointment-name-field">
+								<dt><label for="CorydonPhysioAppointment_name">Full Name</label></dt>
+								<dd>
+					<input type="text" name="CorydonPhysioAppointment[name]" id="CorydonPhysioAppointment_name" />				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-phone_number-field">
+								<dt><label for="CorydonPhysioAppointment_phone_number">Phone Number</label></dt>
+								<dd>
+					<input type="text" name="CorydonPhysioAppointment[phone_number]" id="CorydonPhysioAppointment_phone_number" />				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-email-field">
+								<dt><label for="CorydonPhysioAppointment_email">E-Mail Address</label></dt>
+								<dd>
+					<input type="text" name="CorydonPhysioAppointment[email]" id="CorydonPhysioAppointment_email" />				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-service-field">
+								<dt><label for="CorydonPhysioAppointment_service">Services Requested</label></dt>
+								<dd>
+					<select name="CorydonPhysioAppointment[service]" id="CorydonPhysioAppointment_service">
+<option value="physiotherapy">Physiotherapy</option>
+<option value="massage">Massage Therapy</option>
+<option value="nutrition">Nutrition Coaching</option>
+<option value="homevisit">&quot;At Home&quot; Physiotherapy Visit</option>
+<option value="occupational">Occupational Therapy</option>
+<option value="acupuncture">Acupuncture</option>
+<option value="not-sure">Not sure? We can help.</option>
+<option value="other">Other</option>
+</select>				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-reply-field">
+								<dd>
+					<ul class="radio_list"><li><input name="CorydonPhysioAppointment[reply]" type="radio" value="email" id="CorydonPhysioAppointment_reply_email" />&nbsp;<label for="CorydonPhysioAppointment_reply_email">E-Mail Reply</label></li>
+<li><input name="CorydonPhysioAppointment[reply]" type="radio" value="telephone" id="CorydonPhysioAppointment_reply_telephone" checked="checked" />&nbsp;<label for="CorydonPhysioAppointment_reply_telephone">Telephone Reply</label></li></ul>				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-captcha-field">
+								<dt><label for="CorydonPhysioAppointment_captcha">Security Code</label></dt>
+								<dd>
+					<input type="text" name="CorydonPhysioAppointment[captcha]" class="captcha" id="CorydonPhysioAppointment_captcha" /><a href='' onClick='return false' title='Reload image'><img src='/captcha?1536307700' onClick='this.src="/captcha?r=" + Math.random() + "&amp;reload=1"' border='0' class='captcha' /></a>				</dd>
+			</dl>
+	
+				
+			<dl id="CorydonPhysioAppointment-_csrf_token-field">
+								<dd>
+					<input type="hidden" name="CorydonPhysioAppointment[_csrf_token]" value="c9b3a913f0baeea296d0ab2166fc1fb9" id="CorydonPhysioAppointment__csrf_token" />				</dd>
+			</dl>
+	
+				</fieldset>
+	
+		<fieldset>
+			<input type="hidden" name="form" value="CorydonPhysioAppointment" />
+			<input type="submit" value="Submit" />
+		</fieldset>
+
+	</div>
+		
+</form>
+				<script src="//static.leadpages.net/leadboxes/current/embed.js" async defer></script> <img style="cursor:pointer; max-width: 300px;" data-leadbox-popup="WvVoGJBSBAma44rmHPT8wj" data-leadbox-domain="greatbigideas.lpages.co" src="https://lh3.googleusercontent.com/ubQnF_bbHszBGOdJSqfcVZCCY7uRcO8B2B8kl_f9oGHnyC62E9PQVoSzj02IoTQi662rCxusv1zXlOmbLkVOrw=s0" alt="Click here to subscribe"/>
+					
+				</aside>
+				
+				<ul id="contact" class="contact-side">
+	
+					<li>
+						<img src="/img/envelope.png" />
+						<a onClick="_gaq.push(['_trackEvent', 'Email Link', 'Click', 'Right Sidebar: corydonp@mts.net']);" href="mailto:corydonp@mts.net">corydonp@mts.net</a>
+					</li>
+
+					<li>
+						<img src="/img/telephone.png" />
+						<span>204-925-0380</span>
+					</li>
+
+					<li>
+						<a class="img-link" href="/contact-us"><img src="/img/map.png" /></a>
+						<div class="contact-location-header">2 Locations<br> in Winnipeg</div>
+						<div class="address-1 address-link">
+							<a href='/clinic-profile#rady-centre'>Rady Fitness Centre <img src='/img/new-tag.jpg'></a>							<div class="address-content">
+								123 Doncaster at Wellington Cres.							</div>							
+						</div>
+
+						<div class="address-2 address-link">
+							<a href='/clinic-profile#charleswood'>Charleswood</a>							<div class="address-content">
+								3354 Roblin Blvd. at Elmhurst Rd.							</div>
+						</div>						
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</div>
+	
+</div>
+
+<div id="footer">
+
+	<div class="layout-container">
+
+		<nav>
+			<ul>
+			
+	<li class="level-0 home clickable">
+		<a class="level-0 home clickable" href="/home">Home</a>
+			</li>
+			
+	<li class="level-0 our-team clickable">
+		<a class="level-0 our-team clickable" href="/our-team">Our Team</a>
+			</li>
+			
+	<li class="level-0 services clickable">
+		<a class="level-0 services clickable" href="/services">Services</a>
+			</li>
+			
+	<li class="level-0 link-40 clickable">
+		<a class="level-0 link-40 clickable" href="/blog">Health Blog</a>
+			</li>
+			
+	<li class="level-0 clinic-profile clickable">
+		<a class="level-0 clinic-profile clickable" href="/clinic-profile">Clinic Profile</a>
+			</li>
+			
+	<li class="level-0 faq clickable">
+		<a class="level-0 faq clickable" href="/faq">FAQ</a>
+			</li>
+			
+	<li class="level-0 patient-portal-login clickable">
+		<a class="level-0 patient-portal-login clickable" href="/patient-portal-login">Your Exercises</a>
+			</li>
+			<li>
+		<a href="/sitemap">Sitemap</a>
+	</li>
+		<li>
+		<a href="/contact-us">Contact</a>
+	</li>
+</ul>
+		</nav>
+
+		<aside id="colophon">
+						<h3 class="visuallyhidden">Colophon</h3>
+			<p>&copy; 2018
+<div id="" class="vcard">
+<div class="org">Corydon Physiotherapy Clinic</div>
+<a class="email" href="mailto:corydonp@mts.net">corydonp@mts.net</a>
+<div class="adr">
+<div class="street-address">3354 Roblin Blvd</div>
+<span class="locality">Winnipeg</span>, <span class="region">MB</span>&nbsp;<span class="postal-code">R3R 0C5</span> <span class="country-name">Canada</span></div>
+<div class="tel">204-925-0380</div>
+<div><span class="category">Physiotherapy</span>, <span class="category">Massage Therapy</span>, <span class="category">Acupuncture</span>, <span class="category">Nutrition Coaching</span>, <span class="category">Pain Management</span></div>
+</div>		</aside>
+
+		<aside id="credits">
+			Site design by <a href="http://www.thewebshop.ca/" target="_blank" rel="nofollow">Canada's Web Shop</a>
+		</aside>
+
+	</div>
+
+</div>
+
+		<script type="text/javascript" src="/js/cache/cdd1e6e9dbe6c5515e970b4fc43c2eee-1410472413.1523372614.js"></script>
+
+		<script type="text/javascript">
+			jQuery(function($){
+				
+	
+
+		$('nav ul.dropdown').superfish({
+
+				delay: 200,
+				autoArrows: true
+		});
+
+		$('nav ul.dropdown a').click(function() {
+			var $this = $(this);
+			if ($this.parent().find('ul').length && !$this.hasClass('clickable'))
+				return false;
+		});
+
+		// Mark all parent menu entries of the current menu entry as current as well!
+		$('nav ul.dropdown li.current').parents('li').each(function () {
+			var element = $(this);
+			element.addClass('current');
+			element.find('> a').addClass('current');
+		});// ......current
+
+	
+				});
+		</script>
+
+		<script>
+	var _gaq = [['_setAccount', 'UA-34483802-1'], ['_trackPageview']];
+	(function(d, t) {
+		var g = d.createElement(t),
+			s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+	})(document, 'script');
+</script>				
+		<!--[if lt IE 7 ]>
+			<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+			<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+		<![endif]-->
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4372ebaf82","applicationID":"10298918","transactionName":"ZFBWZkdYCBFTBkRdXF0adVFBUAkMHQZdR3VBWlpGZVgBBx0WWFtE","queueTime":0,"applicationTime":1125,"atts":"SBdVEA9CGx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

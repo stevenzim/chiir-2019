@@ -1,0 +1,1023 @@
+<!DOCTYPE html PUBLIC "" "html">
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Symptoms Shoe Insoles Do Not Appear to Prevent Chronic Low Back Pain News, Journal Notes 473510</title>
+    <link type="text/css" rel="stylesheet" media="all" href="https://www.cvs.com/webcontent/css/balance.css">
+    <link type="text/css" rel="stylesheet" media="all" href="https://www.cvs.com/webcontent/css/common.css">
+    <link type="text/css" rel="stylesheet" media="all" href="https://www.cvs.com/webcontent/css/module-mktg.css"><script type="text/javascript" src="https://www.cvs.com/webcontent/js/common.js">//</script><meta name="description" content="Find latest Health Information from CVS/pharmacy related to:Shoe Insoles Do Not Appear to Prevent Chronic Low Back Pain">
+    <meta name="keywords" content="health care,health information,cvs health care,cvs health information,Shoe Insoles Do Not Appear to Prevent Chronic Low Back Pain"><script type="text/javascript">
+					return true;
+					
+				</script><script type="text/javascript"><!--
+							Date.prototype.getWeek = function()
+							{
+								var Y = this.getFullYear();
+								var currentMonth = this.getMonth();
+								var currentDayOfTheMonth = this.getDate();
+								var numberOfDaysPastForThisYear = currentDayOfTheMonth;
+								var TempDate;
+								
+								/* We have already added the days of the current month to numberOfDaysPastForThisYear.
+								Now we want to count all the days which occured in previous months if there are any previous months. */
+								for( i = 0; i < currentMonth; i++)
+								{
+									for( n = 1; n <= 31; n++ )
+									{
+										TempDate = new Date(Y,i,n); /* Note that the number of days "n" can be any number;
+										it will simply push the month ahead as days are stacked on - therefore we can 
+										check for a change in month. September 31 is equal to October 1. */
+										
+										if( i == TempDate.getMonth() )
+										{
+											numberOfDaysPastForThisYear++;
+										}
+										else
+										{
+											/* If we are looking at September 31 or some such thing, we'll not add any days */
+										}
+									}
+								}
+								var NthWeek = Math.ceil(numberOfDaysPastForThisYear/7);
+								if(NthWeek > 52)
+								{
+								NthWeek = 52;
+								}
+								return NthWeek;
+							}							
+						--></script><script type="text/javascript"><!--
+						var CalculatorTitles = new Array("Ideal Body Weight","Body Mass Index","Waist-to-Hip Ratio","Basal Metabolism","Calorie/Energy Needs","Target Heart Rate","Activity Calculator","Calories Burned","Exercise Guide","Ovulation Calculator","Pregnancy Due Date","Depression","Diabetes","Osteoporosis","Breast Cancer","Coronary Heart Disease");
+						var CalculatorBlurbs = new Array("Using body mass index as a reference, this calculator determines your ideal body weight range. All you need to do is enter your height. ","This tool considers your height and weight to assess your weight status. ","Are you apple-shaped or pear-shaped? Find out here. ","This is the amount of calories your body burns when at rest, but awake, over the course of one day. What's your basal metabolism? ","How many calories do you need to eat each day to maintain your weight and fuel your physical activity? Enter a few of your stats into this calculator to find out. ","When you stop to take your heart rate during a workout, what should it be? Depends on your age and how hard you're working out. Find out your range here. ","Enter your weight and how many calories you would like to burn. We'll tell you which activities to do and how long to do them to work off those calories. ","Select the type and duration of activity you do and we'll tell you the calories you've burned. ","Enter your current weight and how much you would like to lose per week. We’ll tell you which activities will help you accomplish your weight loss goal and how much time you will need to spend doing them. ","Is it time to expand your family? This tool identifies your most fertile days during the month. ","Make sure you buy the diapers in time! This tool calculates your expected delivery date (EDD).","Determine your risk of depression by answering nine questions mental health professionals use to help make the diagnosis of this common condition. ","Find out if you are at increased risk for Type II Diabetes by answering a series of simple questions. ","Find out if you could benefit from further testing and treatment for osteoporosis. ","Determine your risk of developing breast cancer within the next five years based on your age and other known risk factors. ","Determine your risk of developing significant coronary heart disease within the next ten years.");
+						--></script><script type="text/javascript"><!--
+					
+					var today = new Date();
+					var weekOfYear = today.getWeek();
+					var monthOfYear = today.getMonth();
+					
+					function	populateFeatureArticleDiv()
+					{
+						var ThisWeeksFeatrSrcChunk = getThisWeeksFeatureSourceChunk();
+						var FeatureSourceXML = getXMLFile(ThisWeeksFeatrSrcChunk);
+						var featrArtChunkIID = getFeaturedArticleChunkIID(FeatureSourceXML);
+						var featrArtHref = getFeaturedArticleHREF( featrArtChunkIID );
+						var FeatureArtXML = getXMLFile( featrArtChunkIID ); //returns an actual XML document
+						var FeatrArtImageIID = getFeaturedArticleImageID(FeatureArtXML);
+						renderFeatureArticleImage(FeatrArtImageIID,featrArtHref);
+						renderFeaturedArticleHeadLink(featrArtHref,FeatureArtXML);
+						renderFeaturedArticleBlurb(FeatureSourceXML);
+					}
+					
+					function	populateFeatureVideoDiv()
+					{
+						var FeatrVidChnk = getFeaturedVideoChunkIID();
+						var FeaturedVideoXML = getXMLFile(FeatrVidChnk);
+						var FeatrVidHREF = getFeaturedVideoHREF(FeatrVidChnk)
+						renderFeatureVideoImageLink(FeatrVidHREF);
+						renderFeaturedVideoLink(FeaturedVideoXML,FeatrVidHREF);
+						renderFeaturedVideoBlurb(FeaturedVideoXML);
+					}
+					
+					function renderFeaturedVideoBlurb(FeaturedVideoXML)
+					{
+						var movieTranscriptSection;
+						var allSections = FeaturedVideoXML.getElementsByTagName("Section");
+						var transcript = "Learn more about you health and healthcare options.";
+						var transcriptTextNode;
+							
+							for( n = 0; n < allSections.length; n++ )
+							{
+								if( allSections[n].getAttribute("id") == "movie_transcript" )
+								{
+								movieTranscriptSection = allSections[n];
+								}
+							}
+							if(movieTranscriptSection.getElementsByTagName("Para")[0].firstChild.nodeName == "Italic")
+							{
+							transcript = movieTranscriptSection.getElementsByTagName("Para")[0].firstChild.firstChild.nodeValue;
+							}
+							else
+							{
+							transcript = movieTranscriptSection.getElementsByTagName("Para")[0].firstChild.nodeValue;
+							}
+							
+							if(transcript.length > 100)
+							{
+								transcript = transcript.substring( 0, 100 );
+								transcript = transcript.substring( 0, transcript.lastIndexOf(" ") );
+							}
+							
+							transcript += " ...";
+							transcriptTextNode = document.createTextNode(transcript);
+							
+							var newPara = document.createElement("p");
+							newPara.appendChild(transcriptTextNode);
+							
+							document.getElementById("FeatureVideoDiv").appendChild(newPara);
+					}
+					
+					function renderFeaturedVideoLink(FeaturedVideoXML,FeatrVidHREF)
+					{
+						var FeaturedVideoLink = document.createElement("a");
+						FeaturedVideoLink.setAttribute("href",FeatrVidHREF);
+						var newDiv = document.createElement("div");
+						newDiv.setAttribute("id","featureLinkR");
+						var newArrowImage = document.createElement("img");
+						newArrowImage.setAttribute("src","https://www.cvs.com/webcontent/images/common/redarrow.png");
+						newArrowImage.setAttribute("width","4");
+						newArrowImage.setAttribute("height","7");
+						newDiv.setAttribute("style","display:inline;");
+						var FeaturedVideoTitleText = document.createTextNode(FeaturedVideoXML.getElementsByTagName("Title")[0].firstChild.nodeValue);
+						FeaturedVideoLink.appendChild(FeaturedVideoTitleText);
+						newDiv.appendChild(FeaturedVideoLink);
+						newDiv.appendChild(newArrowImage);
+						document.getElementById("FeatureVideoDiv").appendChild(newDiv);
+					}
+					
+					function renderFeatureVideoImageLink(FeatrVidHREF)
+					{
+						var featureVideoImageSRC = "https://services.epnet.com/GetImage.aspx?imageiid=8360";
+						var FeatureVideoImageLink = document.createElement("a");
+						var FeatureVideoImage = document.createElement("img");
+						FeatureVideoImageLink.setAttribute("href",FeatrVidHREF);
+						FeatureVideoImage.setAttribute("src",featureVideoImageSRC);
+						FeatureVideoImageLink.appendChild(FeatureVideoImage);
+						document.getElementById("FeatureVideoDiv").appendChild(FeatureVideoImageLink);
+					}
+					
+					function getFeaturedVideoHREF(featVidChnk)
+					{
+						var FvHREF = "/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3";
+						FvHREF = FvHREF + "&chunkiid=" + featVidChnk;
+						return FvHREF;
+					}
+					
+					function getFeaturedVideoChunkIID()
+					{
+						var VideoChunks = new Array("889606", "889607", "889608", "889609", "889610", "889611", "889612", "889613", "889614", "889615", "889616", "889617", "889618", "889619", "889620", "889621", "889622", "889623", "889624", "889625", "889626", "889627", "889628", "889629", "889630", "889631", "889632", "889633", "889634", "889635", "889636", "889637", "889638", "889639", "889640", "889641", "889642", "889643", "889644", "889645", "889646", "889647", "889648", "889649", "889650", "889651", "889652", "889653", "889654", "889655");
+						var pick = 0;
+						
+						if( weekOfYear > 50 )
+						{
+							pick = 0;
+						}
+						else
+						{
+							pick = weekOfYear - 1;
+						}
+						return VideoChunks[pick];
+					}
+					
+					
+					function renderFeaturedArticleBlurb(FeatureSourceXML)
+					{
+						var newPara = document.createElement("p");
+						var secondPara = FeatureSourceXML.getElementsByTagName("Para")[1].firstChild.nodeValue;
+							if(secondPara.length > 100)
+							{
+								secondPara = secondPara.substring( 0, 100 );
+								secondPara = secondPara.substring( 0, secondPara.lastIndexOf(" ") );
+							}
+						secondPara += " ...";
+						var FeatureArticleBlurb = document.createTextNode(secondPara);
+						newPara.appendChild(FeatureArticleBlurb);
+						document.getElementById("FeatureArticleDiv").appendChild(newPara);
+					}
+					
+					function renderFeaturedArticleHeadLink(featrArtHref,FeatureArtXML)
+						{
+							var newDiv = document.createElement("div");
+							newDiv.setAttribute("id","featureLinkR");
+							var newArrowImage = document.createElement("img");
+							newArrowImage.setAttribute("src","https://www.cvs.com/webcontent/images/common/redarrow.png");
+							newArrowImage.setAttribute("width","4");
+							newArrowImage.setAttribute("height","7");
+							var newFeatureArticleLink2 = document.createElement("a");
+							var LinkText = document.createTextNode( FeatureArtXML.getElementsByTagName("Title")[0].firstChild.nodeValue);
+							newFeatureArticleLink2.setAttribute("href",featrArtHref);
+							newFeatureArticleLink2.setAttribute("style","display:inline;");
+							newFeatureArticleLink2.appendChild(LinkText);
+							newDiv.appendChild(newFeatureArticleLink2);
+							newDiv.appendChild(newArrowImage);
+							document.getElementById("FeatureArticleDiv").appendChild(newDiv);
+							var newBreak = document.createElement("br");
+							document.getElementById("FeatureArticleDiv").appendChild(newBreak);
+						}
+					
+					function renderFeatureArticleImage(FeatrArtImageIID,featrArtHref)
+					{
+						var featureArticleImageSRC = "https://services.epnet.com/GetImage.aspx?imageiid=";
+						featureArticleImageSRC = featureArticleImageSRC + FeatrArtImageIID;
+						var newFeatureArticleImageLink = document.createElement("a");
+						var newFeatureArticleImage = document.createElement("img");
+						newFeatureArticleImageLink.setAttribute("href",featrArtHref);
+						newFeatureArticleImage.setAttribute("src",featureArticleImageSRC);
+						newFeatureArticleImageLink.appendChild(newFeatureArticleImage);
+						document.getElementById("FeatureArticleDiv").appendChild(newFeatureArticleImageLink);
+					}
+					
+					function getFeaturedArticleImageID(featArtXML)
+					{
+						var FeatArtImageId = "3037";
+						try
+						{
+							FeatArtImageId = featArtXML.getElementsByTagName("Image")[0].getAttribute("imageiid");
+						}
+						catch(error)
+						{
+						;
+						}
+						return FeatArtImageId;
+					}
+					
+					function getFeaturedArticleHREF( featArtChunk )
+					{
+						var FaHREF = "/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3";
+						FaHREF += "&chunkiid=" + featArtChunk;
+						return FaHREF;
+					}
+					
+					function getFeaturedArticleChunkIID( featArtSrcXML )
+					{
+						return featArtSrcXML.getElementsByTagName("Para")[0].getElementsByTagName("ArticleLink")[0].getAttribute("chunkiid");
+					}
+					
+					function getThisWeeksFeatureSourceChunk()
+					{
+						var AllFeaturePrimarySources = new Array ('35430','35427', '35428', '35433', '35431', '35432', '35429', '35436', '35437');
+						var relevantWeek = weekOfYear - 1;
+						while( relevantWeek > AllFeaturePrimarySources.length -1 )
+						{
+							relevantWeek -= AllFeaturePrimarySources.length;
+						}
+						return AllFeaturePrimarySources[relevantWeek];
+					}
+					
+					function getFeaturedArticleChunkIID( featArtSrcXML )
+					{
+						return featArtSrcXML.getElementsByTagName("Para")[0].getElementsByTagName("ArticleLink")[0].getAttribute("chunkiid");
+					}
+					
+					function getXMLFile( chunkiid )
+					{						
+						var ob8, Str8, lmt8;
+						var bg8 = 0;
+						var m8 = 2;
+						
+						var r8 = 6;
+						var coeff8 = m8;
+						
+						lmt8 = m8*r8/2;
+						var obStr8;
+						while(bg8 < lmt8)	{
+							bg8++;
+						}
+						ob8 = "isxml";
+						
+						if(m8*r8/2 == lmt8)
+						{
+							Str8 = "=true";
+						}
+						
+						if(bg8%2==0)
+						{
+							obStr8 = ob8 + Str8;
+						}
+						
+						XMLFileName = "/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3";
+						
+						XMLFileName += "&chunkiid=" + chunkiid + "&" + obStr8;
+						
+						var XMLDoc;
+						
+						try
+						{
+							var xmlhttp = new XMLHttpRequest(); 
+							xmlhttp.open("GET",XMLFileName,false);
+							xmlhttp.send(null);
+							XMLDoc = xmlhttp.responseXML.documentElement;
+						}
+						catch(e)
+						{
+							try
+							{
+								XMLDoc =document.implementation.createDocument("","",null);
+								XMLDoc.async=false;
+								XMLDoc.load(XMLFileName);
+							}
+							catch(e)
+							{
+								try
+								{
+									XMLDoc = new ActiveXObject("Microsoft.XMLDOM");
+									XMLDoc.async=false;
+									XMLDoc.load(XMLFileName);
+									XMLDoc.getResponseHeader();
+								}
+								catch(e)
+								{
+								;
+								}
+							}
+						}
+						return XMLDoc;
+					}
+					
+					
+					--></script><script language="JavaScript">
+			
+					var oPrintWin;
+					function ShowPamphlet(winURL) 
+					{ 
+						try
+						{
+						//alert(oPrintWin);
+							if ((oPrintWin==undefined) || (oPrintWin.closed)) 
+							{
+								//alert(winURL);
+								oPrintWin = window.open(winURL,'EP_Pamphlet','width=620,height=600,top=30,left=230,toolbar=0,status=0,menubar=0,resizable=1,scrollbars=1'); 
+								oPrintWin.focus();
+							} else 
+							{
+								oPrintWin.focus();
+							}
+						} 
+						catch(e) 
+						{
+						;
+						}
+					}
+					
+		</script><link rel="stylesheet" href="https://healthlibrary.epnet.com/css/ep_containerStyle_919_CVS.css">
+    <style type="text/css">
+					#HLSearchBox {
+					height:21px;
+					width:128px;
+					background:url(https://services.epnet.com/getimage.aspx?imageiid=8230);
+					background-repeat:no-repeat;
+					background-size:100% 100%;
+					border:solid 0px red;
+					font-size:12px;
+					color:#555555;
+					float:left;
+					margin:8px 0px 14px 0px;
+					text-align:left;
+					padding-left:8px;
+					}
+					
+					#searchbutton {
+					position:relative;
+					height:24px;
+					width:26px;
+					margin:7px 0px 34px 8px;
+					float:left;
+					}
+					
+					
+					#main {
+					clear:both;
+					}
+					
+					#pageHeading{ 
+					color:#007099;
+					margin-top:20px; 
+					font-size: 30px
+					}
+					
+					.refineStyle li a {
+					background: url("https://www.cvs.com/bizcontent/general/arrow-blue-sm-00.png") no-repeat scroll 20px 13px #F5F5F5;
+					color: #585858;
+					display: block;
+					line-height: 30px;
+					padding-left: 8px;
+					text-decoration: none;
+					text-indent: 20px;
+					}
+					
+					.refineStyle li a:hover {
+					color: #CC0000;
+					text-decoration: underline;
+					}
+					
+					.refineStyle h2 {
+					background-color: #F0F0F0;
+					border-bottom: 1px solid #D7D7D7;
+					color: #007799;
+					display: block;
+					float: none;
+					font-size: 1.167em;
+					line-height: 16px;
+					margin: 0;
+					overflow: hidden;
+					padding: 20px 0;
+					text-indent: 10px;
+					}
+						
+						
+					#featureLinkR {
+					position:relative;
+					display:block;
+					top:6px;
+					font-size:12px;
+					line-height:13px;
+					height:30px;
+					width:350px;
+					}
+					
+										
+					#featureLinkR a {
+					position:relative;
+					top:0px;
+					font-weight:600;
+					color:#CC0000;
+					margin-right:5px;
+					margin-top:15px;
+					text-decoration:none;
+					}
+					
+					#featureLinkR a:hover {
+					text-decoration:underline;
+					}
+					
+					li .secondaryR {
+					text-decoration:none;
+					}
+					
+					li .secondaryR:hover {
+					text-decoration:underline;
+					}
+					
+					#adSpaceRight {
+					
+					display:none;
+					
+					position:relative;
+					top:0px;
+					width:108px;
+					float:right;
+					height:350px;
+					z-index:4;
+					border:solid 1px #AAAAAA;
+					padding:5px;
+					background-color:#F5F5F5;
+					}
+					
+					#ep_videoContainer embed{
+					width:470px;
+					height:330px;
+					}
+					
+					#ep_documentBody p {
+					clear:both;
+					}
+					
+					.footer-column:nth-child(3) {
+					width:150px;
+					}
+					
+					.footer-column:nth-child(4) {
+					width:200px;
+					margin-right:21px;
+					}
+					
+#HLDocument ul li {
+list-style-image: url(https://services.epnet.com/getImage.aspx?ImageIID=6701);
+
+}
+#HLDocument ul li ul li {
+list-style-image: url(https://services.epnet.com/getImage.aspx?ImageIID=6704);
+}
+.ep_groupNavigation {
+background-image:url('https://services.epnet.com/GetImage.aspx/getImage.aspx?ImageIID=8244');
+}
+#ep_rightHandTools {
+background-image:url('https://services.epnet.com/GetImage.aspx/getImage.aspx?ImageIID=8244');
+}
+#EP__HeaderCell { 
+background: url('https://services.epnet.com/getImage.aspx?ImageIID=7209') no-repeat;
+}
+#HLSearchBox {
+background:url(https://services.epnet.com/getimage.aspx?imageiid=8230);
+}
+
+					
+					
+				</style>
+    <style type="text/css">
+						 #top-nav-tabs-ec > .col1 > a.hover,
+						 #top-nav-tabs-ec > .col2 > a.hover,
+						 #top-nav-tabs-ec > .col3 > a.hover,
+						 #top-nav-tabs-ec > .col4 > a.hover{background-position: 0 0 !important;} 
+					</style><script type="text/javascript" src="https://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/js/SC_map.js">//</script><script type="text/javascript" src="https://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/js/jquery-1.3.2.js">//</script><script type="text/javascript" charset="ISO-8859-1" src="https://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/js/SymptomChecker.js">//</script><script type="text/javascript" src="https://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/js/jquery-ui.js">//</script><link rel="stylesheet" type="text/css" href="https://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/css/SC_Caribbean.css"><script type="text/javascript">
+					EPSC.SC_baseURI = "GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&chunkiid=";
+					EPSC.SC_zIndex = 9999;
+					EPSC.SC_Color = "Caribbean";
+					EPSC.SC_AdditionalRequestObjects = "";
+					EPSC.SC_defaultLanguage = "E";
+					
+					EPSC.IMAGELOCATION = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/";
+					
+					//This is a divide-by number. 2 will place the SC in the horizontal center; 1 will bump it right up against the 
+					//right side of the browser window; 1.05 will place a small margin to its right.
+					//EPSC.SC_hOffset = 2;
+					
+					//vertical offset..., 20 will place 20 pixels more space under the SC, -20 will subtract 20 pixels
+					EPSC.SC_vOffset = 190; 
+					
+					/*### ONE LANGUAGE ONLY OPTION ###*/
+					/*\\\\\\\\\\\\\\\/////////////////*/
+						//Only set this variable if you 
+						//need only one language or the other.
+						//Set this to "En" for English or "Sp" for Spanish.
+						//SC_OneLangOnly = "En";
+					/*/////////////////\\\\\\\\\\\\\\\*/
+					/*### ONE LANGUAGE ONLY OPTION ###*/
+					
+					var preload1 = new Image();
+					preload1.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/whiteBk" + EPSC.SC_Color + "_AM.gif";
+					var preload2 = new Image();
+					preload2.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/whiteBk" + EPSC.SC_Color + "_AF.gif";
+					var preload3 = new Image();
+					preload3.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/whiteBk" + EPSC.SC_Color + "_CM.gif";
+					var preload4 = new Image();
+					preload4.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/whiteBk" + EPSC.SC_Color + "_CF.gif";
+					var preload5 = new Image();
+					preload5.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/closerButton" + EPSC.SC_Color + "_Over.gif";
+					var preload6 = new Image();
+					preload6.src = "http://medical.ebscohost.com/HLPeripheral/SymptomChecker_ASPX/images/SymptChkrButton" + EPSC.SC_Color + "_Over.gif";
+					
+					$(window).ready( function() {
+						$("#CVS_SC_VsbltySttr").click(function() {		
+							EPSC.setCookie("SC_CookieTest", "yes");		
+								if(EPSC.SymptomCheckerVisibility == "V")
+								{
+									EPSC.SymptomCheckerVisibility = "H";
+									$("#SymptomCheckerDiv").slideUp(250);
+								}
+								else
+								{
+									EPSC.SymptomCheckerVisibility = "V";
+									$("#SymptomCheckerDiv").slideDown(250);
+								}
+								var cValue = EPSC.getNewCookieString();
+								EPSC.setCookie(EPSC.SC_CookieName, cValue, EPSC.cookieDuration);
+						});
+					});
+					</script><script type="text/javascript"> 
+					function exLinkRedirector(URL)
+					{
+						alert("Thank you for visiting our health content page. You are now being re-directed to an external site.");
+						setTimeout( "reDirect('" + URL + "')", 800 );
+					}
+					
+					function reDirect(URL)
+					{
+						var newWindow=window.open( URL, "_blank", "menubar=yes,location=yes,toolbar=yes,scrollbars=yes,resizable=yes,height=554,width=820", false );
+						newWindow.focus();
+					}
+					
+					function exLinkLongURLDisplayer(URL)
+					{
+						prompt('Full reference URL reads as follows:',URL);
+					}
+				</script></head>
+  <body>
+    <div id="headWrap">
+      <div id="headRow01Wrap">
+        <div id="headRow01" class="floatContainer">
+          <div id="tabsBlock" class="floatContainer floatLeft"><a id="navTab_01" title="CVS.com" alt="CVS.com" class="navTab floatLeft selected" href="https://www.cvs.com/">CVS.com</a><a href="https://www.minuteclinic.com" id="navTab_03" class="navTab floatLeft" title="MinuteClinic" alt="MinuteClinic">MinuteClinic</a><a href="https://www.cvsphoto.com/home.aspx" id="navTab_02" class="navTab floatLeft" title="Photo" alt="Photo">Photo</a><a href="https://www.cvs.com/account/sso/intersite_transfer_service.jsp" id="navTab_04" class="navTab floatLeft" title="Optical">Optical</a></div>
+          <ul id="accountBlock" class="floatContainer floatRight">
+            <li id="weeklyAd" class="floatRight last"><a href="https://www.cvs.com/weeklyad/browse/browse-home.jsp#Browse" title="View Weekly Store Ad">myWeekly Ad</a></li>
+            <li class="floatRight"><a title="Find CVS Store Locations" href="https://www.cvs.com/stores/store-locator-landing.jsp">Store Locator</a><span class="link_dev">|</span></li>
+            <li class="floatRight "><b class="header_top_links header_top_links_small">Welcome to the Health Information Center</b><span class="link_dev">|</span></li>
+          </ul>
+        </div>
+      </div>
+      <div id="headRow02Wrap">
+        <div id="headRow02">
+          <div id="navWrapper">
+            <div class="opinionlab"><script type="text/javascript">O_GoT('<img src="https://www.cvs.com/webcontent/images/opinionlab/sm_666_oo.gif" border="0" title="Please give us your feedback, opens Feedback external site in a new window" alt=""> Feedback');</script></div>
+            <div id="cvsLogo" class="floatLeft col col1"><a title="Go to CVS home" href="/"><img src="https://www.cvs.com/webcontent/images/common/cvs-logo.png" width="87" height="86" alt="CVS/pharmacy home"></a></div>
+            <div class="floatLeft col col2">
+              <div class="row1"></div>
+              <div id="top-nav-container">
+                <ul id="top-nav-tabs-ec">
+                  <li id="pharmacy-top-nav-tab" class="floatLeft col col1 top-nav-tab"><a id="pharmacy-flyout-tab" href="https://www.cvs.com/pharmacy/pharmacy-homepage.jsp?version=cookied" class="tab menu-phrmacy" title="Pharmacy">Pharmacy</a></li>
+                  <li id="shop-top-nav-tab" class="floatLeft col col2 top-nav-tab"><a id="shop-flyout-tab" href="https://www.cvs.com/shop/" class="tab menu-shop" title="Shop">Shop</a></li>
+                  <li id="deals-top-nav-tab" class="floatLeft col col3 top-nav-tab"><a id="deals-flyout-tab" href="https://www.cvs.com/deals/deals.jsp" class="tab menu-deals" title="Deals"><span class="hidebehindimage">Deals</span></a></li>
+                  <li id="extracare-top-nav-tab" class="floatLeft col col4 top-nav-tab"><a id="extracare-flyout-tab" href="https://www.cvs.com/extracare/landing.jsp" class="tab menu-extracare" title="ExtraCare"><span class="hidebehindimage">ExtraCare</span></a></li>
+                  <li class="floatLeft col col5 top-nav-tab">
+                    <form name="GlobalSearchForm" id="GlobalSearchForm" method="get" action="https://www.cvs.com/search/_/N-0">
+                      <fieldset class="floatContainer">
+                        <legend class="hidden">Search</legend><label for="searchbox" class="hidden">Search</label><input type="text" id="searchbox" name="searchTerm" onfocus="clearSearchBox(this.id);" class="floatLeft" value="Search" maxlength="255" style="width:310px"><button type="submit" id="searchBoxSubmit"><img src="https://www.cvs.com/webcontent/images/common/magnifying-icon.png" width="13" height="12" alt="Submit Search"></button><input type="hidden" id="pt" name="pt" value="global"></fieldset>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="simple_overlay" id="cvs-overlay">
+          <div class="details"></div><a id="overlayClose" class="close">Close</a></div>
+        <div class="addcartmodalDialogBox" id="addToCart-overlay">
+          <div class="details"></div><a id="overlayCloseAdd" class="close">Close</a></div>
+      </div>
+    </div>
+    <div id="mainWrapper">
+      <div id="main">
+        <div id="headerColumn">
+          <ul id="breadcrumb" class="floatContainer floatList">
+            <li class="floatLeft col1"><a href="https://www.cvs.com">Home</a></li>
+            <li class="floatLeft">|</li>
+            <li class="floatLeft col2"><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3">Health Information Center</a></li>
+          </ul>
+        </div>
+        <div id="colWrapper" class="floatContainer">
+          <div id="leftNavZone" class="floatLeft">
+            <div class="refineStyle blackarrow" style="margin-top:12px;">
+              <h2>Medical Condition Library</h2>
+              <ul class="ep_CVSLeft">
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33786">In-Depth Reports</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33341">Fact Sheets</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=248916">Resource Centers</a></li>
+                <li><a href="javascript:ce = window.open('https://healthlibrary.epnet.com/tools/index3.aspx?siteid=healthlibrary&amp;token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;frame=parent','ConditionExplorer','width=738,height=541,location=no,status=yes,menubar=no,scrollbars=no,resizable=yes');ce.focus();void(null);">Condition Navigator</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33342">Tests, Procedures &amp; Surgery</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=45979">Videos &amp; Animations</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=1000106">Additional Wellness Videos</a></li>
+                <li><a id="CVS_SC_VsbltySttr">Symptom Checker</a></li>
+              </ul>
+            </div>
+            <div class="refineStyle blackarrow" style="clear:both;">
+              <h2>Information Centers</h2>
+              <ul class="refineStyleCatalog">
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33694">Allergy</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33703">Arthritis</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33706">Asthma</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33711">Cancer</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33712">Chronic Fatigue Syndrome</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33713">Colds &amp; Flu</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33718">Diabetes</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33736">Heart Disease</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33740">Hepatitis</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33772">Stroke</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33774">Weight Management</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=248916">View All</a></li>
+              </ul>
+            </div>
+            <div class="refineStyle blackarrow" style="clear:both;">
+              <h2>Wellness Centers</h2>
+              <ul class="refineStyleCatalog">
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35427">Aging &amp; Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35437">Women's Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35431">Men's Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35433">Kids' &amp; Teens' Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=112722">Diet Center</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35430">Food &amp;  Nutrition</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33774">Weight Management</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35432">Mental Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=35429">Fitness</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=33756">Oral Health</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=45979">Wellness Animations</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=143943">View All</a></li>
+              </ul>
+            </div>
+            <div class="refineStyle blackarrow" style="clear:both;">
+              <h2>Helpful Resources</h2>
+              <ul class="refineStyleCatalog">
+                <li><a href="dict.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;docid=/MedicalDictionary/index">Medical Dictionary</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=136688">Healthcare Provider Management</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=40199">Medical News and Research</a></li>
+                <li><a href="GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=157017">Health Myths</a></li>
+                <li><a href="javascript:md=window.open('https://calculators.epnet.com?docid=healthcalculators/listofcalculators&amp;CollectionIID=921&amp;DeliveryContext=coe&amp;token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;hasHRA=true&amp;frame=parent','Calculators','width=625,height=550,left=0,top=0,scrollbars=yes,toolbar=no,location=no,resizable=yes');md.focus();void(null);">Health Calculators</a></li>
+                <li><a href="javascript:ae=window.open('https://healthlibrary.epnet.com/tools/index2.aspx?siteid=healthlibrary&amp;token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;frame=parent','AnatomyExplorer','width=738,height=541,location=no,status=yes,menubar=no,scrollbars=no,resizable=yes');ae.focus();void(null);">Anatomy Navigator</a></li>
+                <li><a href="https://www.cvs.com/CVSApp/health/drug_information_center.jsp">Medication Management</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="contentZone" class="floatLeft">
+            <table cellspacing="0" cellpadding="0" id="EP__wrapperTable">
+              <tr>
+                <td id="EP__HLContentCell"><div id="HLDocument"><a name="top"><input type="hidden" /></a><script type="text/javascript">
+		
+			function exLinkRedirector(URL)
+			{
+				alert("Thank you for visiting our health content page. You are now being re-directed to an external site.");
+				setTimeout( "reDirect('" + URL + "')", 800 );
+			}
+			
+			function reDirect(URL)
+			{
+				var newWindow=window.open( URL, "_blank", "", false );
+				newWindow.focus();
+			}
+			
+			function exLinkLongURLDisplayer(URL)
+			{
+				prompt('Full reference URL reads as follows:',URL);
+			}
+			
+		</script><script type="text/javascript"><!--
+						var currentRefVisibility = "false";
+						function toggleRef()
+						{
+							if (document.getElementById("toggleAnchor"))
+							{
+								var counter = 0;
+								var counter2 = 0;
+								var referenceNodes = document.getElementsByTagName('p');
+								var currentState;
+								
+								if(currentRefVisibility == "true")
+								{
+									while(counter2 < referenceNodes.length)
+									{
+										if(referenceNodes[counter2].getAttribute("className")=="ep_reference")
+										{
+										referenceNodes[counter2].setAttribute("className", "ep_referenceHidden");
+										}
+										if(referenceNodes[counter2].getAttribute("class")=="ep_reference")
+										{
+										referenceNodes[counter2].setAttribute("class", "ep_referenceHidden");
+										}
+										counter2++;
+									}
+									currentRefVisibility = "false";
+								}
+								else
+								{
+									while(counter2 < referenceNodes.length)
+									{
+										if(referenceNodes[counter2].getAttribute("className")=="ep_referenceHidden")
+										{
+										referenceNodes[counter2].setAttribute("className", "ep_reference");
+										}
+										if(referenceNodes[counter2].getAttribute("class")=="ep_referenceHidden")
+										{
+										referenceNodes[counter2].setAttribute("class", "ep_reference");
+										}
+										counter2++;
+									}
+									currentRefVisibility = "true";
+								}
+	
+								minSign = document.createTextNode("[ - ]");
+								plusSign = document.createTextNode("[ + ]");
+								ToggleAnchor = document.getElementById("toggleAnchor");
+								ToggleAnchorSymbol = ToggleAnchor.childNodes[0].nodeValue;
+								
+								if(currentRefVisibility == "false")
+								{
+								ToggleAnchor.removeChild(ToggleAnchor.childNodes[0]);
+								ToggleAnchor.appendChild(plusSign);
+								}
+								else
+								{
+								ToggleAnchor.removeChild(ToggleAnchor.childNodes[0]);
+								ToggleAnchor.appendChild(minSign);
+								}
+							}
+							else
+							{
+							;
+							}
+						}
+						
+						function openRef()
+						{
+						if (document.getElementById("toggleAnchor"))
+							{
+								var counter2 = 0;
+								var referenceNodes = document.getElementsByTagName('p');
+								var currentState;
+								
+								if(currentRefVisibility == "false")
+								{
+									while(counter2 < referenceNodes.length)
+									{
+										if(referenceNodes[counter2].getAttribute("className")=="ep_referenceHidden")
+										{
+										referenceNodes[counter2].setAttribute("className", "ep_reference");
+										}
+										if(referenceNodes[counter2].getAttribute("class")=="ep_referenceHidden")
+										{
+										referenceNodes[counter2].setAttribute("class", "ep_reference");
+										}
+										counter2++;
+									}
+									currentRefVisibility = "true";
+								}
+								minSign = document.createTextNode("[ - ]");
+								plusSign = document.createTextNode("[ + ]");
+								ToggleAnchor = document.getElementById("toggleAnchor");
+								ToggleAnchorSymbol = ToggleAnchor.childNodes[0].nodeValue;
+								ToggleAnchor.removeChild(ToggleAnchor.childNodes[0]);
+								ToggleAnchor.appendChild(minSign);
+							}
+							else
+							{
+							;
+							}
+						}
+					--></script><h1 id="ep_Title">Shoe Insoles Do Not Appear to Prevent Chronic Low Back Pain</h1><div class="ep_byLine">
+      by
+      Pamela Jones, MA</div><div id="ep_rightHandTools" xmlns:fo="http://www.w3.org/1999/XSL/Format"><div id="ep_documentNavigation"><div class="ep_navigation"><div><a href="#AbouStudy">About the Study</a></div><div><a href="#How  You?">How Does This Affect You?</a></div></div><div id="EP_featuresLinks"><a onclick="javascript:ShowPamphlet('https://healthlibrary.epnet.com/PamphletPrint.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=473510');" href="javascript: void(null);"><img alt="Print" src="https://services.epnet.com/getimage.aspx?imageiid=6696" /></a><a href="http://health.cvs.com/send2friend.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=473510"><img alt="Send to a Friend" src="https://services.epnet.com/getimage.aspx?imageiid=6697" /></a></div></div></div><div id="ep_documentBody"><a name="top"><input type="hidden" /></a><p>
+      Back pain is one of the most common health problems in the US. There are a variety of causes for back pain including:
+      <ul><li>High-impact activities</li><li>Standing for  long periods of time</li><li>Poor posture</li><li>Poor lifting techniques</li><li>Weak muscles</li></ul>
+      Shoe insoles are commonly used to treat back pain. The insoles are designed to help by decreasing impact and encouraging proper alignment.
+    </p><p>
+      Researchers of the Cochrane Library reviewed several past studies to assess if shoe insoles were actually effective in the prevention or treatment of
+      <a href="/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=11702">low back pain</a>. The study found strong evidence that insoles can not prevent back pain. The study was unable to gather enough information to determine if they are an effective treatment option.
+     </p><a name="AbouStudy"><input type="hidden" /></a><div id=""><h1>About the Study</h1><p>
+        The
+        <a href="/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=373102#Systematicreview">systematic review</a>
+        included six previous
+        <a href="/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=373102#RCT">randomized controlled studies</a>. The studies all compared treatment of customized and non-customized insoles to placebo, no intervention, or other interventions. Some studies reviewed the ability of insoles to prevent back pain in people that spent a lot of time on their feet (walking or standing). Other studies reviewed the effect the insoles had on the pain level of people with current back pain. Some studies reviewed both prevention and pain management. After review, the following conclusions were reached: <ul><li>There is strong evidence that insoles are not useful in back pain prevention.</li><li>There is some weaker evidence that insoles may help  relieve back pain.</li></ul></p><p>There are some limits with this study review. There was no long-term information provided for treatment or prevention. Most of the studies also only focused on young, healthy males.</p></div><a name="How  You?"><input type="hidden" /></a><div id=""><h1>How Does This Affect You?    <a href="#top"><span class="topLink">TOP</span></a></h1><p>The limits of the study can affect the intensity of the results. The evidence was too weak on back pain treatment to provide a firm conclusion. If you have back pain, talk to your doctor about treatment options.</p><p>
+        To prevent back pain, practice good posture and
+        proper lifting techniques. Participate in regular physical activity and work to strengthen your abdominal and back muscles.
+       </p></div></div><div id="ep_documentTrail"><div class="ep_resourceGroup"><h1>RESOURCES:</h1><div class="ep_resource">American Academy of Family Physicians<br /><a href="javascript:exLinkRedirector('http://www.familydoctor.org/')">http://www.familydoctor.org/</a></div><div class="ep_resource">American Academy of Orthopaedic Surgeons<br /><a href="javascript:exLinkRedirector('http://www.aaos.org/')">http://www.aaos.org/</a></div></div><div class="ep_sourceInformation"><h1>References:</h1><div class="ep_source">
+          Sahar T, Cohen MJ, Ne'eman V, et al. Insoles for prevention and treatment of back pain.
+          <i>Cochrane Database of Systematic Reviews 2009</i>
+          . Intervention review 2009. Issue 4. Art. No.: CD005275. DOI: 10.1002/14651858.CD005275.pub2.
+        </div></div><div class="ep_reviewInformation">Last reviewed March 2009 by <a href="/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=29311#Lucas">Larissa J. Lucas, MD</a></div></div></div></td>
+              </tr>
+              <tr>
+                <td id="EP__FooterCell" colspan="2">
+                  <div id="ep_documentTrail">
+                    <p>EBSCO Information Services is fully accredited by <a href="https://accreditnet2.urac.org//uracportal/Directory/CompanyView/3274" target="_new">URAC</a>. URAC is an independent, nonprofit health care accrediting organization dedicated to promoting health care quality through accreditation, certification and commendation.</p>
+                    <p>This content is reviewed regularly and is updated when new and relevant evidence is made available. This information is neither intended nor implied to be a substitute for professional medical advice. Always seek the advice of your physician or other qualified health provider prior to starting any new treatment or with questions regarding a medical condition.</p>
+                    <p>To send comments or feedback to our Editorial Team regarding the content please email us at <a href="mailto:healthlibrarysupport@ebsco.com?subject=TOKEN:f75979d-ARTICLE:473510">healthlibrarysupport@ebsco.com</a>. Our Health Library Support team will respond to your email request within 2 business days.</p>
+                  </div>
+                  <div class="ep_copyright"><a href="http://health.cvs.com/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=255878" target="_blank"><nobr>Copyright ©
+				<script type="text/javascript">
+					var todaysDate = new Date();
+					var y = todaysDate.getFullYear();
+					y = y.toString();
+					document.write(y);
+					</script></nobr></a> <a target="_blank" href="https://www.ebscohost.com/">EBSCO Information Services</a><br>All rights reserved.</div>
+                  <div class="ep_policies"><a href="https://www.ebsco.com/company/privacy-policy#eis_products_services_privacy_policy">Privacy Policy</a> | <a href="http://health.cvs.com/GetContent.aspx?token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&amp;chunkiid=29309">Editorial Policy</a></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="adSpaceRight">advertisement</div>
+        </div>
+      </div>
+    </div>
+    <div id="footerOuterWrap">
+      <div id="footerWrapper">
+        <div id="footer">
+          <form action="https://www.cvs.com/email/" method="get" class="floatContainer">
+            <fieldset class="floatContainer floatLeft">
+              <legend class="hidden">Email Newsletter Signup</legend>
+              <div class="floatLeft col col1"><label for="newsletter">Sign up for our email newsletter</label></div>
+              <div class="floatLeft col col2"><input type="email" value="Email Address" class="floatLeft" id="newsletter" name="email" onclick="javascript:document.getElementById('newsletter').value=''"></div>
+              <div class="floatLeft col col3"><button name="newsletter_submit" id="newsletter_submit" type="submit" title="Go">Go</button></div>
+            </fieldset>
+            <div id="socialMedia">
+              <div>
+								Follow us on:
+							</div>
+              <ul class="floatRight">
+                <li><a href="http://www.facebook.com/CVS" title="Follow us on Facebook"><img src="https://www.cvs.com/webcontent/images/common/facebook-icon.png" alt="Facebook" width="24" height="24"></a></li>
+                <li><a href="http://twitter.com/CVS_Extra" title="Follow us on Twitter"><img src="https://www.cvs.com/webcontent/images/common/twitter-icon.png" alt="Twitter" width="24" height="24"></a></li>
+                <li><a href="http://www.youtube.com/cvspharmacyvideos" title="Follow us on Youtube"><img src="https://www.cvs.com/webcontent/images/common/youtube-icon.png" alt="Youtube" width="24" height="24"></a></li>
+                <li><a href="https://www.cvs.com/mobility" title="Follow us on your Phone"><img src="https://www.cvs.com/webcontent/images/common/cellphone-icon.png" alt="Phone" width="24" height="24"></a></li>
+              </ul>
+            </div>
+          </form>
+          <div id="footerMenuWrapper" class="floatContainer">
+            <div id="16517">
+              <style type="text/css">	
+								#promocontent a {text-decoration:none; cursor:pointer;}
+								div#footer-links {
+								width: 940px; height: 200px;
+								margin-top: 0px; margin-left: 0px; 
+								}
+								#footer-links p {margin: 0px;}
+								div.footer-column {
+								width: 188px; float: left;
+								margin-left: 0px; margin-top: 0px;
+								text-align: left; padding-top: 0px;
+								}
+								#promocontent .promoLinkred {
+								background: url("https://www.cvs.com/bizcontent/general/arrow-red.png") no-repeat scroll right center transparent;
+								color: #CC0000;
+								display: inline-block;
+								font-weight: bold;
+								padding: 0 0.833em 0 0;
+								text-decoration: none;
+								}
+							</style>
+              <div id="promocontent">
+                <div id="footer-links">
+                  <div class="footer-column"><a class="promoLinkred" href="https://www.cvs.com/pharmacy/pharmacy-homepage.jsp">Pharmacy Services</a><br><a href="https://www.cvs.com/drug">Drug Information Center</a><br><a href="https://health.cvs.com/">Health Information Center</a><br><a href="https://www.cvs.com/checkout/rx/rx_new_prescription.jsp?flow=rx&amp;passedTransactionType=new">New Prescriptions</a><br><a href="https://www.cvs.com/pharmacy/center.jsp?tab=summary">Refill Prescriptions</a><br><a href="https://www.cvs.com/checkout/rx/rx_transfer_pharmacy_info.jsp">Transfer Prescriptions</a><br><a href="https://www.cvs.com/pharmacy/center.jsp?tab=order_history">View/Print Prescription History</a><br><a href="https://www.cvs.com/checkout/rx/rx_express_refill_container.jsp">Rapid Refill</a><br><a href="https://www.cvs.com/bizcontent/general/footer/pharmacy-customer-bill-of-rights-for-language-services.pdf">New York Patient Bill of Rights</a><br><br><p>Questions? <br>Call 1-888-607-4287</p>
+                  </div>
+                  <div class="footer-column"><a href="https://www.cvs.com/store-locator/landing" class="promoLinkred">CVS/pharmacy Stores</a><br><a href="https://www.cvs.com/store-locator/landing">Store Locator</a><br><a href="https://www.cvs.com/giftcards">CVS/pharmacy Gift Cards</a><br><a href="https://www.cvs.com/account/sso/intersite-sso-service.jsp?target=photo">CVSphoto</a><br><a href="https://www.cvs.com/shop/online-deals/_/N-3vZ2k?pt=SHOP&amp;searchTerm=money-center">Money Center</a><br><a href=" /minuteclinic/">MinuteClinic</a><br><br><a href="https://www.cvs.com/account/my-account.jsp" class="promoLinkred">My Account</a><br><a href="https://www.cvs.com/account/order-status-and-history.jsp">Order Status</a><br></div>
+                  <div class="footer-column"><a href="https://www.cvs.com/deals/deals.jsp" class="promoLinkred">Deals</a><br><a href="https://www.cvs.com/myweeklyad">myWeekly Ad</a><br><a href="https://www.cvs.com/onlinesales">Online Offers</a><br><a href="https://print.coupons.com/alink.asp?go=14415oj9710">In-Store Offers</a><br><p style="line-height: 0px;"> </p><a href="https://www.cvs.com/extracare/landing.jsp" class="promoLinkred">ExtraCare</a><br><br><a href="https://www.cvs.com/mobile-cvs" class="promoLinkred">Mobile</a><br><a href="https://www.cvs.com/mobile-cvs/sites">Mobile Sites</a><br><a href="https://www.cvs.com/mobile-cvs/apps">Mobile App</a><br></div>
+                  <div class="footer-column"><a class="promoLinkred" href="https://www.cvs.com/help/help_index.jsp">Help</a><br><a href="https://www.cvs.com/help/help_contact_us.jsp">Contact Us</a><br><a href="https://www.cvs.com/returnpolicy">Return Policy</a><br><a href="https://www.cvs.com/shippinginformation">Shipping Information</a><br><a href="https://www.cvs.com/help/privacy_policy.jsp">Privacy Policy</a><br><a href="https://www.cvs.com/help/sitemap/sitemap.jsp">Site Map</a><br><a href="https://www.cvs.com/help/help_subtopic_details.jsp?subtopicName=Security+Alerts&amp;topicid=2400003">Security</a><br><a href="https://apps.health.ny.gov/pdpw/SearchDrugs/Home.action">NY Prescription Drug Price List</a><br><br><a class="promoLinkred" href="https://www.caremark.com">Prescription Benefit Management</a><br><a href="https://www.caremark.com">Caremark.com</a></div>
+                  <div class="footer-column"><a href="https://www.cvshealth.com" class="promoLinkred">Corporate Information</a><br><a href="https://www.cvshealth.com">CVSHealth.com</a><br><a href="https://investors.cvshealth.com">Investors</a><br><a href="https://www.cvshealth.com/newsroom">Newsroom</a><br><a href="https://www.cvshealth.com/social-responsibility">Social Responsibility</a><br><a href="https://jobs.cvshealth.com/article/retail-jobs">Careers</a><br><a href="https://www.cvshealth.com/patient-privacy">Patient Privacy</a><br><a href="https://www.cvshealth.com/social-responsibility/corporate-social-responsibility/ethics-and-human-rights">Ethics &amp; Human Rights</a><br><a href="https://www.cvscaremarkrealty.com/">Real Estate</a><br><a href="https://www.cvspharmacyacquisitions.com/">Sell Your Pharmacy</a><br><a href="https://www.cvssuppliers.com/">Suppliers</a><br><a href="https://www.silverscript.com/">SilverScript.com</a><br></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_wraper"></div>
+          <div id="policyWrapper" class="floatContainer">
+            <div id="policy"><a href="https://www.cvs.com/help/terms_of_use.jsp">Terms of Use</a>|
+							<a href="https://www.cvs.com/accessibility">Accessibility</a>|
+							<a href="https://www.cvs.com/help/privacy_policy.jsp">Privacy Policy</a>|
+							<span>© Copyright 1999 - 2016 CVS.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div><script type="text/javascript">
+						
+							if( window.location.host == "healthlibrary.epnet.com" )
+							{
+								var newURLString = "https://health.cvs.com" + window.location.pathname + window.location.search;
+								window.location.replace(newURLString);
+							}
+						
+							/*
+							if( navigator.userAgent.indexOf("Chrome") != -1 )
+							{
+								var alphaNav = document.getElementById("ep_alphaNavigation");
+								var allAlphaLinkSpans = alphaNav.getElementsByTagName("span");
+								
+								for( var n in allAlphaLinkSpans )
+								{
+									if( allAlphaLinkSpans.length > 20 )
+									{
+									allAlphaLinkSpans[n].setAttribute("style","width:11px;margin:0px 3px 0px 4px");
+									}
+									else
+									{
+									allAlphaLinkSpans[n].setAttribute("style","width:12px;margin:0px 6px 0px 6px");
+									}
+								}
+							}
+							*/
+						
+							var rightHandToolsElement = document.getElementById("ep_rightHandTools");
+						
+							if( navigator.userAgent.indexOf("MSIE 8.") != -1)
+							{
+								if(  document.getElementById("ep_indexVersionLinks") && !( document.getElementById("ep_documentNavigation") )  )
+								{
+									rightHandToolsElement.setAttribute("style","background-image:url('https://services.epnet.com/GetImage.aspx/getImage.aspx?ImageIID=8249');background-position:0px 0px;");
+								}
+							}
+							else
+							{
+								if(  document.getElementById("ep_indexVersionLinks") && !( document.getElementById("ep_documentNavigation") )  )
+								{
+									rightHandToolsElement.setAttribute("style","background-position:0px 20px;");
+								}
+							}
+							
+							
+							
+						</script><script type="text/javascript">
+						var condNavLink = document.getElementById("CondNavLink");
+						condNavLink.onclick = function(){
+						ce = window.open('http://healthlibrary.epnet.com/tools/index3.aspx?siteid=healthlibrary&token=f75979d3-9c7c-4b16-af56-3e122a3f19e3&frame=parent','ConditionExplorer','width=738,height=541,location=no,status=yes,menubar=no,scrollbars=no,resizable=yes');ce.focus();void(null);
+						};</script></div>
+    <div id="SymptomCheckerDiv" style="display:none;">
+      <div id="closer"><input type="hidden"></div>
+      <div id="bodyGraphic">
+        <div id="instructionsLabel">
+          <h1><input type="hidden"></h1>
+        </div>
+        <ul>
+          <li id="genderLabel"><span><input type="hidden"></span><a href="#" id="genderSetter"><input type="hidden"></a></li>
+          <li id="ageLabel"><span><input type="hidden"></span><a href="#" id="ageSetter"><input type="hidden"></a></li>
+          <li id="bodyLabel">
+            <p><input type="hidden"></p><select id="bodyPartSetter"><option id="bpGeneral" value="65"></option>
+              <option id="bpHead" value="66"></option>
+              <option id="bpEyes" value="67"></option>
+              <option id="bpNose" value="68"></option>
+              <option id="bpMouth" value="69"></option>
+              <option id="bpEars" value="70"></option>
+              <option id="bpNeck" value="71"></option>
+              <option id="bpThroat" value="72"></option>
+              <option id="bpAbdomen" value="73"></option>
+              <option id="bpChest" value="74"></option>
+              <option id="bpGroin" value="75"></option>
+              <option id="bpArms" value="76"></option>
+              <option id="bpSkin" value="77"></option>
+              <option id="bpHands" value="78"></option>
+              <option id="bpHipsLegs" value="79"></option>
+              <option id="bpButtocks" value="80"></option>
+              <option id="bpBack" value="81"></option></select></li>
+          <li id="languageLabel"><span><input type="hidden"></span><a href="#" id="langSetter"><input type="hidden"></a></li>
+        </ul>
+      </div>
+      <div id="relatedLinksDiv">
+        <div id="relatedArticlesLabel">
+          <h1><input type="hidden"></h1>
+        </div>
+        <div id="relatedLinks"><input type="hidden"></div>
+      </div>
+    </div>
+  </body>
+</html>

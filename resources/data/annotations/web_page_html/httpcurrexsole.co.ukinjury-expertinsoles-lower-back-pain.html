@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="UTF-8">
+		
+		
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300|Nova+Square">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://currexsole.co.uk/wp-content/themes/currexsole/style.css" />
+		<link rel="shortcut icon" href="http://www.currexsole.co.uk/favicon.ico">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		
+<!-- This site is optimized with the Yoast WordPress SEO plugin v2.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>Back pain insoles | currex UK insoles</title>
+<meta name="description" content="Use currex insoles for lower back pain from running to get increased stabilisation, shock absorption and fit."/>
+<link rel="canonical" href="http://currexsole.co.uk/injury-expert/insoles-lower-back-pain/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Back pain insoles | currex UK insoles" />
+<meta property="og:description" content="Use currex insoles for lower back pain from running to get increased stabilisation, shock absorption and fit." />
+<meta property="og:url" content="http://currexsole.co.uk/injury-expert/insoles-lower-back-pain/" />
+<meta property="og:site_name" content="CurrexSole UK" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="CurrexSole UK &raquo; LOWER BACK PAIN Comments Feed" href="http://currexsole.co.uk/injury-expert/insoles-lower-back-pain/feed/" />
+<link rel='stylesheet' id='advanced-responsive-video-embedder-css'  href='http://currexsole.co.uk/wp-content/plugins/advanced-responsive-video-embedder/public/advanced-responsive-video-embedder-public.css?ver=6.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://currexsole.co.uk/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://currexsole.co.uk/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://currexsole.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://currexsole.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://currexsole.co.uk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1.24" />
+<link rel='shortlink' href='http://currexsole.co.uk/?p=425' />
+	
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51635271-1', 'currexsole.co.uk');
+  ga('send', 'pageview');
+
+</script>
+
+
+  
+    <!-- Corresponding code in the "parent" page -->
+    <script src="http://npr.github.io/responsiveiframe/js/jquery.js"></script>
+    <script src="http://npr.github.io/responsiveiframe/js/jquery.responsiveiframe.js"></script>
+    <script>
+    ;(function($){
+    $(function(){
+    $('#myIframeID').responsiveIframe({ xdomain: '*'});
+    });
+    })(jQuery);
+    </script>
+		<script>
+		$(function() {
+			$('.carousel').carousel();
+			
+			$('#insole_tech_carousel').on('slid.bs.carousel', function() {
+				var carouselData = $(this).data('bs.carousel');
+				var currentIndex = carouselData.getActiveIndex();
+				
+				var type = $('#insole_tech_carousel li:eq(' + currentIndex + ')').data('type');
+				
+				$('.features .marker span').attr('class', type);
+			});
+			
+			// If selecting from drop down
+			$('.select-sole').change(function(e) {
+				var option = $(this).find('option:selected');
+				var insole_id = $(this).find('option:selected').val();
+				
+				if( insole_id == "" )
+				{
+					$('.insole_images .row').removeClass('show').addClass('hide');
+					
+					$('.sole-tabs li.active').removeClass('active');
+					$('.sole-tabs li:first').addClass('active');
+					
+					$('.arch_type_selector').slideUp(function(e) {
+						$('.all_soles').slideDown();
+					});
+				}
+				else
+				{
+					$('.insole_images .row').removeClass('show').addClass('hide');
+					$('.row_' + insole_id ).addClass('show');
+					
+					var high_url  = $(option).data('high-url');
+					var med_url   = $(option).data('med-url');
+					var low_url   = $(option).data('low-url');
+					
+					$('.title.buy.high a').attr('href', high_url);
+					$('.title.buy.med a').attr('href', med_url);
+					$('.title.buy.low a').attr('href', low_url);
+					
+					var type = $('.sole-tabs li[data-insole-id="' + insole_id + '"] a').text();
+					
+					$('.title.buy .type').text( type );
+									
+					$('.sole-tabs li.active').removeClass('active');
+					
+					$('.sole-tabs li[data-insole-id="' + insole_id + '"]').addClass('active');
+					
+					
+					$('.arch_type_selector').slideDown(function() {
+						$('.step_1 span').removeClass('bold');
+						$('.step_2 span').addClass('bold');
+					});
+					
+				}
+			});
+			
+			// If selecting from list
+			$('.sole-tabs li').click(function(e) {
+				var _this = $(this);
+				var insole_id = $(this).data('insole-id');
+				var high_url  = $(this).data('high-url');
+				var med_url   = $(this).data('med-url');
+				var low_url   = $(this).data('low-url');
+				
+				
+				
+				$('.sole-tabs li.active').removeClass('active');
+				
+				if( insole_id == "" )
+				{
+					$('.insole_images .row').removeClass('show').addClass('hide');
+					$('.select-sole option:first').prop('selected', true);
+					
+					$('.arch_type_selector').slideUp(function(e) {
+						$('.all_soles').slideDown();
+					});
+				}
+				else
+				{
+					var type = $(_this).find('a:first').text();
+					
+					$('.title.buy .type').text( type );
+					
+					$('.title.buy.high a').attr('href', high_url);
+					$('.title.buy.med a').attr('href', med_url);
+					$('.title.buy.low a').attr('href', low_url);
+					
+					$('.insole_images .row').removeClass('show').addClass('hide');
+					$('.row_' + insole_id ).addClass('show');
+					
+					$('.arch_type_selector').slideDown(function() {
+						$('.step_1 span').removeClass('bold');
+						$('.step_2 span').addClass('bold');
+					});
+				}
+				
+				$(this).addClass('active');
+			});
+			
+			// If selecting from all
+			$('.all_insoles_select').click(function(e) {
+				e.preventDefault();
+				
+				var _this     = $(this);
+				var insole_id = $(_this).data('insole-id');
+				var high_url  = $(_this).data('high-url');
+				var med_url   = $(_this).data('med-url');
+				var low_url   = $(_this).data('low-url');
+				
+				
+					
+				$('.title.buy.high a').attr('href', high_url);
+				$('.title.buy.med a').attr('href', med_url);
+				$('.title.buy.low a').attr('href', low_url);
+				
+				
+				var type = $('.sole-tabs li[data-insole-id="' + insole_id + '"] a').text();	
+				$('.title.buy .type').text( type );
+					
+				$('.sole-tabs li.active').removeClass('active');
+				$('.sole-tabs li[data-insole-id="' + insole_id + '"]').addClass('active');
+				
+				$('.insole_images .row').removeClass('show').addClass('hide');
+				$('.row_' + insole_id ).addClass('show');
+				
+				
+				$('.arch_type_selector').slideDown(function() {
+					$('.step_1 span').removeClass('bold');
+					$('.step_2 span').addClass('bold');
+				});
+			});
+			
+			$('.sole-tabs li a').click(function(e) {
+				e.preventDefault();
+			});
+		});
+		</script>
+		</head>
+	
+	<body>
+		
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a class="navbar-brand" href="http://currexsole.co.uk"><img src="http://currexsole.co.uk/wp-content/themes/currexsole/media/images/logo-300.jpg" alt="" /></a>
+				</div>
+				
+				<div class="navbar-collapse collapse">
+					<div class="col-sm-7 col-md-7 pull-right navbar-links" style="margin-top: 15px;">
+						<div class="pull-right"><a href="http://shop.currexsole.co.uk/default.asp"><span class="btn btn-red"><strong>Buy 2 Pairs and Get FREE Delivery</strong></span> </a>
+          <a href="https://facebook.com/currexSoleUK" target="_blank"><img src="http://currexsole.co.uk/wp-content/uploads/2014/06/fb-logo-top.png"></a>
+              <a href="https://twitter.com/currexSoleUK" target="_blank"> <img src="http://currexsole.co.uk/wp-content/uploads/2014/06/twitter-logo-top.png"></a>
+							<!--<a href="http://currexsole.co.uk/arch-profiles/insoles-foot-types/" class="btn btn-default">Which insoles do I need?</a>
+		<a href="http://currexsole.co.uk/delivery/"><img src="http://currexsole.co.uk/wp-content/uploads/2014/07/next-day-delivery.png" style="padding:0 4px"></a>-->
+			<a href="http://shop.currexsole.co.uk" class="btn btn-primary">Buy Insoles NOW - Go to our SHOP</a>
+						</div>
+					</div>
+					
+					<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse "><ul id="menu-main-menu" class="nav navbar-nav navbar-right"><li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a title="Insole Selector" href="http://currexsole.co.uk/arch-profiles/insoles-foot-types/">Insole Selector</a></li>
+<li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-76 dropdown"><a title="Our Insoles" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Our Insoles <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a title="RUNPRO" href="http://currexsole.co.uk/insoles/running-insoles-runpro/">RUNPRO</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a title="CLEATPRO" href="http://currexsole.co.uk/insoles/cleatpro/">CLEATPRO</a></li>
+	<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a title="EDGEPRO" href="http://currexsole.co.uk/insoles/ski-insoles-edgepro/">EDGEPRO</a></li>
+	<li id="menu-item-2268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2268"><a title="HIKEPRO" href="http://currexsole.co.uk/insoles/hikepro/">HIKEPRO</a></li>
+	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a title="BIKEPRO" href="http://currexsole.co.uk/insoles/bike-insoles-bikepro/">BIKEPRO</a></li>
+	<li id="menu-item-1325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1325"><a title="TECHNOLOGIES" href="http://currexsole.co.uk/technologies/">TECHNOLOGIES</a></li>
+</ul>
+</li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-55 dropdown"><a title="Sports" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Sports <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-66" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a title="RUNNING" href="http://currexsole.co.uk/sports/running/">RUNNING</a></li>
+	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a title="FOOTBALL" href="http://currexsole.co.uk/sports/football/">FOOTBALL</a></li>
+	<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a title="GOLF" href="http://currexsole.co.uk/sports/golf/">GOLF</a></li>
+	<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a title="CYCLING" href="http://currexsole.co.uk/sports/cycling/">CYCLING</a></li>
+	<li id="menu-item-973" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-973"><a title="WALKING" href="http://currexsole.co.uk/sports/walking-insoles/">WALKING</a></li>
+	<li id="menu-item-972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"><a title="HIKING (shoes)" href="http://currexsole.co.uk/sports/hiking-shoes/">HIKING (shoes)</a></li>
+	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a title="HIKING (walking boots)" href="http://currexsole.co.uk/sports/hiking/">HIKING (walking boots)</a></li>
+	<li id="menu-item-72" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72"><a title="TRIATHLON (running)" href="http://currexsole.co.uk/sports/triathlon-running/">TRIATHLON (running)</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-974"><a title="TRIATHLON (cycling)" href="http://currexsole.co.uk/sports/triathlon-cycling/">TRIATHLON (cycling)</a></li>
+	<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a title="RUGBY" href="http://currexsole.co.uk/sports/rugby/">RUGBY</a></li>
+	<li id="menu-item-70" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a title="TENNIS" href="http://currexsole.co.uk/sports/tennis/">TENNIS</a></li>
+	<li id="menu-item-59" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59"><a title="CRICKET" href="http://currexsole.co.uk/sports/cricket/">CRICKET</a></li>
+	<li id="menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-764"><a title="FITNESS &amp; GYM" href="http://currexsole.co.uk/sports/fitness-insoles/">FITNESS &#038; GYM</a></li>
+	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a title="MOUNTAIN BIKING" href="http://currexsole.co.uk/sports/mountain-biking/">MOUNTAIN BIKING</a></li>
+	<li id="menu-item-69" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a title="SQUASH" href="http://currexsole.co.uk/sports/squash/">SQUASH</a></li>
+	<li id="menu-item-413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a title="HOCKEY" href="http://currexsole.co.uk/sports/hockey-boots-insoles/">HOCKEY</a></li>
+	<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a title="SKIING" href="http://currexsole.co.uk/sports/ski-insoles/">SKIING</a></li>
+	<li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a title="SNOWBOARDING" href="http://currexsole.co.uk/sports/snowboarding/">SNOWBOARDING</a></li>
+	<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a title="MOUNTAINEERING" href="http://currexsole.co.uk/sports/mountaineering-insoles/">MOUNTAINEERING</a></li>
+</ul>
+</li>
+<li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-75 dropdown"><a title="Injury Expert" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Injury Expert <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-289" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a title="BLISTERS" href="http://currexsole.co.uk/injury-expert/insoles-blisters/">BLISTERS</a></li>
+	<li id="menu-item-297" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-297"><a title="PLANTAR FASCIITIS" href="http://currexsole.co.uk/injury-expert/best-insoles-for-plantar-fasciitis/">PLANTAR FASCIITIS</a></li>
+	<li id="menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418"><a title="ACHILLES TENDONITIS" href="http://currexsole.co.uk/injury-expert/achilles-tendonitis/">ACHILLES TENDONITIS</a></li>
+	<li id="menu-item-424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a title="SHIN SPLINTS" href="http://currexsole.co.uk/injury-expert/insoles-shin-splints/">SHIN SPLINTS</a></li>
+	<li id="menu-item-423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423"><a title="KNEE PAIN" href="http://currexsole.co.uk/injury-expert/insoles-knee-pain/">KNEE PAIN</a></li>
+	<li id="menu-item-428" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-425 current_page_item menu-item-428 active"><a title="LOWER BACK PAIN" href="http://currexsole.co.uk/injury-expert/insoles-lower-back-pain/">LOWER BACK PAIN</a></li>
+	<li id="menu-item-1613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1613"><a title="MORTON&#039;S NEUROMA" href="http://currexsole.co.uk/injury-expert/insoles-morton-neuroma-2/">MORTON&#8217;S NEUROMA</a></li>
+	<li id="menu-item-1615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1615"><a title="IT BAND SYNDROME" href="http://currexsole.co.uk/injury-expert/insoles-itb-syndrome/">IT BAND SYNDROME</a></li>
+	<li id="menu-item-1614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1614"><a title="HEEL BRUISES" href="http://currexsole.co.uk/injury-expert/insoles-heel-bruise/">HEEL BRUISES</a></li>
+	<li id="menu-item-1310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1310"><a title="ASK THE EXPERT" href="http://currexsole.co.uk/injury-expert/ask-expert/">ASK THE EXPERT</a></li>
+</ul>
+</li>
+<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-355 dropdown"><a title="Why currex?" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Why currex? <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-1302" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1302"><a title="BENEFITS" href="http://currexsole.co.uk/why-currexsole/benefits/">BENEFITS</a></li>
+	<li id="menu-item-1248" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1248"><a title="OUR STORY" href="http://currexsole.co.uk/why-currexsole/about/">OUR STORY</a></li>
+	<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-408"><a title="CUSTOMER REVIEWS" href="http://currexsole.co.uk/why-currexsole/customer-reviews/">CUSTOMER REVIEWS</a></li>
+</ul>
+</li>
+<li id="menu-item-1807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1807"><a title="Store Locator" href="http://currexsole.co.uk/store-locator/">Store Locator</a></li>
+<li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-438 dropdown"><a title="Us" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Us <span class="caret"></span></a>
+<ul role="menu" class=" dropdown-menu">
+	<li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a title="NEWS" href="http://currexsole.co.uk/us/currexsole-insole-news/">NEWS</a></li>
+	<li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437"><a title="ATHLETES" href="http://currexsole.co.uk/us/athletes/">ATHLETES</a></li>
+	<li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a title="CONTACT US" href="http://currexsole.co.uk/us/contact-currexsoles-insoles/">CONTACT US</a></li>
+</ul>
+</li>
+<li id="menu-item-1218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1218"><a title="Trim to Fit" href="http://currexsole.co.uk/trimtofit/">Trim to Fit</a></li>
+<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407"><a title="FAQ&#039;S" href="http://currexsole.co.uk/why-currexsole/faqs/">FAQ&#8217;S</a></li>
+</ul></div>				</div>
+			</div>
+		</div>
+		
+		<div class="main">	
+		
+<div class="container two-col">
+	<div class="row">
+		<div class="col-lg-12">
+		<h1>Injury Expert. <span>Lower Back Pain.</span></h1>
+		</div>
+	</div>
+	
+	<div class="row">	
+		<div class="col-md-6">
+			<h2>Lower back pain while running is very common and can be caused by a number of things.</h2>
+<p><strong>SYMPTOMS</strong></p>
+<ul>
+<li>Pain in the lower back while running, normally occurs after 10-15 mins. No injury has occurred.</li>
+<li>Pain generally worsened by leaning backwards or sideways.</li>
+<li>Your back often feels stiff and vulnerable, especially but not exclusively when running</li>
+</ul>
+<p><strong>COMMON CAUSES</strong></p>
+<ul>
+<li>Increase in intensity, length or duration of your running.</li>
+<li>Lack of core strength in combination with hill running.</li>
+<li>Incorrect footwear and/or insufficient (worn out) cushioning.</li>
+<li>Asymmetrical running style due to an over-dominant leg, stride length or gait behaviour.</li>
+</ul>
+<p><strong>SOLUTIONS</strong></p>
+<ul>
+<li><strong>Use currex insoles</strong> for increased stabilisation, shock absorption and fit.</li>
+<li>Stretch hips, buttocks and hip flexors – perform the Child’s Pose stretch.</li>
+<li>Strengthen Hamstrings and Glutes – run with a lower back support while rehab.</li>
+<li>Ensure that your footwear is ideal &#8211; see a <a title="Stores" href="http://currexsole.co.uk/stores/">specialist</a></li>
+</ul>
+<p><strong><a href="http://currexsole.co.uk/arch-profiles/insoles-foot-types/">Buy lower back pain insoles now</a></strong></p>
+		</div>
+	
+		<div class="col-md-6">
+			<div align="center"><a href="http://currexsole.co.uk/wp-content/uploads/2014/04/back-pain.jpg"><img class="alignnone size-full wp-image-1584" src="http://currexsole.co.uk/wp-content/uploads/2014/04/back-pain.jpg" alt="Insoles for back pain" width="500" height="503" /></a></div>
+<p><a class="btn btn-primary" href="http://shop.currexsole.co.uk">Buy Insoles NOW</a></p>
+<p>Not sure which insole you need then please use our <strong><a href="http://currexsole.co.uk/arch-profiles/insoles-foot-types/">Insole Selector</a></strong></p>
+<div style="text-align: right;">« <a href="http://currexsole.co.uk/injury-expert/insoles-knee-pain/">back</a> | <a href="http://currexsole.co.uk/injury-expert/insoles-morton-neuroma-2/">next</a> »</div>
+		</div>
+	</div>
+</div>
+
+	
+	</div>
+	
+	<div class="divider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-4 blue"></div>
+				<div class="col-xs-4 orange"></div>
+				<div class="col-xs-4 red"></div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="footer">			
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 quicklinks clearfix">		
+				
+					<div class="menu-footer_menu_col1-container"><ul id="menu-footer_menu_col1" class="list-unstyled menu"><li id="menu-item-449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-449"><a href="#">The Small Print</a></li>
+<li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="http://currexsole.co.uk/terms-conditions/">Terms &#038; Conditions</a></li>
+<li id="menu-item-470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-470"><a href="http://currexsole.co.uk/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-471"><a href="http://currexsole.co.uk/security/">Security</a></li>
+</ul></div>					
+					<div class="menu-footer_menu_col2-container"><ul id="menu-footer_menu_col2" class="list-unstyled menu"><li id="menu-item-448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-448"><a href="#">Retail</a></li>
+<li id="menu-item-506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-506"><a href="http://shop.currexsole.co.uk">Shop</a></li>
+<li id="menu-item-474" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-474"><a title="Delivery &amp; Returns" href="http://currexsole.co.uk/delivery/">Delivery &#038; Returns</a></li>
+<li id="menu-item-1376" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1376"><a href="http://currexsole.co.uk/account/">Your Account</a></li>
+<li id="menu-item-1549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1549"><a href="http://currexsole.co.uk/free-insoles-life/">Free Insoles For Life</a></li>
+</ul></div>					
+					<div class="menu-footer_menu_col3-container"><ul id="menu-footer_menu_col3" class="list-unstyled menu"><li id="menu-item-479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-479"><a href="#">Connect</a></li>
+<li id="menu-item-480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-480"><a target="_blank" href="https://twitter.com/currexUK">Twitter</a></li>
+<li id="menu-item-481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-481"><a target="_blank" href="https://www.facebook.com/currexUK">Facebook</a></li>
+<li id="menu-item-1958" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1958"><a href="http://currexsole.co.uk/press/">Press</a></li>
+<li id="menu-item-1959" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1959"><a href="http://currexsole.co.uk/us/currexsole-insole-news/">News</a></li>
+</ul></div>				</div>
+				
+				<div class="col-sm-4">
+					<img src="http://currexsole.co.uk/wp-content/themes/currexsole/media/images/footer_logos.png" class="img-responsive pull-right">
+				</div>
+				
+				<span>&copy; currex GmbH | <a href="http://www.currexsole.co.uk/currex/legal">Legal</a> | <a href="http://www.currexsole.co.uk/currex/media-centre">Media Centre</a></span>
+			</div>	
+		</div>
+	</div>
+
+	<script type='text/javascript' src='http://currexsole.co.uk/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/currexsole.co.uk\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://currexsole.co.uk/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.2.1'></script>
+</body>
+</html>

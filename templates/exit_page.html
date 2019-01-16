@@ -1,0 +1,15 @@
+{% extends "layout_generic_survey.html" %} 
+
+
+{% block survey %}
+<div class="form_description">
+    <h2>You have now completed the main experiment.  We will now take you to a post experiment survey.  Please click the button below. <label style="color:red;">{{ message }}</label> </h2>
+</div>
+
+<div class="buttons">
+<input class="grey" type="button" value="Take me to Survey" onclick="window.location.href='{{payload.participant_state.qualtrics_link}}'" />
+
+</div>
+
+
+{% endblock %}
