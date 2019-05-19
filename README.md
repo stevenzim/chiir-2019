@@ -6,12 +6,15 @@ Herein are the code and documents for reproducibility purposes of our publicatio
 Please use information in the following bibtex entry for citation, and be sure to cite other relevant works contained within (e.g. Pogacar et al. 2017, White et al. 2014, etc.).
 
 ```
-@inproceedings{Zimmerman2019Improving,
-  title={Privacy Nudging in Search: Investigating Potential Impacts},
-  author={Zimmerman, Steven and Thorpe, Alistair and Fox, Chris and Kruschwitz, Udo},
-  booktitle={Proceedings of the 2019 Conference on Human Information Interaction and Retrieval (CHIIR ’19)},
-  year={2019},
-}
+@inproceedings{Zimmerman2019Privacy,
+ author = {Zimmerman, S. and Thorpe, A. and Fox, C. and Kruschwitz, U.},
+ title = {Privacy Nudging in Search: Investigating Potential Impacts},
+ booktitle = {Proceedings of the 2019 Conference on Human Information Interaction and Retrieval},
+ series = {CHIIR '19},
+ year = {2019},
+ location = {Glasgow, Scotland UK},
+ pages = {283--287}
+} 
 ```
 
 # Setup
