@@ -1,5 +1,5 @@
 # CHIIR 2019 Code and Documents
-Herein are the code and documents for reproducibility purposes of our publication.  Web pages as displayed to users can be found here: 'static/webpage_img'.   Web page meta data, including 3rd party tracker data, can be found here: 'resources/data/annotations/json'
+Herein are the code and documents for reproducibility purposes of our publication.  Web pages as displayed to users can be found here: 'static/webpage_img'.   Web page meta data, including 3rd party tracker data, can be found here: 'resources/data/annotations/json'.   Anonomyized participant data can be found in 'CHIIR_2019_data_anonymized.xlsx'.
 
 
 # Citing work
